@@ -95,10 +95,24 @@ Only `id`, `name` and `description` are required; every other field is omitted w
 A listing that belongs to more than one type adds an explicit `type: [...]` field.
 The schema in `src/content.config.ts` validates every field at build time.
 
+## Deployment
+
+Two GitHub Actions workflows deploy the site:
+
+- **deploy-pages.yml** — every push to `main` builds and publishes `dist/` to the `gh-pages`
+  branch (root of the Pages site).
+- **pr-preview.yml** — every pull request gets a preview at
+  `<pages-url>/pr-preview/pr-<number>/` with a comment on the PR. Internal links are
+  base-path-aware (`src/lib/url.ts`), so previews work in a subdirectory.
+
+One-time setup: in the repository settings, set Pages to "Deploy from a branch", branch
+`gh-pages`, folder `/`. The branch is created by the first `main` deployment.
+
 ## Notes for the cutover
 
-- The API endpoints are emitted as `*.json` files. Configure the CDN or web server to serve them
-  extensionless (`/api/v1/connectors` -> `/api/v1/connectors.json`).
+- The API endpoints are emitted as `*.json` files. The CDN must serve them extensionless
+  (`/api/v1/connectors` -> `/api/v1/connectors.json`) and with content type `application/json`.
+  GitHub Pages alone cannot do this; it is handled at the CDN level.
 - Old AppDirect URLs (`/en-US/apps/<id>/<slug>`) need redirect rules to `/listings/<slug>/`.
 - The submission flow (Tasklist forms), lead forms (HubSpot) and the idea portal (ProductHub) are
   external services. Link them from the site; they do not change.

@@ -1,4 +1,6 @@
 ---
+import { u } from '../lib/url';
+
 interface Props {
   title: string;
   description?: string;
@@ -89,13 +91,13 @@ const { title, description } = Astro.props;
   <body>
     <header class="site">
       <div class="container">
-        <a class="brand" href="/"><img src="/logo.png" alt="Camunda Marketplace" /></a>
+        <a class="brand" href={u('/')}><img src={u('/logo.png')} alt="Camunda Marketplace" /></a>
         <nav>
-          <a href="/listings/">Browse all</a>
-          <a href="/listings/?type=connector">Connectors</a>
-          <a href="/listings/?type=blueprint">Blueprints</a>
-          <a href="/listings/?type=solution">Solutions</a>
-          <a class="contribute" href="/contribute/">Contribute</a>
+          <a href={u('/listings/')}>Browse all</a>
+          <a href={u('/listings/?type=connector')}>Connectors</a>
+          <a href={u('/listings/?type=blueprint')}>Blueprints</a>
+          <a href={u('/listings/?type=solution')}>Solutions</a>
+          <a class="contribute" href={u('/contribute/')}>Contribute</a>
         </nav>
       </div>
     </header>

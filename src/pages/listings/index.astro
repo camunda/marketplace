@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { getListings, facetValues, assetUrl } from '../../lib/data';
+import { u } from '../../lib/url';
 
 const listings = await getListings();
 
@@ -63,7 +64,7 @@ const facets = facetGroups.map(([label, key]) => ({ label, key, values: facetVal
               data-runtimes={l.runtimes.join('|')}
               data-compatible-versions={l.compatibleVersions.join('|')}
             >
-              <a href={`/listings/${l.slug}/`}>
+              <a href={u(`/listings/${l.slug}/`)}>
                 {l.icon && <img src={assetUrl(l, l.icon)!} alt="" width="48" height="48" loading="lazy" />}
                 <div>
                   <h3>{l.name}</h3>

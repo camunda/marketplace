@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import { getListings, isConnector, isBlueprint, isSolution, assetUrl } from '../lib/data';
+import { u } from '../lib/url';
 
 const listings = await getListings();
 const featured = listings.filter((l) => l.creatorType === 'camunda').slice(0, 6);
@@ -12,22 +13,22 @@ const featured = listings.filter((l) => l.creatorType === 'camunda').slice(0, 6)
       <h1>Camunda Marketplace</h1>
       <p>Connectors, process blueprints and partner solutions for your Camunda projects.</p>
       <p>
-        <a class="button primary" href="/listings/">Browse {listings.length} listings</a>
+        <a class="button primary" href={u('/listings/')}>Browse {listings.length} listings</a>
       </p>
     </div>
   </section>
 
   <section class="container stats">
-    <a href="/listings/?type=connector"><strong>{listings.filter(isConnector).length}</strong> Connectors</a>
-    <a href="/listings/?type=blueprint"><strong>{listings.filter(isBlueprint).length}</strong> Blueprints</a>
-    <a href="/listings/?type=solution"><strong>{listings.filter(isSolution).length}</strong> Solutions</a>
+    <a href={u('/listings/?type=connector')}><strong>{listings.filter(isConnector).length}</strong> Connectors</a>
+    <a href={u('/listings/?type=blueprint')}><strong>{listings.filter(isBlueprint).length}</strong> Blueprints</a>
+    <a href={u('/listings/?type=solution')}><strong>{listings.filter(isSolution).length}</strong> Solutions</a>
   </section>
 
   <section class="container">
     <h2>From Camunda</h2>
     <div class="grid">
       {featured.map((l) => (
-        <a class="card" href={`/listings/${l.slug}/`}>
+        <a class="card" href={u(`/listings/${l.slug}/`)}>
           {l.icon && <img src={assetUrl(l, l.icon)!} alt="" width="48" height="48" loading="lazy" />}
           <h3>{l.name}</h3>
           <p>{l.description}</p>

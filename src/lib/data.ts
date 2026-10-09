@@ -2,6 +2,7 @@ import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 import { readdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
+import { u } from './url';
 
 export type ListingEntry = CollectionEntry<'listings'>;
 
@@ -57,7 +58,7 @@ export const isSolution = (l: Listing) => l.type.includes('solution');
 
 /** URL of a media file that sits next to listing.md. */
 export function assetUrl(l: Listing, file: string | null): string | null {
-  return file ? `/listings/${l.slug}/assets/${file}` : null;
+  return file ? u(`/listings/${l.slug}/assets/${file}`) : null;
 }
 
 /** Lowest compatible Camunda version, matching marketplace-api's requiredCamundaVersion. */

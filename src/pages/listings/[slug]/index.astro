@@ -2,6 +2,7 @@
 import Base from '../../../layouts/Base.astro';
 import { render } from 'astro:content';
 import { getListings, webModelerImportUrl, videoEmbedUrl, parseVideo, assetUrl } from '../../../lib/data';
+import { u } from '../../../lib/url';
 
 export async function getStaticPaths() {
   const listings = await getListings();
@@ -67,7 +68,7 @@ const links: [string, string | undefined][] = [
         {l.links.docs && <a class="button" href={l.links.docs} target="_blank" rel="noopener">Documentation</a>}
         {l.links.demo && <a class="button" href={l.links.demo} target="_blank" rel="noopener">Request demo</a>}
         {l.links.website && <a class="button" href={l.links.website} target="_blank" rel="noopener">Visit website</a>}
-        <a class="button" href={`/listings/${l.slug}/contact/`}>Contact</a>
+        <a class="button" href={u(`/listings/${l.slug}/contact/`)}>Contact</a>
       </div>
 
       {
