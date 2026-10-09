@@ -1,0 +1,64 @@
+---
+id: 784360
+slug: "mpmx-ai-camunda-8-mcp-process-optimization"
+name: "mpmX AI: Camunda 8 MCP Process Optimization"
+type: 
+  - "solution"
+creatorType: "partner"
+creatorName: "mpmX GmbH"
+creatorUrl: "https://mpmx.ai/"
+categories: 
+  - "Agentic Solutions"
+industries: 
+  - "Technology"
+useCases: 
+  - "Agentic AI orchestration"
+resourceTypes: []
+bpmnTypes: []
+runtimes: []
+compatibleVersions: 
+  - "8.7"
+  - "8.8"
+  - "8.9"
+availability: "listing-only"
+description: "MCP tool for process optimization"
+tagline: "mpmX AI-Powered Camunda Process Orchestration"
+templates: []
+saasTemplate: null
+smTemplate: null
+githubRepo: null
+docsUrl: null
+previewImage: null
+demoRequestUrl: "https://mpmx.ai/"
+demoVideo: 
+  provider: "youtube"
+  id: "UHlNLNJ-H0E"
+  url: "https://www.youtube.com/watch?v=UHlNLNJ-H0E"
+icon: "icon.png"
+heroImage: "hero.png"
+screenshots: []
+resources: []
+supportUrl: "https://forum.camunda.io/"
+referUrl: null
+lastModified: "2026-03-20"
+---
+
+mpmX AI gives business users the power to analyze and optimize processes through a chat-style interface, significantly reducing the technical threshold required to carry out significant and meaningful process optimization.
+
+## Features
+
+### Docker-ready deployment
+
+Docker Compose support with volume-mounted BPMN files for consistent team environments.
+
+### Secure authentication with OAuth2
+
+Authenticate with Camunda SaaS using client credentials.
+
+### Auto-constructed API URLs
+
+API endpoints auto-derived from cluster ID and region — no manual URL configuration needed.
+
+### Strict TypeScript with Zod validation
+
+Type-safe implementation with runtime input validation for all tool parameters.

@@ -1,0 +1,81 @@
+---
+id: 417336
+slug: "amazon-dynamodb-connector"
+name: "Amazon DynamoDB Connector"
+type: 
+  - "connector"
+creatorType: "camunda"
+creatorName: "Camunda"
+creatorUrl: "https://camunda.com/"
+categories: 
+  - "Data & Analytics"
+industries: []
+useCases: []
+resourceTypes: []
+bpmnTypes: 
+  - "bpmn:Task"
+runtimes: 
+  - "bundle"
+compatibleVersions: 
+  - "8.2"
+  - "8.3"
+  - "8.4"
+  - "8.5"
+availability: "open-source"
+description: "Seamlessly integrate with NoSQL databases"
+tagline: "Integrate NoSQL Databases with the Amazon DynamoDB Connector"
+templates: 
+  - id: "io.camunda.connectors.AWSDynamoDB.v1"
+    name: "Amazon DynamoDB outbound"
+    url: "https://raw.githubusercontent.com/camunda/connectors/main/connectors/aws/aws-dynamodb/element-templates/aws-dynamodb-outbound-connector.json"
+saasTemplate: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.AWSDynamoDB.v1/latest/aws-dynamodb-outbound-connector.json"
+smTemplate: "https://github.com/camunda/connectors/tree/main/connectors/aws/aws-dynamodb/element-templates"
+githubRepo: null
+docsUrl: null
+previewImage: null
+demoRequestUrl: null
+demoVideo: null
+icon: "icon.png"
+heroImage: "hero.png"
+screenshots: []
+resources: []
+supportUrl: "https://forum.camunda.io/"
+referUrl: "https://docs.camunda.io/docs/components/connectors/out-of-the-box-connectors/aws-dynamodb"
+lastModified: "2025-09-02"
+---
+
+Integrate DynamoDB, Amazon's NoSQL database service, with Camunda process orchestration. From table creation to item updates, experience unparalleled data management and integration.
+
+## Features
+
+### Create Table
+
+Easily set up a new DynamoDB table right from Camunda-based processes, ensuring swift initialization of data storage.
+
+### Delete Table
+
+Safely remove an existing DynamoDB table, allowing for efficient data management and restructuring when needed.
+
+### Describe Table
+
+Obtain detailed information about a specific DynamoDB table, aiding in informed decision-making and process orchestration.
+
+### Scan Table
+
+Access and retrieve items from a table based on specific criteria, ensuring targeted data acquisition for your processes.
+
+### Add Item
+
+Introduce a new item or replace an existing one, ensuring data consistency and up-to-date records.
+
+### Delete Item
+
+Remove specific items using primary keys, streamlining data management and maintaining data relevance.
+
+### Get Item
+
+Fetch specific attributes for a particular item using its primary key, ensuring precise data retrieval for process inputs.
+
+### Update Item
+
+Modify attributes of an existing item or add a new entry if it doesn't exist, guaranteeing up-to-date and comprehensive data storage.

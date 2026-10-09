@@ -11,7 +11,7 @@
  * Usage: node scripts/extract.mjs [--skip-images]
  */
 
-import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
+import { mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -44,6 +44,13 @@ const AVAILABILITY_MAP = {
   'Open Source': 'open-source',
   'Listing Only': 'listing-only',
   'Coming soon': 'coming-soon',
+};
+
+// Categories with only 1-2 entries fold into a larger sibling.
+const CATEGORY_MERGE = {
+  'Best Practices': 'Patterns',
+  'DMN': 'Patterns',
+  'Form': 'Patterns',
 };
 
 const CUSTOM_ATTRIBUTE_MAP = {
@@ -254,7 +261,11 @@ function toListing(product, canonicalVendor, usedSlugs) {
   const type = [...new Set(categories.map((t) => PRODUCT_TYPE_CATEGORIES[t.name]).filter(Boolean))];
 
   // Category children, e.g. "AI Services" (connector), "Quick Start" (blueprint).
-  const categoryValues = [...new Set(categories.flatMap((t) => (t.children ?? []).map((c) => c.name)))].sort();
+  const categoryValues = [
+    ...new Set(
+      categories.flatMap((t) => (t.children ?? []).map((c) => CATEGORY_MERGE[c.name] ?? c.name)),
+    ),
+  ].sort();
 
   const versions = tagChildren(product, 'Version Compatibility').sort(compareVersions);
 
@@ -271,7 +282,6 @@ function toListing(product, canonicalVendor, usedSlugs) {
   usedSlugs.add(slug);
 
   const icon = queueImage(listing.myAppLogoIconUrl ?? listing.imageUrl, slug, 'icon');
-  const image = queueImage(listing.imageUrl, slug, 'thumb');
   const heroImage = queueImage(product.overview?.imageUrl, slug, 'hero');
   const screenshots = (product.screenshots ?? [])
     .map((s, i) => queueImage(s.imageUrl, slug, `screenshot-${i + 1}`))
@@ -295,8 +305,6 @@ function toListing(product, canonicalVendor, usedSlugs) {
     availability: AVAILABILITY_MAP[tagChildren(product, 'Availability')[0]] ?? null,
     description: blurb || overview,
     tagline: product.overview?.splashTitle ?? null,
-    body: overview && overview !== blurb ? overview : '',
-    features: (product.features ?? []).map((f) => ({ header: f.header ?? null, description: f.description ?? null })),
     templates,
     saasTemplate,
     smTemplate: attrs.smTemplate ?? null,
@@ -304,21 +312,36 @@ function toListing(product, canonicalVendor, usedSlugs) {
     docsUrl: attrs.docsUrl ?? null,
     previewImage: attrs.previewImage ?? null,
     demoRequestUrl: attrs.demoRequestUrl ?? null,
-    relatedConnectors: attrs.relatedConnectors ?? null,
     demoVideo: parseVideo(product.overview?.demoUrl),
     icon,
-    image,
     heroImage,
     screenshots,
     resources: (product.resources ?? [])
       .map((r) => ({ type: r.resourceType ?? null, title: r.name ?? null, url: r.link ?? r.url ?? null }))
       .filter((r) => r.url),
     supportUrl: product.support?.knowledgebaseUrl ?? null,
-    termsUrl: product.termsUrl ?? null,
     referUrl: product.referUrl ?? null,
-    publishedOn: isoDate(product.publishedOn),
     lastModified: isoDate(product.lastModified),
   };
+}
+
+/** Overview text plus feature list as a single Markdown document. */
+function toMarkdownBody(product) {
+  const parts = [];
+  const listing = product.listing ?? {};
+  const overview = (listing.overview ?? '').trim();
+  const blurb = (listing.blurb ?? '').trim();
+  if (overview && overview !== blurb) parts.push(overview);
+  const features = (product.features ?? []).filter((f) => f.header || f.description);
+  if (features.length) {
+    parts.push('## Features');
+    for (const f of features) {
+      const header = (f.header ?? '').replace(/:$/, '').trim();
+      if (header) parts.push(`### ${header}`);
+      if (f.description) parts.push(f.description.trim());
+    }
+  }
+  return parts.join('\n\n');
 }
 
 // ---------------------------------------------------------------------------
@@ -332,18 +355,20 @@ const usedSlugs = new Set();
 mkdirSync(CONTENT_DIR, { recursive: true });
 
 const listings = products
-  .map((p) => toListing(p, canonicalVendor, usedSlugs))
-  .sort((a, b) => a.name.localeCompare(b.name));
+  .map((p) => ({ record: toListing(p, canonicalVendor, usedSlugs), body: toMarkdownBody(p) }))
+  .sort((a, b) => a.record.name.localeCompare(b.record.name));
 
-for (const listing of listings) {
-  const dir = join(CONTENT_DIR, listing.slug);
+for (const { record, body } of listings) {
+  const dir = join(CONTENT_DIR, record.slug);
   mkdirSync(dir, { recursive: true });
-  writeFileSync(join(dir, 'listing.yaml'), toYaml(listing));
+  rmSync(join(dir, 'listing.yaml'), { force: true }); // replaced by listing.md
+  const markdown = `---\n${toYaml(record)}---\n\n${body}\n`;
+  writeFileSync(join(dir, 'listing.md'), markdown);
 }
 
 const { ok, failed, failures } = await downloadImages();
 
-const byType = (t) => listings.filter((l) => l.type.includes(t)).length;
+const byType = (t) => listings.filter((l) => l.record.type.includes(t)).length;
 console.log(`extracted ${listings.length} listings -> ${CONTENT_DIR}`);
 console.log(`  connectors: ${byType('connector')}, blueprints: ${byType('blueprint')}, solutions: ${byType('solution')}`);
 console.log(`images: ${ok} downloaded, ${failed} failed${SKIP_IMAGES ? ' (skipped)' : ''}`);

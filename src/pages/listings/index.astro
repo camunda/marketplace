@@ -55,12 +55,12 @@ const facets = facetGroups.map(([label, key]) => ({ label, key, values: facetVal
               data-name={l.name.toLowerCase()}
               data-description={l.description.toLowerCase()}
               data-type={l.type.join('|')}
-              data-creatorType={l.creatorType ?? ''}
+              data-creator-type={l.creatorType ?? ''}
               data-categories={l.categories.join('|')}
               data-industries={l.industries.join('|')}
-              data-useCases={l.useCases.join('|')}
+              data-use-cases={l.useCases.join('|')}
               data-runtimes={l.runtimes.join('|')}
-              data-compatibleVersions={l.compatibleVersions.join('|')}
+              data-compatible-versions={l.compatibleVersions.join('|')}
             >
               <a href={`/listings/${l.slug}/`}>
                 {l.icon && <img src={assetUrl(l, l.icon)!} alt="" width="48" height="48" loading="lazy" />}
@@ -73,6 +73,7 @@ const facets = facetGroups.map(([label, key]) => ({ label, key, values: facetVal
                     ))}
                     {l.creatorName && <span class="pill">{l.creatorName}</span>}
                     {l.compatibleVersions[0] && <span class="pill">Camunda {l.compatibleVersions[0]}+</span>}
+                    {l.lastModified && <span class="pill">updated {l.lastModified}</span>}
                   </span>
                 </div>
               </a>

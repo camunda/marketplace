@@ -5,7 +5,10 @@ export type Listing = CollectionEntry<'listings'>['data'];
 
 export async function getListings(): Promise<Listing[]> {
   const entries = await getCollection('listings');
-  return entries.map((e) => e.data).sort((a, b) => a.name.localeCompare(b.name));
+  // Most recently updated first; fall back to the name.
+  return entries
+    .map((e) => e.data)
+    .sort((a, b) => (b.lastModified ?? '').localeCompare(a.lastModified ?? '') || a.name.localeCompare(b.name));
 }
 
 export const isConnector = (l: Listing) => l.type.includes('connector');

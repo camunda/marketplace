@@ -1,13 +1,16 @@
 ---
 import Base from '../../../layouts/Base.astro';
-import { getListings, webModelerImportUrl, videoEmbedUrl, assetUrl } from '../../../lib/data';
+import { getCollection, render } from 'astro:content';
+import { webModelerImportUrl, videoEmbedUrl, assetUrl } from '../../../lib/data';
 
 export async function getStaticPaths() {
-  const listings = await getListings();
-  return listings.map((l) => ({ params: { slug: l.slug }, props: { l } }));
+  const entries = await getCollection('listings');
+  return entries.map((entry) => ({ params: { slug: entry.data.slug }, props: { entry } }));
 }
 
-const { l } = Astro.props;
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const l = entry.data;
 const importUrl = webModelerImportUrl(l);
 const embedUrl = videoEmbedUrl(l);
 
@@ -53,7 +56,9 @@ const sidebar: [string, string[]][] = [
         {l.referUrl && <a class="button" href={l.referUrl} target="_blank" rel="noopener">Visit website</a>}
       </div>
 
-      {l.body && <p class="body">{l.body}</p>}
+      <div class="body">
+        <Content />
+      </div>
 
       {
         embedUrl && (
@@ -65,22 +70,6 @@ const sidebar: [string, string[]][] = [
       {
         !embedUrl && l.demoVideo && (
           <p><a href={l.demoVideo.url} target="_blank" rel="noopener">Watch the demo video</a></p>
-        )
-      }
-
-      {
-        l.features.length > 0 && (
-          <>
-            <h2>Features</h2>
-            <dl class="features">
-              {l.features.map((f) => (
-                <>
-                  <dt>{f.header}</dt>
-                  <dd>{f.description}</dd>
-                </>
-              ))}
-            </dl>
-          </>
         )
       }
 
@@ -129,7 +118,6 @@ const sidebar: [string, string[]][] = [
         <h3>Links</h3>
         <p>
           {l.supportUrl && <><a href={l.supportUrl} target="_blank" rel="noopener">Support</a><br /></>}
-          {l.termsUrl && <><a href={l.termsUrl} target="_blank" rel="noopener">Terms</a><br /></>}
           {l.previewImage && <><a href={l.previewImage} target="_blank" rel="noopener">Process preview</a><br /></>}
         </p>
       </div>
@@ -150,15 +138,13 @@ const sidebar: [string, string[]][] = [
   .creator { color: var(--muted); margin: 0 0 4px; display: flex; gap: 8px; align-items: center; }
   .tagline { color: var(--muted); font-size: 18px; margin: 8px 0 0; }
   .ctas { display: flex; gap: 10px; flex-wrap: wrap; margin: 24px 0; }
-  .body { font-size: 16px; line-height: 1.6; white-space: pre-line; }
+  .body { font-size: 16px; line-height: 1.6; }
   .video iframe {
     width: 100%;
     aspect-ratio: 16 / 9;
     border: 0;
     border-radius: 8px;
   }
-  .features dt { font-weight: 700; margin-top: 16px; }
-  .features dd { margin: 4px 0 0; color: var(--muted); }
   .screens { display: grid; gap: 12px; }
   .screens img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; }
   .facet { border-top: 1px solid var(--line); padding: 12px 0; }
