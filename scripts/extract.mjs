@@ -287,8 +287,12 @@ function toListing(product, canonicalVendor, usedSlugs) {
   const typeDir = TYPE_DIRS[types[0]] ?? 'misc';
   const dir = `${typeDir}/${slug}`;
 
-  queueImage(listing.myAppLogoIconUrl ?? listing.imageUrl, dir, 'icon');
-  const gallerySources = [product.overview?.imageUrl, ...(product.screenshots ?? []).map((s) => s.imageUrl)];
+  // Prefer the 2x srcset variant where AppDirect provides one.
+  queueImage(listing.myAppLogoIconSrcset?.['2x'] ?? listing.myAppLogoIconUrl ?? listing.imageUrl, dir, 'icon');
+  const gallerySources = [
+    product.overview?.imageSrcset?.['2x'] ?? product.overview?.imageUrl,
+    ...(product.screenshots ?? []).map((s) => s.imageUrlSrcset?.['2x'] ?? s.imageUrl),
+  ];
   gallerySources.filter(Boolean).forEach((url, i) => queueImage(url, dir, `gallery-${i + 1}`));
 
   const links = {
