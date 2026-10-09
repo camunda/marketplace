@@ -58,6 +58,7 @@ const sidebar: [string, string[]][] = [
         {l.docsUrl && <a class="button" href={l.docsUrl} target="_blank" rel="noopener">Documentation</a>}
         {l.demoRequestUrl && <a class="button" href={l.demoRequestUrl} target="_blank" rel="noopener">Request demo</a>}
         {l.referUrl && <a class="button" href={l.referUrl} target="_blank" rel="noopener">Visit website</a>}
+        <a class="button" href={`/listings/${l.slug}/contact/`}>Contact</a>
       </div>
 
       <div class="body">

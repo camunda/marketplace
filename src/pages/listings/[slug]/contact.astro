@@ -1,0 +1,74 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { assetUrl } from '../../../lib/data';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('listings');
+  return entries.map((entry) => ({ params: { slug: entry.data.slug }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const l = entry.data;
+---
+
+<Base title={`Contact - ${l.name}`} description={`Contact the creator of ${l.name}.`}>
+  <div class="container">
+    <header class="head">
+      {l.icon && <img src={assetUrl(l, l.icon)!} alt="" width="56" height="56" />}
+      <div>
+        <h1>Contact</h1>
+        <p class="muted">
+          About <a href={`/listings/${l.slug}/`}>{l.name}</a>
+          {l.creatorName && <> by {l.creatorName}</>}
+        </p>
+      </div>
+    </header>
+
+    <div id="hubspot-form"></div>
+    <p id="hubspot-form-error" hidden>
+      The form could not be loaded. Contact
+      <a href={`mailto:info@camunda.com?subject=Marketplace - ${l.name}`}>info@camunda.com</a>
+      instead.
+    </p>
+  </div>
+
+  <script is:inline src="https://js.hsforms.net/forms/embed/v2.js"></script>
+  <script
+    is:inline
+    define:vars={{ productName: l.name, productId: String(l.id), productCreator: l.creatorName ?? '' }}
+  >
+    hbspt.forms.create({
+      region: 'na1',
+      portalId: '4513465',
+      formId: '90c72902-a95e-47a4-af27-ccce7a5f836e',
+      target: '#hubspot-form',
+      onFormReady: function () {
+        var iframe = document.querySelector('#hubspot-form iframe');
+        if (!iframe || !iframe.contentDocument) return;
+        var doc = iframe.contentDocument;
+        var set = function (name, value) {
+          var input = doc.querySelector('input[name="' + name + '"]');
+          if (input) input.value = value;
+        };
+        set('marketplace_product_name', productName);
+        set('marketplace_product_id', productId);
+        set('marketplace_product_creator', productCreator);
+      },
+    });
+
+    // Show the fallback if HubSpot does not load (for example, blocked by an ad blocker).
+    setTimeout(function () {
+      if (!document.querySelector('#hubspot-form iframe')) {
+        document.getElementById('hubspot-form-error').hidden = false;
+      }
+    }, 6000);
+  </script>
+</Base>
+
+<style>
+  .container { max-width: 720px; margin-top: 40px; }
+  .head { display: flex; gap: 16px; align-items: center; margin-bottom: 24px; }
+  .head h1 { margin: 0; }
+  .muted { color: var(--muted); margin: 4px 0 0; }
+</style>
