@@ -23,6 +23,9 @@ bpmnTypes:
 runtimes: 
   - "bundle"
   - "self-hosted"
+connectorTypes: 
+  - "inbound"
+  - "outbound"
 compatibleVersions: 
   - "8.7"
   - "8.8"

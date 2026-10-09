@@ -17,6 +17,8 @@ bpmnTypes:
   - "bpmn:Task"
 runtimes: 
   - "self-hosted"
+connectorTypes: 
+  - "outbound"
 compatibleVersions: 
   - "8.3"
 availability: "listing-only"

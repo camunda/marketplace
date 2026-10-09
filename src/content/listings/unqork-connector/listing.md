@@ -15,6 +15,9 @@ resourceTypes: []
 bpmnTypes: []
 runtimes: 
   - "self-hosted"
+connectorTypes: 
+  - "inbound"
+  - "outbound"
 compatibleVersions: 
   - "8.5"
 availability: "listing-only"

@@ -23,6 +23,7 @@ const listings = defineCollection({
     resourceTypes: z.array(z.string()),
     bpmnTypes: z.array(z.string()),
     runtimes: z.array(z.enum(['bundle', 'self-hosted'])),
+    connectorTypes: z.array(z.enum(['inbound', 'outbound'])),
     compatibleVersions: z.array(z.string()),
     availability: z.enum(['open-source', 'listing-only', 'coming-soon']).nullable(),
 

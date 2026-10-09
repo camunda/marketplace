@@ -20,6 +20,7 @@ resourceTypes:
   - "Form"
 bpmnTypes: []
 runtimes: []
+connectorTypes: []
 compatibleVersions: 
   - "8.7"
 availability: "open-source"

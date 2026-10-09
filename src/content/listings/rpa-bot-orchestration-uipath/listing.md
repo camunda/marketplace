@@ -25,6 +25,7 @@ useCases:
 resourceTypes: []
 bpmnTypes: []
 runtimes: []
+connectorTypes: []
 compatibleVersions: 
   - "8.4"
   - "8.5"

@@ -19,6 +19,7 @@ resourceTypes:
   - "README"
 bpmnTypes: []
 runtimes: []
+connectorTypes: []
 compatibleVersions: 
   - "8.8"
 availability: "open-source"

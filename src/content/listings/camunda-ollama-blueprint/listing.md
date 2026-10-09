@@ -18,6 +18,7 @@ resourceTypes:
 bpmnTypes: []
 runtimes: 
   - "self-hosted"
+connectorTypes: []
 compatibleVersions: 
   - "8.9"
 availability: "open-source"

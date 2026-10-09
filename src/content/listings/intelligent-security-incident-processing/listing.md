@@ -18,6 +18,7 @@ resourceTypes:
 bpmnTypes: 
   - "bpmn:Task"
 runtimes: []
+connectorTypes: []
 compatibleVersions: 
   - "8.8"
   - "8.9"

@@ -16,6 +16,7 @@ useCases:
 resourceTypes: []
 bpmnTypes: []
 runtimes: []
+connectorTypes: []
 compatibleVersions: 
   - "8.3"
 availability: "open-source"

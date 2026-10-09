@@ -16,6 +16,7 @@ resourceTypes:
   - "BPMN"
 bpmnTypes: []
 runtimes: []
+connectorTypes: []
 compatibleVersions: 
   - "8.2"
   - "8.3"

@@ -18,6 +18,8 @@ bpmnTypes:
   - "bpmn:IntermediateThrowEvent"
 runtimes: 
   - "bundle"
+connectorTypes: 
+  - "outbound"
 compatibleVersions: 
   - "8.7"
   - "8.8"

@@ -40,6 +40,11 @@ const RUNTIME_MAP = {
   'Host yourself': 'self-hosted',
 };
 
+const CONNECTOR_TYPE_MAP = {
+  'Inbound Connector': 'inbound',
+  'Outbound Connector': 'outbound',
+};
+
 const AVAILABILITY_MAP = {
   'Open Source': 'open-source',
   'Listing Only': 'listing-only',
@@ -301,6 +306,7 @@ function toListing(product, canonicalVendor, usedSlugs) {
     resourceTypes: tagChildren(product, 'Resource Types Included'),
     bpmnTypes: tagChildren(product, 'Supported BPMN Types'),
     runtimes: tagChildren(product, 'Connector Runtime').map((r) => RUNTIME_MAP[r]).filter(Boolean),
+    connectorTypes: tagChildren(product, 'Connector Type').map((t) => CONNECTOR_TYPE_MAP[t]).filter(Boolean),
     compatibleVersions: versions,
     availability: AVAILABILITY_MAP[tagChildren(product, 'Availability')[0]] ?? null,
     description: blurb || overview,

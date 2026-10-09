@@ -15,6 +15,8 @@ resourceTypes: []
 bpmnTypes: []
 runtimes: 
   - "bundle"
+connectorTypes: 
+  - "outbound"
 compatibleVersions: 
   - "8.9"
 availability: "open-source"

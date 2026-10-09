@@ -21,6 +21,9 @@ bpmnTypes:
   - "bpmn:BoundaryEvent"
 runtimes: 
   - "bundle"
+connectorTypes: 
+  - "inbound"
+  - "outbound"
 compatibleVersions: 
   - "8.8"
   - "8.9"

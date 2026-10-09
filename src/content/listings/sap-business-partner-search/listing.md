@@ -18,6 +18,7 @@ resourceTypes:
   - "README"
 bpmnTypes: []
 runtimes: []
+connectorTypes: []
 compatibleVersions: 
   - "8.6"
   - "8.7"

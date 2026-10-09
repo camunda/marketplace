@@ -20,6 +20,8 @@ bpmnTypes:
   - "bpmn:Task"
 runtimes: 
   - "bundle"
+connectorTypes: 
+  - "outbound"
 compatibleVersions: 
   - "8.2"
   - "8.3"

@@ -16,6 +16,8 @@ bpmnTypes:
   - "bpmn:Task"
 runtimes: 
   - "self-hosted"
+connectorTypes: 
+  - "outbound"
 compatibleVersions: []
 availability: "listing-only"
 description: "Invoke Azure Functions in orchestrated business processes"

@@ -18,6 +18,8 @@ bpmnTypes:
   - "bpmn:StartEvent"
 runtimes: 
   - "self-hosted"
+connectorTypes: 
+  - "inbound"
 compatibleVersions: 
   - "8.8"
   - "8.9"

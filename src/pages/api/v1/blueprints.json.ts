@@ -1,11 +1,13 @@
-import { getListings, isBlueprint, requiredVersion, saasTemplateUrls, assetUrl } from '../../../lib/data';
+import { getListings, isBlueprint, requiredVersion, saasTemplateUrls, assetUrl, hasSourceFiles } from '../../../lib/data';
 
 /**
  * Replicates marketplace-api: GET /api/v1/blueprints
+ * Matches the live default: blueprints without source files
+ * (availability "listing-only" / "coming-soon") are excluded.
  */
 export async function GET() {
   const listings = await getListings();
-  const items = listings.filter(isBlueprint).map((l) => ({
+  const items = listings.filter(isBlueprint).filter(hasSourceFiles).map((l) => ({
     id: String(l.id),
     name: l.name,
     overview: l.tagline ?? l.description,

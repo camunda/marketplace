@@ -16,6 +16,8 @@ bpmnTypes:
   - "bpmn:Task"
 runtimes: 
   - "bundle"
+connectorTypes: 
+  - "outbound"
 compatibleVersions: 
   - "8.6"
 availability: "open-source"

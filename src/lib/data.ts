@@ -47,6 +47,11 @@ export function videoEmbedUrl(l: Listing): string | null {
   return null;
 }
 
+/** marketplace-api: blueprints marked "listing-only"/"coming-soon" have no source files
+ *  and are hidden from the default /api/v1/blueprints response. */
+export const hasSourceFiles = (l: Listing) =>
+  l.availability !== 'listing-only' && l.availability !== 'coming-soon';
+
 /** Sorted unique values of a facet across a set of listings. */
 export function facetValues(listings: Listing[], key: keyof Listing): string[] {
   const values = new Set<string>();

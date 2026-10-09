@@ -19,6 +19,8 @@ bpmnTypes:
   - "bpmn:SubProcess"
 runtimes: 
   - "bundle"
+connectorTypes: 
+  - "outbound"
 compatibleVersions: 
   - "8.8"
   - "8.9"

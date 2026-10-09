@@ -19,6 +19,8 @@ bpmnTypes:
   - "bpmn:StartEvent"
 runtimes: 
   - "bundle"
+connectorTypes: 
+  - "outbound"
 compatibleVersions: 
   - "8.6"
   - "8.7"

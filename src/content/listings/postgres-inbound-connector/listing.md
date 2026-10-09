@@ -18,6 +18,8 @@ bpmnTypes:
   - "bpmn:IntermediateThrowEvent"
 runtimes: 
   - "self-hosted"
+connectorTypes: 
+  - "inbound"
 compatibleVersions: 
   - "8.3"
 availability: "open-source"

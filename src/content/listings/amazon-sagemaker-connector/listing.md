@@ -16,6 +16,8 @@ resourceTypes: []
 bpmnTypes: 
   - "bpmn:Task"
 runtimes: []
+connectorTypes: 
+  - "outbound"
 compatibleVersions: 
   - "8.6"
 availability: "coming-soon"

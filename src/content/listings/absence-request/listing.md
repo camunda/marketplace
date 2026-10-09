@@ -18,6 +18,7 @@ resourceTypes:
   - "Form"
 bpmnTypes: []
 runtimes: []
+connectorTypes: []
 compatibleVersions: 
   - "8.5"
   - "8.6"
