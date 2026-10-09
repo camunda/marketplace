@@ -97,15 +97,8 @@ The schema in `src/content.config.ts` validates every field at build time.
 
 ## Notes for the cutover
 
-- **GitHub Pages has no rewrite rules.** The build emits every API endpoint as `<name>.json`
-  plus an extensionless copy where the path allows it. Exception: `/api/v1/connectors` and
-  `/api/v1/blueprints` are also directories (they contain the `<id>.json` detail endpoints), so
-  no extensionless file can exist there. Consumers of these two endpoints must either switch to
-  the `.json` URL, or a CDN (for example Cloudflare) in front of GitHub Pages must rewrite them.
-  Extensionless files are served as `application/octet-stream` - fine for browsers, check strict
-  HTTP clients.
-- Locally the dev server rewrites extensionless API paths (see `src/middleware.ts`), so Camunda
-  Hub can point at `http://localhost:4321/api/v1` unchanged.
+- The API endpoints are emitted as `*.json` files. Configure the CDN or web server to serve them
+  extensionless (`/api/v1/connectors` -> `/api/v1/connectors.json`).
 - Old AppDirect URLs (`/en-US/apps/<id>/<slug>`) need redirect rules to `/listings/<slug>/`.
 - The submission flow (Tasklist forms), lead forms (HubSpot) and the idea portal (ProductHub) are
   external services. Link them from the site; they do not change.
