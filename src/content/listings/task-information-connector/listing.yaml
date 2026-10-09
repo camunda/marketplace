@@ -1,0 +1,53 @@
+id: 632752
+slug: "task-information-connector"
+name: "Task Information Connector"
+type: 
+  - "connector"
+creatorType: "community"
+creatorName: "Domingos Dias"
+creatorUrl: "https://selenium.ao/"
+categories: 
+  - "Technical Protocols"
+industries: []
+useCases: []
+resourceTypes: 
+  - "Connector Template"
+bpmnTypes: 
+  - "bpmn:Task"
+runtimes: 
+  - "bundle"
+compatibleVersions: 
+  - "8.6"
+  - "8.7"
+  - "8.8"
+availability: "open-source"
+description: "Retrieves active Camunda process tasks"
+tagline: "Intelligent task retrieval and process monitoring"
+body: |-
+  A smart Camunda connector that securely retrieves and monitors active human tasks from process instances using Operate, Tasklist, and Keycloak, enabling seamless automation and real-time process visibility.
+features: 
+  - header: "Automatic task discovery"
+    description: "Identify active or pending user tasks in a process instance automatically based on state (CREATED, READY, or ASSIGNED). This eliminates manual polling and simplifies orchestration of human workflows."
+  - header: "Sub-process navigation"
+    description: "Follow sub-process chains dynamically to locate user tasks even after a parent process has completed. This ensures accurate monitoring and correlation across nested processes."
+  - header: "Real-time process insight"
+    description: "Continuously retrieve up-to-date task metadata (such as task ID, form key, and creation time) to power dashboards, trigger downstream automations, and feed decision logic."
+templates: []
+saasTemplate: null
+smTemplate: "https://github.com/DomingossDias/task-info-connector/tree/feature/task-connector-update"
+githubRepo: null
+docsUrl: "https://github.com/DomingossDias/task-info-connector/tree/feature/task-connector-update"
+previewImage: null
+demoRequestUrl: null
+relatedConnectors: null
+demoVideo: null
+icon: "icon.png"
+image: "thumb.png"
+heroImage: "hero.png"
+screenshots: []
+resources: []
+supportUrl: "https://forum.camunda.io/"
+termsUrl: null
+referUrl: null
+publishedOn: "2025-10-15"
+lastModified: "2025-10-15"

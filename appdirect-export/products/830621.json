@@ -1,0 +1,1150 @@
+{
+  "resources": [],
+  "screenshots": [],
+  "addonOfferings": [],
+  "featuredCustomers": [],
+  "featuredMedia": [],
+  "href": "https://marketplace.camunda.com/api/marketplace/v1/products/830621",
+  "uuid": "57f4af11-8122-4f22-b519-3428a46a1f8e",
+  "productRefId": "365ac07e-807a-498c-a7f3-db70c09a3980",
+  "publishedApp": null,
+  "workingApp": {
+    "id": "830607",
+    "href": "https://marketplace.camunda.com/api/marketplace/v1/products/830607"
+  },
+  "name": "Intelligent Security Incident Processing",
+  "type": "WEB_APP",
+  "usesVariants": false,
+  "provider": {
+    "uuid": "948d0eed-a7db-479e-a7f2-423909d2e333",
+    "name": "ilume informatik AG",
+    "url": "camunda.com",
+    "creatorUserUuid": null,
+    "creatorName": null
+  },
+  "listing": {
+    "myAppLogoIconUrl": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/830621/myAppIcon/img16546832838298949352.png",
+    "imageUrl": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/830621/thumbs_64/img12603190481564419350.png",
+    "profileImageUrl": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/830621/thumbs_112/img2689931056068629021.png",
+    "myAppLogoIconSrcset": {
+      "default": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/830621/myAppIcon/img16546832838298949352.png",
+      "2x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/830621/myAppIcon/img16546832838298949352-2x.png",
+      "1x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/830621/myAppIcon/img16546832838298949352.png"
+    },
+    "imageSrcset": {
+      "default": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/830621/thumbs_64/img12603190481564419350.png",
+      "2x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/830621/thumbs_64/img12603190481564419350-2x.png",
+      "1x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/830621/thumbs_64/img12603190481564419350.png"
+    },
+    "profileImageSrcset": {
+      "default": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/830621/thumbs_112/img2689931056068629021.png",
+      "2x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/830621/thumbs_112/img2689931056068629021-2x.png",
+      "1x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/830621/thumbs_112/img2689931056068629021.png"
+    },
+    "blurb": "AI-powered security incident analysis and decisions",
+    "overview": "This blueprint automates the analysis and triage of security incidents for security operations center teams. It normalizes incoming security events, enriches them with threat intelligence and asset context, and applies consistent decision logic to identify which incidents require action. Confirmed incidents are routed to downstream systems such as ServiceNow, while false positives are filtered out automatically.\nThe goal is to automatically structure and categorize incoming security events and, based on this, make consistent and traceable decisions.\n\n- The focus is on clearly separating:\n\n- Data preparation (ingest & normalization)\n\n- Technical interpretation (topic & context)\n\n- Decision logic (AI Incident Planner)",
+    "rating": null,
+    "reviewCount": 0,
+    "mobileBundleId": null,
+    "mobileAppStoreId": null
+  },
+  "overview": {
+    "splashTitle": "Automate security incident triage and decision-making",
+    "splashDescription": "Manually triaging every security incident is slow and inconsistent, and it delays response to real threats. This blueprint automates that process end to end, structuring incoming events and applying clearly defined decision logic to identify which incidents matter. By combining deterministic processing with targeted validation, it reduces false alarms and delivers consistent, traceable, audit-proof incident assessments. The result is a security operation that is more efficient, transparent, and scalable.",
+    "imageUrl": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/830621/overview/img8555919120970456732.png?e5d11845c2f53c5f408337852db7671a",
+    "imageSrcset": {
+      "default": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/830621/overview/img8555919120970456732.png",
+      "2x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/830621/overview/img8555919120970456732-2x.png",
+      "1x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/830621/overview/img8555919120970456732.png"
+    },
+    "demoUrl": "https://youtu.be/Ud6uq9CKhHs",
+    "documentationUrl": "https://github.com/ilume-Informatik-AG/Intelligent-Security-Incident-Processing-Blueprint/blob/main/README.md",
+    "downloadDocumentationUrl": null,
+    "systemRequirements": null,
+    "downloadFileSize": null,
+    "benefits": [],
+    "versions": {}
+  },
+  "support": {
+    "email": null,
+    "phone": null,
+    "knowledgebaseUrl": "https://forum.camunda.io/",
+    "description": null
+  },
+  "privacyUrl": null,
+  "termsUrl": null,
+  "referUrl": null,
+  "hostedLocation": null,
+  "lastModified": 1784796858000,
+  "pricing": {
+    "pricingSummary": null,
+    "footnotes": [],
+    "bullets": [],
+    "editions": [
+      {
+        "id": 965827,
+        "uuid": "ee673ee4-ec70-421b-b884-f1bdcd76eeb2",
+        "productEditionRefId": "8c921f23-4b8d-433e-a043-696f53afbe96",
+        "rank": 1,
+        "name": "Resource 1",
+        "primary": false,
+        "trial": {
+          "length": 0,
+          "unit": "DAY"
+        },
+        "expiredTrialGracePeriod": null,
+        "bundleOnly": false,
+        "targetAudience": null,
+        "code": "0",
+        "defaultFreeTrial": false,
+        "invisible": false,
+        "leadGen": false,
+        "lastModified": 1784796857000,
+        "revenueType": "RECURRING",
+        "restricted": false,
+        "freeTrialDuration": 0,
+        "freeTrialType": "DAY",
+        "privacyUrl": null,
+        "termsUrl": null,
+        "freeTrialEditionRequireBillingInfo": null,
+        "freeTrialEditionAutomaticUpgradeToPaidEnabled": null,
+        "plans": [
+          {
+            "href": "https://marketplace.camunda.com/api/marketplace/v1/products/830621/editions/965827/paymentPlans/1174384",
+            "id": 1174384,
+            "uuid": "325eb38b-4698-4faa-b268-07aa0140622a",
+            "frequency": "MONTHLY",
+            "status": "ACTIVE",
+            "contract": null,
+            "allowCustomUsage": false,
+            "keepBillDateOnUsageChange": true,
+            "keepBillDateOnPricingPlanChange": true,
+            "separatePrepaid": false,
+            "isPrimaryPrice": false,
+            "costs": [
+              {
+                "id": 1746544,
+                "editionPricingItemId": 1529792,
+                "editionPricingItemUuid": "993d3bcb-fd74-44d5-aba9-086f11c9c4ab",
+                "status": "ACTIVE",
+                "unit": "NOT_APPLICABLE",
+                "unitDependency": null,
+                "minUnits": 0.0,
+                "maxUnits": null,
+                "meteredUsage": false,
+                "increment": 1.0,
+                "pricePerIncrement": false,
+                "blockContractDecrease": false,
+                "blockContractIncrease": false,
+                "blockOriginalContractDecrease": false,
+                "canIncreaseUnits": true,
+                "canDecreaseUnits": true,
+                "amount": null,
+                "pricingStrategy": "UNIT"
+              }
+            ],
+            "discount": null,
+            "creditOnCancellation": false,
+            "primaryPrice": false
+          }
+        ],
+        "bullets": [
+          {
+            "id": null,
+            "content": "templateLink",
+            "tooltip": "https://raw.githubusercontent.com/ilume-Informatik-AG/Intelligent-Security-Incident-Processing-Blueprint/refs/heads/main/Blueprint/AI_Incident_Investigation.bpmn"
+          }
+        ],
+        "items": [
+          {
+            "unit": "USER",
+            "amount": 1.0,
+            "unlimited": false
+          }
+        ],
+        "customizations": [],
+        "customAttributes": []
+      },
+      {
+        "id": 970009,
+        "uuid": "cc733baa-2c4c-46e1-8a7d-492f4c760e73",
+        "productEditionRefId": "f45b66fe-632b-4d62-9e0e-c6357a5c1b3b",
+        "rank": 1,
+        "name": "Resource 2",
+        "primary": false,
+        "trial": {
+          "length": 0,
+          "unit": "DAY"
+        },
+        "expiredTrialGracePeriod": null,
+        "bundleOnly": false,
+        "targetAudience": null,
+        "code": "0",
+        "defaultFreeTrial": false,
+        "invisible": false,
+        "leadGen": false,
+        "lastModified": 1784796857000,
+        "revenueType": "RECURRING",
+        "restricted": false,
+        "freeTrialDuration": 0,
+        "freeTrialType": "DAY",
+        "privacyUrl": null,
+        "termsUrl": null,
+        "freeTrialEditionRequireBillingInfo": null,
+        "freeTrialEditionAutomaticUpgradeToPaidEnabled": null,
+        "plans": [
+          {
+            "href": "https://marketplace.camunda.com/api/marketplace/v1/products/830621/editions/970009/paymentPlans/1174385",
+            "id": 1174385,
+            "uuid": "d6a629d4-c23f-42ea-a53e-2c7738246c32",
+            "frequency": "MONTHLY",
+            "status": "ACTIVE",
+            "contract": null,
+            "allowCustomUsage": false,
+            "keepBillDateOnUsageChange": true,
+            "keepBillDateOnPricingPlanChange": true,
+            "separatePrepaid": false,
+            "isPrimaryPrice": false,
+            "costs": [
+              {
+                "id": 1746545,
+                "editionPricingItemId": 1529793,
+                "editionPricingItemUuid": "fe599b5e-94b0-4aae-a219-f51713666000",
+                "status": "ACTIVE",
+                "unit": "NOT_APPLICABLE",
+                "unitDependency": null,
+                "minUnits": 0.0,
+                "maxUnits": null,
+                "meteredUsage": false,
+                "increment": 1.0,
+                "pricePerIncrement": false,
+                "blockContractDecrease": false,
+                "blockContractIncrease": false,
+                "blockOriginalContractDecrease": false,
+                "canIncreaseUnits": true,
+                "canDecreaseUnits": true,
+                "amount": null,
+                "pricingStrategy": "UNIT"
+              }
+            ],
+            "discount": null,
+            "creditOnCancellation": false,
+            "primaryPrice": false
+          }
+        ],
+        "bullets": [
+          {
+            "id": null,
+            "content": "templateLink",
+            "tooltip": "https://raw.githubusercontent.com/ilume-Informatik-AG/Intelligent-Security-Incident-Processing-Blueprint/refs/heads/main/Blueprint/Incident_Intake_Selection.bpmn"
+          }
+        ],
+        "items": [
+          {
+            "unit": "USER",
+            "amount": 1.0,
+            "unlimited": false
+          }
+        ],
+        "customizations": [],
+        "customAttributes": []
+      },
+      {
+        "id": 970010,
+        "uuid": "a32d6047-bffb-4e8b-8094-cda3afff28a0",
+        "productEditionRefId": "19f31661-c422-4d16-8199-e15a37f11af9",
+        "rank": 1,
+        "name": "Resource 3",
+        "primary": false,
+        "trial": {
+          "length": 0,
+          "unit": "DAY"
+        },
+        "expiredTrialGracePeriod": null,
+        "bundleOnly": false,
+        "targetAudience": null,
+        "code": "0",
+        "defaultFreeTrial": false,
+        "invisible": false,
+        "leadGen": false,
+        "lastModified": 1784796857000,
+        "revenueType": "RECURRING",
+        "restricted": false,
+        "freeTrialDuration": 0,
+        "freeTrialType": "DAY",
+        "privacyUrl": null,
+        "termsUrl": null,
+        "freeTrialEditionRequireBillingInfo": null,
+        "freeTrialEditionAutomaticUpgradeToPaidEnabled": null,
+        "plans": [
+          {
+            "href": "https://marketplace.camunda.com/api/marketplace/v1/products/830621/editions/970010/paymentPlans/1174386",
+            "id": 1174386,
+            "uuid": "75fe095a-b353-4b61-a561-27faba75b005",
+            "frequency": "MONTHLY",
+            "status": "ACTIVE",
+            "contract": null,
+            "allowCustomUsage": false,
+            "keepBillDateOnUsageChange": true,
+            "keepBillDateOnPricingPlanChange": true,
+            "separatePrepaid": false,
+            "isPrimaryPrice": false,
+            "costs": [
+              {
+                "id": 1746546,
+                "editionPricingItemId": 1529794,
+                "editionPricingItemUuid": "4ed65da5-49b3-44d1-8b35-6171a4f34548",
+                "status": "ACTIVE",
+                "unit": "NOT_APPLICABLE",
+                "unitDependency": null,
+                "minUnits": 0.0,
+                "maxUnits": null,
+                "meteredUsage": false,
+                "increment": 1.0,
+                "pricePerIncrement": false,
+                "blockContractDecrease": false,
+                "blockContractIncrease": false,
+                "blockOriginalContractDecrease": false,
+                "canIncreaseUnits": true,
+                "canDecreaseUnits": true,
+                "amount": null,
+                "pricingStrategy": "UNIT"
+              }
+            ],
+            "discount": null,
+            "creditOnCancellation": false,
+            "primaryPrice": false
+          }
+        ],
+        "bullets": [
+          {
+            "id": null,
+            "content": "templateLink",
+            "tooltip": "https://raw.githubusercontent.com/ilume-Informatik-AG/Intelligent-Security-Incident-Processing-Blueprint/refs/heads/main/Blueprint/Incident_Report.form"
+          }
+        ],
+        "items": [
+          {
+            "unit": "USER",
+            "amount": 1.0,
+            "unlimited": false
+          }
+        ],
+        "customizations": [],
+        "customAttributes": []
+      },
+      {
+        "id": 970011,
+        "uuid": "16fda1d9-51ae-4328-9302-4e1302e2ba9f",
+        "productEditionRefId": "0664b907-de01-4a15-99de-5e5c3c870344",
+        "rank": 1,
+        "name": "Resource 4",
+        "primary": false,
+        "trial": {
+          "length": 0,
+          "unit": "DAY"
+        },
+        "expiredTrialGracePeriod": null,
+        "bundleOnly": false,
+        "targetAudience": null,
+        "code": "0",
+        "defaultFreeTrial": false,
+        "invisible": false,
+        "leadGen": false,
+        "lastModified": 1784796857000,
+        "revenueType": "RECURRING",
+        "restricted": false,
+        "freeTrialDuration": 0,
+        "freeTrialType": "DAY",
+        "privacyUrl": null,
+        "termsUrl": null,
+        "freeTrialEditionRequireBillingInfo": null,
+        "freeTrialEditionAutomaticUpgradeToPaidEnabled": null,
+        "plans": [
+          {
+            "href": "https://marketplace.camunda.com/api/marketplace/v1/products/830621/editions/970011/paymentPlans/1174387",
+            "id": 1174387,
+            "uuid": "20e6e5c8-b791-4f67-8a8f-03622671f792",
+            "frequency": "MONTHLY",
+            "status": "ACTIVE",
+            "contract": null,
+            "allowCustomUsage": false,
+            "keepBillDateOnUsageChange": true,
+            "keepBillDateOnPricingPlanChange": true,
+            "separatePrepaid": false,
+            "isPrimaryPrice": false,
+            "costs": [
+              {
+                "id": 1746547,
+                "editionPricingItemId": 1529795,
+                "editionPricingItemUuid": "d0c16343-1041-4357-ba01-9ada1ae5f4e9",
+                "status": "ACTIVE",
+                "unit": "NOT_APPLICABLE",
+                "unitDependency": null,
+                "minUnits": 0.0,
+                "maxUnits": null,
+                "meteredUsage": false,
+                "increment": 1.0,
+                "pricePerIncrement": false,
+                "blockContractDecrease": false,
+                "blockContractIncrease": false,
+                "blockOriginalContractDecrease": false,
+                "canIncreaseUnits": true,
+                "canDecreaseUnits": true,
+                "amount": null,
+                "pricingStrategy": "UNIT"
+              }
+            ],
+            "discount": null,
+            "creditOnCancellation": false,
+            "primaryPrice": false
+          }
+        ],
+        "bullets": [
+          {
+            "id": null,
+            "content": "templateLink",
+            "tooltip": "https://raw.githubusercontent.com/ilume-Informatik-AG/Intelligent-Security-Incident-Processing-Blueprint/refs/heads/main/Blueprint/Incident_Type_Selection.form"
+          }
+        ],
+        "items": [
+          {
+            "unit": "USER",
+            "amount": 1.0,
+            "unlimited": false
+          }
+        ],
+        "customizations": [],
+        "customAttributes": []
+      },
+      {
+        "id": 970012,
+        "uuid": "9f207834-a846-442d-92a7-ec3135261e74",
+        "productEditionRefId": "8c9f3261-1d86-43b2-b722-42e3ecd90072",
+        "rank": 1,
+        "name": "Resource 5",
+        "primary": false,
+        "trial": {
+          "length": 0,
+          "unit": "DAY"
+        },
+        "expiredTrialGracePeriod": null,
+        "bundleOnly": false,
+        "targetAudience": null,
+        "code": "0",
+        "defaultFreeTrial": false,
+        "invisible": false,
+        "leadGen": false,
+        "lastModified": 1784796857000,
+        "revenueType": "RECURRING",
+        "restricted": false,
+        "freeTrialDuration": 0,
+        "freeTrialType": "DAY",
+        "privacyUrl": null,
+        "termsUrl": null,
+        "freeTrialEditionRequireBillingInfo": null,
+        "freeTrialEditionAutomaticUpgradeToPaidEnabled": null,
+        "plans": [
+          {
+            "href": "https://marketplace.camunda.com/api/marketplace/v1/products/830621/editions/970012/paymentPlans/1174388",
+            "id": 1174388,
+            "uuid": "d4cf528c-633b-4daa-a323-68438bbfe277",
+            "frequency": "MONTHLY",
+            "status": "ACTIVE",
+            "contract": null,
+            "allowCustomUsage": false,
+            "keepBillDateOnUsageChange": true,
+            "keepBillDateOnPricingPlanChange": true,
+            "separatePrepaid": false,
+            "isPrimaryPrice": false,
+            "costs": [
+              {
+                "id": 1746548,
+                "editionPricingItemId": 1529796,
+                "editionPricingItemUuid": "d8a1198d-0377-4090-b0f6-034cb211375b",
+                "status": "ACTIVE",
+                "unit": "NOT_APPLICABLE",
+                "unitDependency": null,
+                "minUnits": 0.0,
+                "maxUnits": null,
+                "meteredUsage": false,
+                "increment": 1.0,
+                "pricePerIncrement": false,
+                "blockContractDecrease": false,
+                "blockContractIncrease": false,
+                "blockOriginalContractDecrease": false,
+                "canIncreaseUnits": true,
+                "canDecreaseUnits": true,
+                "amount": null,
+                "pricingStrategy": "UNIT"
+              }
+            ],
+            "discount": null,
+            "creditOnCancellation": false,
+            "primaryPrice": false
+          }
+        ],
+        "bullets": [
+          {
+            "id": null,
+            "content": "templateLink",
+            "tooltip": "https://raw.githubusercontent.com/ilume-Informatik-AG/Intelligent-Security-Incident-Processing-Blueprint/refs/heads/main/Blueprint/Incident_Validation.form"
+          }
+        ],
+        "items": [
+          {
+            "unit": "USER",
+            "amount": 1.0,
+            "unlimited": false
+          }
+        ],
+        "customizations": [],
+        "customAttributes": []
+      }
+    ]
+  },
+  "publishedOn": 1783007721000,
+  "rating": null,
+  "absoluteRating": null,
+  "numRatings": null,
+  "buyable": true,
+  "importable": false,
+  "importableAppApprovalMode": null,
+  "free": false,
+  "freeTrialOrEditionPresent": false,
+  "referable": false,
+  "hidePricings": true,
+  "useCheckoutV2": true,
+  "visibleToCurrentUser": true,
+  "collectLeads": true,
+  "collectLeadsWithPurchaseEnabled": false,
+  "assignLeadsToDevelopers": true,
+  "newSubscriptionEnabled": true,
+  "multipleSubscriptionsEnabled": false,
+  "changeSubscriptionAllowed": true,
+  "displayQuestions": true,
+  "displayReviews": true,
+  "oneClickPurchasable": true,
+  "autoUpgradeToPaid": false,
+  "downloadFileSize": null,
+  "startingPrice": {
+    "unit": null,
+    "billingFrequency": "MONTHLY",
+    "amount": null,
+    "discount": null
+  },
+  "highestPercentageDiscount": null,
+  "highestFixedDiscount": null,
+  "bundledPlanIds": null,
+  "customIntegration": null,
+  "usageType": "SINGLE_USER",
+  "linkedImportableApplicationUuid": null,
+  "liveChatEnabled": false,
+  "liveChatAvailable": false,
+  "showThirdPartyLegalDisclosure": false,
+  "showSelfServiceRestriction": false,
+  "integrationConfiguration": {
+    "multipleSubscriptionsEnabled": false,
+    "integrationEventConfigurationWS": null,
+    "domainAssociationConfiguration": {
+      "settingsUrl": null,
+      "verificationUrl": null,
+      "maxDomainAssociation": null,
+      "linkUrl": null,
+      "unlinkUrl": null
+    },
+    "domainManagementEnabled": false,
+    "productSettings": null
+  },
+  "addon": false,
+  "supportsMultipleEditions": true,
+  "sellerName": null,
+  "features": [
+    {
+      "id": "6651052",
+      "refId": "662d73da-7c4e-4468-9b06-b1474519c713",
+      "header": "Check threat intelligence",
+      "description": "Checks IP addresses and other indicators against known threat data from external sources.",
+      "hideOnOverview": false,
+      "position": 1,
+      "characteristics": []
+    },
+    {
+      "id": "6651053",
+      "refId": "e680d349-84c6-4f1c-b00f-47593fc25a96",
+      "header": "Look up asset infrastructure",
+      "description": "Identifies internal systems, their criticality, and the organizational units responsible for them.",
+      "hideOnOverview": false,
+      "position": 2,
+      "characteristics": []
+    },
+    {
+      "id": "6651054",
+      "refId": "5bd3c6d1-51de-47ef-ae20-ec8ba4aa4cf4",
+      "header": "Assess GDPR relevance",
+      "description": "Assesses whether an incident involves personal data and whether regulatory measures are required.",
+      "hideOnOverview": false,
+      "position": 3,
+      "characteristics": []
+    },
+    {
+      "id": "6651055",
+      "refId": "ff3b6420-e1fa-460e-9f40-83d5f77b515c",
+      "header": "Integrate with operational systems",
+      "description": "Sends relevant and confirmed security incidents to downstream systems such as ServiceNow, while filtering out false positives so only validated incidents are forwarded.",
+      "hideOnOverview": false,
+      "position": 4,
+      "characteristics": []
+    },
+    {
+      "id": "6651056",
+      "refId": "c7a251ad-fccd-4817-a28c-8905ce56b491",
+      "header": "Reduce manual analysis effort",
+      "description": "Structured processing and consistent decision logic reduce manual review and deliver reproducible incident assessments across the SOC.",
+      "hideOnOverview": false,
+      "position": 5,
+      "characteristics": []
+    },
+    {
+      "id": "6651057",
+      "refId": "15d0f0cf-f868-4c1c-810b-3d7e7cbff793",
+      "header": "Support audit-ready compliance",
+      "description": "Every incident decision is documented to support ISO 27001 and GDPR requirements, giving auditors a clear, traceable record and helping teams detect relevant incidents early.",
+      "hideOnOverview": false,
+      "position": 6,
+      "characteristics": []
+    }
+  ],
+  "tags": [
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 4177,
+      "name": "Resource Types Included",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 21603,
+          "name": "BPMN",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        },
+        {
+          "type": "ATTRIBUTE",
+          "id": 21606,
+          "name": "Connector Template",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 4068,
+      "name": "Industry",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20935,
+          "name": "Any",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 4069,
+      "name": "Use Case",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 22520,
+          "name": "Agentic AI orchestration",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 3984,
+      "name": "Supported BPMN Types",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20541,
+          "name": "bpmn:Task",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": "This relates to the template attribute \"appliesTo\""
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 4005,
+      "name": "Version Compatibility",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 22546,
+          "name": "8.8",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        },
+        {
+          "type": "ATTRIBUTE",
+          "id": 23367,
+          "name": "8.9",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        },
+        {
+          "type": "ATTRIBUTE",
+          "id": 23627,
+          "name": "8.10",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 4070,
+      "name": "Application",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20945,
+          "name": "AI Services",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "CATEGORY",
+      "id": 107793,
+      "name": "Blueprints",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "SUB_CATEGORY",
+          "id": 63554,
+          "name": "Solution Accelerators",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 3974,
+      "name": "Creator",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20487,
+          "name": "Partner",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 4067,
+      "name": "Availability",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20922,
+          "name": "Open Source",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    }
+  ],
+  "supportedLanguages": [
+    "en-US"
+  ],
+  "mosiConnectorType": "CREST",
+  "platforms": [],
+  "customAttributes": [
+    {
+      "attributeType": "TEXT_WITH_LOCALIZATION",
+      "label": "Creator Website Link",
+      "attributeKey": "0-creator-link",
+      "value": "https://ilume.de/camunda"
+    },
+    {
+      "attributeType": "TEXT_WITH_LOCALIZATION",
+      "label": "For SAAS",
+      "attributeKey": "1-template-only-for-SAAS",
+      "value": "useEditionTemplateLinks"
+    },
+    {
+      "attributeType": "TEXT_WITH_LOCALIZATION",
+      "label": "Installation Guide",
+      "attributeKey": "2-compile-yourself-Guide",
+      "value": "https://github.com/ilume-Informatik-AG/Intelligent-Security-Incident-Processing-Blueprint/blob/main/README.md"
+    },
+    {
+      "attributeType": "TEXT_WITH_LOCALIZATION",
+      "label": "For SM",
+      "attributeKey": "2-template-only-for-sm",
+      "value": "https://github.com/ilume-Informatik-AG/Intelligent-Security-Incident-Processing-Blueprint"
+    },
+    {
+      "attributeType": "TEXT_WITH_LOCALIZATION",
+      "label": "used Connectors",
+      "attributeKey": "related_connectors",
+      "value": "415933, 449589"
+    }
+  ],
+  "productRibbon": null,
+  "merchandisingBadges": [
+    {
+      "uuid": "d0c44526-1d31-4db3-8026-121b5a697337",
+      "name": "Partner",
+      "image": "https://d3bql97l1ytoxn.cloudfront.net/common_resources/badge/d0c44526-1d31-4db3-8026-121b5a697337/img5777263081410118250.png?ccd956e54345219497e3045478505649"
+    }
+  ],
+  "supportedCountries": [
+    "KN",
+    "KP",
+    "YE",
+    "AT",
+    "MU",
+    "US",
+    "VG",
+    "FJ",
+    "ER",
+    "JP",
+    "BV",
+    "CU",
+    "VA",
+    "IT",
+    "CY",
+    "RO",
+    "MX",
+    "ZW",
+    "GY",
+    "TT",
+    "AI",
+    "AX",
+    "SY",
+    "LT",
+    "GG",
+    "AZ",
+    "DK",
+    "MT",
+    "AN",
+    "WS",
+    "DE",
+    "ZM",
+    "ET",
+    "NF",
+    "GQ",
+    "PA",
+    "ME",
+    "PR",
+    "BO",
+    "ST",
+    "RS",
+    "GE",
+    "TC",
+    "GH",
+    "EC",
+    "KH",
+    "BZ",
+    "BF",
+    "IN",
+    "LI",
+    "SX",
+    "JE",
+    "CH",
+    "MR",
+    "AF",
+    "TD",
+    "WF",
+    "KZ",
+    "MM",
+    "MD",
+    "NU",
+    "JO",
+    "VC",
+    "NE",
+    "AL",
+    "DM",
+    "MO",
+    "NZ",
+    "GR",
+    "TK",
+    "GF",
+    "PM",
+    "FK",
+    "GS",
+    "GW",
+    "MC",
+    "IR",
+    "TJ",
+    "GL",
+    "SO",
+    "CK",
+    "SR",
+    "GM",
+    "MG",
+    "CC",
+    "GB",
+    "GP",
+    "AM",
+    "RE",
+    "NI",
+    "AU",
+    "NA",
+    "PH",
+    "HT",
+    "TV",
+    "BL",
+    "SV",
+    "SE",
+    "MH",
+    "BR",
+    "UG",
+    "BW",
+    "BM",
+    "LU",
+    "LA",
+    "LR",
+    "BY",
+    "NC",
+    "SG",
+    "RW",
+    "EH",
+    "HN",
+    "DZ",
+    "TO",
+    "CR",
+    "SZ",
+    "IS",
+    "MF",
+    "IQ",
+    "AG",
+    "PT",
+    "FM",
+    "FR",
+    "TM",
+    "AW",
+    "NL",
+    "DJ",
+    "HM",
+    "KY",
+    "MZ",
+    "CZ",
+    "DO",
+    "IL",
+    "YT",
+    "CG",
+    "SA",
+    "LS",
+    "SH",
+    "MV",
+    "BT",
+    "TR",
+    "BB",
+    "IO",
+    "MW",
+    "SN",
+    "TG",
+    "MY",
+    "KE",
+    "NO",
+    "SK",
+    "VU",
+    "AS",
+    "KW",
+    "ZA",
+    "BA",
+    "CX",
+    "HK",
+    "KR",
+    "CN",
+    "GU",
+    "LC",
+    "BE",
+    "PL",
+    "TW",
+    "AD",
+    "BG",
+    "NR",
+    "VN",
+    "BI",
+    "PY",
+    "UM",
+    "CS",
+    "JM",
+    "IM",
+    "SL",
+    "SC",
+    "CA",
+    "MS",
+    "VI",
+    "SJ",
+    "CL",
+    "HR",
+    "LB",
+    "LK",
+    "MA",
+    "MQ",
+    "NP",
+    "EE",
+    "SB",
+    "FO",
+    "CD",
+    "NG",
+    "QA",
+    "BS",
+    "CM",
+    "SI",
+    "BD",
+    "AR",
+    "KG",
+    "GD",
+    "PG",
+    "RU",
+    "ID",
+    "KI",
+    "TN",
+    "BQ",
+    "OM",
+    "BN",
+    "PK",
+    "PN",
+    "PS",
+    "BJ",
+    "LV",
+    "BH",
+    "CO",
+    "GA",
+    "PE",
+    "IE",
+    "GI",
+    "SS",
+    "SM",
+    "HU",
+    "PW",
+    "UZ",
+    "GT",
+    "MP",
+    "UY",
+    "CI",
+    "GN",
+    "CF",
+    "TF",
+    "LY",
+    "TZ",
+    "AQ",
+    "ES",
+    "MN",
+    "EG",
+    "AE",
+    "CW",
+    "FI",
+    "TH",
+    "UA",
+    "MK",
+    "PF",
+    "CV",
+    "AO",
+    "KM",
+    "TL",
+    "VE",
+    "SD",
+    "ML"
+  ],
+  "supportedCurrencies": [
+    "USD"
+  ],
+  "availableToResellers": true,
+  "useCheckoutForSpecialPricingMessage": false,
+  "childVisibleOnNetwork": false,
+  "sourcedProduct": false,
+  "sourceId": null,
+  "links": [],
+  "_embedded": {
+    "associatedAddons": []
+  },
+  "id": 830621
+}

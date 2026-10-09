@@ -1,0 +1,1112 @@
+{
+  "resources": [
+    {
+      "id": null,
+      "resourceType": "VIDEO",
+      "locale": null,
+      "name": "How to configure the Github Webhook Connector",
+      "link": "https://vimeo.com/840397436?share=copy",
+      "scribdKey": null,
+      "scribdId": null,
+      "description": null,
+      "resellerAccess": false,
+      "createdByDev": true
+    }
+  ],
+  "screenshots": [],
+  "addonOfferings": [],
+  "featuredCustomers": [],
+  "featuredMedia": [],
+  "href": "https://marketplace.camunda.com/api/marketplace/v1/products/418739",
+  "uuid": "e822cd36-9b11-4966-957b-3749687b6505",
+  "productRefId": "a154aab5-e7d5-41c7-8998-405de1e9b86e",
+  "publishedApp": null,
+  "workingApp": {
+    "id": "418738",
+    "href": "https://marketplace.camunda.com/api/marketplace/v1/products/418738"
+  },
+  "name": "GitHub Connector",
+  "type": "WEB_APP",
+  "usesVariants": false,
+  "provider": {
+    "uuid": "948d0eed-a7db-479e-a7f2-423909d2e333",
+    "name": "Camunda",
+    "url": "camunda.com",
+    "creatorUserUuid": null,
+    "creatorName": null
+  },
+  "listing": {
+    "myAppLogoIconUrl": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/418739/myAppIcon/img5855693026826501954.png",
+    "imageUrl": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/418739/thumbs_64/img7272412642362631460.png",
+    "profileImageUrl": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/418739/thumbs_112/img4032952253285866453.png",
+    "myAppLogoIconSrcset": {
+      "default": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/418739/myAppIcon/img5855693026826501954.png",
+      "2x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/418739/myAppIcon/img5855693026826501954-2x.png",
+      "1x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/418739/myAppIcon/img5855693026826501954.png"
+    },
+    "imageSrcset": {
+      "default": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/418739/thumbs_64/img7272412642362631460.png",
+      "2x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/418739/thumbs_64/img7272412642362631460-2x.png",
+      "1x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/418739/thumbs_64/img7272412642362631460.png"
+    },
+    "profileImageSrcset": {
+      "default": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/418739/thumbs_112/img4032952253285866453.png",
+      "2x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/418739/thumbs_112/img4032952253285866453-2x.png",
+      "1x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/418739/thumbs_112/img4032952253285866453.png"
+    },
+    "blurb": "Integrate GitHub tasks in Camunda",
+    "overview": "Manage GitHub repositories, issues, and more directly through Camunda to automate your entire software development process.",
+    "rating": null,
+    "reviewCount": 0,
+    "mobileBundleId": null,
+    "mobileAppStoreId": null
+  },
+  "overview": {
+    "splashTitle": "Orchestrate Your Software Development Lifecycle with Camunda and GitHub",
+    "splashDescription": "The GitHub Connector is a robust tool designed to integrate Camunda process automation with GitHub’s comprehensive set of software development and version control tools. Manage repositories, handle issues, merge branches, and streamline your software development pipeline — all from within Camunda's powerful process orchestration environment.",
+    "imageUrl": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/418739/overview/img2208467420464579863.png?e49e8552020cdebfb355621e586257b9",
+    "imageSrcset": {
+      "default": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/418739/overview/img2208467420464579863.png",
+      "2x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/418739/overview/img2208467420464579863-2x.png",
+      "1x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/418739/overview/img2208467420464579863.png"
+    },
+    "demoUrl": null,
+    "documentationUrl": "https://docs.camunda.io/docs/components/connectors/out-of-the-box-connectors/github/",
+    "downloadDocumentationUrl": null,
+    "systemRequirements": null,
+    "downloadFileSize": null,
+    "benefits": [],
+    "versions": {}
+  },
+  "support": {
+    "email": null,
+    "phone": null,
+    "knowledgebaseUrl": "https://forum.camunda.io/",
+    "description": null
+  },
+  "privacyUrl": null,
+  "termsUrl": null,
+  "referUrl": "https://camunda.com",
+  "hostedLocation": null,
+  "lastModified": 1757062774000,
+  "pricing": {
+    "pricingSummary": null,
+    "footnotes": [],
+    "bullets": [],
+    "editions": [
+      {
+        "id": 823275,
+        "uuid": "8d3f1020-bae1-4209-b7a9-0ed2f98cc2f3",
+        "productEditionRefId": "830dc275-0de8-43db-b250-5c454746753e",
+        "rank": 1,
+        "name": "Github Inbound Start",
+        "primary": false,
+        "trial": {
+          "length": 0,
+          "unit": "DAY"
+        },
+        "expiredTrialGracePeriod": null,
+        "bundleOnly": false,
+        "targetAudience": null,
+        "code": "2",
+        "defaultFreeTrial": false,
+        "invisible": false,
+        "leadGen": false,
+        "lastModified": 1757062772000,
+        "revenueType": "FREE",
+        "restricted": false,
+        "freeTrialDuration": 0,
+        "freeTrialType": "DAY",
+        "privacyUrl": null,
+        "termsUrl": null,
+        "freeTrialEditionRequireBillingInfo": null,
+        "freeTrialEditionAutomaticUpgradeToPaidEnabled": null,
+        "plans": [
+          {
+            "href": "https://marketplace.camunda.com/api/marketplace/v1/products/418739/editions/823275/paymentPlans/1004031",
+            "id": 1004031,
+            "uuid": "7795003a-c095-4091-8bfa-355a8e29d79e",
+            "frequency": "MONTHLY",
+            "status": "ACTIVE",
+            "contract": null,
+            "allowCustomUsage": false,
+            "keepBillDateOnUsageChange": true,
+            "keepBillDateOnPricingPlanChange": true,
+            "separatePrepaid": false,
+            "isPrimaryPrice": false,
+            "costs": [],
+            "discount": null,
+            "creditOnCancellation": false,
+            "primaryPrice": false
+          }
+        ],
+        "bullets": [
+          {
+            "id": null,
+            "content": "templateLink",
+            "tooltip": "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.webhook.GithubWebhookConnectorMessageStart.v1/latest/github-webhook-connector-message-start.json"
+          },
+          {
+            "id": null,
+            "content": "appliesTo",
+            "tooltip": "bpmn:StartEvent"
+          },
+          {
+            "id": null,
+            "content": "templateId",
+            "tooltip": "io.camunda.connectors.webhook.GithubWebhookConnectorMessageStart.v1"
+          }
+        ],
+        "items": [
+          {
+            "unit": "USER",
+            "amount": 1.0,
+            "unlimited": false
+          }
+        ],
+        "customizations": [],
+        "customAttributes": []
+      },
+      {
+        "id": 823276,
+        "uuid": "98e09cc4-beb8-40bf-b1fc-17b0a86f6f7a",
+        "productEditionRefId": "02aa1097-1660-4ff0-abc9-d721975e6a6f",
+        "rank": 1,
+        "name": "Github Inbound Intermediate",
+        "primary": false,
+        "trial": {
+          "length": 0,
+          "unit": "DAY"
+        },
+        "expiredTrialGracePeriod": null,
+        "bundleOnly": false,
+        "targetAudience": null,
+        "code": "1",
+        "defaultFreeTrial": false,
+        "invisible": false,
+        "leadGen": false,
+        "lastModified": 1757062772000,
+        "revenueType": "FREE",
+        "restricted": false,
+        "freeTrialDuration": 0,
+        "freeTrialType": "DAY",
+        "privacyUrl": null,
+        "termsUrl": null,
+        "freeTrialEditionRequireBillingInfo": null,
+        "freeTrialEditionAutomaticUpgradeToPaidEnabled": null,
+        "plans": [
+          {
+            "href": "https://marketplace.camunda.com/api/marketplace/v1/products/418739/editions/823276/paymentPlans/1004032",
+            "id": 1004032,
+            "uuid": "ffb32523-7ec1-4d0d-8ed6-e7da04c1f7e2",
+            "frequency": "MONTHLY",
+            "status": "ACTIVE",
+            "contract": null,
+            "allowCustomUsage": false,
+            "keepBillDateOnUsageChange": true,
+            "keepBillDateOnPricingPlanChange": true,
+            "separatePrepaid": false,
+            "isPrimaryPrice": false,
+            "costs": [],
+            "discount": null,
+            "creditOnCancellation": false,
+            "primaryPrice": false
+          }
+        ],
+        "bullets": [
+          {
+            "id": null,
+            "content": "templateLink",
+            "tooltip": "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.webhook.GithubWebhookConnectorIntermediate.v1/latest/github-webhook-connector-intermediate.json"
+          },
+          {
+            "id": null,
+            "content": "appliesTo",
+            "tooltip": "bpmn:IntermediateCatchEvent"
+          },
+          {
+            "id": null,
+            "content": "appliesTo",
+            "tooltip": "bpmn:IntermediateThrowEvent"
+          },
+          {
+            "id": null,
+            "content": "templateId",
+            "tooltip": "io.camunda.connectors.webhook.GithubWebhookConnectorIntermediate.v1"
+          }
+        ],
+        "items": [
+          {
+            "unit": "USER",
+            "amount": 1.0,
+            "unlimited": false
+          }
+        ],
+        "customizations": [],
+        "customAttributes": []
+      },
+      {
+        "id": 823277,
+        "uuid": "bb4de1e5-8f94-4bdd-bef0-650089d7f5ef",
+        "productEditionRefId": "50196e11-4c93-467f-a943-821c9ca70364",
+        "rank": 1,
+        "name": "Github Outbound",
+        "primary": false,
+        "trial": {
+          "length": 0,
+          "unit": "DAY"
+        },
+        "expiredTrialGracePeriod": null,
+        "bundleOnly": false,
+        "targetAudience": null,
+        "code": "1",
+        "defaultFreeTrial": false,
+        "invisible": false,
+        "leadGen": false,
+        "lastModified": 1757062772000,
+        "revenueType": "RECURRING",
+        "restricted": false,
+        "freeTrialDuration": 0,
+        "freeTrialType": "DAY",
+        "privacyUrl": null,
+        "termsUrl": null,
+        "freeTrialEditionRequireBillingInfo": null,
+        "freeTrialEditionAutomaticUpgradeToPaidEnabled": null,
+        "plans": [
+          {
+            "href": "https://marketplace.camunda.com/api/marketplace/v1/products/418739/editions/823277/paymentPlans/1004033",
+            "id": 1004033,
+            "uuid": "996b1e02-fd90-45d8-a76b-542b1f3786bf",
+            "frequency": "MONTHLY",
+            "status": "ACTIVE",
+            "contract": null,
+            "allowCustomUsage": false,
+            "keepBillDateOnUsageChange": true,
+            "keepBillDateOnPricingPlanChange": true,
+            "separatePrepaid": false,
+            "isPrimaryPrice": false,
+            "costs": [
+              {
+                "id": 1507733,
+                "editionPricingItemId": 1324955,
+                "editionPricingItemUuid": "376d0b70-b1ff-46c4-8e2c-0164b63cf660",
+                "status": "ACTIVE",
+                "unit": "NOT_APPLICABLE",
+                "unitDependency": null,
+                "minUnits": 0.0,
+                "maxUnits": null,
+                "meteredUsage": false,
+                "increment": 1.0,
+                "pricePerIncrement": false,
+                "blockContractDecrease": false,
+                "blockContractIncrease": false,
+                "blockOriginalContractDecrease": false,
+                "canIncreaseUnits": true,
+                "canDecreaseUnits": true,
+                "amount": null,
+                "pricingStrategy": "UNIT"
+              }
+            ],
+            "discount": null,
+            "creditOnCancellation": false,
+            "primaryPrice": false
+          }
+        ],
+        "bullets": [
+          {
+            "id": null,
+            "content": "templateLink",
+            "tooltip": "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.GitHub.v1/latest/github-connector.json"
+          },
+          {
+            "id": null,
+            "content": "appliesTo",
+            "tooltip": "bpmn:Task"
+          },
+          {
+            "id": null,
+            "content": "templateId",
+            "tooltip": "io.camunda.connectors.GitHub.v1"
+          }
+        ],
+        "items": [
+          {
+            "unit": "USER",
+            "amount": 1.0,
+            "unlimited": false
+          }
+        ],
+        "customizations": [],
+        "customAttributes": []
+      },
+      {
+        "id": 927271,
+        "uuid": "f4e9513e-3a99-4ce7-92f5-12603928296c",
+        "productEditionRefId": "293911fd-01c3-4e00-beca-f7573071442b",
+        "rank": 1,
+        "name": "Github Inbound Boundary Template",
+        "primary": false,
+        "trial": {
+          "length": 0,
+          "unit": "DAY"
+        },
+        "expiredTrialGracePeriod": null,
+        "bundleOnly": false,
+        "targetAudience": null,
+        "code": "0",
+        "defaultFreeTrial": false,
+        "invisible": false,
+        "leadGen": false,
+        "lastModified": 1757062772000,
+        "revenueType": "RECURRING",
+        "restricted": false,
+        "freeTrialDuration": 0,
+        "freeTrialType": "DAY",
+        "privacyUrl": null,
+        "termsUrl": null,
+        "freeTrialEditionRequireBillingInfo": null,
+        "freeTrialEditionAutomaticUpgradeToPaidEnabled": null,
+        "plans": [
+          {
+            "href": "https://marketplace.camunda.com/api/marketplace/v1/products/418739/editions/927271/paymentPlans/1125316",
+            "id": 1125316,
+            "uuid": "e5ad3253-5885-4047-8b83-dc6c21f81aa0",
+            "frequency": "MONTHLY",
+            "status": "ACTIVE",
+            "contract": null,
+            "allowCustomUsage": false,
+            "keepBillDateOnUsageChange": true,
+            "keepBillDateOnPricingPlanChange": true,
+            "separatePrepaid": false,
+            "isPrimaryPrice": false,
+            "costs": [
+              {
+                "id": 1655953,
+                "editionPricingItemId": 1466787,
+                "editionPricingItemUuid": "f345729e-0a51-46d1-a4d5-d82551f1a935",
+                "status": "ACTIVE",
+                "unit": "NOT_APPLICABLE",
+                "unitDependency": null,
+                "minUnits": 0.0,
+                "maxUnits": null,
+                "meteredUsage": false,
+                "increment": 1.0,
+                "pricePerIncrement": false,
+                "blockContractDecrease": false,
+                "blockContractIncrease": false,
+                "blockOriginalContractDecrease": false,
+                "canIncreaseUnits": true,
+                "canDecreaseUnits": true,
+                "amount": null,
+                "pricingStrategy": "UNIT"
+              }
+            ],
+            "discount": null,
+            "creditOnCancellation": false,
+            "primaryPrice": false
+          }
+        ],
+        "bullets": [
+          {
+            "id": null,
+            "content": "templateLink",
+            "tooltip": "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.webhook.GithubWebhookConnectorBoundary.v1/latest/github-webhook-connector-boundary.json"
+          },
+          {
+            "id": null,
+            "content": "appliesTo",
+            "tooltip": "bpmn:BoundaryEvent"
+          }
+        ],
+        "items": [
+          {
+            "unit": "USER",
+            "amount": 1.0,
+            "unlimited": false
+          }
+        ],
+        "customizations": [],
+        "customAttributes": []
+      }
+    ]
+  },
+  "publishedOn": 1693841215000,
+  "rating": null,
+  "absoluteRating": null,
+  "numRatings": null,
+  "buyable": true,
+  "importable": false,
+  "importableAppApprovalMode": null,
+  "free": true,
+  "freeTrialOrEditionPresent": false,
+  "referable": true,
+  "hidePricings": true,
+  "useCheckoutV2": false,
+  "visibleToCurrentUser": true,
+  "collectLeads": true,
+  "collectLeadsWithPurchaseEnabled": false,
+  "assignLeadsToDevelopers": true,
+  "newSubscriptionEnabled": true,
+  "multipleSubscriptionsEnabled": false,
+  "changeSubscriptionAllowed": true,
+  "displayQuestions": true,
+  "displayReviews": true,
+  "oneClickPurchasable": false,
+  "autoUpgradeToPaid": false,
+  "downloadFileSize": null,
+  "startingPrice": null,
+  "highestPercentageDiscount": null,
+  "highestFixedDiscount": null,
+  "bundledPlanIds": null,
+  "customIntegration": null,
+  "usageType": "MULTI_USER",
+  "linkedImportableApplicationUuid": null,
+  "liveChatEnabled": false,
+  "liveChatAvailable": false,
+  "showThirdPartyLegalDisclosure": false,
+  "showSelfServiceRestriction": false,
+  "integrationConfiguration": {
+    "multipleSubscriptionsEnabled": false,
+    "integrationEventConfigurationWS": null,
+    "domainAssociationConfiguration": {
+      "settingsUrl": null,
+      "verificationUrl": null,
+      "maxDomainAssociation": null,
+      "linkUrl": null,
+      "unlinkUrl": null
+    },
+    "domainManagementEnabled": false,
+    "productSettings": null
+  },
+  "addon": false,
+  "supportsMultipleEditions": true,
+  "sellerName": null,
+  "features": [
+    {
+      "id": "6319413",
+      "refId": "da45f09e-93d5-44ea-a1cb-0b5379a3108b",
+      "header": "Create, Get, Update an Issue",
+      "description": "Automate the creation and updating of issues from Camunda processes whenever a new feature is proposed or a bug is detected.",
+      "hideOnOverview": false,
+      "position": 1,
+      "characteristics": []
+    },
+    {
+      "id": "6319414",
+      "refId": "48d464c2-94f4-44bc-abd5-eda2a07a1765",
+      "header": "Create an Issue, Comment, Search Issue",
+      "description": "Create GitHub issues or search for GitHub issues based on various parameters. This feature is perfect for issue tracking and documentation.",
+      "hideOnOverview": false,
+      "position": 2,
+      "characteristics": []
+    },
+    {
+      "id": "6319415",
+      "refId": "d60a5597-d365-4019-95fc-09e7d8e48f4f",
+      "header": "List, Get, Merge a Branch",
+      "description": "Automate branch management tasks to enforce coding standards or to initiate automated testing and deployment.",
+      "hideOnOverview": false,
+      "position": 3,
+      "characteristics": []
+    },
+    {
+      "id": "6319416",
+      "refId": "feb6dc00-0878-4400-8998-79da2155e4e7",
+      "header": "List Code Scanning Alerts",
+      "description": "Retrieve code quality metrics and security vulnerability reports and use them to trigger appropriate Camunda processes.",
+      "hideOnOverview": false,
+      "position": 4,
+      "characteristics": []
+    },
+    {
+      "id": "6319417",
+      "refId": "527be1bd-2349-4cc8-91cb-ec323876dd69",
+      "header": "Create an Organization Invitation",
+      "description": "Automate the process of inviting new members to your GitHub organization. This feature is ideal for employee onboarding.",
+      "hideOnOverview": false,
+      "position": 5,
+      "characteristics": []
+    },
+    {
+      "id": "6319418",
+      "refId": "d4323720-ac11-497e-9c1c-0ddadd1871f1",
+      "header": "Create, Update, Delete, List Releases",
+      "description": "Automate the release process by creating or updating GitHub releases based on milestones achieved in a Camunda-based process.",
+      "hideOnOverview": false,
+      "position": 6,
+      "characteristics": []
+    },
+    {
+      "id": "6319419",
+      "refId": "3620ce14-52ec-4632-8445-aa82692692cc",
+      "header": "List, Create, Get, Update, Delete a Repository, List Contributors",
+      "description": "Automate repository creation and repository management based on project needs or internal requirements.",
+      "hideOnOverview": false,
+      "position": 7,
+      "characteristics": []
+    },
+    {
+      "id": "6319420",
+      "refId": "a9eda9ee-555e-4188-a413-678c63a4366b",
+      "header": "Trigger Process by Webhook from GitHub",
+      "description": "Initiate a Camunda process instance based on GitHub events such as pushes, pull requests, and issue comments.",
+      "hideOnOverview": false,
+      "position": 8,
+      "characteristics": []
+    }
+  ],
+  "tags": [
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 3984,
+      "name": "Supported BPMN Types",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20541,
+          "name": "bpmn:Task",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        },
+        {
+          "type": "ATTRIBUTE",
+          "id": 20542,
+          "name": "bpmn:IntermediateCatchEvent",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        },
+        {
+          "type": "ATTRIBUTE",
+          "id": 20543,
+          "name": "bpmn:StartEvent",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        },
+        {
+          "type": "ATTRIBUTE",
+          "id": 20696,
+          "name": "bpmn:IntermediateThrowEvent",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": "This relates to the template attribute \"appliesTo\""
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 4068,
+      "name": "Industry",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20935,
+          "name": "Any",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "CATEGORY",
+      "id": 107792,
+      "name": "Connectors",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "SUB_CATEGORY",
+          "id": 63913,
+          "name": "Collaboration Tools",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 4005,
+      "name": "Version Compatibility",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20621,
+          "name": "8.2",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        },
+        {
+          "type": "ATTRIBUTE",
+          "id": 20622,
+          "name": "8.3",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        },
+        {
+          "type": "ATTRIBUTE",
+          "id": 20828,
+          "name": "8.4",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        },
+        {
+          "type": "ATTRIBUTE",
+          "id": 20829,
+          "name": "8.5",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 3974,
+      "name": "Creator",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20486,
+          "name": "Camunda",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 4067,
+      "name": "Availability",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20922,
+          "name": "Open Source",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 4070,
+      "name": "Application",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20943,
+          "name": "Collaboration Tools",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 3983,
+      "name": "Connector Runtime",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20536,
+          "name": "Camunda Connectors Bundle",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": "SDK Connectors are made based on an SDK. Here you need to install the runtime and the template.\r\nFor protocol-based connector you only need to upload the template, they are reusing the runtime of our OOTB protocol connectors (REST, GraphQL etc.)."
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 3954,
+      "name": "Connector Type",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20534,
+          "name": "Inbound Connector",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        },
+        {
+          "type": "ATTRIBUTE",
+          "id": 20535,
+          "name": "Outbound Connector",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    }
+  ],
+  "supportedLanguages": [
+    "en-US"
+  ],
+  "mosiConnectorType": "CREST",
+  "platforms": [],
+  "customAttributes": [
+    {
+      "attributeType": "TEXT_WITH_LOCALIZATION",
+      "label": "Creator Website Link",
+      "attributeKey": "0-creator-link",
+      "value": "https://camunda.com/"
+    },
+    {
+      "attributeType": "TEXT_WITH_LOCALIZATION",
+      "label": "For SAAS",
+      "attributeKey": "1-template-only-for-SAAS",
+      "value": "useEditionTemplateLinks"
+    },
+    {
+      "attributeType": "TEXT_WITH_LOCALIZATION",
+      "label": "For SM",
+      "attributeKey": "2-template-only-for-sm",
+      "value": "https://github.com/camunda/connectors/tree/main/connectors/github/element-templates"
+    }
+  ],
+  "productRibbon": null,
+  "merchandisingBadges": [],
+  "supportedCountries": [
+    "KN",
+    "KP",
+    "YE",
+    "MU",
+    "AT",
+    "US",
+    "VG",
+    "FJ",
+    "ER",
+    "JP",
+    "BV",
+    "CU",
+    "VA",
+    "IT",
+    "RO",
+    "CY",
+    "MX",
+    "ZW",
+    "GY",
+    "TT",
+    "AI",
+    "SY",
+    "AX",
+    "LT",
+    "GG",
+    "DK",
+    "AZ",
+    "MT",
+    "AN",
+    "WS",
+    "ZM",
+    "DE",
+    "NF",
+    "ET",
+    "GQ",
+    "PA",
+    "ME",
+    "PR",
+    "BO",
+    "ST",
+    "RS",
+    "GE",
+    "TC",
+    "GH",
+    "KH",
+    "EC",
+    "BZ",
+    "BF",
+    "IN",
+    "LI",
+    "SX",
+    "JE",
+    "MR",
+    "CH",
+    "AF",
+    "TD",
+    "WF",
+    "KZ",
+    "MM",
+    "MD",
+    "NU",
+    "JO",
+    "VC",
+    "NE",
+    "MO",
+    "AL",
+    "DM",
+    "NZ",
+    "GR",
+    "TK",
+    "PM",
+    "GF",
+    "FK",
+    "GS",
+    "MC",
+    "GW",
+    "IR",
+    "TJ",
+    "GL",
+    "SO",
+    "CK",
+    "SR",
+    "GM",
+    "MG",
+    "CC",
+    "GB",
+    "GP",
+    "AM",
+    "RE",
+    "NI",
+    "AU",
+    "NA",
+    "PH",
+    "HT",
+    "TV",
+    "BL",
+    "SV",
+    "SE",
+    "MH",
+    "BR",
+    "UG",
+    "BW",
+    "BM",
+    "LU",
+    "LR",
+    "LA",
+    "NC",
+    "BY",
+    "SG",
+    "RW",
+    "EH",
+    "HN",
+    "DZ",
+    "TO",
+    "SZ",
+    "CR",
+    "IS",
+    "MF",
+    "IQ",
+    "AG",
+    "PT",
+    "FM",
+    "FR",
+    "TM",
+    "AW",
+    "NL",
+    "DJ",
+    "HM",
+    "KY",
+    "MZ",
+    "DO",
+    "CZ",
+    "IL",
+    "YT",
+    "CG",
+    "SA",
+    "LS",
+    "SH",
+    "MV",
+    "BT",
+    "TR",
+    "BB",
+    "IO",
+    "MW",
+    "SN",
+    "TG",
+    "MY",
+    "KE",
+    "NO",
+    "SK",
+    "VU",
+    "AS",
+    "KW",
+    "ZA",
+    "BA",
+    "CX",
+    "HK",
+    "KR",
+    "CN",
+    "GU",
+    "LC",
+    "BE",
+    "PL",
+    "TW",
+    "AD",
+    "BG",
+    "VN",
+    "NR",
+    "BI",
+    "UM",
+    "PY",
+    "CS",
+    "JM",
+    "IM",
+    "SL",
+    "SC",
+    "CA",
+    "MS",
+    "VI",
+    "SJ",
+    "CL",
+    "HR",
+    "LB",
+    "LK",
+    "MQ",
+    "MA",
+    "NP",
+    "SB",
+    "EE",
+    "FO",
+    "CD",
+    "NG",
+    "QA",
+    "BS",
+    "CM",
+    "SI",
+    "BD",
+    "AR",
+    "KG",
+    "GD",
+    "PG",
+    "RU",
+    "KI",
+    "ID",
+    "TN",
+    "BQ",
+    "OM",
+    "BN",
+    "PK",
+    "PN",
+    "PS",
+    "BJ",
+    "LV",
+    "BH",
+    "CO",
+    "GA",
+    "PE",
+    "IE",
+    "GI",
+    "SS",
+    "SM",
+    "HU",
+    "PW",
+    "UZ",
+    "GT",
+    "MP",
+    "UY",
+    "CI",
+    "GN",
+    "CF",
+    "TF",
+    "LY",
+    "TZ",
+    "AQ",
+    "ES",
+    "MN",
+    "EG",
+    "AE",
+    "CW",
+    "FI",
+    "UA",
+    "TH",
+    "PF",
+    "MK",
+    "CV",
+    "AO",
+    "KM",
+    "TL",
+    "VE",
+    "SD",
+    "ML"
+  ],
+  "supportedCurrencies": [
+    "USD"
+  ],
+  "availableToResellers": true,
+  "useCheckoutForSpecialPricingMessage": false,
+  "childVisibleOnNetwork": false,
+  "sourcedProduct": false,
+  "sourceId": null,
+  "links": [],
+  "_embedded": {
+    "associatedAddons": []
+  },
+  "id": 418739
+}

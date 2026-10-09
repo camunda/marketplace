@@ -1,0 +1,53 @@
+id: 426644
+slug: "azure-devops-connector"
+name: "Azure DevOps Connector"
+type: 
+  - "connector"
+creatorType: "partner"
+creatorName: "BP3 Global"
+creatorUrl: "https://www.bp-3.com/camunda"
+categories: 
+  - "Collaboration Tools"
+industries: []
+useCases: []
+resourceTypes: []
+bpmnTypes: 
+  - "bpmn:Task"
+runtimes: 
+  - "bundle"
+compatibleVersions: 
+  - "8.2"
+  - "8.3"
+  - "8.4"
+availability: "open-source"
+description: "Integrate Azure DevOps into Camunda"
+tagline: "Azure DevOps Connector"
+body: |-
+  Use the Azure DevOps Connector to access Azure's comprehensive DevOps tools. Managing issues can be automated and orchestrated from within Camunda.
+features: 
+  - header: "Create Issue/Task"
+    description: "Create an issue or task in Azure DevOps."
+  - header: "Get Issue/Task"
+    description: "Get issue or task details from Azure DevOps."
+templates: 
+  - id: null
+    name: "Azure DevOps Connector Outbound Template"
+    url: "https://raw.githubusercontent.com/BP3/azure-devops-connector/main/element-templates/azure-devops-connector.json"
+saasTemplate: "https://raw.githubusercontent.com/BP3/azure-devops-connector/main/element-templates/azure-devops-connector.json"
+smTemplate: "https://github.com/BP3/azure-devops-connector"
+githubRepo: null
+docsUrl: null
+previewImage: null
+demoRequestUrl: null
+relatedConnectors: null
+demoVideo: null
+icon: "icon.png"
+image: "thumb.png"
+heroImage: "hero.png"
+screenshots: []
+resources: []
+supportUrl: "https://support.bp-3.com/"
+termsUrl: null
+referUrl: null
+publishedOn: "2024-01-10"
+lastModified: "2024-04-08"

@@ -1,0 +1,54 @@
+id: 844739
+slug: "camunda-8-self-managed-on-stackit"
+name: "Camunda 8 Self-Managed on STACKIT"
+type: 
+  - "solution"
+creatorType: "partner"
+creatorName: "Consid GmbH"
+creatorUrl: "https://www.consid.com"
+categories: 
+  - "Solution Accelerators"
+industries: []
+useCases: 
+  - "Microservices orchestration"
+resourceTypes: []
+bpmnTypes: []
+runtimes: []
+compatibleVersions: 
+  - "8.9"
+  - "8.10"
+availability: "listing-only"
+description: "Sovereign Camunda deployment on STACKIT"
+tagline: "Deploy sovereign process orchestration, delivered entirely as code"
+body: |-
+  Consid designs and builds Camunda Self-Managed on STACKIT, the sovereign cloud of the Schwarz Group. Delivered entirely as Terraform, Helm and GitOps in your Git, production-ready in weeks, with data staying in Germany.
+features: 
+  - header: "Keep data sovereign by default"
+    description: "Keep process data, backups and logs in German data centers operated by Schwarz Digits under German jurisdiction, so GDPR, DORA and audit questions are answered during design instead of after go-live."
+  - header: "Deploy a production-grade reference architecture"
+    description: "Get multi-AZ Kubernetes (SKE), managed PostgreSQL, OpenSearch and S3-compatible object storage, plus observability and secrets management, with backup and restore configured and rehearsed before the first process goes live."
+  - header: "Keep everything as code, in your Git"
+    description: "Run the entire platform as STACKIT Terraform, Helm and GitOps, reproducible per environment, reviewable in pull requests, and yours to keep, with no proprietary tooling and no lock-in."
+  - header: "Reach production in weeks, not months"
+    description: "Get architecture, sizing and a cost model from a one-week assessment, then move from landing zone to Camunda rollout in about a week using the proven IaC baseline, with a first production cluster typically standing two to three weeks after kickoff."
+  - header: "Keep knowledge in your team"
+    description: "Build the platform alongside your team as Consid engineers implement SSO, connectors, CI/CD and first processes together, prove sizing under load, then hand over runbooks and enablement, with support remaining available after go-live."
+templates: []
+saasTemplate: null
+smTemplate: null
+githubRepo: null
+docsUrl: null
+previewImage: null
+demoRequestUrl: null
+relatedConnectors: null
+demoVideo: null
+icon: "icon.png"
+image: "thumb.png"
+heroImage: "hero.png"
+screenshots: []
+resources: []
+supportUrl: "https://github.com/consid-germany/camunda-on-stackit"
+termsUrl: null
+referUrl: null
+publishedOn: "2026-07-29"
+lastModified: "2026-08-26"

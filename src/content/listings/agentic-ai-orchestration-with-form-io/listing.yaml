@@ -1,0 +1,57 @@
+id: 719979
+slug: "agentic-ai-orchestration-with-form-io"
+name: "Agentic AI Orchestration with Form.io"
+type: 
+  - "solution"
+  - "blueprint"
+creatorType: "partner"
+creatorName: "Form.io"
+creatorUrl: "https://form.io/"
+categories: 
+  - "Agentic Solutions"
+  - "Solution Accelerators"
+industries: []
+useCases: 
+  - "Agentic AI orchestration"
+resourceTypes: []
+bpmnTypes: []
+runtimes: []
+compatibleVersions: 
+  - "8.8"
+  - "8.9"
+availability: "listing-only"
+description: "Orchestrate processes with Form.io forms"
+tagline: "Agentic AI orchestration with Camunda and Form.io"
+body: |-
+  Combine Form.io data capture with Camunda process orchestration, enabling secure, governed human and system workflows for agentic AI use cases across teams.
+features: 
+  - header: "Decouple form and API development"
+    description: "Model forms and APIs as reusable assets in Form.io while Camunda orchestrates the end-to-end process that uses the captured data to drive automation and routing."
+  - header: "Enterprise-ready solution pattern"
+    description: "Apply a proven approach for regulated environments by pairing Form.io's configurable data capture with Camunda's process orchestration and automation capabilities."
+  - header: "Connect processes to existing systems"
+    description: "Integrate modern and legacy systems so Camunda processes can read, update, and route Form.io data without creating new silos across teams and applications."
+  - header: "Security and governance at scale"
+    description: "Support consistent governance across forms and processes with access controls, auditing, and deployment practices that help teams manage change from development through production."
+templates: []
+saasTemplate: null
+smTemplate: null
+githubRepo: null
+docsUrl: "https://help.form.io/faq/tutorials-and-workflows/using-camunda-with-form.io"
+previewImage: null
+demoRequestUrl: "https://form.io/contact-us/"
+relatedConnectors: null
+demoVideo: 
+  provider: "youtube"
+  id: "LE3Fg4_R68Q"
+  url: "https://youtu.be/LE3Fg4_R68Q?"
+icon: "icon.png"
+image: "thumb.png"
+heroImage: "hero.png"
+screenshots: []
+resources: []
+supportUrl: "https://forum.camunda.io/"
+termsUrl: null
+referUrl: null
+publishedOn: "2026-01-14"
+lastModified: "2026-01-16"

@@ -1,0 +1,62 @@
+id: 475968
+slug: "aaseya-license-and-permitting-solution"
+name: "Aaseya License & Permitting Solution"
+type: 
+  - "blueprint"
+creatorType: "partner"
+creatorName: "Aaseya IT Services Pvt. Ltd."
+creatorUrl: "https://aaseya.com/"
+categories: 
+  - "Solution Accelerators"
+industries: 
+  - "Public Sector"
+useCases: 
+  - "Simplified case management"
+resourceTypes: 
+  - "BPMN"
+bpmnTypes: []
+runtimes: []
+compatibleVersions: 
+  - "8.3"
+  - "8.4"
+  - "8.5"
+  - "8.6"
+  - "8.7"
+availability: "open-source"
+description: "Streamline government licensing and boost efficiency"
+tagline: "Aaseya ALPS: One-Stop Licensing for Businesses and Residents"
+body: |-
+  Streamline government licensing for residents and businesses. Manage applications, payments, and inspections to boost efficiency and revenue.
+features: 
+  - header: "Hunter/User License Creation"
+    description: "Manage the end-to-end licensing process for hunters, recreational users, and other individuals requiring a specific type of license."
+  - header: "Hunter/User Review"
+    description: "Enable efficient review and processing of license applications, ensuring that applications are thoroughly checked and compliant with regulatory standards before approval."
+  - header: "Hunter/User License Creation Approval"
+    description: "Streamline the final stages of the licensing process, ensuring applications meet all regulatory requirements before official issuance."
+  - header: "Document Verification"
+    description: "Ensure applicants meet eligibility requirements by verifying submitted documents accurately and efficiently."
+  - header: "Checklist Evaluation"
+    description: "Streamline and ensure the accuracy of eligibility assessment, document verification, and regulatory compliance for each license application."
+templates: 
+  - id: null
+    name: "Resource 1"
+    url: "https://raw.githubusercontent.com/AkhilaPuram/Camunda-ALPS/refs/heads/master/alps/src/main/resources/camunda/ALPS.bpmn"
+saasTemplate: null
+smTemplate: "https://github.com/AkhilaPuram/Camunda-ALPS"
+githubRepo: null
+docsUrl: "https://github.com/AkhilaPuram/Camunda-ALPS.git"
+previewImage: "https://raw.githubusercontent.com/AkhilaPuram/Camunda-ALPS/refs/heads/master/alps/src/main/resources/camunda/ALPS.bpmn"
+demoRequestUrl: null
+relatedConnectors: null
+demoVideo: null
+icon: "icon.png"
+image: "thumb.png"
+heroImage: "hero.png"
+screenshots: []
+resources: []
+supportUrl: "https://forum.camunda.io/"
+termsUrl: null
+referUrl: null
+publishedOn: "2025-01-31"
+lastModified: "2025-03-18"

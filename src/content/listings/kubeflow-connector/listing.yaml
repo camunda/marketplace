@@ -1,0 +1,67 @@
+id: 423548
+slug: "kubeflow-connector"
+name: "Kubeflow Connector"
+type: 
+  - "connector"
+creatorType: "partner"
+creatorName: "viadee Unternehmensberatung AG"
+creatorUrl: "https://www.viadee.de/"
+categories: 
+  - "AI Services"
+industries: []
+useCases: []
+resourceTypes: []
+bpmnTypes: 
+  - "bpmn:Task"
+runtimes: 
+  - "self-hosted"
+compatibleVersions: 
+  - "8.4"
+availability: "open-source"
+description: "Integrate Kubeflow pipelines into processes"
+tagline: "Invoke Kubeflow pipelines from within a process, both synchronously and asynchronously"
+body: |-
+  Retrieve Kubeflow pipelines, experiments, and runs, and trigger pipelines and consume their output in the subsequent process steps.
+features: 
+  - header: "Get Pipelines"
+    description: "Get an overview of all pipelines available within Kubeflow and apply a filter if necessary."
+  - header: "Get Experiments"
+    description: "Get an overview of all experiments available within Kubeflow and apply a filter if necessary."
+  - header: "Get Runs"
+    description: "Get an overview of all runs available within Kubeflow and apply a filter if necessary."
+  - header: "Get Run By ID"
+    description: "Get details of a single run identified by its ID."
+  - header: "Get Run By Name"
+    description: "Get details of a single run identified by its name."
+  - header: "Start Run"
+    description: "Trigger a run and continue."
+  - header: "Start Run and Monitor"
+    description: "Trigger a run, wait for its completion, and continue."
+  - header: "Create Experiment"
+    description: "Create an experiment by providing a name and, optionally, a description."
+  - header: "Get Experiment By ID"
+    description: "Get details of a single experiment identified by its ID."
+  - header: "API Version Compatibility"
+    description: "This Connector supports all operations regardless of whether you are running v1 pipelines or v2 pipelines."
+templates: 
+  - id: null
+    name: "Kubeflow Connector outbound"
+    url: "placeholder"
+saasTemplate: null
+smTemplate: null
+githubRepo: "https://github.com/viadee/c8-kubeflow-outbound-connector"
+docsUrl: "https://docs.camunda.io/docs/guides/host-custom-connectors/"
+previewImage: null
+demoRequestUrl: null
+relatedConnectors: null
+demoVideo: null
+icon: "icon.png"
+image: "thumb.png"
+heroImage: "hero.png"
+screenshots: []
+resources: []
+supportUrl: "https://forum.camunda.io/"
+termsUrl: null
+referUrl: null
+publishedOn: "2023-11-23"
+lastModified: "2024-04-08"

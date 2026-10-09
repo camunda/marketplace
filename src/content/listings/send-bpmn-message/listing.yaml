@@ -1,0 +1,48 @@
+id: 448966
+slug: "send-bpmn-message"
+name: "Send BPMN Message"
+type: 
+  - "connector"
+creatorType: "community"
+creatorName: "Camunda / Pierre-Yves Monnet"
+creatorUrl: null
+categories: 
+  - "Technical Protocols"
+industries: []
+useCases: []
+resourceTypes: []
+bpmnTypes: 
+  - "bpmn:Task"
+runtimes: 
+  - "self-hosted"
+compatibleVersions: 
+  - "8.5"
+availability: "open-source"
+description: "Send a BPMN message"
+tagline: "Send a BPMN Message"
+body: |-
+  This blueprint demonstrates how to send a BPMN message that optionally includes variables, a correlation key, and/or a duration.
+features: 
+  - header: "Send BPMN Message"
+    description: "Send a BPMN message to start a new process. You can include variables."
+  - header: "Send BPMN Message with Correlation"
+    description: "Send a BPMN message with a variable to target a catch event message. The correlation value is provided. You can set a duration."
+templates: []
+saasTemplate: null
+smTemplate: "https://github.com/camunda-community-hub/camunda-8-connector-sendBPMNmessage"
+githubRepo: null
+docsUrl: "https://github.com/camunda-community-hub/camunda-8-connector-sendBPMNmessage/blob/1.2.0/README.md"
+previewImage: null
+demoRequestUrl: null
+relatedConnectors: null
+demoVideo: null
+icon: "icon.png"
+image: "thumb.png"
+heroImage: "hero.png"
+screenshots: []
+resources: []
+supportUrl: "https://forum.camunda.io/"
+termsUrl: null
+referUrl: null
+publishedOn: "2024-08-04"
+lastModified: "2024-08-04"

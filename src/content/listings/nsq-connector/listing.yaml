@@ -1,0 +1,56 @@
+id: 553452
+slug: "nsq-connector"
+name: "NSQ Connector"
+type: 
+  - "connector"
+creatorType: "community"
+creatorName: "Charan Teja Choppavarapu"
+creatorUrl: "https://www.linkedin.com/in/charanteja-choppavarapu/"
+categories: 
+  - "Technical Protocols"
+industries: []
+useCases: []
+resourceTypes: 
+  - "Connector Template"
+bpmnTypes: 
+  - "bpmn:Task"
+runtimes: 
+  - "self-hosted"
+compatibleVersions: 
+  - "8.7"
+availability: "open-source"
+description: "Perform message delivery to NSQ"
+tagline: "Perform message delivery to NSQ with ease"
+body: |-
+  Publish messages to NSQ topics as part of a service task, enabling asynchronous communication and decoupling of processes.
+features: 
+  - header: "Asynchronous messaging"
+    description: "Decouples process execution from message delivery. This design enhances process efficiency by preventing delays while waiting for message handling."
+  - header: "Seamless NSQ integration"
+    description: "Directly connects Camunda-based processes to NSQ. This establishes a straightforward bridge for Camunda processes to interact with the NSQ messaging system."
+  - header: "Customizable via BPMN"
+    description: "Allows configuration of messages and topics within the process model. Developers can easily define message content and target NSQ topics directly in their business process diagrams."
+  - header: "Leverages NSQ capabilities"
+    description: "Utilizes NSQ's distributed and reliable messaging. This ensures robust and scalable message delivery by capitalizing on NSQ's inherent strengths."
+templates: 
+  - id: null
+    name: "NSQ Outbound Connector"
+    url: "https://raw.githubusercontent.com/charanteja469/Camunda-NSQ-Outbound-Connector/refs/heads/master/element-templates/NSQ%20Outbound%20Connector.json"
+saasTemplate: "https://raw.githubusercontent.com/charanteja469/Camunda-NSQ-Outbound-Connector/refs/heads/master/element-templates/NSQ%20Outbound%20Connector.json"
+smTemplate: "https://github.com/charanteja469/Camunda-NSQ-Outbound-Connector"
+githubRepo: "https://github.com/charanteja469/Camunda-NSQ-Outbound-Connector"
+docsUrl: "https://docs.camunda.io/docs/guides/host-custom-connectors/"
+previewImage: null
+demoRequestUrl: null
+relatedConnectors: null
+demoVideo: null
+icon: "icon.png"
+image: "thumb.png"
+heroImage: "hero.png"
+screenshots: []
+resources: []
+supportUrl: "https://forum.camunda.io/"
+termsUrl: null
+referUrl: null
+publishedOn: "2025-06-27"
+lastModified: "2025-06-27"

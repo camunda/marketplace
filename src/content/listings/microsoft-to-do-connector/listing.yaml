@@ -1,0 +1,51 @@
+id: 450392
+slug: "microsoft-to-do-connector"
+name: "Microsoft To Do Connector"
+type: 
+  - "connector"
+creatorType: "partner"
+creatorName: "BBHT Beratungsgesellschaft mbH & Co. KG"
+creatorUrl: "https://www.bbht.de/"
+categories: 
+  - "Collaboration Tools"
+industries: []
+useCases: []
+resourceTypes: 
+  - "Connector Template"
+bpmnTypes: 
+  - "bpmn:StartEvent"
+runtimes: 
+  - "self-hosted"
+compatibleVersions: 
+  - "8.5"
+availability: "open-source"
+description: "Orchestrate Microsoft To Do lists"
+tagline: "Orchestrate Human Work with Microsoft 365 To Do"
+body: |-
+  Orchestrate human work that's managed in Microsoft 365 To Do. Perform operations on task lists, tasks, and check list items.
+features: 
+  - header: "Task Operations"
+    description: "Perform task-based operations, including getting a task, creating a task, updating a task, and deleting a task."
+  - header: "Task List Operations"
+    description: "Perform operations on a task list, including getting a list of task lists, and getting, creating, updating, and deleting a specific task list."
+  - header: "Check List Operations"
+    description: "Perform operations on a check list, including getting a list of check list items, and getting, creating, updating, and deleting items in a specified check list."
+templates: []
+saasTemplate: null
+smTemplate: null
+githubRepo: "https://github.com/bbhtde/bbht-outbound-connector-microsoft-todo/"
+docsUrl: "https://docs.camunda.io/docs/guides/host-custom-connectors/"
+previewImage: null
+demoRequestUrl: null
+relatedConnectors: null
+demoVideo: null
+icon: "icon.png"
+image: "thumb.png"
+heroImage: "hero.png"
+screenshots: []
+resources: []
+supportUrl: "https://github.com/bbhtde/bbht-outbound-connector-microsoft-todo/issues"
+termsUrl: null
+referUrl: null
+publishedOn: "2024-08-22"
+lastModified: "2024-08-22"

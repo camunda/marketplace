@@ -1,0 +1,58 @@
+id: 632753
+slug: "perplexity-ai-connector"
+name: "Perplexity AI Connector"
+type: 
+  - "connector"
+creatorType: "partner"
+creatorName: "Nagarro"
+creatorUrl: "https://www.nagarro.com/en/"
+categories: 
+  - "AI Services"
+industries: []
+useCases: []
+resourceTypes: 
+  - "Connector Template"
+bpmnTypes: 
+  - "bpmn:Task"
+  - "bpmn:IntermediateCatchEvent"
+  - "bpmn:StartEvent"
+runtimes: 
+  - "bundle"
+compatibleVersions: 
+  - "8.6"
+  - "8.7"
+  - "8.8"
+availability: "open-source"
+description: "Ask AI questions in Camunda-based processes"
+tagline: "Integrate Perplexity AI responses into Camunda-based business processes"
+body: |-
+  Query Perplexity AI from Camunda to enrich business processes with real-time, intelligent, natural language responses.
+features: 
+  - header: "Send prompts to Perplexity AI"
+    description: "Easily send natural language prompts to Perplexity AI directly from BPMN elements in Camunda processes (such as service tasks and message events). Use any supported model and configure prompts dynamically based on process variables."
+  - header: "Retrieve and use AI responses"
+    description: "Automatically capture AI-generated responses from Perplexity and use them in downstream workflow logic such as approvals, summaries, and decision gateways, all without writing any custom code."
+templates: 
+  - id: null
+    name: "PerplexityAI Connector Outbound Template"
+    url: "https://raw.githubusercontent.com/surbhi1091996/perplexityAI/refs/heads/main/perplexity-ai-connector.json"
+saasTemplate: null
+smTemplate: "https://github.com/surbhi1091996/perplexityAI"
+githubRepo: null
+docsUrl: "https://github.com/surbhi1091996/perplexityAI/blob/main/README.md"
+previewImage: null
+demoRequestUrl: null
+relatedConnectors: null
+demoVideo: null
+icon: "icon.png"
+image: "thumb.png"
+heroImage: "hero.png"
+screenshots: 
+  - "screenshot-1.png"
+  - "screenshot-2.png"
+resources: []
+supportUrl: "https://forum.camunda.io/"
+termsUrl: null
+referUrl: null
+publishedOn: "2025-10-15"
+lastModified: "2025-10-17"

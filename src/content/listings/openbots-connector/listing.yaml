@@ -1,0 +1,56 @@
+id: 426494
+slug: "openbots-connector"
+name: "OpenBots Connector"
+type: 
+  - "connector"
+creatorType: "partner"
+creatorName: "BP3 Global"
+creatorUrl: "https://www.bp-3.com/camunda"
+categories: 
+  - "Automation Services"
+industries: []
+useCases: 
+  - "RPA bot orchestration"
+resourceTypes: []
+bpmnTypes: 
+  - "bpmn:Task"
+runtimes: 
+  - "bundle"
+compatibleVersions: 
+  - "8.3"
+  - "8.4"
+  - "8.5"
+availability: "open-source"
+description: "Orchestrate RPA bots with Camunda"
+tagline: "Integrate OpenBots with Camunda"
+body: |-
+  Orchestrate RPA bots running in OpenBots as part of your Camunda-based business processes by creating queue items and checking for them to complete.
+features: 
+  - header: "Log In to OpenBots"
+    description: "Log in to OpenBots and retrieve a session token to be used in subsequent calls."
+  - header: "Add Item to Queue"
+    description: "Add a job item to an existing queue."
+  - header: "Get Queue Item Status"
+    description: "Check the status of a previously submitted job item."
+templates: 
+  - id: null
+    name: "OpenBots Connector Outbound Template"
+    url: "https://raw.githubusercontent.com/BP3/openbots-connector/main/element-templates/openbots_connector.json"
+saasTemplate: "https://raw.githubusercontent.com/BP3/openbots-connector/main/element-templates/openbots_connector.json"
+smTemplate: "https://github.com/BP3/openbots-connector"
+githubRepo: null
+docsUrl: null
+previewImage: null
+demoRequestUrl: null
+relatedConnectors: null
+demoVideo: null
+icon: "icon.png"
+image: "thumb.png"
+heroImage: "hero.png"
+screenshots: []
+resources: []
+supportUrl: "https://support.bp-3.com/"
+termsUrl: null
+referUrl: null
+publishedOn: "2024-01-09"
+lastModified: "2024-04-08"

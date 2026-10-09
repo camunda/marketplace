@@ -1,0 +1,55 @@
+id: 808029
+slug: "kadai-enterprise-task-management"
+name: "KADAI Enterprise Task Management"
+type: 
+  - "solution"
+creatorType: "partner"
+creatorName: "envite consulting GmbH"
+creatorUrl: "https://envite.de/green-bpm"
+categories: 
+  - "Solution Accelerators"
+industries: []
+useCases: []
+resourceTypes: []
+bpmnTypes: []
+runtimes: []
+compatibleVersions: 
+  - "8.8"
+  - "8.9"
+availability: "listing-only"
+description: "Consolidate and manage tasks across systems"
+tagline: "Consolidate every Camunda task into one enterprise-grade tasklist"
+body: |-
+  KADAI is an open-source Java library that consolidates tasks from Camunda 8, Camunda 7, and other systems into a single enterprise-grade tasklist. It provides dynamic prioritization, workbasket-based routing, fine-grained access control, and real-time monitoring for large-scale task management operations.
+features: 
+  - header: "Consolidate tasks from multiple systems into one tasklist"
+    description: "KADAI’s goal is to provide a unified tasklist where all of a company’s tasks from all systems can be consolidated, controlled, and managed. Tasks are synchronized bidirectionally with the connected systems containing user tasks via KADAI’s own adapters. There is a flexible and extensible adapter architecture that allows for the integration of various systems. Camunda 8 and Camunda 7 are supported out-of-the-box."
+  - header: "Control task distribution with configurable workbaskets"
+    description: "Workbaskets can be configured with routing rules, distribution logic, and granular permissions so different teams' task inventories remain clearly separated. Sensitive areas such as VIP customer or HR cases can be restricted accordingly. KADAI includes standard routing procedures out of the box and supports full customization to meet virtually any operational requirement, including active assignment to support call center-style implementations."
+  - header: "Prioritize tasks dynamically based on what matters most"
+    description: "KADAI includes standard prioritization by task and document type, with support for custom priority calculations based on any task attribute. Dynamic reprioritization periodically recalculates priorities across the task inventory so urgent work always surfaces to the right person at the right time."
+  - header: "Stay informed with real-time monitoring"
+    description: "The monitoring section provides live overviews of current work status across all workbaskets, which can also feed directly into routing and distribution decisions. Configurable reports can be organized by a range of criteria to support operational review and capacity planning."
+  - header: "Customize KADAI to match your needs"
+    description: "The solution has been designed from the beginning to be adaptable and extensible. On the one hand, this applies to the business logic, which can be tailored to individual needs through various configuration options and, in particular, through implementable Service Provider Interfaces (SPIs). On the other hand, KADAI is designed so that it can be integrated as a technical artifact into various runtime environments. This approach allows KADAI to be managed, deployed, and monitored just as one of your individual software components. One specific advantage is the easy and seamless integration into various security infrastructures."
+templates: []
+saasTemplate: null
+smTemplate: null
+githubRepo: null
+docsUrl: null
+previewImage: null
+demoRequestUrl: "https://envite.de/green-bpm"
+relatedConnectors: null
+demoVideo: null
+icon: "icon.png"
+image: "thumb.png"
+heroImage: "hero.png"
+screenshots: 
+  - "screenshot-1.png"
+  - "screenshot-2.png"
+resources: []
+supportUrl: "https://github.com/kadai-io/kadai/issues"
+termsUrl: null
+referUrl: null
+publishedOn: "2026-05-05"
+lastModified: "2026-05-05"

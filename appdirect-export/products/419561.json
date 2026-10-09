@@ -1,0 +1,840 @@
+{
+  "resources": [
+    {
+      "id": null,
+      "resourceType": "VIDEO",
+      "locale": null,
+      "name": "Acheron's Camunda Connector for GCP Cloud Spanner - Create Table: A Developer's Walkthrough",
+      "link": "https://www.youtube.com/watch?v=RlnWS0kKwlU&t=110s",
+      "scribdKey": null,
+      "scribdId": null,
+      "description": null,
+      "resellerAccess": false,
+      "createdByDev": true
+    }
+  ],
+  "screenshots": [
+    {
+      "imageUrl": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/419561/screenshot/img8163785599334844586.png",
+      "imageUrlSrcset": {
+        "default": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/419561/screenshot/img8163785599334844586.png",
+        "2x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/419561/screenshot/img1800135976890912030.png",
+        "1x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/419561/screenshot/img8163785599334844586.png"
+      }
+    },
+    {
+      "imageUrl": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/419561/screenshot/img4164317510702883000.png",
+      "imageUrlSrcset": {
+        "default": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/419561/screenshot/img4164317510702883000.png",
+        "2x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/419561/screenshot/img8820208103291315120.png",
+        "1x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/419561/screenshot/img4164317510702883000.png"
+      }
+    },
+    {
+      "imageUrl": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/419561/screenshot/img515741221222447181.png",
+      "imageUrlSrcset": {
+        "default": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/419561/screenshot/img515741221222447181.png",
+        "2x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/419561/screenshot/img3296687897846174464.png",
+        "1x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/419561/screenshot/img515741221222447181.png"
+      }
+    },
+    {
+      "imageUrl": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/419561/screenshot/img940982126880524886.png",
+      "imageUrlSrcset": {
+        "default": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/419561/screenshot/img940982126880524886.png",
+        "2x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/419561/screenshot/img7185646076354360387.png",
+        "1x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/419561/screenshot/img940982126880524886.png"
+      }
+    },
+    {
+      "imageUrl": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/419561/screenshot/img6478963529672616673.png",
+      "imageUrlSrcset": {
+        "default": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/419561/screenshot/img6478963529672616673.png",
+        "2x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/419561/screenshot/img2652430642905886699.png",
+        "1x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/419561/screenshot/img6478963529672616673.png"
+      }
+    },
+    {
+      "imageUrl": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/419561/screenshot/img6146687661947163721.png",
+      "imageUrlSrcset": {
+        "default": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/419561/screenshot/img6146687661947163721.png",
+        "2x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/419561/screenshot/img7756393985106857725.png",
+        "1x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/419561/screenshot/img6146687661947163721.png"
+      }
+    }
+  ],
+  "addonOfferings": [],
+  "featuredCustomers": [],
+  "featuredMedia": [],
+  "href": "https://marketplace.camunda.com/api/marketplace/v1/products/419561",
+  "uuid": "c052f483-1981-49e8-bb17-7ecaeaff6c70",
+  "productRefId": "be4381f1-1797-4339-a2c9-2714b7202260",
+  "publishedApp": null,
+  "workingApp": {
+    "id": "419560",
+    "href": "https://marketplace.camunda.com/api/marketplace/v1/products/419560"
+  },
+  "name": "GCP Cloud Spanner Database Connector",
+  "type": "WEB_APP",
+  "usesVariants": false,
+  "provider": {
+    "uuid": "948d0eed-a7db-479e-a7f2-423909d2e333",
+    "name": "Acheron",
+    "url": "camunda.com",
+    "creatorUserUuid": null,
+    "creatorName": null
+  },
+  "listing": {
+    "myAppLogoIconUrl": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/419561/myAppIcon/img5293993022164882696.png",
+    "imageUrl": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/419561/thumbs_64/img8691154372196520684.png",
+    "profileImageUrl": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/419561/thumbs_112/img3504631657391134486.png",
+    "myAppLogoIconSrcset": {
+      "default": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/419561/myAppIcon/img5293993022164882696.png",
+      "2x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/419561/myAppIcon/img5293993022164882696-2x.png",
+      "1x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/419561/myAppIcon/img5293993022164882696.png"
+    },
+    "imageSrcset": {
+      "default": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/419561/thumbs_64/img8691154372196520684.png",
+      "2x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/419561/thumbs_64/img8691154372196520684-2x.png",
+      "1x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/419561/thumbs_64/img8691154372196520684.png"
+    },
+    "profileImageSrcset": {
+      "default": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/419561/thumbs_112/img3504631657391134486.png",
+      "2x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/419561/thumbs_112/img3504631657391134486-2x.png",
+      "1x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/419561/thumbs_112/img3504631657391134486.png"
+    },
+    "blurb": "Connect Camunda with Cloud Spanner",
+    "overview": "Elevate your Camunda workflows with the 'Cloud Spanner Connector' by Acheron. Seamlessly integrate Camunda with Google Cloud's NewSQL database, Cloud Spanner. Efficiently manage data by creating tables, inserting, updating, and deleting data, and retrieving records with advanced filtering options. Achieve limitless scalability and relational semantics for your applications and workflows with our Cloud Spanner Connector.",
+    "rating": null,
+    "reviewCount": 0,
+    "mobileBundleId": null,
+    "mobileAppStoreId": null
+  },
+  "overview": {
+    "splashTitle": "Take advantage of unlimited scalability with relational semantics by connecting you Applications and workflow to Google's NewSQL database i.e) Cloud Spanner with the help of Acheron's Cloud Spanner Connector",
+    "splashDescription": "Elevate your Camunda BPMN workflows with the \"Cloud Spanner Connector.\" Seamlessly integrate Camunda with Google's Cloud Spanner, unlocking limitless scalability with relational semantics. Effortlessly manage data by creating tables, inserting, updating, and deleting data, and retrieving data with advanced filtering options, all within your workflow processes.",
+    "imageUrl": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/419561/overview/img3007560044880886319.png?6bab40e622dd06a64e66c5f6e3a4a9f2",
+    "imageSrcset": {
+      "default": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/419561/overview/img3007560044880886319.png",
+      "2x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/419561/overview/img3007560044880886319-2x.png",
+      "1x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/419561/overview/img3007560044880886319.png"
+    },
+    "demoUrl": null,
+    "documentationUrl": null,
+    "downloadDocumentationUrl": null,
+    "systemRequirements": null,
+    "downloadFileSize": null,
+    "benefits": [],
+    "versions": {}
+  },
+  "support": {
+    "email": "camunda.support@acheron-tech.com",
+    "phone": null,
+    "knowledgebaseUrl": null,
+    "description": null
+  },
+  "privacyUrl": null,
+  "termsUrl": null,
+  "referUrl": "https://acheron-tech.com/",
+  "hostedLocation": null,
+  "lastModified": 1712578607000,
+  "pricing": {
+    "pricingSummary": null,
+    "footnotes": [],
+    "bullets": [],
+    "editions": [
+      {
+        "id": 825557,
+        "uuid": "a047232d-9970-405a-abe2-9e3acf350d0d",
+        "productEditionRefId": "d2ec932a-f785-4b91-848e-0c33b73f2ac7",
+        "rank": 1,
+        "name": "io.camunda.connector.spanner.v1",
+        "primary": false,
+        "trial": {
+          "length": 0,
+          "unit": "DAY"
+        },
+        "expiredTrialGracePeriod": null,
+        "bundleOnly": false,
+        "targetAudience": null,
+        "code": "1",
+        "defaultFreeTrial": false,
+        "invisible": false,
+        "leadGen": false,
+        "lastModified": 1696504695000,
+        "revenueType": "FREE",
+        "restricted": false,
+        "freeTrialDuration": 0,
+        "freeTrialType": "DAY",
+        "privacyUrl": null,
+        "termsUrl": null,
+        "freeTrialEditionRequireBillingInfo": null,
+        "freeTrialEditionAutomaticUpgradeToPaidEnabled": null,
+        "plans": [
+          {
+            "href": "https://marketplace.camunda.com/api/marketplace/v1/products/419561/editions/825557/paymentPlans/1006760",
+            "id": 1006760,
+            "uuid": "9a551daf-bd12-454e-a5d8-256966fbbb0e",
+            "frequency": "MONTHLY",
+            "status": "ACTIVE",
+            "contract": null,
+            "allowCustomUsage": false,
+            "keepBillDateOnUsageChange": true,
+            "keepBillDateOnPricingPlanChange": true,
+            "separatePrepaid": false,
+            "isPrimaryPrice": false,
+            "costs": [],
+            "discount": null,
+            "creditOnCancellation": false,
+            "primaryPrice": false
+          }
+        ],
+        "bullets": [
+          {
+            "id": null,
+            "content": "templateLink",
+            "tooltip": "https://raw.githubusercontent.com/Acheron-Camunda/cloud-spanner-connector/main/element-templates/spanner-connector.json"
+          },
+          {
+            "id": null,
+            "content": "appliesTo",
+            "tooltip": "bpmn:Task"
+          }
+        ],
+        "items": [
+          {
+            "unit": "USER",
+            "amount": 1.0,
+            "unlimited": false
+          }
+        ],
+        "customizations": [],
+        "customAttributes": []
+      }
+    ]
+  },
+  "publishedOn": 1695109901000,
+  "rating": null,
+  "absoluteRating": null,
+  "numRatings": null,
+  "buyable": true,
+  "importable": false,
+  "importableAppApprovalMode": null,
+  "free": true,
+  "freeTrialOrEditionPresent": false,
+  "referable": true,
+  "hidePricings": true,
+  "useCheckoutV2": true,
+  "visibleToCurrentUser": true,
+  "collectLeads": true,
+  "collectLeadsWithPurchaseEnabled": false,
+  "assignLeadsToDevelopers": true,
+  "newSubscriptionEnabled": true,
+  "multipleSubscriptionsEnabled": false,
+  "changeSubscriptionAllowed": true,
+  "displayQuestions": true,
+  "displayReviews": true,
+  "oneClickPurchasable": false,
+  "autoUpgradeToPaid": false,
+  "downloadFileSize": null,
+  "startingPrice": null,
+  "highestPercentageDiscount": null,
+  "highestFixedDiscount": null,
+  "bundledPlanIds": null,
+  "customIntegration": null,
+  "usageType": "MULTI_USER",
+  "linkedImportableApplicationUuid": null,
+  "liveChatEnabled": false,
+  "liveChatAvailable": false,
+  "showThirdPartyLegalDisclosure": false,
+  "showSelfServiceRestriction": false,
+  "integrationConfiguration": {
+    "multipleSubscriptionsEnabled": false,
+    "integrationEventConfigurationWS": null,
+    "domainAssociationConfiguration": {
+      "settingsUrl": null,
+      "verificationUrl": null,
+      "maxDomainAssociation": null,
+      "linkUrl": null,
+      "unlinkUrl": null
+    },
+    "domainManagementEnabled": false,
+    "productSettings": null
+  },
+  "addon": false,
+  "supportsMultipleEditions": true,
+  "sellerName": null,
+  "features": [
+    {
+      "id": "5597427",
+      "refId": "5f1eba0c-8fe9-4af9-b45b-01209e76f9c8",
+      "header": "Seamless Integration",
+      "description": "Connect Camunda with Google Cloud Spanner, bridging the gap between workflow automation and Google's NewSQL database.",
+      "hideOnOverview": false,
+      "position": 1,
+      "characteristics": []
+    },
+    {
+      "id": "5597428",
+      "refId": "d801fb9b-6509-4177-811c-9a1e9b0a2198",
+      "header": "Table Management",
+      "description": "Create new tables within your specified database, optimizing data organization for your workflow applications.",
+      "hideOnOverview": false,
+      "position": 2,
+      "characteristics": []
+    },
+    {
+      "id": "5597429",
+      "refId": "3b3b62e2-09ac-4bab-8cba-cf256dd660be",
+      "header": "Data Insertion",
+      "description": "Insert data into Cloud Spanner tables with ease, ensuring efficient data population for your applications.",
+      "hideOnOverview": false,
+      "position": 3,
+      "characteristics": []
+    },
+    {
+      "id": "5597430",
+      "refId": "3f1ac5b2-b920-466b-8467-f66edeefa089",
+      "header": "Data Updates",
+      "description": "Update data in tables based on specified conditions, maintaining data accuracy and relevance.",
+      "hideOnOverview": false,
+      "position": 4,
+      "characteristics": []
+    },
+    {
+      "id": "5597431",
+      "refId": "f1e3e811-4a79-4afe-af34-a0569383043c",
+      "header": "Data Deletion",
+      "description": "Remove data from tables based on given conditions, enhancing data hygiene and compliance.",
+      "hideOnOverview": false,
+      "position": 5,
+      "characteristics": []
+    },
+    {
+      "id": "5597432",
+      "refId": "946d411f-88db-4efe-9a10-396b1af6a447",
+      "header": "Data Retrieval",
+      "description": "Retrieve data from Cloud Spanner tables with support for Limit, Sort, and Filters, enabling precise data access.",
+      "hideOnOverview": false,
+      "position": 6,
+      "characteristics": []
+    },
+    {
+      "id": "5597433",
+      "refId": "3c2d4b59-ebb3-48d3-ac81-e644656143ce",
+      "header": "Scalability",
+      "description": "Take advantage of Cloud Spanner's unlimited scalability, perfect for handling evolving data needs.",
+      "hideOnOverview": false,
+      "position": 7,
+      "characteristics": []
+    },
+    {
+      "id": "5597434",
+      "refId": "0d066597-63b3-4178-b117-c24374f08dd9",
+      "header": "Data Security",
+      "description": "Leverage Google Cloud Spanner's robust security features to safeguard your data within Camunda BPMN workflows.",
+      "hideOnOverview": false,
+      "position": 8,
+      "characteristics": []
+    },
+    {
+      "id": "5597435",
+      "refId": "136bf4e9-f515-44d2-b2f0-9f6da7564722",
+      "header": "Enhanced Efficiency",
+      "description": "Boost workflow efficiency by seamlessly integrating Cloud Spanner capabilities into your Camunda BPMN processes.",
+      "hideOnOverview": false,
+      "position": 9,
+      "characteristics": []
+    }
+  ],
+  "tags": [
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 3983,
+      "name": "Connector Runtime",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20537,
+          "name": "Host yourself",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": "SDK Connectors are made based on an SDK. Here you need to install the runtime and the template.\r\nFor protocol-based connector you only need to upload the template, they are reusing the runtime of our OOTB protocol connectors (REST, GraphQL etc.)."
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 4068,
+      "name": "Industry",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20935,
+          "name": "Any",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "CATEGORY",
+      "id": 107792,
+      "name": "Connectors",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "SUB_CATEGORY",
+          "id": 63916,
+          "name": "Data & Analytics",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 3984,
+      "name": "Supported BPMN Types",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20541,
+          "name": "bpmn:Task",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": "This relates to the template attribute \"appliesTo\""
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 4070,
+      "name": "Application",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20944,
+          "name": "Data & Analytics",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 4005,
+      "name": "Version Compatibility",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20621,
+          "name": "8.2",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 3974,
+      "name": "Creator",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20487,
+          "name": "Partner",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 4067,
+      "name": "Availability",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20922,
+          "name": "Open Source",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 3954,
+      "name": "Connector Type",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20535,
+          "name": "Outbound Connector",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    }
+  ],
+  "supportedLanguages": [
+    "en-US"
+  ],
+  "mosiConnectorType": "CREST",
+  "platforms": [],
+  "customAttributes": [
+    {
+      "attributeType": "TEXT_WITH_LOCALIZATION",
+      "label": "Creator Website Link",
+      "attributeKey": "0-creator-link",
+      "value": "https://acheron-tech.com/"
+    },
+    {
+      "attributeType": "TEXT_WITH_LOCALIZATION",
+      "label": "Host Yourself",
+      "attributeKey": "1-github-repo-compile-yourself",
+      "value": "https://github.com/Acheron-Camunda/cloud-spanner-connector/"
+    },
+    {
+      "attributeType": "TEXT_WITH_LOCALIZATION",
+      "label": "Installation Guide",
+      "attributeKey": "2-compile-yourself-Guide",
+      "value": "https://docs.camunda.io/docs/guides/host-custom-connectors/"
+    }
+  ],
+  "productRibbon": null,
+  "merchandisingBadges": [
+    {
+      "uuid": "d0c44526-1d31-4db3-8026-121b5a697337",
+      "name": "Partner",
+      "image": "https://d3bql97l1ytoxn.cloudfront.net/common_resources/badge/d0c44526-1d31-4db3-8026-121b5a697337/img5777263081410118250.png?ccd956e54345219497e3045478505649"
+    }
+  ],
+  "supportedCountries": [
+    "KG",
+    "PR",
+    "CN",
+    "AD",
+    "TG",
+    "LA",
+    "TZ",
+    "BM",
+    "VE",
+    "HK",
+    "GI",
+    "IO",
+    "GG",
+    "CF",
+    "HM",
+    "BG",
+    "AW",
+    "PF",
+    "UZ",
+    "MN",
+    "SV",
+    "IR",
+    "PK",
+    "AQ",
+    "NI",
+    "FR",
+    "NC",
+    "CW",
+    "NF",
+    "KN",
+    "QA",
+    "HT",
+    "DZ",
+    "CO",
+    "GL",
+    "BH",
+    "PE",
+    "FI",
+    "GH",
+    "DM",
+    "AF",
+    "TK",
+    "LT",
+    "KM",
+    "BL",
+    "PL",
+    "EG",
+    "MC",
+    "TD",
+    "KE",
+    "TR",
+    "SJ",
+    "GP",
+    "AX",
+    "BB",
+    "JE",
+    "TO",
+    "KY",
+    "KR",
+    "ZM",
+    "SM",
+    "BD",
+    "LB",
+    "ER",
+    "JO",
+    "PS",
+    "TN",
+    "SZ",
+    "VI",
+    "AS",
+    "SN",
+    "ZW",
+    "BT",
+    "PT",
+    "MY",
+    "KW",
+    "AI",
+    "TH",
+    "TV",
+    "YT",
+    "CU",
+    "NL",
+    "ST",
+    "GB",
+    "NA",
+    "MO",
+    "GM",
+    "CG",
+    "VG",
+    "WS",
+    "DJ",
+    "IT",
+    "CA",
+    "MR",
+    "PA",
+    "AU",
+    "CY",
+    "SI",
+    "EH",
+    "AT",
+    "BE",
+    "FK",
+    "CV",
+    "NG",
+    "BJ",
+    "RU",
+    "NP",
+    "FO",
+    "SK",
+    "GS",
+    "OM",
+    "GT",
+    "TF",
+    "CM",
+    "SX",
+    "TT",
+    "PM",
+    "ID",
+    "FJ",
+    "MX",
+    "AM",
+    "MA",
+    "GY",
+    "LY",
+    "BQ",
+    "LU",
+    "NR",
+    "SG",
+    "JP",
+    "BI",
+    "MU",
+    "HR",
+    "SD",
+    "AZ",
+    "BF",
+    "IM",
+    "SR",
+    "VC",
+    "ML",
+    "MF",
+    "GU",
+    "IL",
+    "RS",
+    "MD",
+    "LV",
+    "AO",
+    "GW",
+    "SH",
+    "MG",
+    "DE",
+    "HN",
+    "PW",
+    "DK",
+    "MM",
+    "GF",
+    "RW",
+    "KZ",
+    "HU",
+    "TM",
+    "AN",
+    "CR",
+    "CL",
+    "LC",
+    "MQ",
+    "UM",
+    "DO",
+    "LR",
+    "IN",
+    "GN",
+    "GE",
+    "MV",
+    "UY",
+    "EC",
+    "ZA",
+    "LK",
+    "NO",
+    "TL",
+    "LS",
+    "SY",
+    "AL",
+    "WF",
+    "SL",
+    "CH",
+    "YE",
+    "PN",
+    "VA",
+    "CD",
+    "VN",
+    "TC",
+    "BZ",
+    "SO",
+    "ET",
+    "GD",
+    "BY",
+    "PG",
+    "US",
+    "SS",
+    "CS",
+    "ES",
+    "LI",
+    "GQ",
+    "MW",
+    "AE",
+    "IS",
+    "NE",
+    "BS",
+    "CK",
+    "SC",
+    "GR",
+    "FM",
+    "MK",
+    "MH",
+    "RE",
+    "SA",
+    "SB",
+    "TJ",
+    "TW",
+    "BV",
+    "UG",
+    "VU",
+    "IQ",
+    "BA",
+    "RO",
+    "GA",
+    "UA",
+    "SE",
+    "NU",
+    "ME",
+    "BR",
+    "CI",
+    "BN",
+    "KH",
+    "EE",
+    "AR",
+    "BO",
+    "CC",
+    "AG",
+    "BW",
+    "CZ",
+    "JM",
+    "MP",
+    "NZ",
+    "PY",
+    "MS",
+    "CX",
+    "KI",
+    "PH",
+    "MT",
+    "IE",
+    "KP",
+    "MZ"
+  ],
+  "supportedCurrencies": [
+    "USD"
+  ],
+  "availableToResellers": true,
+  "useCheckoutForSpecialPricingMessage": false,
+  "childVisibleOnNetwork": false,
+  "sourcedProduct": false,
+  "sourceId": null,
+  "links": [],
+  "_embedded": {
+    "associatedAddons": []
+  },
+  "id": 419561
+}

@@ -1,0 +1,49 @@
+id: 418921
+slug: "aws-lambda-camel-connector"
+name: "AWS Lambda (Camel) Connector"
+type: 
+  - "connector"
+creatorType: "partner"
+creatorName: "Cognizant"
+creatorUrl: "https://www.cognizant.com/"
+categories: 
+  - "Cloud Computing Services"
+industries: []
+useCases: 
+  - "Microservices orchestration"
+resourceTypes: []
+bpmnTypes: 
+  - "bpmn:Task"
+runtimes: 
+  - "self-hosted"
+compatibleVersions: 
+  - "8.2"
+availability: "open-source"
+description: "Camel-powered AWS Lambda execution control"
+tagline: "Get the list of functions and invoke a function with provided details"
+body: |-
+  This Connector uses Apache Camel with AWS Lambda to retrieve a list of functions and invoke a function that exists in AWS.
+features: 
+  - header: "List AWS Lambda Functions"
+    description: "Having an accessible list of all AWS Lambda functions deployed on your AWS account is crucial for orchestration and auditing. It allows for dynamic function selection and invocation, thus making your processes more versatile and adaptive to changing needs."
+  - header: "Invoke AWS Lambda Function"
+    description: "Direct invocation of AWS Lambda functions from Camunda via Apache Camel offers you real-time, serverless compute capabilities. This feature is particularly useful for scenarios such as data transformation, event-driven processing, and other tasks that require scalable, on-the-fly computation."
+templates: []
+saasTemplate: null
+smTemplate: null
+githubRepo: null
+docsUrl: null
+previewImage: null
+demoRequestUrl: null
+relatedConnectors: null
+demoVideo: null
+icon: "icon.png"
+image: "thumb.png"
+heroImage: "hero.png"
+screenshots: []
+resources: []
+supportUrl: null
+termsUrl: null
+referUrl: "https://www.cognizant.com/"
+publishedOn: "2023-09-07"
+lastModified: "2024-04-05"

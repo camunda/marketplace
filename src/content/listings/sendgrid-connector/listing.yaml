@@ -1,0 +1,58 @@
+id: 418732
+slug: "sendgrid-connector"
+name: "SendGrid Connector"
+type: 
+  - "connector"
+creatorType: "camunda"
+creatorName: "Camunda"
+creatorUrl: "https://camunda.com/"
+categories: 
+  - "Collaboration Tools"
+industries: []
+useCases: 
+  - "Human Task orchestration"
+resourceTypes: []
+bpmnTypes: 
+  - "bpmn:Task"
+runtimes: 
+  - "bundle"
+compatibleVersions: 
+  - "8.2"
+  - "8.3"
+  - "8.4"
+  - "8.5"
+availability: "open-source"
+description: "Automate emails in Camunda processes"
+tagline: "Streamline Email Communications in Camunda-Based Processes"
+body: |-
+  Integrate SendGrid email delivery into your Camunda processes for automated notifications and reliable transactional emails.
+features: 
+  - header: "Send Message"
+    description: "Leverage Camunda to send customized emails via SendGrid. This feature is essential for a wide range of activities, including customer notifications, transactional emails, and internal communications within a business process."
+  - header: "Send Message Using Template"
+    description: "Leverage SendGrid's templating feature to send standardized, yet personalized, emails right from within your Camunda processes. This feature is ideal for automated marketing campaigns, customer onboarding, and regular status updates."
+templates: 
+  - id: null
+    name: "SendGrid Outbound"
+    url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.SendGrid.v2/latest/sendgrid-outbound-connector.json"
+saasTemplate: null
+smTemplate: "https://github.com/camunda/connectors/tree/main/connectors/sendgrid"
+githubRepo: null
+docsUrl: null
+previewImage: null
+demoRequestUrl: null
+relatedConnectors: null
+demoVideo: 
+  provider: "vimeo"
+  id: "898831364"
+  url: "https://player.vimeo.com/video/898831364"
+icon: "icon.png"
+image: "thumb.png"
+heroImage: "hero.png"
+screenshots: []
+resources: []
+supportUrl: null
+termsUrl: null
+referUrl: "https://camunda.com"
+publishedOn: "2023-09-04"
+lastModified: "2025-09-08"

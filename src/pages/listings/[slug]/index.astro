@@ -1,0 +1,168 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { getListings, webModelerImportUrl, videoEmbedUrl, assetUrl } from '../../../lib/data';
+
+export async function getStaticPaths() {
+  const listings = await getListings();
+  return listings.map((l) => ({ params: { slug: l.slug }, props: { l } }));
+}
+
+const { l } = Astro.props;
+const importUrl = webModelerImportUrl(l);
+const embedUrl = videoEmbedUrl(l);
+
+const sidebar: [string, string[]][] = [
+  ['Categories', l.categories],
+  ['Industries', l.industries],
+  ['Use cases', l.useCases],
+  ['Resources included', l.resourceTypes],
+  ['BPMN types', l.bpmnTypes],
+  ['Runtime', l.runtimes.map((r) => (r === 'bundle' ? 'Camunda connectors' : 'Self-hosted'))],
+  ['Compatible versions', l.compatibleVersions],
+];
+---
+
+<Base title={l.name} description={l.description}>
+  <div class="container layout">
+    <article>
+      <header class="head">
+        {l.icon && <img src={assetUrl(l, l.icon)!} alt="" width="72" height="72" />}
+        <div>
+          <h1>{l.name}</h1>
+          <p class="creator">
+            {
+              l.creatorUrl ? (
+                <a href={l.creatorUrl} rel="noopener">{l.creatorName}</a>
+              ) : (
+                l.creatorName
+              )
+            }
+            {l.creatorType && <span class="pill">{l.creatorType}</span>}
+            {l.availability && <span class="pill">{l.availability}</span>}
+          </p>
+          {l.tagline && <p class="tagline">{l.tagline}</p>}
+        </div>
+      </header>
+
+      <div class="ctas">
+        {importUrl && <a class="button primary" href={importUrl} target="_blank" rel="noopener">Use in SaaS</a>}
+        {l.smTemplate && <a class="button" href={l.smTemplate} target="_blank" rel="noopener">Use Self-Managed</a>}
+        {l.githubRepo && <a class="button" href={l.githubRepo} target="_blank" rel="noopener">GitHub repository</a>}
+        {l.docsUrl && <a class="button" href={l.docsUrl} target="_blank" rel="noopener">Documentation</a>}
+        {l.demoRequestUrl && <a class="button" href={l.demoRequestUrl} target="_blank" rel="noopener">Request demo</a>}
+        {l.referUrl && <a class="button" href={l.referUrl} target="_blank" rel="noopener">Visit website</a>}
+      </div>
+
+      {l.body && <p class="body">{l.body}</p>}
+
+      {
+        embedUrl && (
+          <div class="video">
+            <iframe src={embedUrl} title={`${l.name} demo video`} allowfullscreen loading="lazy" />
+          </div>
+        )
+      }
+      {
+        !embedUrl && l.demoVideo && (
+          <p><a href={l.demoVideo.url} target="_blank" rel="noopener">Watch the demo video</a></p>
+        )
+      }
+
+      {
+        l.features.length > 0 && (
+          <>
+            <h2>Features</h2>
+            <dl class="features">
+              {l.features.map((f) => (
+                <>
+                  <dt>{f.header}</dt>
+                  <dd>{f.description}</dd>
+                </>
+              ))}
+            </dl>
+          </>
+        )
+      }
+
+      {
+        l.screenshots.length > 0 && (
+          <>
+            <h2>Screenshots</h2>
+            <div class="screens">
+              {l.screenshots.map((s) => (
+                <img src={assetUrl(l, s)!} alt={`${l.name} screenshot`} loading="lazy" />
+              ))}
+            </div>
+          </>
+        )
+      }
+
+      {
+        l.resources.length > 0 && (
+          <>
+            <h2>Resources</h2>
+            <ul>
+              {l.resources.map((r) => (
+                <li>
+                  <a href={r.url} target="_blank" rel="noopener">{r.title ?? r.url}</a>
+                </li>
+              ))}
+            </ul>
+          </>
+        )
+      }
+    </article>
+
+    <aside>
+      {
+        sidebar.map(
+          ([label, values]) =>
+            values.length > 0 && (
+              <div class="facet">
+                <h3>{label}</h3>
+                <p>{values.join(', ')}</p>
+              </div>
+            ),
+        )
+      }
+      <div class="facet">
+        <h3>Links</h3>
+        <p>
+          {l.supportUrl && <><a href={l.supportUrl} target="_blank" rel="noopener">Support</a><br /></>}
+          {l.termsUrl && <><a href={l.termsUrl} target="_blank" rel="noopener">Terms</a><br /></>}
+          {l.previewImage && <><a href={l.previewImage} target="_blank" rel="noopener">Process preview</a><br /></>}
+        </p>
+      </div>
+      {l.lastModified && <p class="updated">Last updated {l.lastModified}</p>}
+    </aside>
+  </div>
+</Base>
+
+<style>
+  .layout {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 48px;
+    margin-top: 40px;
+  }
+  .head { display: flex; gap: 20px; align-items: flex-start; }
+  .head h1 { margin: 0 0 4px; }
+  .creator { color: var(--muted); margin: 0 0 4px; display: flex; gap: 8px; align-items: center; }
+  .tagline { color: var(--muted); font-size: 18px; margin: 8px 0 0; }
+  .ctas { display: flex; gap: 10px; flex-wrap: wrap; margin: 24px 0; }
+  .body { font-size: 16px; line-height: 1.6; white-space: pre-line; }
+  .video iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    border-radius: 8px;
+  }
+  .features dt { font-weight: 700; margin-top: 16px; }
+  .features dd { margin: 4px 0 0; color: var(--muted); }
+  .screens { display: grid; gap: 12px; }
+  .screens img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; }
+  .facet { border-top: 1px solid var(--line); padding: 12px 0; }
+  .facet h3 { margin: 0 0 6px; font-size: 13px; text-transform: uppercase; color: var(--muted); }
+  .facet p { margin: 0; font-size: 14px; }
+  .updated { color: var(--muted); font-size: 13px; }
+</style>

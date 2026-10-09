@@ -1,0 +1,1022 @@
+{
+  "resources": [
+    {
+      "id": null,
+      "resourceType": "VIDEO",
+      "locale": null,
+      "name": "How to configure the Amazon SQS Connector",
+      "link": "https://vimeo.com/823992376?share=copy",
+      "scribdKey": null,
+      "scribdId": null,
+      "description": null,
+      "resellerAccess": false,
+      "createdByDev": true
+    }
+  ],
+  "screenshots": [],
+  "addonOfferings": [],
+  "featuredCustomers": [],
+  "featuredMedia": [],
+  "href": "https://marketplace.camunda.com/api/marketplace/v1/products/418713",
+  "uuid": "ee012a5d-357c-438e-b112-6bf6b2a1de8e",
+  "productRefId": "fc133c4c-7b34-4369-8580-c82d6434a16c",
+  "publishedApp": null,
+  "workingApp": {
+    "id": "418708",
+    "href": "https://marketplace.camunda.com/api/marketplace/v1/products/418708"
+  },
+  "name": "Amazon SQS Connector",
+  "type": "WEB_APP",
+  "usesVariants": false,
+  "provider": {
+    "uuid": "948d0eed-a7db-479e-a7f2-423909d2e333",
+    "name": "Camunda",
+    "url": "camunda.com",
+    "creatorUserUuid": null,
+    "creatorName": null
+  },
+  "listing": {
+    "myAppLogoIconUrl": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/418713/myAppIcon/img1593456759604342020.png",
+    "imageUrl": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/418713/thumbs_64/img9095968481719879301.png",
+    "profileImageUrl": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/418713/thumbs_112/img6276454435533350628.png",
+    "myAppLogoIconSrcset": {
+      "default": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/418713/myAppIcon/img1593456759604342020.png",
+      "2x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/418713/myAppIcon/img1593456759604342020-2x.png",
+      "1x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/418713/myAppIcon/img1593456759604342020.png"
+    },
+    "imageSrcset": {
+      "default": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/418713/thumbs_64/img9095968481719879301.png",
+      "2x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/418713/thumbs_64/img9095968481719879301-2x.png",
+      "1x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/418713/thumbs_64/img9095968481719879301.png"
+    },
+    "profileImageSrcset": {
+      "default": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/418713/thumbs_112/img6276454435533350628.png",
+      "2x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/418713/thumbs_112/img6276454435533350628-2x.png",
+      "1x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/418713/thumbs_112/img6276454435533350628.png"
+    },
+    "blurb": "Scalable message queueing with SQS and Camunda",
+    "overview": "Integrate Camunda with Amazon SQS for scalable, efficient message queuing. Perfect for triggering processes and enhancing asynchronous tasks within Camunda.",
+    "rating": null,
+    "reviewCount": 0,
+    "mobileBundleId": null,
+    "mobileAppStoreId": null
+  },
+  "overview": {
+    "splashTitle": "Camunda and Amazon SQS Orchestrate Queues and Simplify Business Processes",
+    "splashDescription": "The Amazon SQS Connector serves as a robust bridge between Camunda and Simple Queue Service (SQS), Amazon's message queuing for microservices, distributed systems, and serverless applications. This Connector is ideal for organizations that want to integrate their orchestrated processes with a scalable and reliable message queuing system.",
+    "imageUrl": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/418713/overview/img1626500970881650755.png?d554e5dfa971c164be238184b4f41077",
+    "imageSrcset": {
+      "default": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/418713/overview/img1626500970881650755.png",
+      "2x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/418713/overview/img1626500970881650755-2x.png",
+      "1x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/418713/overview/img1626500970881650755.png"
+    },
+    "demoUrl": "https://player.vimeo.com/video/823992376?share=copy",
+    "documentationUrl": "https://docs.camunda.io/docs/components/connectors/out-of-the-box-connectors/amazon-sqs/",
+    "downloadDocumentationUrl": null,
+    "systemRequirements": null,
+    "downloadFileSize": null,
+    "benefits": [],
+    "versions": {}
+  },
+  "support": {
+    "email": null,
+    "phone": null,
+    "knowledgebaseUrl": null,
+    "description": null
+  },
+  "privacyUrl": null,
+  "termsUrl": null,
+  "referUrl": "https://camunda.com",
+  "hostedLocation": null,
+  "lastModified": 1757084322000,
+  "pricing": {
+    "pricingSummary": null,
+    "footnotes": [],
+    "bullets": [],
+    "editions": [
+      {
+        "id": 823181,
+        "uuid": "74995e0f-397b-4d4b-bf6d-c790599c9eb8",
+        "productEditionRefId": "e7acbe7b-a1a9-4758-b265-2972120945de",
+        "rank": 1,
+        "name": "Amazon SQS Start",
+        "primary": true,
+        "trial": {
+          "length": 0,
+          "unit": "DAY"
+        },
+        "expiredTrialGracePeriod": null,
+        "bundleOnly": false,
+        "targetAudience": null,
+        "code": "2",
+        "defaultFreeTrial": false,
+        "invisible": false,
+        "leadGen": false,
+        "lastModified": 1757084321000,
+        "revenueType": "FREE",
+        "restricted": false,
+        "freeTrialDuration": 0,
+        "freeTrialType": "DAY",
+        "privacyUrl": null,
+        "termsUrl": null,
+        "freeTrialEditionRequireBillingInfo": null,
+        "freeTrialEditionAutomaticUpgradeToPaidEnabled": null,
+        "plans": [
+          {
+            "href": "https://marketplace.camunda.com/api/marketplace/v1/products/418713/editions/823181/paymentPlans/1003988",
+            "id": 1003988,
+            "uuid": "092fc522-98c9-4f0b-85be-5c9191ae90d4",
+            "frequency": "MONTHLY",
+            "status": "ACTIVE",
+            "contract": null,
+            "allowCustomUsage": false,
+            "keepBillDateOnUsageChange": true,
+            "keepBillDateOnPricingPlanChange": true,
+            "separatePrepaid": false,
+            "isPrimaryPrice": false,
+            "costs": [],
+            "discount": null,
+            "creditOnCancellation": false,
+            "primaryPrice": false
+          }
+        ],
+        "bullets": [
+          {
+            "id": null,
+            "content": "templateLink",
+            "tooltip": "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.AWSSQS.startmessage.v1/latest/aws-sqs-start-message.json"
+          },
+          {
+            "id": null,
+            "content": "appliesTo",
+            "tooltip": "bpmn:StartEvent"
+          }
+        ],
+        "items": [
+          {
+            "unit": "USER",
+            "amount": 1.0,
+            "unlimited": false
+          }
+        ],
+        "customizations": [],
+        "customAttributes": []
+      },
+      {
+        "id": 823182,
+        "uuid": "a1a9830e-5cf4-49cb-bd3f-989b811f9a8c",
+        "productEditionRefId": "edd040cc-f2cf-4a45-bcd2-14b7ccde3137",
+        "rank": 1,
+        "name": "Amazon SQS Intermediate",
+        "primary": false,
+        "trial": {
+          "length": 0,
+          "unit": "DAY"
+        },
+        "expiredTrialGracePeriod": null,
+        "bundleOnly": false,
+        "targetAudience": null,
+        "code": "5",
+        "defaultFreeTrial": false,
+        "invisible": false,
+        "leadGen": false,
+        "lastModified": 1757084321000,
+        "revenueType": "FREE",
+        "restricted": false,
+        "freeTrialDuration": 0,
+        "freeTrialType": "DAY",
+        "privacyUrl": null,
+        "termsUrl": null,
+        "freeTrialEditionRequireBillingInfo": null,
+        "freeTrialEditionAutomaticUpgradeToPaidEnabled": null,
+        "plans": [
+          {
+            "href": "https://marketplace.camunda.com/api/marketplace/v1/products/418713/editions/823182/paymentPlans/1003989",
+            "id": 1003989,
+            "uuid": "4e17d953-b9e0-4c51-9380-721cde439fd6",
+            "frequency": "MONTHLY",
+            "status": "ACTIVE",
+            "contract": null,
+            "allowCustomUsage": false,
+            "keepBillDateOnUsageChange": true,
+            "keepBillDateOnPricingPlanChange": true,
+            "separatePrepaid": false,
+            "isPrimaryPrice": false,
+            "costs": [],
+            "discount": null,
+            "creditOnCancellation": false,
+            "primaryPrice": false
+          }
+        ],
+        "bullets": [
+          {
+            "id": null,
+            "content": "templateLink",
+            "tooltip": "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.AWSSQS.intermediate.v1/latest/aws-sqs-inbound-intermediate-connector.json"
+          },
+          {
+            "id": null,
+            "content": "appliesTo",
+            "tooltip": "bpmn:IntermediateCatchEvent"
+          },
+          {
+            "id": null,
+            "content": "appliesTo",
+            "tooltip": "bpmn:IntermediateThrowEvent"
+          }
+        ],
+        "items": [
+          {
+            "unit": "USER",
+            "amount": 1.0,
+            "unlimited": false
+          }
+        ],
+        "customizations": [],
+        "customAttributes": []
+      },
+      {
+        "id": 823183,
+        "uuid": "44672b37-1e26-4376-8870-b48bcc7b3ecd",
+        "productEditionRefId": "1c669f57-4761-476c-9c03-94205f303fef",
+        "rank": 1,
+        "name": "Amazon SQS Outbound",
+        "primary": false,
+        "trial": {
+          "length": 0,
+          "unit": "DAY"
+        },
+        "expiredTrialGracePeriod": null,
+        "bundleOnly": false,
+        "targetAudience": null,
+        "code": "6",
+        "defaultFreeTrial": false,
+        "invisible": false,
+        "leadGen": false,
+        "lastModified": 1757084321000,
+        "revenueType": "FREE",
+        "restricted": false,
+        "freeTrialDuration": 0,
+        "freeTrialType": "DAY",
+        "privacyUrl": null,
+        "termsUrl": null,
+        "freeTrialEditionRequireBillingInfo": null,
+        "freeTrialEditionAutomaticUpgradeToPaidEnabled": null,
+        "plans": [
+          {
+            "href": "https://marketplace.camunda.com/api/marketplace/v1/products/418713/editions/823183/paymentPlans/1003990",
+            "id": 1003990,
+            "uuid": "f7c27240-9ce2-489e-9666-99eeb2339e3a",
+            "frequency": "MONTHLY",
+            "status": "ACTIVE",
+            "contract": null,
+            "allowCustomUsage": false,
+            "keepBillDateOnUsageChange": true,
+            "keepBillDateOnPricingPlanChange": true,
+            "separatePrepaid": false,
+            "isPrimaryPrice": false,
+            "costs": [],
+            "discount": null,
+            "creditOnCancellation": false,
+            "primaryPrice": false
+          }
+        ],
+        "bullets": [
+          {
+            "id": null,
+            "content": "templateLink",
+            "tooltip": "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.AWSSQS.v1/latest/aws-sqs-outbound-connector.json"
+          },
+          {
+            "id": null,
+            "content": "appliesTo",
+            "tooltip": "bpmn:Task"
+          }
+        ],
+        "items": [
+          {
+            "unit": "USER",
+            "amount": 1.0,
+            "unlimited": false
+          }
+        ],
+        "customizations": [],
+        "customAttributes": []
+      },
+      {
+        "id": 831163,
+        "uuid": "3528e9f2-7f96-4bf2-aa20-66b7674e501f",
+        "productEditionRefId": "8fcd8662-66b6-4292-be08-0bc8e7012aa7",
+        "rank": 1,
+        "name": "Amazon SQS Inbound Boundary",
+        "primary": false,
+        "trial": {
+          "length": 0,
+          "unit": "DAY"
+        },
+        "expiredTrialGracePeriod": null,
+        "bundleOnly": false,
+        "targetAudience": null,
+        "code": "1",
+        "defaultFreeTrial": false,
+        "invisible": false,
+        "leadGen": false,
+        "lastModified": 1757084321000,
+        "revenueType": "FREE",
+        "restricted": false,
+        "freeTrialDuration": 0,
+        "freeTrialType": "DAY",
+        "privacyUrl": null,
+        "termsUrl": null,
+        "freeTrialEditionRequireBillingInfo": null,
+        "freeTrialEditionAutomaticUpgradeToPaidEnabled": null,
+        "plans": [
+          {
+            "href": "https://marketplace.camunda.com/api/marketplace/v1/products/418713/editions/831163/paymentPlans/1013326",
+            "id": 1013326,
+            "uuid": "4da20271-ac2e-455a-b781-55c3992b7b26",
+            "frequency": "MONTHLY",
+            "status": "ACTIVE",
+            "contract": null,
+            "allowCustomUsage": false,
+            "keepBillDateOnUsageChange": true,
+            "keepBillDateOnPricingPlanChange": true,
+            "separatePrepaid": false,
+            "isPrimaryPrice": false,
+            "costs": [],
+            "discount": null,
+            "creditOnCancellation": false,
+            "primaryPrice": false
+          }
+        ],
+        "bullets": [
+          {
+            "id": null,
+            "content": "templateLink",
+            "tooltip": "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.AWSSQS.boundary.v1/latest/aws-sqs-boundary-connector.json"
+          },
+          {
+            "id": null,
+            "content": "appliesTo",
+            "tooltip": "bpmn:BoundaryEvent"
+          }
+        ],
+        "items": [
+          {
+            "unit": "USER",
+            "amount": 1.0,
+            "unlimited": false
+          }
+        ],
+        "customizations": [],
+        "customAttributes": []
+      }
+    ]
+  },
+  "publishedOn": 1693833181000,
+  "rating": null,
+  "absoluteRating": null,
+  "numRatings": null,
+  "buyable": true,
+  "importable": false,
+  "importableAppApprovalMode": null,
+  "free": true,
+  "freeTrialOrEditionPresent": false,
+  "referable": true,
+  "hidePricings": true,
+  "useCheckoutV2": false,
+  "visibleToCurrentUser": true,
+  "collectLeads": true,
+  "collectLeadsWithPurchaseEnabled": false,
+  "assignLeadsToDevelopers": true,
+  "newSubscriptionEnabled": true,
+  "multipleSubscriptionsEnabled": false,
+  "changeSubscriptionAllowed": true,
+  "displayQuestions": true,
+  "displayReviews": true,
+  "oneClickPurchasable": false,
+  "autoUpgradeToPaid": false,
+  "downloadFileSize": null,
+  "startingPrice": null,
+  "highestPercentageDiscount": null,
+  "highestFixedDiscount": null,
+  "bundledPlanIds": null,
+  "customIntegration": null,
+  "usageType": "MULTI_USER",
+  "linkedImportableApplicationUuid": null,
+  "liveChatEnabled": false,
+  "liveChatAvailable": false,
+  "showThirdPartyLegalDisclosure": false,
+  "showSelfServiceRestriction": false,
+  "integrationConfiguration": {
+    "multipleSubscriptionsEnabled": false,
+    "integrationEventConfigurationWS": null,
+    "domainAssociationConfiguration": {
+      "settingsUrl": null,
+      "verificationUrl": null,
+      "maxDomainAssociation": null,
+      "linkUrl": null,
+      "unlinkUrl": null
+    },
+    "domainManagementEnabled": false,
+    "productSettings": null
+  },
+  "addon": false,
+  "supportsMultipleEditions": true,
+  "sellerName": null,
+  "features": [
+    {
+      "id": "6319557",
+      "refId": "8103fd7b-b221-4bcb-a548-b94cf1327ba1",
+      "header": "Send Messages",
+      "description": "Facilitate smoother batch processing by queuing messages from Camunda to Amazon SQS. Asynchronous communication allows complex tasks like data analytics or calculations to be handled separately, improving overall operational efficiency",
+      "hideOnOverview": false,
+      "position": 1,
+      "characteristics": []
+    },
+    {
+      "id": "6319558",
+      "refId": "0a81f602-9159-4a22-abe2-8c0f29e2fa18",
+      "header": "Receive Messages",
+      "description": "Receive messages directly from Amazon SQS within Camunda to act as triggers for specific workflows or tasks. For example, a message in SQS can initiate a customer onboarding process or trigger an inventory restocking event in Camunda",
+      "hideOnOverview": false,
+      "position": 2,
+      "characteristics": []
+    }
+  ],
+  "tags": [
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 4068,
+      "name": "Industry",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20935,
+          "name": "Any",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 4069,
+      "name": "Use Case",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20936,
+          "name": "Microservices orchestration",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 3984,
+      "name": "Supported BPMN Types",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20541,
+          "name": "bpmn:Task",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        },
+        {
+          "type": "ATTRIBUTE",
+          "id": 20542,
+          "name": "bpmn:IntermediateCatchEvent",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        },
+        {
+          "type": "ATTRIBUTE",
+          "id": 20543,
+          "name": "bpmn:StartEvent",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        },
+        {
+          "type": "ATTRIBUTE",
+          "id": 20696,
+          "name": "bpmn:IntermediateThrowEvent",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        },
+        {
+          "type": "ATTRIBUTE",
+          "id": 20697,
+          "name": "bpmn:BoundaryEvent",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": "This relates to the template attribute \"appliesTo\""
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 4005,
+      "name": "Version Compatibility",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20622,
+          "name": "8.3",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        },
+        {
+          "type": "ATTRIBUTE",
+          "id": 20828,
+          "name": "8.4",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        },
+        {
+          "type": "ATTRIBUTE",
+          "id": 20829,
+          "name": "8.5",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 4070,
+      "name": "Application",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20939,
+          "name": "Cloud Computing Services",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 3974,
+      "name": "Creator",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20486,
+          "name": "Camunda",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 4067,
+      "name": "Availability",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20922,
+          "name": "Open Source",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 3983,
+      "name": "Connector Runtime",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20536,
+          "name": "Camunda Connectors Bundle",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": "SDK Connectors are made based on an SDK. Here you need to install the runtime and the template.\r\nFor protocol-based connector you only need to upload the template, they are reusing the runtime of our OOTB protocol connectors (REST, GraphQL etc.)."
+    },
+    {
+      "type": "CATEGORY",
+      "id": 107792,
+      "name": "Connectors",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "SUB_CATEGORY",
+          "id": 63910,
+          "name": "Cloud Computing Services",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 3954,
+      "name": "Connector Type",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20534,
+          "name": "Inbound Connector",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        },
+        {
+          "type": "ATTRIBUTE",
+          "id": 20535,
+          "name": "Outbound Connector",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    }
+  ],
+  "supportedLanguages": [
+    "en-US"
+  ],
+  "mosiConnectorType": "CREST",
+  "platforms": [],
+  "customAttributes": [
+    {
+      "attributeType": "TEXT_WITH_LOCALIZATION",
+      "label": "Creator Website Link",
+      "attributeKey": "0-creator-link",
+      "value": "https://camunda.com/"
+    },
+    {
+      "attributeType": "TEXT_WITH_LOCALIZATION",
+      "label": "For SAAS",
+      "attributeKey": "1-template-only-for-SAAS",
+      "value": "useEditionTemplateLinks"
+    },
+    {
+      "attributeType": "TEXT_WITH_LOCALIZATION",
+      "label": "For SM",
+      "attributeKey": "2-template-only-for-sm",
+      "value": "https://github.com/camunda/connectors/tree/main/connectors/aws/aws-sqs/element-templates"
+    }
+  ],
+  "productRibbon": null,
+  "merchandisingBadges": [],
+  "supportedCountries": [
+    "KN",
+    "KP",
+    "YE",
+    "AT",
+    "MU",
+    "US",
+    "VG",
+    "FJ",
+    "ER",
+    "JP",
+    "BV",
+    "CU",
+    "VA",
+    "IT",
+    "CY",
+    "RO",
+    "MX",
+    "ZW",
+    "GY",
+    "TT",
+    "AI",
+    "SY",
+    "AX",
+    "LT",
+    "GG",
+    "DK",
+    "AZ",
+    "MT",
+    "AN",
+    "WS",
+    "DE",
+    "ZM",
+    "NF",
+    "ET",
+    "GQ",
+    "PA",
+    "ME",
+    "PR",
+    "BO",
+    "ST",
+    "RS",
+    "GE",
+    "TC",
+    "GH",
+    "KH",
+    "EC",
+    "BZ",
+    "BF",
+    "IN",
+    "LI",
+    "SX",
+    "JE",
+    "CH",
+    "MR",
+    "TD",
+    "AF",
+    "WF",
+    "KZ",
+    "MM",
+    "MD",
+    "NU",
+    "JO",
+    "VC",
+    "NE",
+    "MO",
+    "AL",
+    "DM",
+    "NZ",
+    "GR",
+    "TK",
+    "PM",
+    "GF",
+    "FK",
+    "MC",
+    "GS",
+    "GW",
+    "TJ",
+    "IR",
+    "GL",
+    "SO",
+    "CK",
+    "SR",
+    "MG",
+    "GM",
+    "GB",
+    "CC",
+    "GP",
+    "AM",
+    "RE",
+    "NI",
+    "AU",
+    "NA",
+    "PH",
+    "TV",
+    "HT",
+    "BL",
+    "SV",
+    "SE",
+    "MH",
+    "BR",
+    "UG",
+    "BW",
+    "BM",
+    "LU",
+    "LA",
+    "LR",
+    "NC",
+    "BY",
+    "SG",
+    "RW",
+    "EH",
+    "HN",
+    "DZ",
+    "TO",
+    "CR",
+    "SZ",
+    "IS",
+    "MF",
+    "IQ",
+    "PT",
+    "AG",
+    "FM",
+    "FR",
+    "TM",
+    "AW",
+    "NL",
+    "DJ",
+    "HM",
+    "KY",
+    "MZ",
+    "CZ",
+    "DO",
+    "IL",
+    "YT",
+    "CG",
+    "SA",
+    "LS",
+    "SH",
+    "MV",
+    "BT",
+    "TR",
+    "BB",
+    "IO",
+    "MW",
+    "TG",
+    "SN",
+    "MY",
+    "NO",
+    "KE",
+    "SK",
+    "VU",
+    "AS",
+    "KW",
+    "ZA",
+    "BA",
+    "HK",
+    "CX",
+    "KR",
+    "CN",
+    "GU",
+    "LC",
+    "BE",
+    "PL",
+    "TW",
+    "AD",
+    "BG",
+    "VN",
+    "NR",
+    "BI",
+    "PY",
+    "UM",
+    "CS",
+    "JM",
+    "IM",
+    "SL",
+    "SC",
+    "CA",
+    "MS",
+    "VI",
+    "SJ",
+    "CL",
+    "HR",
+    "LB",
+    "LK",
+    "MQ",
+    "MA",
+    "NP",
+    "SB",
+    "EE",
+    "FO",
+    "CD",
+    "NG",
+    "QA",
+    "BS",
+    "CM",
+    "SI",
+    "BD",
+    "AR",
+    "KG",
+    "GD",
+    "PG",
+    "RU",
+    "ID",
+    "KI",
+    "TN",
+    "BQ",
+    "OM",
+    "BN",
+    "PK",
+    "PS",
+    "PN",
+    "BJ",
+    "LV",
+    "BH",
+    "CO",
+    "PE",
+    "GA",
+    "IE",
+    "GI",
+    "SS",
+    "SM",
+    "HU",
+    "PW",
+    "UZ",
+    "GT",
+    "MP",
+    "UY",
+    "CI",
+    "GN",
+    "CF",
+    "TF",
+    "LY",
+    "TZ",
+    "MN",
+    "AQ",
+    "ES",
+    "EG",
+    "AE",
+    "CW",
+    "FI",
+    "TH",
+    "UA",
+    "MK",
+    "PF",
+    "CV",
+    "AO",
+    "KM",
+    "TL",
+    "VE",
+    "SD",
+    "ML"
+  ],
+  "supportedCurrencies": [
+    "USD"
+  ],
+  "availableToResellers": false,
+  "useCheckoutForSpecialPricingMessage": false,
+  "childVisibleOnNetwork": false,
+  "sourcedProduct": false,
+  "sourceId": null,
+  "links": [],
+  "_embedded": {
+    "associatedAddons": []
+  },
+  "id": 418713
+}

@@ -1,0 +1,59 @@
+id: 637225
+slug: "cmis-connector"
+name: "CMIS Connector"
+type: 
+  - "connector"
+creatorType: "community"
+creatorName: "Camunda / Pierre-Yves Monnet"
+creatorUrl: "http://www.camunda.com"
+categories: 
+  - "External Data Services"
+industries: []
+useCases: []
+resourceTypes: 
+  - "Connector Template"
+bpmnTypes: 
+  - "bpmn:Task"
+runtimes: 
+  - "bundle"
+compatibleVersions: 
+  - "8.7"
+  - "8.8"
+availability: "open-source"
+description: "Integrate Camunda with content management systems"
+tagline: "Connect Camunda processes to CMIS-compliant content management systems"
+body: |-
+  Manage folders and documents in a CMIS-compliant content management system from Camunda-based business processes.
+features: 
+  - header: "Upload a document"
+    description: "Upload a document from a Camunda-based business process to the CMIS engine."
+  - header: "Download a document"
+    description: "Download a document from the CMIS engine to Camunda."
+  - header: "Create a folder"
+    description: "Create a folder in the CMIS engine as part of a business process."
+  - header: "Delete a folder"
+    description: "Delete a folder in the CMIS engine. You can use this operation to recursively delete folders and documents."
+  - header: "Delete a document"
+    description: "Delete a document in the CMIS engine."
+templates: 
+  - id: null
+    name: "CMIS connector Outbound Template"
+    url: "https://raw.githubusercontent.com/camunda-community-hub/connector-8-CMIS/refs/heads/main/element-templates/CMIS-connector.json"
+saasTemplate: null
+smTemplate: "https://github.com/camunda-community-hub/connector-8-CMIS"
+githubRepo: null
+docsUrl: "https://github.com/camunda-community-hub/connector-8-CMIS/blob/main/README.md"
+previewImage: null
+demoRequestUrl: null
+relatedConnectors: null
+demoVideo: null
+icon: "icon.png"
+image: "thumb.png"
+heroImage: "hero.png"
+screenshots: []
+resources: []
+supportUrl: "https://forum.camunda.io/"
+termsUrl: null
+referUrl: null
+publishedOn: "2025-10-21"
+lastModified: "2025-10-21"

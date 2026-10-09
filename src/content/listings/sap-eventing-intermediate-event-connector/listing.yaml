@@ -1,0 +1,57 @@
+id: 632751
+slug: "sap-eventing-intermediate-event-connector"
+name: "SAP Eventing Intermediate Event Connector"
+type: 
+  - "connector"
+creatorType: "camunda"
+creatorName: "Camunda"
+creatorUrl: "https://camunda.com/"
+categories: 
+  - "Enterprise Applications"
+industries: []
+useCases: []
+resourceTypes: 
+  - "Connector Template"
+bpmnTypes: 
+  - "bpmn:IntermediateCatchEvent"
+  - "bpmn:IntermediateThrowEvent"
+runtimes: 
+  - "bundle"
+compatibleVersions: 
+  - "8.6"
+  - "8.7"
+  - "8.8"
+availability: "open-source"
+description: "Correlate CloudEvents to BPMN"
+tagline: "Correlate CloudEvents with running processes"
+body: |-
+  Correlate SAP AEM CloudEvents to running Camunda processes using CloudEvent metadata or payload for advanced event-driven orchestration.
+features: 
+  - header: "Advanced message correlation"
+    description: "Match CloudEvents to process instances using CloudEvent metadata or body fields as correlation keys."
+  - header: "Automatic header handling"
+    description: "Supports AEM's Solace-User-Property header mapping for CloudEvent attributes."
+  - header: "Native CloudEvent delivery"
+    description: "Passes all CloudEvent headers and payload data directly to Camunda-based processes for flexible use."
+templates: 
+  - id: null
+    name: "SAP Eventing Intermediate Event Connector Inbound Intermediate Template"
+    url: "https://raw.githubusercontent.com/camunda/sap-connectors/ec7ed38ed3cae366e905bacc81c132b0a73b1afa/eventing-connectors/element-templates/sap-eventing-intermediate-event-connector.json"
+saasTemplate: null
+smTemplate: "https://github.com/camunda/sap-connectors/tree/ec7ed38ed3cae366e905bacc81c132b0a73b1afa/eventing-connectors/element-templates"
+githubRepo: null
+docsUrl: "https://docs.camunda.io/docs/components/camunda-integrations/sap/eventing"
+previewImage: null
+demoRequestUrl: null
+relatedConnectors: null
+demoVideo: null
+icon: "icon.png"
+image: "thumb.png"
+heroImage: "hero.png"
+screenshots: []
+resources: []
+supportUrl: "https://forum.camunda.io/"
+termsUrl: null
+referUrl: null
+publishedOn: "2025-10-15"
+lastModified: "2025-10-15"

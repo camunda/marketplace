@@ -1,0 +1,1151 @@
+{
+  "resources": [],
+  "screenshots": [
+    {
+      "imageUrl": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/775040/screenshot/img17036472316288175738.png",
+      "imageUrlSrcset": {
+        "default": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/775040/screenshot/img17036472316288175738.png",
+        "2x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/775040/screenshot/img17689136865416479662.png",
+        "1x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/775040/screenshot/img17036472316288175738.png"
+      }
+    },
+    {
+      "imageUrl": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/775040/screenshot/img15880663772534568150.png",
+      "imageUrlSrcset": {
+        "default": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/775040/screenshot/img15880663772534568150.png",
+        "2x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/775040/screenshot/img9994966286751203068.png",
+        "1x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/775040/screenshot/img15880663772534568150.png"
+      }
+    },
+    {
+      "imageUrl": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/775040/screenshot/img2892123689273406381.png",
+      "imageUrlSrcset": {
+        "default": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/775040/screenshot/img2892123689273406381.png",
+        "2x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/775040/screenshot/img17986785884583267397.png",
+        "1x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/775040/screenshot/img2892123689273406381.png"
+      }
+    }
+  ],
+  "addonOfferings": [],
+  "featuredCustomers": [],
+  "featuredMedia": [],
+  "href": "https://marketplace.camunda.com/api/marketplace/v1/products/775040",
+  "uuid": "b336088e-faa6-48b7-9f43-eedfbf6f1821",
+  "productRefId": "eae211f3-7a50-4d92-9c6a-8c9d2ee2b1f5",
+  "publishedApp": null,
+  "workingApp": {
+    "id": "773940",
+    "href": "https://marketplace.camunda.com/api/marketplace/v1/products/773940"
+  },
+  "name": "Odoo Connector",
+  "type": "WEB_APP",
+  "usesVariants": false,
+  "provider": {
+    "uuid": "948d0eed-a7db-479e-a7f2-423909d2e333",
+    "name": "Tehuti Projects",
+    "url": "camunda.com",
+    "creatorUserUuid": null,
+    "creatorName": null
+  },
+  "listing": {
+    "myAppLogoIconUrl": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/775040/myAppIcon/img13065328163097177055.png",
+    "imageUrl": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/775040/thumbs_64/img18206667108386614940.png",
+    "profileImageUrl": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/775040/thumbs_112/img6477730600103909830.png",
+    "myAppLogoIconSrcset": {
+      "default": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/775040/myAppIcon/img13065328163097177055.png",
+      "2x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/775040/myAppIcon/img13065328163097177055-2x.png",
+      "1x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/775040/myAppIcon/img13065328163097177055.png"
+    },
+    "imageSrcset": {
+      "default": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/775040/thumbs_64/img18206667108386614940.png",
+      "2x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/775040/thumbs_64/img18206667108386614940-2x.png",
+      "1x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/775040/thumbs_64/img18206667108386614940.png"
+    },
+    "profileImageSrcset": {
+      "default": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/775040/thumbs_112/img6477730600103909830.png",
+      "2x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/775040/thumbs_112/img6477730600103909830-2x.png",
+      "1x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/775040/thumbs_112/img6477730600103909830.png"
+    },
+    "blurb": "Seamless Odoo ERP workflow integration",
+    "overview": "Connect Camunda processes to Odoo 19 ERP. Supports CRUD operations, search, webhooks, and polling for seamless business process automation.",
+    "rating": null,
+    "reviewCount": 0,
+    "mobileBundleId": null,
+    "mobileAppStoreId": null
+  },
+  "overview": {
+    "splashTitle": "Connect Camunda to Odoo ERP",
+    "splashDescription": "This production-ready Camunda connector enables teams to integrate Camunda processes with Odoo 19's External JSON-2 API. This connector enables seamless bi-directional communication between Camunda-based processes and Odoo ERP systems. The outbound connector supports full create, read, update, and delete (CRUD) operations, advanced search with domain filters, pagination, sorting, and custom method execution on any Odoo model. The inbound connector offers both real-time webhook mode for instant event notifications and polling mode for periodic record monitoring. Built with Java 21 and designed for Camunda 8.9+, this connector uses Odoo's modern REST-like JSON-2 API with robust error handling, automatic retries, and comprehensive logging.",
+    "imageUrl": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/775040/overview/img18098566625798807980.png?62221811399496b2ff1e816732de91d6",
+    "imageSrcset": {
+      "default": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/775040/overview/img18098566625798807980.png",
+      "2x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/775040/overview/img18098566625798807980-2x.png",
+      "1x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/775040/overview/img18098566625798807980.png"
+    },
+    "demoUrl": null,
+    "documentationUrl": "https://github.com/Tehuti-Projects/Odoo-19-Camunda-8-Connector/wiki",
+    "downloadDocumentationUrl": null,
+    "systemRequirements": null,
+    "downloadFileSize": null,
+    "benefits": [],
+    "versions": {}
+  },
+  "support": {
+    "email": null,
+    "phone": null,
+    "knowledgebaseUrl": "https://github.com/Tehuti-Projects/Odoo-19-Camunda-8-Connector/issues",
+    "description": null
+  },
+  "privacyUrl": null,
+  "termsUrl": null,
+  "referUrl": null,
+  "hostedLocation": null,
+  "lastModified": 1770634716000,
+  "pricing": {
+    "pricingSummary": null,
+    "footnotes": [],
+    "bullets": [],
+    "editions": [
+      {
+        "id": 948516,
+        "uuid": "b61d50ec-d7cf-4c5c-b394-4d04c42341e9",
+        "productEditionRefId": "0a7f705e-2a08-48b0-a7d1-0afedfa52d39",
+        "rank": 1,
+        "name": "Odoo Connector Outbound Template",
+        "primary": false,
+        "trial": {
+          "length": 0,
+          "unit": "DAY"
+        },
+        "expiredTrialGracePeriod": null,
+        "bundleOnly": false,
+        "targetAudience": null,
+        "code": "0",
+        "defaultFreeTrial": false,
+        "invisible": false,
+        "leadGen": false,
+        "lastModified": 1770634715000,
+        "revenueType": "RECURRING",
+        "restricted": false,
+        "freeTrialDuration": 0,
+        "freeTrialType": "DAY",
+        "privacyUrl": null,
+        "termsUrl": null,
+        "freeTrialEditionRequireBillingInfo": null,
+        "freeTrialEditionAutomaticUpgradeToPaidEnabled": null,
+        "plans": [
+          {
+            "href": "https://marketplace.camunda.com/api/marketplace/v1/products/775040/editions/948516/paymentPlans/1149980",
+            "id": 1149980,
+            "uuid": "c2f28e9a-2c10-4902-b45a-c651a7594a91",
+            "frequency": "MONTHLY",
+            "status": "ACTIVE",
+            "contract": null,
+            "allowCustomUsage": false,
+            "keepBillDateOnUsageChange": true,
+            "keepBillDateOnPricingPlanChange": true,
+            "separatePrepaid": false,
+            "isPrimaryPrice": false,
+            "costs": [
+              {
+                "id": 1694933,
+                "editionPricingItemId": 1501552,
+                "editionPricingItemUuid": "4710e981-a83d-47b9-a755-278c0595afb1",
+                "status": "ACTIVE",
+                "unit": "NOT_APPLICABLE",
+                "unitDependency": null,
+                "minUnits": 0.0,
+                "maxUnits": null,
+                "meteredUsage": false,
+                "increment": 1.0,
+                "pricePerIncrement": false,
+                "blockContractDecrease": false,
+                "blockContractIncrease": false,
+                "blockOriginalContractDecrease": false,
+                "canIncreaseUnits": true,
+                "canDecreaseUnits": true,
+                "amount": null,
+                "pricingStrategy": "UNIT"
+              }
+            ],
+            "discount": null,
+            "creditOnCancellation": false,
+            "primaryPrice": false
+          }
+        ],
+        "bullets": [
+          {
+            "id": null,
+            "content": "templateLink",
+            "tooltip": "https://raw.githubusercontent.com/Tehuti-Projects/Odoo-19-Camunda-8-Connector/refs/heads/Ver-wa/odoo-outbound-connector/element-templates/odoo-outbound-connector.json"
+          },
+          {
+            "id": null,
+            "content": "appliesTo",
+            "tooltip": "bpmn:Task"
+          }
+        ],
+        "items": [
+          {
+            "unit": "USER",
+            "amount": 1.0,
+            "unlimited": false
+          }
+        ],
+        "customizations": [],
+        "customAttributes": []
+      },
+      {
+        "id": 948517,
+        "uuid": "9d1abc8f-c45a-49c8-9ed4-ea1359b64e6b",
+        "productEditionRefId": "d00b5cf3-0999-4ea4-a24c-7172f99aca63",
+        "rank": 1,
+        "name": "Odoo Connector Inbound Start Template",
+        "primary": false,
+        "trial": {
+          "length": 0,
+          "unit": "DAY"
+        },
+        "expiredTrialGracePeriod": null,
+        "bundleOnly": false,
+        "targetAudience": null,
+        "code": "0",
+        "defaultFreeTrial": false,
+        "invisible": false,
+        "leadGen": false,
+        "lastModified": 1770634715000,
+        "revenueType": "RECURRING",
+        "restricted": false,
+        "freeTrialDuration": 0,
+        "freeTrialType": "DAY",
+        "privacyUrl": null,
+        "termsUrl": null,
+        "freeTrialEditionRequireBillingInfo": null,
+        "freeTrialEditionAutomaticUpgradeToPaidEnabled": null,
+        "plans": [
+          {
+            "href": "https://marketplace.camunda.com/api/marketplace/v1/products/775040/editions/948517/paymentPlans/1149981",
+            "id": 1149981,
+            "uuid": "b571eecb-98e6-4ecc-81a2-7976d5120f24",
+            "frequency": "MONTHLY",
+            "status": "ACTIVE",
+            "contract": null,
+            "allowCustomUsage": false,
+            "keepBillDateOnUsageChange": true,
+            "keepBillDateOnPricingPlanChange": true,
+            "separatePrepaid": false,
+            "isPrimaryPrice": false,
+            "costs": [
+              {
+                "id": 1694934,
+                "editionPricingItemId": 1501553,
+                "editionPricingItemUuid": "081a0517-0b00-46e8-a76c-668b8bad33cf",
+                "status": "ACTIVE",
+                "unit": "NOT_APPLICABLE",
+                "unitDependency": null,
+                "minUnits": 0.0,
+                "maxUnits": null,
+                "meteredUsage": false,
+                "increment": 1.0,
+                "pricePerIncrement": false,
+                "blockContractDecrease": false,
+                "blockContractIncrease": false,
+                "blockOriginalContractDecrease": false,
+                "canIncreaseUnits": true,
+                "canDecreaseUnits": true,
+                "amount": null,
+                "pricingStrategy": "UNIT"
+              }
+            ],
+            "discount": null,
+            "creditOnCancellation": false,
+            "primaryPrice": false
+          }
+        ],
+        "bullets": [
+          {
+            "id": null,
+            "content": "templateLink",
+            "tooltip": "https://raw.githubusercontent.com/Tehuti-Projects/Odoo-19-Camunda-8-Connector/refs/heads/Ver-wa/odoo-inbound-connector/element-templates/odoo-inbound-connector-start-event.json"
+          },
+          {
+            "id": null,
+            "content": "appliesTo",
+            "tooltip": "bpmn:StartEvent"
+          }
+        ],
+        "items": [
+          {
+            "unit": "USER",
+            "amount": 1.0,
+            "unlimited": false
+          }
+        ],
+        "customizations": [],
+        "customAttributes": []
+      },
+      {
+        "id": 948518,
+        "uuid": "a0f0e107-a670-4233-84db-c2051475297c",
+        "productEditionRefId": "4616072b-9f72-4300-91c4-bcc04bda73ce",
+        "rank": 1,
+        "name": "Odoo Connector Inbound Intermediate Template",
+        "primary": false,
+        "trial": {
+          "length": 0,
+          "unit": "DAY"
+        },
+        "expiredTrialGracePeriod": null,
+        "bundleOnly": false,
+        "targetAudience": null,
+        "code": "0",
+        "defaultFreeTrial": false,
+        "invisible": false,
+        "leadGen": false,
+        "lastModified": 1770634715000,
+        "revenueType": "RECURRING",
+        "restricted": false,
+        "freeTrialDuration": 0,
+        "freeTrialType": "DAY",
+        "privacyUrl": null,
+        "termsUrl": null,
+        "freeTrialEditionRequireBillingInfo": null,
+        "freeTrialEditionAutomaticUpgradeToPaidEnabled": null,
+        "plans": [
+          {
+            "href": "https://marketplace.camunda.com/api/marketplace/v1/products/775040/editions/948518/paymentPlans/1149982",
+            "id": 1149982,
+            "uuid": "7e98f63b-05dd-4129-b230-0401c1042d43",
+            "frequency": "MONTHLY",
+            "status": "ACTIVE",
+            "contract": null,
+            "allowCustomUsage": false,
+            "keepBillDateOnUsageChange": true,
+            "keepBillDateOnPricingPlanChange": true,
+            "separatePrepaid": false,
+            "isPrimaryPrice": false,
+            "costs": [
+              {
+                "id": 1694935,
+                "editionPricingItemId": 1501554,
+                "editionPricingItemUuid": "6e5b4bfa-4be7-470e-9491-183e376d2f95",
+                "status": "ACTIVE",
+                "unit": "NOT_APPLICABLE",
+                "unitDependency": null,
+                "minUnits": 0.0,
+                "maxUnits": null,
+                "meteredUsage": false,
+                "increment": 1.0,
+                "pricePerIncrement": false,
+                "blockContractDecrease": false,
+                "blockContractIncrease": false,
+                "blockOriginalContractDecrease": false,
+                "canIncreaseUnits": true,
+                "canDecreaseUnits": true,
+                "amount": null,
+                "pricingStrategy": "UNIT"
+              }
+            ],
+            "discount": null,
+            "creditOnCancellation": false,
+            "primaryPrice": false
+          }
+        ],
+        "bullets": [
+          {
+            "id": null,
+            "content": "templateLink",
+            "tooltip": "https://raw.githubusercontent.com/Tehuti-Projects/Odoo-19-Camunda-8-Connector/refs/heads/Ver-wa/odoo-inbound-connector/element-templates/odoo-inbound-connector-intermediate.json"
+          }
+        ],
+        "items": [
+          {
+            "unit": "USER",
+            "amount": 1.0,
+            "unlimited": false
+          }
+        ],
+        "customizations": [],
+        "customAttributes": []
+      },
+      {
+        "id": 948519,
+        "uuid": "c025f6d5-1198-4f84-b0a0-e0c8960fa896",
+        "productEditionRefId": "5582650a-bfdb-4f98-8d5d-89f1fefc42cd",
+        "rank": 1,
+        "name": "Odoo Connector Inbound Boundary Template",
+        "primary": false,
+        "trial": {
+          "length": 0,
+          "unit": "DAY"
+        },
+        "expiredTrialGracePeriod": null,
+        "bundleOnly": false,
+        "targetAudience": null,
+        "code": "0",
+        "defaultFreeTrial": false,
+        "invisible": false,
+        "leadGen": false,
+        "lastModified": 1770634715000,
+        "revenueType": "RECURRING",
+        "restricted": false,
+        "freeTrialDuration": 0,
+        "freeTrialType": "DAY",
+        "privacyUrl": null,
+        "termsUrl": null,
+        "freeTrialEditionRequireBillingInfo": null,
+        "freeTrialEditionAutomaticUpgradeToPaidEnabled": null,
+        "plans": [
+          {
+            "href": "https://marketplace.camunda.com/api/marketplace/v1/products/775040/editions/948519/paymentPlans/1149983",
+            "id": 1149983,
+            "uuid": "a15b84d5-9469-4d17-b9ee-e8c7eb7f9194",
+            "frequency": "MONTHLY",
+            "status": "ACTIVE",
+            "contract": null,
+            "allowCustomUsage": false,
+            "keepBillDateOnUsageChange": true,
+            "keepBillDateOnPricingPlanChange": true,
+            "separatePrepaid": false,
+            "isPrimaryPrice": false,
+            "costs": [
+              {
+                "id": 1694936,
+                "editionPricingItemId": 1501555,
+                "editionPricingItemUuid": "3eef268f-148a-433d-9295-7e8828192ba8",
+                "status": "ACTIVE",
+                "unit": "NOT_APPLICABLE",
+                "unitDependency": null,
+                "minUnits": 0.0,
+                "maxUnits": null,
+                "meteredUsage": false,
+                "increment": 1.0,
+                "pricePerIncrement": false,
+                "blockContractDecrease": false,
+                "blockContractIncrease": false,
+                "blockOriginalContractDecrease": false,
+                "canIncreaseUnits": true,
+                "canDecreaseUnits": true,
+                "amount": null,
+                "pricingStrategy": "UNIT"
+              }
+            ],
+            "discount": null,
+            "creditOnCancellation": false,
+            "primaryPrice": false
+          }
+        ],
+        "bullets": [
+          {
+            "id": null,
+            "content": "templateLink",
+            "tooltip": "https://raw.githubusercontent.com/Tehuti-Projects/Odoo-19-Camunda-8-Connector/refs/heads/Ver-wa/odoo-inbound-connector/element-templates/odoo-inbound-connector-boundary.json"
+          },
+          {
+            "id": null,
+            "content": "appliesTo",
+            "tooltip": "bpmn:BoundaryEvent"
+          }
+        ],
+        "items": [
+          {
+            "unit": "USER",
+            "amount": 1.0,
+            "unlimited": false
+          }
+        ],
+        "customizations": [],
+        "customAttributes": []
+      }
+    ]
+  },
+  "publishedOn": 1770634627000,
+  "rating": null,
+  "absoluteRating": null,
+  "numRatings": null,
+  "buyable": true,
+  "importable": false,
+  "importableAppApprovalMode": null,
+  "free": false,
+  "freeTrialOrEditionPresent": false,
+  "referable": false,
+  "hidePricings": true,
+  "useCheckoutV2": true,
+  "visibleToCurrentUser": true,
+  "collectLeads": true,
+  "collectLeadsWithPurchaseEnabled": false,
+  "assignLeadsToDevelopers": true,
+  "newSubscriptionEnabled": true,
+  "multipleSubscriptionsEnabled": false,
+  "changeSubscriptionAllowed": true,
+  "displayQuestions": true,
+  "displayReviews": true,
+  "oneClickPurchasable": true,
+  "autoUpgradeToPaid": false,
+  "downloadFileSize": null,
+  "startingPrice": {
+    "unit": null,
+    "billingFrequency": "MONTHLY",
+    "amount": null,
+    "discount": null
+  },
+  "highestPercentageDiscount": null,
+  "highestFixedDiscount": null,
+  "bundledPlanIds": null,
+  "customIntegration": null,
+  "usageType": "SINGLE_USER",
+  "linkedImportableApplicationUuid": null,
+  "liveChatEnabled": false,
+  "liveChatAvailable": false,
+  "showThirdPartyLegalDisclosure": false,
+  "showSelfServiceRestriction": false,
+  "integrationConfiguration": {
+    "multipleSubscriptionsEnabled": false,
+    "integrationEventConfigurationWS": null,
+    "domainAssociationConfiguration": {
+      "settingsUrl": null,
+      "verificationUrl": null,
+      "maxDomainAssociation": null,
+      "linkUrl": null,
+      "unlinkUrl": null
+    },
+    "domainManagementEnabled": false,
+    "productSettings": null
+  },
+  "addon": false,
+  "supportsMultipleEditions": true,
+  "sellerName": null,
+  "features": [
+    {
+      "id": "6455004",
+      "refId": "27d24972-94ac-4870-b887-5d096eb9b0be",
+      "header": "Full CRUD operations",
+      "description": "Create, read, update, and delete records in any Odoo model with type-safe request handling and structured responses.",
+      "hideOnOverview": false,
+      "position": 1,
+      "characteristics": []
+    },
+    {
+      "id": "6455005",
+      "refId": "87691cc0-fa23-42b3-9830-c36e5ae7af56",
+      "header": "Advanced search and filtering",
+      "description": "Query Odoo records using domain filters with support for pagination, sorting, and field selection. Combine search and read in a single operation.",
+      "hideOnOverview": false,
+      "position": 2,
+      "characteristics": []
+    },
+    {
+      "id": "6455006",
+      "refId": "4c884c07-9ce8-4d45-b24a-938cb1eae278",
+      "header": "Real-time webhooks",
+      "description": "Receive instant notifications from Odoo when records are created, updated, or deleted. Automatically correlate events to running process instances.",
+      "hideOnOverview": false,
+      "position": 3,
+      "characteristics": []
+    },
+    {
+      "id": "6455007",
+      "refId": "0b7049df-2482-44a9-8501-dadaf4882101",
+      "header": "Polling mode",
+      "description": "Periodically poll Odoo for new or modified records using configurable intervals and tracking fields for reliable event detection.",
+      "hideOnOverview": false,
+      "position": 4,
+      "characteristics": []
+    },
+    {
+      "id": "6455008",
+      "refId": "8cd2196c-67a9-46cd-a98c-7171846cbd2f",
+      "header": "Custom method execution",
+      "description": "Call any custom Odoo model method with full argument support, enabling integration with custom business logic and processes.",
+      "hideOnOverview": false,
+      "position": 5,
+      "characteristics": []
+    },
+    {
+      "id": "6455009",
+      "refId": "7cc0d29d-4221-42c8-87ef-6e40f48b0dc7",
+      "header": "Production-ready connector",
+      "description": "Built with Java 21, automatic retry logic, comprehensive error handling, and full compatibility with Camunda 8.9+ connector runtime.",
+      "hideOnOverview": false,
+      "position": 6,
+      "characteristics": []
+    }
+  ],
+  "tags": [
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 4070,
+      "name": "Application",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20942,
+          "name": "Enterprise Applications",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 4068,
+      "name": "Industry",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20935,
+          "name": "Any",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 3984,
+      "name": "Supported BPMN Types",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20541,
+          "name": "bpmn:Task",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        },
+        {
+          "type": "ATTRIBUTE",
+          "id": 20542,
+          "name": "bpmn:IntermediateCatchEvent",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        },
+        {
+          "type": "ATTRIBUTE",
+          "id": 20543,
+          "name": "bpmn:StartEvent",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        },
+        {
+          "type": "ATTRIBUTE",
+          "id": 20696,
+          "name": "bpmn:IntermediateThrowEvent",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        },
+        {
+          "type": "ATTRIBUTE",
+          "id": 20697,
+          "name": "bpmn:BoundaryEvent",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": "This relates to the template attribute \"appliesTo\""
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 4005,
+      "name": "Version Compatibility",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 22546,
+          "name": "8.8",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        },
+        {
+          "type": "ATTRIBUTE",
+          "id": 23367,
+          "name": "8.9",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "CATEGORY",
+      "id": 107792,
+      "name": "Connectors",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "SUB_CATEGORY",
+          "id": 63917,
+          "name": "Enterprise Applications",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 3974,
+      "name": "Creator",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20488,
+          "name": "Community",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 4067,
+      "name": "Availability",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20922,
+          "name": "Open Source",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 3983,
+      "name": "Connector Runtime",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20536,
+          "name": "Camunda Connectors Bundle",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": "SDK Connectors are made based on an SDK. Here you need to install the runtime and the template.\r\nFor protocol-based connector you only need to upload the template, they are reusing the runtime of our OOTB protocol connectors (REST, GraphQL etc.)."
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 4177,
+      "name": "Resource Types Included",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 21606,
+          "name": "Connector Template",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 3954,
+      "name": "Connector Type",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20534,
+          "name": "Inbound Connector",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        },
+        {
+          "type": "ATTRIBUTE",
+          "id": 20535,
+          "name": "Outbound Connector",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    }
+  ],
+  "supportedLanguages": [
+    "en-US"
+  ],
+  "mosiConnectorType": "CREST",
+  "platforms": [],
+  "customAttributes": [
+    {
+      "attributeType": "TEXT_WITH_LOCALIZATION",
+      "label": "Creator Website Link",
+      "attributeKey": "0-creator-link",
+      "value": "https://www.tehutiprojects.com"
+    },
+    {
+      "attributeType": "TEXT_WITH_LOCALIZATION",
+      "label": "For SAAS",
+      "attributeKey": "1-template-only-for-SAAS",
+      "value": "useEditionTemplateLinks"
+    },
+    {
+      "attributeType": "TEXT_WITH_LOCALIZATION",
+      "label": "Installation Guide",
+      "attributeKey": "2-compile-yourself-Guide",
+      "value": "https://github.com/Tehuti-Projects/Odoo-19-Camunda-8-Connector/wiki"
+    },
+    {
+      "attributeType": "TEXT_WITH_LOCALIZATION",
+      "label": "For SM",
+      "attributeKey": "2-template-only-for-sm",
+      "value": "https://github.com/Tehuti-Projects/Odoo-19-Camunda-8-Connector"
+    }
+  ],
+  "productRibbon": null,
+  "merchandisingBadges": [
+    {
+      "uuid": "d0c44526-1d31-4db3-8026-121b5a697337",
+      "name": "Partner",
+      "image": "https://d3bql97l1ytoxn.cloudfront.net/common_resources/badge/d0c44526-1d31-4db3-8026-121b5a697337/img5777263081410118250.png?ccd956e54345219497e3045478505649"
+    }
+  ],
+  "supportedCountries": [
+    "ID",
+    "NI",
+    "SX",
+    "DE",
+    "KW",
+    "SY",
+    "TM",
+    "IO",
+    "NF",
+    "LV",
+    "FJ",
+    "SG",
+    "KN",
+    "GB",
+    "VU",
+    "CC",
+    "TT",
+    "HM",
+    "LA",
+    "NO",
+    "CL",
+    "MN",
+    "TG",
+    "MX",
+    "PS",
+    "PM",
+    "VG",
+    "ML",
+    "VE",
+    "JP",
+    "MZ",
+    "CF",
+    "AQ",
+    "LT",
+    "TJ",
+    "ZW",
+    "VI",
+    "LI",
+    "FM",
+    "BB",
+    "KP",
+    "AT",
+    "JE",
+    "MD",
+    "WS",
+    "GQ",
+    "NZ",
+    "QA",
+    "CM",
+    "HR",
+    "SL",
+    "CK",
+    "RS",
+    "LC",
+    "CZ",
+    "SM",
+    "KY",
+    "TC",
+    "AO",
+    "AR",
+    "PK",
+    "ET",
+    "NL",
+    "LU",
+    "CG",
+    "MG",
+    "YT",
+    "NC",
+    "CD",
+    "EH",
+    "AM",
+    "BQ",
+    "SS",
+    "PE",
+    "MK",
+    "TV",
+    "HK",
+    "SD",
+    "NU",
+    "GL",
+    "BY",
+    "IE",
+    "MF",
+    "NP",
+    "CH",
+    "CY",
+    "MV",
+    "MM",
+    "RW",
+    "CV",
+    "SN",
+    "LY",
+    "BR",
+    "FI",
+    "PN",
+    "NA",
+    "BI",
+    "SJ",
+    "TD",
+    "ZA",
+    "BG",
+    "JO",
+    "KI",
+    "SR",
+    "BA",
+    "LB",
+    "BL",
+    "KM",
+    "VN",
+    "FR",
+    "MS",
+    "PG",
+    "TF",
+    "GF",
+    "MO",
+    "TH",
+    "TK",
+    "CR",
+    "RE",
+    "SK",
+    "TW",
+    "AS",
+    "CI",
+    "HU",
+    "MQ",
+    "UY",
+    "PA",
+    "UG",
+    "PF",
+    "KZ",
+    "GE",
+    "MU",
+    "LK",
+    "ME",
+    "BS",
+    "LS",
+    "TR",
+    "DZ",
+    "MY",
+    "ST",
+    "AE",
+    "FO",
+    "UZ",
+    "OM",
+    "IT",
+    "MW",
+    "EG",
+    "GR",
+    "AI",
+    "TN",
+    "PY",
+    "CA",
+    "MA",
+    "AW",
+    "TZ",
+    "PH",
+    "SO",
+    "BD",
+    "PL",
+    "CO",
+    "CN",
+    "IS",
+    "IQ",
+    "ER",
+    "SB",
+    "PW",
+    "KH",
+    "MH",
+    "AN",
+    "GD",
+    "BH",
+    "SH",
+    "GH",
+    "KE",
+    "DK",
+    "SC",
+    "GY",
+    "EC",
+    "ES",
+    "TO",
+    "NG",
+    "GT",
+    "UA",
+    "MC",
+    "PT",
+    "LR",
+    "BW",
+    "SA",
+    "KR",
+    "EE",
+    "IR",
+    "GM",
+    "TL",
+    "BZ",
+    "BT",
+    "NE",
+    "BJ",
+    "GI",
+    "AF",
+    "BE",
+    "UM",
+    "NR",
+    "SZ",
+    "CX",
+    "AG",
+    "MP",
+    "SE",
+    "GP",
+    "AD",
+    "YE",
+    "BO",
+    "IL",
+    "FK",
+    "CS",
+    "DO",
+    "BF",
+    "JM",
+    "DJ",
+    "GN",
+    "RU",
+    "SV",
+    "BV",
+    "IM",
+    "SI",
+    "VC",
+    "WF",
+    "AX",
+    "CU",
+    "VA",
+    "MR",
+    "MT",
+    "KG",
+    "IN",
+    "CW",
+    "AU",
+    "BN",
+    "RO",
+    "GU",
+    "GG",
+    "HN",
+    "ZM",
+    "BM",
+    "GS",
+    "GW",
+    "AZ",
+    "HT",
+    "AL",
+    "GA",
+    "DM",
+    "US",
+    "PR"
+  ],
+  "supportedCurrencies": [
+    "USD"
+  ],
+  "availableToResellers": true,
+  "useCheckoutForSpecialPricingMessage": false,
+  "childVisibleOnNetwork": false,
+  "sourcedProduct": false,
+  "sourceId": null,
+  "links": [],
+  "_embedded": {
+    "associatedAddons": []
+  },
+  "id": 775040
+}

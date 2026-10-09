@@ -1,0 +1,62 @@
+id: 418741
+slug: "gitlab-connector"
+name: "GitLab Connector"
+type: 
+  - "connector"
+creatorType: "camunda"
+creatorName: "Camunda"
+creatorUrl: "https://camunda.com/"
+categories: 
+  - "Collaboration Tools"
+industries: []
+useCases: []
+resourceTypes: []
+bpmnTypes: 
+  - "bpmn:Task"
+runtimes: 
+  - "bundle"
+compatibleVersions: 
+  - "8.2"
+  - "8.3"
+  - "8.4"
+  - "8.5"
+availability: "open-source"
+description: "Automate GitLab workflows with Camunda"
+tagline: "Elevate Your DevOps Journey with Camunda and GitLab"
+body: |-
+  Automate GitLab project management, issue tracking, and software release processes to manage your entire DevOps cycle in one centralized Camunda environment.
+features: 
+  - header: "Get, Create, Delete an Issue"
+    description: "Automate the retrieval, creation, and deletion of GitLab issues directly from Camunda-based processes."
+  - header: "Comment on an Issue"
+    description: "Auto-generate or manually add comments to GitLab issues, setting the level of confidentiality as needed."
+  - header: "Search Issues"
+    description: "Execute custom searches for GitLab issues using parameters such as scope, state, assignee ID, username, and text within the issue title and description."
+  - header: "List All Releases by Project ID"
+    description: "Automatically pull a list of all releases for specific projects. This feature is useful for generating release reports and planning deployments."
+  - header: "Get Release by a Tag Name"
+    description: "Retrieve specific release details via tag name, aiding in version control and release management."
+  - header: "Create a Release"
+    description: "Create GitLab releases from Camunda-based processes, including setting the tag, ref, release name, and description."
+templates: 
+  - id: null
+    name: "Gitlab Outbound"
+    url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.GitLab.v1/latest/gitlab-connector.json"
+saasTemplate: null
+smTemplate: "https://raw.githubusercontent.com/camunda/connectors/main/connectors/gitlab/element-templates/gitlab-connector.json"
+githubRepo: null
+docsUrl: null
+previewImage: null
+demoRequestUrl: null
+relatedConnectors: null
+demoVideo: null
+icon: "icon.png"
+image: "thumb.png"
+heroImage: "hero.png"
+screenshots: []
+resources: []
+supportUrl: null
+termsUrl: null
+referUrl: "https://camunda.com"
+publishedOn: "2023-09-04"
+lastModified: "2025-09-08"

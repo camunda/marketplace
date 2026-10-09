@@ -1,0 +1,46 @@
+id: 427600
+slug: "redis-connector"
+name: "Redis Connector"
+type: 
+  - "connector"
+creatorType: "community"
+creatorName: "MakeLabs.in / Raghavendra Chari"
+creatorUrl: "https://linkedin.com/in/chari"
+categories: 
+  - "Data & Analytics"
+industries: []
+useCases: []
+resourceTypes: []
+bpmnTypes: 
+  - "bpmn:Task"
+runtimes: 
+  - "self-hosted"
+compatibleVersions: 
+  - "8.3"
+availability: "open-source"
+description: "Use Redis in business processes"
+tagline: "Simplify data operations in business processes"
+body: |-
+  Transact JSON data with Redis as your back-end database system.
+features: 
+  - header: "Standard CRUD Operations"
+    description: "The Connector supports GET operations to read JSON data; PUT operations to create a new record or update an existing record; and DELETE operations to delete an existing record."
+templates: []
+saasTemplate: null
+smTemplate: null
+githubRepo: "https://github.com/rchari-ml/redis-connector-nodejs/tree/main"
+docsUrl: "https://docs.camunda.io/docs/guides/host-custom-connectors/"
+previewImage: null
+demoRequestUrl: null
+relatedConnectors: null
+demoVideo: null
+icon: "icon.png"
+image: "thumb.png"
+heroImage: "hero.png"
+screenshots: []
+resources: []
+supportUrl: "https://forum.camunda.io/"
+termsUrl: null
+referUrl: "https://linkedin.com/in/chari"
+publishedOn: "2024-02-07"
+lastModified: "2024-04-05"

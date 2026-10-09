@@ -1,0 +1,61 @@
+id: 871407
+slug: "ollama-connector"
+name: "Ollama Connector"
+type: 
+  - "connector"
+creatorType: "community"
+creatorName: "Rajesh Ponna"
+creatorUrl: "https://www.linkedin.com/in/ponna-rajesh"
+categories: 
+  - "AI Services"
+industries: 
+  - "Technology"
+useCases: []
+resourceTypes: 
+  - "Connector Template"
+bpmnTypes: 
+  - "bpmn:Task"
+runtimes: 
+  - "self-hosted"
+compatibleVersions: 
+  - "8.9"
+availability: "open-source"
+description: "Local, private AI for Camunda"
+tagline: "Run local AI models inside your processes"
+body: |-
+  Run open-weight AI models locally with Ollama inside Camunda processes, with no cloud API costs, full data privacy, and a native BPMN task powered by a custom Java outbound connector.
+features: 
+  - header: "Run models on your own infrastructure"
+    description: "Runs open-weight models (llama3.2, mistral, qwen2.5, gpt-oss:20b) directly on your own infrastructure via Ollama's OpenAI-compatible API."
+  - header: "Skip per-request AI billing"
+    description: "No cloud AI billing; fixed local compute replaces pay-per-token API fees."
+  - header: "Keep prompts and responses local"
+    description: "Prompts and responses never leave your local infrastructure."
+  - header: "Use a native Camunda Modeler template"
+    description: "Ships an \"Ollama Chat\" element template so the connector appears as a proper task type in BPMN diagrams."
+  - header: "Use the official Docker Compose setup"
+    description: "Extends Camunda's official Self-Managed Docker Compose distribution with extra_hosts, LOADER_PATH, and a JAR mount, without touching the official files."
+  - header: "Configure prompt and response mapping"
+    description: "Configure endpoint, model name, and prompt/output variable mapping directly from the BPMN task."
+templates: 
+  - id: null
+    name: "Ollama Connector"
+    url: "https://raw.githubusercontent.com/rajeshponna/ollama-custom-connector/main/element-templates/ollama-chat.json"
+saasTemplate: "https://raw.githubusercontent.com/rajeshponna/ollama-custom-connector/main/element-templates/ollama-chat.json"
+smTemplate: "https://raw.githubusercontent.com/rajeshponna/ollama-custom-connector/main/element-templates/ollama-chat.json"
+githubRepo: "https://github.com/rajeshponna/ollama-custom-connector"
+docsUrl: "https://docs.camunda.io/docs/guides/host-custom-connectors/"
+previewImage: null
+demoRequestUrl: null
+relatedConnectors: null
+demoVideo: null
+icon: "icon.png"
+image: "thumb.png"
+heroImage: "hero.png"
+screenshots: []
+resources: []
+supportUrl: "https://forum.camunda.io/"
+termsUrl: null
+referUrl: null
+publishedOn: "2026-09-15"
+lastModified: "2026-09-15"

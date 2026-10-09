@@ -1,0 +1,53 @@
+id: 449589
+slug: "amazon-bedrock-connector"
+name: "Amazon Bedrock Connector"
+type: 
+  - "connector"
+creatorType: "camunda"
+creatorName: "Camunda"
+creatorUrl: null
+categories: 
+  - "AI Services"
+industries: []
+useCases: 
+  - "Agentic AI orchestration"
+resourceTypes: 
+  - "Connector Template"
+bpmnTypes: 
+  - "bpmn:Task"
+runtimes: 
+  - "bundle"
+compatibleVersions: 
+  - "8.6"
+availability: "open-source"
+description: "Orchestrate AI in business processes"
+tagline: "Integrate Leading AI Models Into Processes"
+body: |-
+  Integrate any AI model that Amazon Bedrock offers into your Camunda-based business processes.
+features: 
+  - header: "Invoke Model"
+    description: "Make a custom request to any model that is available on Amazon Bedrock."
+  - header: "Converse"
+    description: "Bring a conversational agent into your business processes, using any model available on Amazon Bedrock."
+templates: 
+  - id: null
+    name: "AWS Bedrock connector Outbound Template"
+    url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.aws.bedrock.v1/latest/aws-bedrock-outbound-connector.json"
+saasTemplate: null
+smTemplate: "https://raw.githubusercontent.com/camunda/connectors/main/connectors/aws/aws-bedrock/element-templates/aws-bedrock-outbound-connector.json"
+githubRepo: null
+docsUrl: null
+previewImage: null
+demoRequestUrl: null
+relatedConnectors: null
+demoVideo: null
+icon: "icon.png"
+image: "thumb.png"
+heroImage: "hero.png"
+screenshots: []
+resources: []
+supportUrl: "https://forum.camunda.io/"
+termsUrl: null
+referUrl: null
+publishedOn: "2024-08-13"
+lastModified: "2025-09-05"

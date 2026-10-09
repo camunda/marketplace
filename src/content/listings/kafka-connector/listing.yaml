@@ -1,0 +1,71 @@
+id: 418722
+slug: "kafka-connector"
+name: "Kafka Connector"
+type: 
+  - "connector"
+creatorType: "camunda"
+creatorName: "Camunda"
+creatorUrl: "https://camunda.com/"
+categories: 
+  - "Automation Services"
+industries: []
+useCases: 
+  - "Microservices orchestration"
+resourceTypes: []
+bpmnTypes: 
+  - "bpmn:Task"
+  - "bpmn:IntermediateCatchEvent"
+  - "bpmn:StartEvent"
+  - "bpmn:IntermediateThrowEvent"
+  - "bpmn:BoundaryEvent"
+runtimes: 
+  - "bundle"
+compatibleVersions: 
+  - "8.2"
+  - "8.3"
+  - "8.4"
+  - "8.5"
+availability: "open-source"
+description: "Streamline Kafka messaging in Camunda"
+tagline: "Camunda and Kafka: Orchestrating Real-Time Data Streams"
+body: |-
+  Leverage the real-time data streaming of Apache Kafka with the process orchestration capabilities of Camunda. Perfect for real-time analytics, notifications, and multi-system orchestration.
+features: 
+  - header: "Consume Message"
+    description: "This feature enables Camunda to consume real-time messages from Kafka topics. For example, incoming messages can trigger immediate actions or initiate complex workflows within Camunda, such as order processing or real-time analytics."
+  - header: "Produce Message"
+    description: "Empower Camunda workflows to produce messages to Kafka topics. This feature can be beneficial for initiating downstream activities in other systems (such as inventory updates or sending notifications), all orchestrated seamlessly within Camunda."
+templates: 
+  - id: null
+    name: "Kafka Inbound Start"
+    url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.inbound.KafkaMessageStart.v1/latest/kafka-inbound-connector-start-message.json"
+  - id: null
+    name: "Kafka Inbound Intermediate"
+    url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.inbound.KafkaIntermediate.v1/latest/kafka-inbound-connector-intermediate.json"
+  - id: null
+    name: "Kafka Outbound"
+    url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.KAFKA.v1/latest/kafka-outbound-connector.json"
+  - id: null
+    name: "Kafka Inbound Boundary"
+    url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.inbound.KafkaBoundary.v1/latest/kafka-inbound-connector-boundary.json"
+saasTemplate: null
+smTemplate: "https://github.com/camunda/connectors/tree/main/connectors/kafka/element-templates"
+githubRepo: null
+docsUrl: null
+previewImage: null
+demoRequestUrl: null
+relatedConnectors: null
+demoVideo: 
+  provider: "vimeo"
+  id: "1003712454"
+  url: "https://player.vimeo.com/video/1003712454?share=copy"
+icon: "icon.png"
+image: "thumb.png"
+heroImage: "hero.png"
+screenshots: []
+resources: []
+supportUrl: null
+termsUrl: null
+referUrl: "https://camunda.com/"
+publishedOn: "2023-09-04"
+lastModified: "2025-09-09"

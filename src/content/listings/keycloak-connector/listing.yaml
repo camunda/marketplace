@@ -1,0 +1,56 @@
+id: 457160
+slug: "keycloak-connector"
+name: "Keycloak Connector"
+type: 
+  - "connector"
+creatorType: "community"
+creatorName: "Camunda / Pierre-Yves Monnet"
+creatorUrl: null
+categories: 
+  - "Automation Services"
+industries: []
+useCases: []
+resourceTypes: 
+  - "Connector Template"
+bpmnTypes: 
+  - "bpmn:Task"
+runtimes: 
+  - "bundle"
+compatibleVersions: 
+  - "8.6"
+availability: "open-source"
+description: "Automate Camunda user management"
+tagline: "Automate user management with Keycloak and Camunda"
+body: |-
+  Combine Keycloak and Camunda to create, modify, and delete users and their roles.
+features: 
+  - header: "Create a User"
+    description: "Create a user in Keycloak and assign roles to enable users to access Camunda Operate, Tasklist, and Optimize."
+  - header: "Search Users"
+    description: "Search for users based on multiple criteria or search by user ID."
+  - header: "Update a User"
+    description: "Update user properties such as first name, last name, and email. You can also update the list of roles that are assigned to the user."
+  - header: "Delete a User"
+    description: "Delete a user from Keycloak."
+templates: 
+  - id: null
+    name: "Keycloak Outbound Template"
+    url: "https://raw.githubusercontent.com/camunda-community-hub/camunda-8-connector-keycloak/refs/heads/main/element-templates/keycloak-function.json"
+saasTemplate: "https://raw.githubusercontent.com/camunda-community-hub/camunda-8-connector-keycloak/refs/heads/main/element-templates/keycloak-function.json"
+smTemplate: "https://github.com/camunda-community-hub/camunda-8-connector-keycloak"
+githubRepo: null
+docsUrl: "https://github.com/camunda-community-hub/camunda-8-connector-keycloak/blob/main/README.md"
+previewImage: null
+demoRequestUrl: null
+relatedConnectors: null
+demoVideo: null
+icon: "icon.png"
+image: "thumb.png"
+heroImage: "hero.png"
+screenshots: []
+resources: []
+supportUrl: "https://forum.camunda.io/"
+termsUrl: null
+referUrl: null
+publishedOn: "2024-10-31"
+lastModified: "2024-10-31"

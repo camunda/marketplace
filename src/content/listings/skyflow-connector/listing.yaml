@@ -1,0 +1,56 @@
+id: 773517
+slug: "skyflow-connector"
+name: "Skyflow Connector"
+type: 
+  - "connector"
+creatorType: "community"
+creatorName: "Camunda / Mathieu Stennier"
+creatorUrl: "https://www.camunda.com"
+categories: 
+  - "Enterprise Applications"
+industries: []
+useCases: 
+  - "Agentic AI orchestration"
+resourceTypes: 
+  - "Connector Template"
+bpmnTypes: 
+  - "bpmn:Task"
+runtimes: 
+  - "self-hosted"
+compatibleVersions: 
+  - "8.8"
+  - "8.9"
+availability: "open-source"
+description: "Protect sensitive data in processes"
+tagline: "Protect your data from AI and integration leaks"
+body: |-
+  Protect sensitive data in Camunda-powered business processes. This connecter uses Skyflow Detect to de-identify sensitive fields in structured JSON data and re-identify previously tokenized values. It locates sensitive information such PII, PHI, and PCI from text, PDFs, images, and audio files and then redacts that information with tokens. You can use this de-identified data for a variety of tasks such as model training, fine tuning, running secure inference, performing privacy-aware analytics, or any other operational task that requires de-identified unstructured data.
+features: 
+  - header: "Automated de-identification of sensitive data"
+    description: "Detect and tokenize sensitive information across multiple data types, replacing it with secure tokens that can be used safely in downstream processes."
+  - header: "Vault-backed tokenization and re-identification"
+    description: "Store sensitive data securely in Skyflow's vault and re-identify tokens only when permitted. This enables controlled access for authorized use cases such as audits, investigations, and customer service."
+  - header: "Privacy-safe AI and analytics enablement"
+    description: "Use de-identified data for AI model training, fine-tuning, secure inference, and privacy-aware analytics, without risking data leakage or regulatory violations."
+templates: []
+saasTemplate: null
+smTemplate: "https://github.com/mathieu-stennier/skyflow-camunda-connector"
+githubRepo: null
+docsUrl: "https://github.com/mathieu-stennier/skyflow-camunda-connector"
+previewImage: null
+demoRequestUrl: null
+relatedConnectors: null
+demoVideo: 
+  provider: "youtube"
+  id: "UZJrN1oXlyE"
+  url: "https://youtu.be/UZJrN1oXlyE"
+icon: "icon.png"
+image: "thumb.png"
+heroImage: "hero.png"
+screenshots: []
+resources: []
+supportUrl: "https://forum.camunda.io/"
+termsUrl: null
+referUrl: null
+publishedOn: "2026-02-05"
+lastModified: "2026-02-12"

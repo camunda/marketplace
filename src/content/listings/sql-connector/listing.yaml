@@ -1,0 +1,53 @@
+id: 442271
+slug: "sql-connector"
+name: "SQL Connector"
+type: 
+  - "connector"
+creatorType: "camunda"
+creatorName: "Camunda"
+creatorUrl: "camunda.com"
+categories: 
+  - "External Data Services"
+industries: []
+useCases: []
+resourceTypes: []
+bpmnTypes: 
+  - "bpmn:Task"
+runtimes: 
+  - "bundle"
+compatibleVersions: 
+  - "8.6"
+availability: "open-source"
+description: "Seamless database integration in Camunda"
+tagline: "Seamless Data Exchange with Camunda and Databases"
+body: |-
+  Simplify data exchange with MySQL, MSSQL, MariaDB, and PostgreSQL databases. Seamlessly integrate database operations into your Camunda-based processes.
+features: 
+  - header: "Direct Database Integration"
+    description: "This Connector allows direct reading and writing of data within MySQL, MSSQL, MariaDB, and PostgreSQL databases, simplifying data exchange in Camunda processes."
+  - header: "Enhanced Workflow Automation"
+    description: "You can execute various process blueprints and use cases without extra installation or development effort."
+  - header: "Improved Security and Maintenance"
+    description: "This Connector reduces complexity, enhances security, and lowers maintenance costs by integrating database operations within Camunda."
+templates: 
+  - id: null
+    name: "SQL Connector Outbound Template"
+    url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.Jdbc.v1/latest/jdbc-outbound-connector.json"
+saasTemplate: null
+smTemplate: "https://github.com/camunda/connectors/tree/main/connectors/jdbc"
+githubRepo: null
+docsUrl: null
+previewImage: null
+demoRequestUrl: null
+relatedConnectors: null
+demoVideo: null
+icon: "icon.png"
+image: "thumb.png"
+heroImage: "hero.png"
+screenshots: []
+resources: []
+supportUrl: "https://forum.camunda.io/"
+termsUrl: null
+referUrl: null
+publishedOn: "2024-06-06"
+lastModified: "2025-09-10"

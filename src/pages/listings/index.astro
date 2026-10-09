@@ -1,0 +1,167 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getListings, facetValues, assetUrl } from '../../lib/data';
+
+const listings = await getListings();
+
+const facetGroups: [string, keyof (typeof listings)[number]][] = [
+  ['Creator', 'creatorType'],
+  ['Category', 'categories'],
+  ['Industry', 'industries'],
+  ['Use case', 'useCases'],
+  ['Runtime', 'runtimes'],
+  ['Camunda version', 'compatibleVersions'],
+];
+const facets = facetGroups.map(([label, key]) => ({ label, key, values: facetValues(listings, key) }));
+---
+
+<Base title="Browse listings">
+  <div class="container layout">
+    <aside>
+      <input id="search" type="search" placeholder="Search listings…" aria-label="Search listings" />
+      <div class="group">
+        <h3>Type</h3>
+        {
+          ['connector', 'blueprint', 'solution'].map((t) => (
+            <label>
+              <input type="checkbox" data-facet="type" value={t} /> {t[0].toUpperCase() + t.slice(1)}s
+            </label>
+          ))
+        }
+      </div>
+      {
+        facets.map(({ label, key, values }) =>
+          values.length ? (
+            <details class="group">
+              <summary>{label}</summary>
+              {values.map((v) => (
+                <label>
+                  <input type="checkbox" data-facet={String(key)} value={v} /> {v}
+                </label>
+              ))}
+            </details>
+          ) : null,
+        )
+      }
+    </aside>
+
+    <section>
+      <p id="count" class="count"></p>
+      <ul id="results" class="results">
+        {
+          listings.map((l) => (
+            <li
+              class="card"
+              data-name={l.name.toLowerCase()}
+              data-description={l.description.toLowerCase()}
+              data-type={l.type.join('|')}
+              data-creatorType={l.creatorType ?? ''}
+              data-categories={l.categories.join('|')}
+              data-industries={l.industries.join('|')}
+              data-useCases={l.useCases.join('|')}
+              data-runtimes={l.runtimes.join('|')}
+              data-compatibleVersions={l.compatibleVersions.join('|')}
+            >
+              <a href={`/listings/${l.slug}/`}>
+                {l.icon && <img src={assetUrl(l, l.icon)!} alt="" width="48" height="48" loading="lazy" />}
+                <div>
+                  <h3>{l.name}</h3>
+                  <p>{l.description}</p>
+                  <span class="meta">
+                    {l.type.map((t) => (
+                      <span class="pill">{t}</span>
+                    ))}
+                    {l.creatorName && <span class="pill">{l.creatorName}</span>}
+                    {l.compatibleVersions[0] && <span class="pill">Camunda {l.compatibleVersions[0]}+</span>}
+                  </span>
+                </div>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </div>
+</Base>
+
+<style>
+  .layout {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 32px;
+    margin-top: 32px;
+  }
+  aside { align-self: start; position: sticky; top: 16px; }
+  #search {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    margin-bottom: 16px;
+  }
+  .group { margin-bottom: 12px; }
+  .group h3, .group summary { font-size: 14px; margin: 8px 0; cursor: pointer; }
+  .group label { display: block; font-size: 14px; color: var(--muted); padding: 2px 0; }
+  .count { color: var(--muted); font-size: 14px; }
+  .results { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+  .card a {
+    display: flex;
+    gap: 16px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 16px;
+    color: var(--ink);
+  }
+  .card a:hover { text-decoration: none; border-color: var(--blue); }
+  .card h3 { margin: 0 0 4px; font-size: 16px; }
+  .card p {
+    margin: 0 0 8px;
+    color: var(--muted);
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .meta { display: flex; gap: 6px; flex-wrap: wrap; }
+  .card.hidden { display: none; }
+</style>
+
+<script>
+  const cards = [...document.querySelectorAll<HTMLElement>('#results .card')];
+  const boxes = [...document.querySelectorAll<HTMLInputElement>('input[data-facet]')];
+  const search = document.querySelector<HTMLInputElement>('#search')!;
+  const count = document.querySelector('#count')!;
+
+  // Preselect ?type= from the URL (used by the navigation links).
+  const initialType = new URLSearchParams(location.search).get('type');
+  if (initialType) {
+    const box = boxes.find((b) => b.dataset.facet === 'type' && b.value === initialType);
+    if (box) box.checked = true;
+  }
+
+  function applyFilters() {
+    const query = search.value.trim().toLowerCase();
+    const selected = new Map<string, string[]>();
+    for (const b of boxes.filter((b) => b.checked)) {
+      const facet = b.dataset.facet!;
+      selected.set(facet, [...(selected.get(facet) ?? []), b.value]);
+    }
+    let visible = 0;
+    for (const card of cards) {
+      const textMatch =
+        !query || card.dataset.name!.includes(query) || card.dataset.description!.includes(query);
+      const facetMatch = [...selected].every(([facet, values]) => {
+        const haystack = (card.dataset[facet] ?? '').split('|');
+        return values.some((v) => haystack.includes(v));
+      });
+      card.classList.toggle('hidden', !(textMatch && facetMatch));
+      if (textMatch && facetMatch) visible++;
+    }
+    count.textContent = `${visible} listing${visible === 1 ? '' : 's'}`;
+  }
+
+  search.addEventListener('input', applyFilters);
+  for (const b of boxes) b.addEventListener('change', applyFilters);
+  applyFilters();
+</script>

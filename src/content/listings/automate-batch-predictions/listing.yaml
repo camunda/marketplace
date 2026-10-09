@@ -1,0 +1,66 @@
+id: 451491
+slug: "automate-batch-predictions"
+name: "Automate Batch Predictions"
+type: 
+  - "blueprint"
+creatorType: "partner"
+creatorName: "Acheron Software Consultancy Private Limited"
+creatorUrl: "https://acheron-tech.com/"
+categories: 
+  - "Quick Start"
+industries: 
+  - "Financial Services"
+  - "Insurance"
+  - "Media and Entertainment"
+  - "Technology"
+  - "Healthcare"
+  - "Manufacturing"
+  - "Retail"
+  - "Supply Chain & Logistics"
+  - "Public Sector"
+  - "Telecommunications"
+useCases: 
+  - "Microservices orchestration"
+resourceTypes: []
+bpmnTypes: []
+runtimes: []
+compatibleVersions: 
+  - "8.3"
+  - "8.4"
+  - "8.5"
+availability: "listing-only"
+description: "Automated predictions with Vertex AI"
+tagline: "Predictive Batch Processing with Vertex AI"
+body: |-
+  Integrate Camunda and Google Cloud Vertex AI to streamline data processing and conversion and leverage ML models to make accurate predictions.
+features: 
+  - header: "Seamless Integration"
+    description: "Integrate Camunda with Vertex AI to create a comprehensive predictive analytics solution, automating batch predictions and streamlining data processing for enhanced efficiency and accuracy."
+  - header: "Automated Data Conversion"
+    description: "This blueprint automatically converts uploaded data files into JSONL format, ensuring consistent and standardized processing across processes, enhancing efficiency, and supporting data handling and analysis."
+  - header: "Pre-Deployed Model Usage"
+    description: "This blueprint leverages pre-deployed AI models to deliver reliable and accurate predictions, ensuring consistent performance and enhancing decision-making across automated workflows and data-driven processes."
+  - header: "End-to-End Automation"
+    description: "Use this blueprint to create a process that oversees the entire workflow from job initiation to result retrieval, minimizing manual intervention, enhancing efficiency, and ensuring a seamless, automated process for optimal performance."
+templates: []
+saasTemplate: null
+smTemplate: null
+githubRepo: null
+docsUrl: null
+previewImage: null
+demoRequestUrl: "https://github.com/Acheron-Camunda/Camunda-GCP-Vision-AI-Blueprint/tree/main"
+relatedConnectors: null
+demoVideo: 
+  provider: "youtube"
+  id: "Sqsd8lAihfM"
+  url: "https://youtu.be/Sqsd8lAihfM"
+icon: "icon.png"
+image: "thumb.png"
+heroImage: "hero.png"
+screenshots: []
+resources: []
+supportUrl: "https://forum.camunda.io/"
+termsUrl: null
+referUrl: null
+publishedOn: "2024-09-02"
+lastModified: "2025-06-30"

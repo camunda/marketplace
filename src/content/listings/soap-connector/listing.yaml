@@ -1,0 +1,63 @@
+id: 565583
+slug: "soap-connector"
+name: "SOAP Connector"
+type: 
+  - "connector"
+creatorType: "camunda"
+creatorName: "Camunda"
+creatorUrl: null
+categories: 
+  - "Technical Protocols"
+industries: []
+useCases: []
+resourceTypes: 
+  - "Connector Template"
+bpmnTypes: 
+  - "bpmn:Task"
+runtimes: 
+  - "self-hosted"
+compatibleVersions: 
+  - "8.5"
+  - "8.6"
+  - "8.7"
+  - "8.8"
+availability: "open-source"
+description: "SOAP web service integration"
+tagline: "Integrate legacy systems with ease"
+body: |-
+  Interact with SOAP-based web services directly within BPMN-based processes, enabling integration with legacy systems and enterprise services that rely on the SOAP protocol.
+features: 
+  - header: "WSDL-based operation discovery"
+    description: "Automatically detect and configure available operations from a provided WSDL file, ensuring accurate integration with enterprise SOAP APIs and reducing setup time."
+  - header: "Flexible message construction"
+    description: "Easily define input payloads using XML or expressions. Populate SOAP requests with dynamic data from your Camunda process variables to match the service's expected schema."
+  - header: "Custom headers and namespaces"
+    description: "Add custom SOAP headers and security tokens and define XML namespaces to meet specific API requirements; ideal for working with standards-compliant enterprise services."
+  - header: "Response mapping to variables"
+    description: "Map the SOAP response (or parts of it) directly to process variables, enabling further automation and decision-making in downstream tasks without additional parsing logic."
+  - header: "Support for authentication"
+    description: "Configure basic authentication credentials or use custom headers for secure communication with protected SOAP endpoints."
+  - header: "Legacy system integration"
+    description: "Bring older, mission-critical systems into modern automation workflows without rewriting services or building middleware."
+templates: 
+  - id: null
+    name: "SOAP Connector Outbound Template"
+    url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda:soap/latest/soap-outbound-connector.json"
+saasTemplate: null
+smTemplate: "https://github.com/camunda/connectors/tree/main/connectors/soap"
+githubRepo: null
+docsUrl: null
+previewImage: null
+demoRequestUrl: null
+relatedConnectors: null
+demoVideo: null
+icon: "icon.png"
+image: "thumb.png"
+heroImage: "hero.png"
+screenshots: []
+resources: []
+supportUrl: "https://forum.camunda.io/"
+termsUrl: null
+referUrl: null
+publishedOn: "2025-07-15"
+lastModified: "2025-09-03"

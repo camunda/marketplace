@@ -1,0 +1,67 @@
+id: 519694
+slug: "migration-of-camunda-7-to-8"
+name: "Migration of Camunda 7 to 8"
+type: 
+  - "solution"
+creatorType: "partner"
+creatorName: "\"J-IT\" IT-Dienstleistungs GesmbH"
+creatorUrl: "https://jit.at/"
+categories: 
+  - "Migration Solutions"
+industries: 
+  - "Financial Services"
+  - "Insurance"
+  - "Media and Entertainment"
+  - "Technology"
+  - "Healthcare"
+  - "Manufacturing"
+  - "Retail"
+  - "Supply Chain & Logistics"
+  - "Public Sector"
+  - "Telecommunications"
+useCases: []
+resourceTypes: []
+bpmnTypes: []
+runtimes: []
+compatibleVersions: 
+  - "8.2"
+  - "8.3"
+  - "8.4"
+  - "8.5"
+  - "8.6"
+  - "8.7"
+availability: "listing-only"
+description: "Expert-led, structured Camunda migration approach"
+tagline: "Smooth migration. No surprises."
+body: |-
+  Structured, fixed-price migration from Camunda 7 to 8  for both embedded and remote engines. Designed for reliability, transparency, and peace of mind.
+features: 
+  - header: "Structured project kick-off and scope alignment"
+    description: "Start with clear scope definition, system access, and source code validation. The kick-off phase ensures alignment between business, IT, and governance for a migration without surprises."
+  - header: "End-to-end architecture and process assessment"
+    description: "We analyze your architecture and business processes to define a Camunda 8-ready blueprint. This includes identifying embedded versus remote setups and required technology changes."
+  - header: "Guided transition to Camunda 8 runtime"
+    description: "In the implementation phase, we migrate core process components, including job workers, service tasks, and infrastructure. From Zeebe setup to DMN updates and testing, we handle the technical shift end-to-end."
+  - header: "Seamless migration of process data"
+    description: "In the data migration phase, we use the Camunda 8 Data Migrator and offer in-house exports for Camunda 7 and 8 to unify process data across systems. This enables long-term storage, compliance, and traceability in a separate, central data store."
+  - header: "Go-live support and final validation"
+    description: "During rollout, final tests, cutover planning, and stakeholder enablement ensure a stable production launch. We help you choose between drain-out and big-bang approaches for a clean transition."
+templates: []
+saasTemplate: null
+smTemplate: null
+githubRepo: null
+docsUrl: null
+previewImage: null
+demoRequestUrl: null
+relatedConnectors: null
+demoVideo: null
+icon: "icon.png"
+image: "thumb.png"
+heroImage: "hero.png"
+screenshots: []
+resources: []
+supportUrl: "https://forum.camunda.io/"
+termsUrl: null
+referUrl: null
+publishedOn: "2025-05-08"
+lastModified: "2025-06-30"

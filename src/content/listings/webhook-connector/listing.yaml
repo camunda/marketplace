@@ -1,0 +1,68 @@
+id: 418745
+slug: "webhook-connector"
+name: "Webhook Connector"
+type: 
+  - "connector"
+creatorType: "camunda"
+creatorName: "Camunda"
+creatorUrl: "https://camunda.com/"
+categories: 
+  - "Technical Protocols"
+industries: []
+useCases: 
+  - "Microservices orchestration"
+resourceTypes: []
+bpmnTypes: 
+  - "bpmn:IntermediateCatchEvent"
+  - "bpmn:StartEvent"
+  - "bpmn:IntermediateThrowEvent"
+  - "bpmn:BoundaryEvent"
+runtimes: 
+  - "bundle"
+compatibleVersions: 
+  - "8.3"
+  - "8.4"
+  - "8.5"
+availability: "open-source"
+description: "Integrate any webhook seamlessly, securely"
+tagline: "Unleash the Power of Webhooks in Your Camunda Processes"
+body: |-
+  Integrate any external webhook into your Camunda processes. Supports all HTTP methods and offers robust security through JWT, Basic, API KEY, and HMAC authentication.
+features: 
+  - header: "Supports All HTTP Methods"
+    description: "Flexible to manage GET, POST, PUT, DELETE, PATCH, and more, making this Connector versatile for any external integration."
+  - header: "Multiple Authorization Mechanisms"
+    description: "JWT allows integration with services that use JSON Web Tokens for security. Basic authentication leverages username and password authentication for simplicity. API key integration allows you to work with services that use API keys for authentication."
+  - header: "HMAC Authentication"
+    description: "Provides an extra layer of security by requiring the request to be signed by a secret key."
+templates: 
+  - id: null
+    name: "Webhook Inbound Boundary Template"
+    url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.webhook.WebhookConnectorBoundary.v1/latest/webhook-connector-boundary.json"
+  - id: null
+    name: "Webhook Inbound Start Template"
+    url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.webhook.WebhookConnectorStartMessage.v1/latest/webhook-connector-start-message.json"
+  - id: null
+    name: "Webhook Inbound Intermediate Template"
+    url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.webhook.WebhookConnectorIntermediate.v1/latest/webhook-connector-intermediate.json"
+saasTemplate: null
+smTemplate: "https://github.com/camunda/connectors/tree/main/connectors/webhook/element-templates"
+githubRepo: null
+docsUrl: null
+previewImage: null
+demoRequestUrl: null
+relatedConnectors: null
+demoVideo: 
+  provider: "vimeo"
+  id: "812763971"
+  url: "https://vimeo.com/812763971?share=copy"
+icon: "icon.png"
+image: "thumb.png"
+heroImage: "hero.png"
+screenshots: []
+resources: []
+supportUrl: null
+termsUrl: null
+referUrl: "https://camunda.com"
+publishedOn: "2023-09-04"
+lastModified: "2025-09-10"

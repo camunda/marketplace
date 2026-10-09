@@ -1,0 +1,55 @@
+id: 428851
+slug: "bpm-ai-decide-connector"
+name: "BPM AI Decide Connector"
+type: 
+  - "connector"
+creatorType: "partner"
+creatorName: "Holisticon"
+creatorUrl: "https://www.holisticon.de"
+categories: 
+  - "AI Services"
+industries: []
+useCases: 
+  - "Agentic AI orchestration"
+resourceTypes: []
+bpmnTypes: 
+  - "bpmn:Task"
+runtimes: 
+  - "self-hosted"
+compatibleVersions: 
+  - "8.4"
+availability: "open-source"
+description: "Automate decisions using AI"
+tagline: "Automate decision-making in business processes to reduce reliance on human tasks and improve operational performance"
+body: |-
+  Make automated decisions in business processes based on process variables and a question.
+features: 
+  - header: "Automated Decisions and Classification"
+    description: "Supercharge your process automation with AI decision-making capabilities. Designed for versatility, the Connector handles general decision tasks, document classification, and more, streamlining your workflow and improving operational efficiency."
+  - header: "Explainability and Confidence Estimation"
+    description: "Elevate trust in automated decisions with explainability features that provide reasoning descriptions for decisions that are made by AI models. Set a confidence threshold to automatically defer to human judgment when the model is uncertain, ensuring high accuracy and oversight in decision-making."
+  - header: "Multimodal Support"
+    description: "Accept input data in various forms and modalities including PDFs, images and audio. You can input documents via file paths or web URLs, making the Connector adaptable to a wide range of sources and ensuring seamless integration into your existing processes."
+  - header: "Integrated OCR Capabilities"
+    description: "Extract text from images and scanned documents with embedded or API-based OCR, enabling decisions based on non-text documents, even if the model only supports text."
+  - header: "On-premises Support"
+    description: "Leverage built-in support for local AI models for basic use cases, ensuring data privacy, cost efficiency, and enhanced reliability within your infrastructure."
+templates: []
+saasTemplate: null
+smTemplate: null
+githubRepo: "https://github.com/holunda-io/bpm-ai-connectors-camunda-8"
+docsUrl: "https://docs.camunda.io/docs/guides/host-custom-connectors/"
+previewImage: null
+demoRequestUrl: null
+relatedConnectors: null
+demoVideo: null
+icon: "icon.png"
+image: "thumb.png"
+heroImage: "hero.png"
+screenshots: []
+resources: []
+supportUrl: "https://github.com/holunda-io/bpm-ai-connectors-camunda-8/discussions/categories/q-a"
+termsUrl: null
+referUrl: null
+publishedOn: "2024-02-27"
+lastModified: "2024-04-08"

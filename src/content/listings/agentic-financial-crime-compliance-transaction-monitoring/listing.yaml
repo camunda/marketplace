@@ -1,0 +1,61 @@
+id: 519052
+slug: "agentic-financial-crime-compliance-transaction-monitoring"
+name: "Agentic Financial Crime Compliance Transaction Monitoring"
+type: 
+  - "solution"
+creatorType: "partner"
+creatorName: "Capgemini"
+creatorUrl: "https://www.capgemini.com/"
+categories: 
+  - "Agentic Solutions"
+  - "Solution Accelerators"
+industries: 
+  - "Financial Services"
+useCases: 
+  - "Agentic AI orchestration"
+resourceTypes: []
+bpmnTypes: []
+runtimes: []
+compatibleVersions: 
+  - "8.2"
+  - "8.3"
+  - "8.4"
+  - "8.5"
+  - "8.6"
+  - "8.7"
+  - "8.8"
+availability: "listing-only"
+description: "Modernize transaction monitoring with AI/ML"
+tagline: "Agentic Financial Crime Compliance Transaction Monitoring"
+body: |-
+  Leverage agentic AI to address the biggest challenges in anti-money laundering (AML) compliance to ensure stronger regulatory alignment, improve operational resilience, and enhance fraud prevention capabilities.
+features: 
+  - header: "Reduce manual effort and increase response efficiency"
+    description: "The agentic assistant gathers and evaluates information from numerous sources that would have otherwise each been manual touchpoints for a fraud investigator."
+  - header: "Reduce false positive fraud alerts"
+    description: "Continuous improvement is achieved as the AI model gains experience, driving down false positive fraud alerts."
+  - header: "Reduce alert resolution time"
+    description: "As a result of task automation and less manual effort, resolution time is reduced."
+  - header: "Increase regulatory reporting accuracy"
+    description: "End-to-end process orchestration enables all data across the entire process to be collected, facilitating increased accuracy and more extensive regulatory reporting."
+  - header: "Reduce exposure to financial crimes and fines"
+    description: "As fraud tracking accuracy increases, exposure to financial crimes and the possibility of regulatory fines is significantly reduced."
+templates: []
+saasTemplate: null
+smTemplate: null
+githubRepo: null
+docsUrl: null
+previewImage: null
+demoRequestUrl: null
+relatedConnectors: null
+demoVideo: null
+icon: "icon.png"
+image: "thumb.png"
+heroImage: "hero.png"
+screenshots: []
+resources: []
+supportUrl: "https://forum.camunda.io/"
+termsUrl: null
+referUrl: null
+publishedOn: "2025-05-07"
+lastModified: "2025-06-02"

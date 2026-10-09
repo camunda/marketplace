@@ -1,0 +1,70 @@
+id: 775482
+slug: "retail-returns-management"
+name: "Retail Returns Management"
+type: 
+  - "solution"
+creatorType: "partner"
+creatorName: "Tech Mahindra"
+creatorUrl: "https://www.techmahindra.com/services/artificial-intelligence/redefining-retail-cpg-ai/"
+categories: 
+  - "Agentic Solutions"
+  - "Solution Accelerators"
+industries: 
+  - "Technology"
+  - "Retail"
+useCases: 
+  - "Microservices orchestration"
+  - "Human Task orchestration"
+  - "Simplified case management"
+  - "Agentic AI orchestration"
+resourceTypes: []
+bpmnTypes: []
+runtimes: []
+compatibleVersions: 
+  - "8.8"
+  - "8.9"
+availability: "listing-only"
+description: "Retail Returns Management, Handling & Processing"
+tagline: "Retail Returns Management"
+body: |-
+  AI-powered returns management platform for fashion and apparel or other retail items, uses predictive analytics, computer vision, and intelligent automation to transform high-volume returns into efficient, revenue-generating processes, reducing rates by 15-35% and costs by 20-60%.
+features: 
+  - header: "Predictive Return Analytics: "
+    description: "ML algorithms analyze historical data, customer behavior, product images, and return codes to forecast likely returns pre-purchase, enabling better inventory planning and upstream fixes like sizing improvements."
+  - header: "Automated Approval & Routing:"
+    description: "AI applies predefined rules to instantly approve/deny returns (e.g., tagless items rejected), then dynamically routes via real-time optimization for speed and cost, integrating with OMS for bundling."
+  - header: "Visual Inspection & Disposition:"
+    description: "Computer vision scans returned items for condition (wear, damage), auto-grading A/B/C for restock/refurbish/liquidate decisions, slashing manual processing 75%."
+  - header: "Customer Experience Automation:"
+    description: "Self-service portals with conversational AI handle initiations/refunds/exchanges in real-time, boosting repurchase rates 2-3x."
+  - header: "End-to-End Workflow: "
+    description: "Unified dashboard tracks E2E P&L by channel/SKU, feeding insights back to design teams for root-cause reductions like inconsistent sizing."
+  - header: "Sustainability optimization:"
+    description: "AI prioritizes circular paths (repair/recycle) via lifecycle tracking, minimizing landfill while complying with ESG via data-driven reporting."
+  - header: "Apparel-Specific, Sizing & Fit:"
+    description: "Integrates body measurement AI with purchase history to recommend sizes, reducing bracketing; enhances product pages with GenAI-generated fit visuals and descriptions."
+  - header: "Apparel-Specific, Dynamic value recovery:"
+    description: "Post-inspection, AI sets optimal pricing for resale channels based on condition, demand, and market data, recovering up to 38% more value from B/C-grade items."
+  - header: "Apparel-Specific, Fraud & Anomaly Detection:"
+    description: "ML flags wardrobing or suspicious patterns (e.g., repeat returns), with agentic escalation for verification, cutting fraud losses significantly."
+templates: []
+saasTemplate: null
+smTemplate: null
+githubRepo: null
+docsUrl: null
+previewImage: null
+demoRequestUrl: null
+relatedConnectors: null
+demoVideo: null
+icon: "icon.png"
+image: "thumb.png"
+heroImage: "hero.png"
+screenshots: 
+  - "screenshot-1.png"
+  - "screenshot-2.png"
+resources: []
+supportUrl: "https://forum.camunda.io/"
+termsUrl: null
+referUrl: null
+publishedOn: "2026-02-10"
+lastModified: "2026-02-10"

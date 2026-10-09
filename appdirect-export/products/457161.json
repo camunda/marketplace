@@ -1,0 +1,1148 @@
+{
+  "resources": [],
+  "screenshots": [],
+  "addonOfferings": [],
+  "featuredCustomers": [],
+  "featuredMedia": [],
+  "href": "https://marketplace.camunda.com/api/marketplace/v1/products/457161",
+  "uuid": "a53fff69-fdc7-442c-8998-88c024748039",
+  "productRefId": "b79a4e40-41eb-40e8-b3ca-ef7946b85788",
+  "publishedApp": null,
+  "workingApp": {
+    "id": "455304",
+    "href": "https://marketplace.camunda.com/api/marketplace/v1/products/455304"
+  },
+  "name": "Email Connector",
+  "type": "WEB_APP",
+  "usesVariants": false,
+  "provider": {
+    "uuid": "948d0eed-a7db-479e-a7f2-423909d2e333",
+    "name": "Camunda",
+    "url": "camunda.com",
+    "creatorUserUuid": null,
+    "creatorName": null
+  },
+  "listing": {
+    "myAppLogoIconUrl": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/457161/myAppIcon/img1048625465099983088.png",
+    "imageUrl": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/457161/thumbs_64/img2097754593977365029.png",
+    "profileImageUrl": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/457161/thumbs_112/img8019928394323528424.png",
+    "myAppLogoIconSrcset": {
+      "default": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/457161/myAppIcon/img1048625465099983088.png",
+      "2x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/457161/myAppIcon/img1048625465099983088-2x.png",
+      "1x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/457161/myAppIcon/img1048625465099983088.png"
+    },
+    "imageSrcset": {
+      "default": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/457161/thumbs_64/img2097754593977365029.png",
+      "2x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/457161/thumbs_64/img2097754593977365029-2x.png",
+      "1x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/457161/thumbs_64/img2097754593977365029.png"
+    },
+    "profileImageSrcset": {
+      "default": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/457161/thumbs_112/img8019928394323528424.png",
+      "2x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/457161/thumbs_112/img8019928394323528424-2x.png",
+      "1x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/457161/thumbs_112/img8019928394323528424.png"
+    },
+    "blurb": "Versatile email management for multiple protocols",
+    "overview": "Integrate email into business processes with support for IMAP, POP3, and SMTP, plus advanced search, organizational capabilities, and messaging functions.",
+    "rating": null,
+    "reviewCount": 0,
+    "mobileBundleId": null,
+    "mobileAppStoreId": null
+  },
+  "overview": {
+    "splashTitle": "Orchestrate email communications in business processes",
+    "splashDescription": "This versatile email management Connector streamlines email communications within business processes and helps keep inboxes clean and organized. Take advantage of advanced search, the ability to move emails, and other key functions. The Connector supports the IMAP, POP3, and SMTP protocols.",
+    "imageUrl": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/457161/overview/img2859595950768139179.png?3f210a034f7b8325620dedd80ba53aaf",
+    "imageSrcset": {
+      "default": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/457161/overview/img2859595950768139179.png",
+      "2x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/457161/overview/img2859595950768139179-2x.png",
+      "1x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/457161/overview/img2859595950768139179.png"
+    },
+    "demoUrl": null,
+    "documentationUrl": "https://docs.camunda.io/docs/components/connectors/out-of-the-box-connectors/email/",
+    "downloadDocumentationUrl": null,
+    "systemRequirements": null,
+    "downloadFileSize": null,
+    "benefits": [],
+    "versions": {}
+  },
+  "support": {
+    "email": null,
+    "phone": null,
+    "knowledgebaseUrl": "https://forum.camunda.io/",
+    "description": null
+  },
+  "privacyUrl": null,
+  "termsUrl": null,
+  "referUrl": null,
+  "hostedLocation": null,
+  "lastModified": 1765188531000,
+  "pricing": {
+    "pricingSummary": null,
+    "footnotes": [],
+    "bullets": [],
+    "editions": [
+      {
+        "id": 887218,
+        "uuid": "192a8791-0b6f-4d9b-b3ac-b29b3136cec2",
+        "productEditionRefId": "d368da9d-cab1-4224-bc8e-ac55439b0a4b",
+        "rank": 1,
+        "name": "Email Outbound",
+        "primary": false,
+        "trial": {
+          "length": 0,
+          "unit": "DAY"
+        },
+        "expiredTrialGracePeriod": null,
+        "bundleOnly": false,
+        "targetAudience": null,
+        "code": "0",
+        "defaultFreeTrial": false,
+        "invisible": false,
+        "leadGen": false,
+        "lastModified": 1765188530000,
+        "revenueType": "RECURRING",
+        "restricted": false,
+        "freeTrialDuration": 0,
+        "freeTrialType": "DAY",
+        "privacyUrl": null,
+        "termsUrl": null,
+        "freeTrialEditionRequireBillingInfo": null,
+        "freeTrialEditionAutomaticUpgradeToPaidEnabled": null,
+        "plans": [
+          {
+            "href": "https://marketplace.camunda.com/api/marketplace/v1/products/457161/editions/887218/paymentPlans/1081357",
+            "id": 1081357,
+            "uuid": "93af5460-052a-4a43-924c-e756ece62196",
+            "frequency": "MONTHLY",
+            "status": "ACTIVE",
+            "contract": null,
+            "allowCustomUsage": false,
+            "keepBillDateOnUsageChange": true,
+            "keepBillDateOnPricingPlanChange": true,
+            "separatePrepaid": false,
+            "isPrimaryPrice": false,
+            "costs": [
+              {
+                "id": 1603953,
+                "editionPricingItemId": 1414686,
+                "editionPricingItemUuid": "b29a5085-7fa7-4e3a-bccb-5683a1e73fb2",
+                "status": "ACTIVE",
+                "unit": "NOT_APPLICABLE",
+                "unitDependency": null,
+                "minUnits": 0.0,
+                "maxUnits": null,
+                "meteredUsage": false,
+                "increment": 1.0,
+                "pricePerIncrement": false,
+                "blockContractDecrease": false,
+                "blockContractIncrease": false,
+                "blockOriginalContractDecrease": false,
+                "canIncreaseUnits": true,
+                "canDecreaseUnits": true,
+                "amount": null,
+                "pricingStrategy": "UNIT"
+              }
+            ],
+            "discount": null,
+            "creditOnCancellation": false,
+            "primaryPrice": false
+          }
+        ],
+        "bullets": [
+          {
+            "id": null,
+            "content": "templateLink",
+            "tooltip": "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.email.v1/latest/email-outbound-connector.json"
+          },
+          {
+            "id": null,
+            "content": "appliesTo",
+            "tooltip": "bpmn:Task"
+          }
+        ],
+        "items": [
+          {
+            "unit": "USER",
+            "amount": 1.0,
+            "unlimited": false
+          }
+        ],
+        "customizations": [],
+        "customAttributes": []
+      },
+      {
+        "id": 887219,
+        "uuid": "1c5a9cf6-751b-4ef7-8b8f-30c6714035ab",
+        "productEditionRefId": "c20842b3-7678-47db-9aa4-1bb6271042cd",
+        "rank": 1,
+        "name": "Email Inbound Start",
+        "primary": false,
+        "trial": {
+          "length": 0,
+          "unit": "DAY"
+        },
+        "expiredTrialGracePeriod": null,
+        "bundleOnly": false,
+        "targetAudience": null,
+        "code": "1",
+        "defaultFreeTrial": false,
+        "invisible": false,
+        "leadGen": false,
+        "lastModified": 1765188530000,
+        "revenueType": "RECURRING",
+        "restricted": false,
+        "freeTrialDuration": 0,
+        "freeTrialType": "DAY",
+        "privacyUrl": null,
+        "termsUrl": null,
+        "freeTrialEditionRequireBillingInfo": null,
+        "freeTrialEditionAutomaticUpgradeToPaidEnabled": null,
+        "plans": [
+          {
+            "href": "https://marketplace.camunda.com/api/marketplace/v1/products/457161/editions/887219/paymentPlans/1081358",
+            "id": 1081358,
+            "uuid": "42c3583d-dfad-4ea3-96bf-ad9f55bbd5ce",
+            "frequency": "MONTHLY",
+            "status": "ACTIVE",
+            "contract": null,
+            "allowCustomUsage": false,
+            "keepBillDateOnUsageChange": true,
+            "keepBillDateOnPricingPlanChange": true,
+            "separatePrepaid": false,
+            "isPrimaryPrice": false,
+            "costs": [
+              {
+                "id": 1603954,
+                "editionPricingItemId": 1414687,
+                "editionPricingItemUuid": "42799f4b-9860-4c54-af7b-1c73f79aa184",
+                "status": "ACTIVE",
+                "unit": "NOT_APPLICABLE",
+                "unitDependency": null,
+                "minUnits": 0.0,
+                "maxUnits": null,
+                "meteredUsage": false,
+                "increment": 1.0,
+                "pricePerIncrement": false,
+                "blockContractDecrease": false,
+                "blockContractIncrease": false,
+                "blockOriginalContractDecrease": false,
+                "canIncreaseUnits": true,
+                "canDecreaseUnits": true,
+                "amount": null,
+                "pricingStrategy": "UNIT"
+              }
+            ],
+            "discount": null,
+            "creditOnCancellation": false,
+            "primaryPrice": false
+          }
+        ],
+        "bullets": [
+          {
+            "id": null,
+            "content": "templateLink",
+            "tooltip": "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.inbound.EmailMessageStart.v1/latest/email-message-start-event-connector.json"
+          },
+          {
+            "id": null,
+            "content": "appliesTo",
+            "tooltip": "bpmn:StartEvent"
+          }
+        ],
+        "items": [
+          {
+            "unit": "USER",
+            "amount": 1.0,
+            "unlimited": false
+          }
+        ],
+        "customizations": [],
+        "customAttributes": []
+      },
+      {
+        "id": 887220,
+        "uuid": "2cb28743-a6e3-4984-a97b-a42fcfecabf9",
+        "productEditionRefId": "8056a6ae-4c29-49ac-a94e-b23e9eef2d8d",
+        "rank": 1,
+        "name": "Email Inbound Boundary",
+        "primary": false,
+        "trial": {
+          "length": 0,
+          "unit": "DAY"
+        },
+        "expiredTrialGracePeriod": null,
+        "bundleOnly": false,
+        "targetAudience": null,
+        "code": "2",
+        "defaultFreeTrial": false,
+        "invisible": false,
+        "leadGen": false,
+        "lastModified": 1765188530000,
+        "revenueType": "RECURRING",
+        "restricted": false,
+        "freeTrialDuration": 0,
+        "freeTrialType": "DAY",
+        "privacyUrl": null,
+        "termsUrl": null,
+        "freeTrialEditionRequireBillingInfo": null,
+        "freeTrialEditionAutomaticUpgradeToPaidEnabled": null,
+        "plans": [
+          {
+            "href": "https://marketplace.camunda.com/api/marketplace/v1/products/457161/editions/887220/paymentPlans/1081359",
+            "id": 1081359,
+            "uuid": "883f8198-dfba-4c88-a53f-df4215360c2b",
+            "frequency": "MONTHLY",
+            "status": "ACTIVE",
+            "contract": null,
+            "allowCustomUsage": false,
+            "keepBillDateOnUsageChange": true,
+            "keepBillDateOnPricingPlanChange": true,
+            "separatePrepaid": false,
+            "isPrimaryPrice": false,
+            "costs": [
+              {
+                "id": 1603955,
+                "editionPricingItemId": 1414688,
+                "editionPricingItemUuid": "e52c9d69-ad29-4dc5-ae99-e26cfa19a033",
+                "status": "ACTIVE",
+                "unit": "NOT_APPLICABLE",
+                "unitDependency": null,
+                "minUnits": 0.0,
+                "maxUnits": null,
+                "meteredUsage": false,
+                "increment": 1.0,
+                "pricePerIncrement": false,
+                "blockContractDecrease": false,
+                "blockContractIncrease": false,
+                "blockOriginalContractDecrease": false,
+                "canIncreaseUnits": true,
+                "canDecreaseUnits": true,
+                "amount": null,
+                "pricingStrategy": "UNIT"
+              }
+            ],
+            "discount": null,
+            "creditOnCancellation": false,
+            "primaryPrice": false
+          }
+        ],
+        "bullets": [
+          {
+            "id": null,
+            "content": "templateLink",
+            "tooltip": "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.inbound.EmailBoundary.v1/latest/email-inbound-connector-boundary.json"
+          },
+          {
+            "id": null,
+            "content": "appliesTo",
+            "tooltip": "bpmn:BoundaryEvent"
+          }
+        ],
+        "items": [
+          {
+            "unit": "USER",
+            "amount": 1.0,
+            "unlimited": false
+          }
+        ],
+        "customizations": [],
+        "customAttributes": []
+      },
+      {
+        "id": 887221,
+        "uuid": "87d42cf1-c13f-4121-bdec-e3f54d8b8069",
+        "productEditionRefId": "c4fbe25d-4ce6-4880-8479-7c84f6842856",
+        "rank": 1,
+        "name": "Email Inbound Intermediate",
+        "primary": false,
+        "trial": {
+          "length": 0,
+          "unit": "DAY"
+        },
+        "expiredTrialGracePeriod": null,
+        "bundleOnly": false,
+        "targetAudience": null,
+        "code": "3",
+        "defaultFreeTrial": false,
+        "invisible": false,
+        "leadGen": false,
+        "lastModified": 1765188530000,
+        "revenueType": "RECURRING",
+        "restricted": false,
+        "freeTrialDuration": 0,
+        "freeTrialType": "DAY",
+        "privacyUrl": null,
+        "termsUrl": null,
+        "freeTrialEditionRequireBillingInfo": null,
+        "freeTrialEditionAutomaticUpgradeToPaidEnabled": null,
+        "plans": [
+          {
+            "href": "https://marketplace.camunda.com/api/marketplace/v1/products/457161/editions/887221/paymentPlans/1081360",
+            "id": 1081360,
+            "uuid": "54e7f337-65ff-4891-bd67-d0c0f41eaff0",
+            "frequency": "MONTHLY",
+            "status": "ACTIVE",
+            "contract": null,
+            "allowCustomUsage": false,
+            "keepBillDateOnUsageChange": true,
+            "keepBillDateOnPricingPlanChange": true,
+            "separatePrepaid": false,
+            "isPrimaryPrice": false,
+            "costs": [
+              {
+                "id": 1603956,
+                "editionPricingItemId": 1414689,
+                "editionPricingItemUuid": "3d1950c0-b498-4df4-a779-28a8184a6100",
+                "status": "ACTIVE",
+                "unit": "NOT_APPLICABLE",
+                "unitDependency": null,
+                "minUnits": 0.0,
+                "maxUnits": null,
+                "meteredUsage": false,
+                "increment": 1.0,
+                "pricePerIncrement": false,
+                "blockContractDecrease": false,
+                "blockContractIncrease": false,
+                "blockOriginalContractDecrease": false,
+                "canIncreaseUnits": true,
+                "canDecreaseUnits": true,
+                "amount": null,
+                "pricingStrategy": "UNIT"
+              }
+            ],
+            "discount": null,
+            "creditOnCancellation": false,
+            "primaryPrice": false
+          }
+        ],
+        "bullets": [
+          {
+            "id": null,
+            "content": "templateLink",
+            "tooltip": "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.inbound.EmailIntermediate.v1/latest/email-inbound-connector-intermediate.json"
+          },
+          {
+            "id": null,
+            "content": "appliesTo",
+            "tooltip": "bpmn:IntermediateCatchEvent"
+          },
+          {
+            "id": null,
+            "content": "appliesTo",
+            "tooltip": "bpmn:IntermediateThrowEvent"
+          }
+        ],
+        "items": [
+          {
+            "unit": "USER",
+            "amount": 1.0,
+            "unlimited": false
+          }
+        ],
+        "customizations": [],
+        "customAttributes": []
+      }
+    ]
+  },
+  "publishedOn": 1730365419000,
+  "rating": null,
+  "absoluteRating": null,
+  "numRatings": null,
+  "buyable": true,
+  "importable": false,
+  "importableAppApprovalMode": null,
+  "free": false,
+  "freeTrialOrEditionPresent": false,
+  "referable": false,
+  "hidePricings": true,
+  "useCheckoutV2": true,
+  "visibleToCurrentUser": true,
+  "collectLeads": true,
+  "collectLeadsWithPurchaseEnabled": false,
+  "assignLeadsToDevelopers": true,
+  "newSubscriptionEnabled": true,
+  "multipleSubscriptionsEnabled": false,
+  "changeSubscriptionAllowed": true,
+  "displayQuestions": true,
+  "displayReviews": true,
+  "oneClickPurchasable": true,
+  "autoUpgradeToPaid": false,
+  "downloadFileSize": null,
+  "startingPrice": {
+    "unit": null,
+    "billingFrequency": "MONTHLY",
+    "amount": null,
+    "discount": null
+  },
+  "highestPercentageDiscount": null,
+  "highestFixedDiscount": null,
+  "bundledPlanIds": null,
+  "customIntegration": null,
+  "usageType": "SINGLE_USER",
+  "linkedImportableApplicationUuid": null,
+  "liveChatEnabled": false,
+  "liveChatAvailable": false,
+  "showThirdPartyLegalDisclosure": false,
+  "showSelfServiceRestriction": false,
+  "integrationConfiguration": {
+    "multipleSubscriptionsEnabled": false,
+    "integrationEventConfigurationWS": null,
+    "domainAssociationConfiguration": {
+      "settingsUrl": null,
+      "verificationUrl": null,
+      "maxDomainAssociation": null,
+      "linkUrl": null,
+      "unlinkUrl": null
+    },
+    "domainManagementEnabled": false,
+    "productSettings": null
+  },
+  "addon": false,
+  "supportsMultipleEditions": true,
+  "sellerName": null,
+  "features": [
+    {
+      "id": "6418277",
+      "refId": "033bee49-8c64-4f4b-901e-2d0c418ec4b4",
+      "header": "List Emails",
+      "description": "Retrieve and view a list of emails in specific folders or across an entire mailbox using POP3 or IMAP. This function offers a clear and concise summary of email contents which can be used for quick oversight or to trigger subsequent process tasks in Camunda.",
+      "hideOnOverview": false,
+      "position": 1,
+      "characteristics": []
+    },
+    {
+      "id": "6418278",
+      "refId": "9f26b6d1-5ed6-40ad-b75f-42d96f8a66bb",
+      "header": "Read Emails",
+      "description": "Read and extract data from emails, including header information and body, using POP3 or IMAP. This feature is essential for processes that require content analysis or automated processing based on the information contained within emails.",
+      "hideOnOverview": false,
+      "position": 2,
+      "characteristics": []
+    },
+    {
+      "id": "6418279",
+      "refId": "aab3a521-b2db-4004-a7f5-a4e55b51c2b1",
+      "header": "Advanced Email Search",
+      "description": "Perform complex searches with detailed criteria such as sender, recipient, subject, keywords, and date ranges. This powerful search capability ensures that specific emails can be quickly located and acted upon within a Camunda-based process.",
+      "hideOnOverview": false,
+      "position": 3,
+      "characteristics": []
+    },
+    {
+      "id": "6418280",
+      "refId": "507c6dd5-85c0-4da0-af94-9b86f73e0163",
+      "header": "Send Email",
+      "description": "Create outbound emails directly from Camunda-based processes using SMTP. Customize various aspects of the email, such as recipients, subject lines, and body content, facilitating communication.",
+      "hideOnOverview": false,
+      "position": 4,
+      "characteristics": []
+    },
+    {
+      "id": "6418281",
+      "refId": "b41a4d39-def2-4d9e-b506-57c9ea8e7c2e",
+      "header": "Delete Email",
+      "description": "Delete emails from a mailbox using POP3 or IMAP. Use this function to manage inbox size, maintain organization, and ensure compliance with data retention policies. This feature can be automated within business processes to keep email communications streamlined and relevant.",
+      "hideOnOverview": false,
+      "position": 5,
+      "characteristics": []
+    },
+    {
+      "id": "6418282",
+      "refId": "15ce661e-0235-47d8-ae22-380a24be722f",
+      "header": "Move Emails",
+      "description": "Move emails between folders using the IMAP protocol, allowing for efficient inbox organization. This feature supports automated categorization and prioritization of emails, ensuring that the mailbox remains orderly and that important emails are readily accessible within a process.",
+      "hideOnOverview": false,
+      "position": 6,
+      "characteristics": []
+    }
+  ],
+  "tags": [
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 4068,
+      "name": "Industry",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20935,
+          "name": "Any",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 3984,
+      "name": "Supported BPMN Types",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20541,
+          "name": "bpmn:Task",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        },
+        {
+          "type": "ATTRIBUTE",
+          "id": 20542,
+          "name": "bpmn:IntermediateCatchEvent",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        },
+        {
+          "type": "ATTRIBUTE",
+          "id": 20543,
+          "name": "bpmn:StartEvent",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        },
+        {
+          "type": "ATTRIBUTE",
+          "id": 20696,
+          "name": "bpmn:IntermediateThrowEvent",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        },
+        {
+          "type": "ATTRIBUTE",
+          "id": 20697,
+          "name": "bpmn:BoundaryEvent",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": "This relates to the template attribute \"appliesTo\""
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 4005,
+      "name": "Version Compatibility",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 21226,
+          "name": "8.6",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        },
+        {
+          "type": "ATTRIBUTE",
+          "id": 21227,
+          "name": "8.7",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        },
+        {
+          "type": "ATTRIBUTE",
+          "id": 22546,
+          "name": "8.8",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        },
+        {
+          "type": "ATTRIBUTE",
+          "id": 23367,
+          "name": "8.9",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 3974,
+      "name": "Creator",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20486,
+          "name": "Camunda",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 4067,
+      "name": "Availability",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20922,
+          "name": "Open Source",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 4070,
+      "name": "Application",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20941,
+          "name": "External Data Services",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        },
+        {
+          "type": "ATTRIBUTE",
+          "id": 20946,
+          "name": "Technical Protocols",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 3983,
+      "name": "Connector Runtime",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20536,
+          "name": "Camunda Connectors Bundle",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": "SDK Connectors are made based on an SDK. Here you need to install the runtime and the template.\r\nFor protocol-based connector you only need to upload the template, they are reusing the runtime of our OOTB protocol connectors (REST, GraphQL etc.)."
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 4177,
+      "name": "Resource Types Included",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 21606,
+          "name": "Connector Template",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "CATEGORY",
+      "id": 107792,
+      "name": "Connectors",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "SUB_CATEGORY",
+          "id": 63915,
+          "name": "Technical Protocols",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 3954,
+      "name": "Connector Type",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20534,
+          "name": "Inbound Connector",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        },
+        {
+          "type": "ATTRIBUTE",
+          "id": 20535,
+          "name": "Outbound Connector",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    }
+  ],
+  "supportedLanguages": [
+    "en-US"
+  ],
+  "mosiConnectorType": "CREST",
+  "platforms": [],
+  "customAttributes": [
+    {
+      "attributeType": "TEXT_WITH_LOCALIZATION",
+      "label": "For SAAS",
+      "attributeKey": "1-template-only-for-SAAS",
+      "value": "useEditionTemplateLinks"
+    },
+    {
+      "attributeType": "TEXT_WITH_LOCALIZATION",
+      "label": "For SM",
+      "attributeKey": "2-template-only-for-sm",
+      "value": "https://github.com/camunda/connectors/tree/main/connectors/email/element-templates"
+    }
+  ],
+  "productRibbon": null,
+  "merchandisingBadges": [],
+  "supportedCountries": [
+    "KG",
+    "PR",
+    "CN",
+    "AD",
+    "TG",
+    "LA",
+    "TZ",
+    "BM",
+    "VE",
+    "HK",
+    "GI",
+    "IO",
+    "GG",
+    "CF",
+    "HM",
+    "BG",
+    "AW",
+    "PF",
+    "UZ",
+    "MN",
+    "SV",
+    "IR",
+    "PK",
+    "AQ",
+    "NI",
+    "FR",
+    "NC",
+    "CW",
+    "NF",
+    "KN",
+    "QA",
+    "HT",
+    "DZ",
+    "CO",
+    "GL",
+    "BH",
+    "PE",
+    "FI",
+    "GH",
+    "DM",
+    "AF",
+    "TK",
+    "LT",
+    "KM",
+    "BL",
+    "PL",
+    "EG",
+    "MC",
+    "TD",
+    "KE",
+    "TR",
+    "SJ",
+    "GP",
+    "AX",
+    "BB",
+    "JE",
+    "TO",
+    "KY",
+    "KR",
+    "ZM",
+    "SM",
+    "BD",
+    "LB",
+    "ER",
+    "JO",
+    "PS",
+    "TN",
+    "SZ",
+    "VI",
+    "AS",
+    "SN",
+    "ZW",
+    "BT",
+    "PT",
+    "MY",
+    "KW",
+    "AI",
+    "TH",
+    "TV",
+    "YT",
+    "CU",
+    "NL",
+    "ST",
+    "GB",
+    "NA",
+    "MO",
+    "GM",
+    "CG",
+    "VG",
+    "WS",
+    "DJ",
+    "IT",
+    "CA",
+    "MR",
+    "PA",
+    "AU",
+    "CY",
+    "SI",
+    "EH",
+    "AT",
+    "BE",
+    "FK",
+    "CV",
+    "NG",
+    "BJ",
+    "RU",
+    "NP",
+    "FO",
+    "SK",
+    "GS",
+    "OM",
+    "GT",
+    "TF",
+    "CM",
+    "SX",
+    "TT",
+    "PM",
+    "ID",
+    "FJ",
+    "MX",
+    "AM",
+    "MA",
+    "GY",
+    "LY",
+    "BQ",
+    "LU",
+    "NR",
+    "SG",
+    "JP",
+    "BI",
+    "MU",
+    "HR",
+    "SD",
+    "AZ",
+    "BF",
+    "IM",
+    "SR",
+    "VC",
+    "ML",
+    "MF",
+    "GU",
+    "IL",
+    "RS",
+    "MD",
+    "LV",
+    "AO",
+    "GW",
+    "SH",
+    "MG",
+    "DE",
+    "HN",
+    "PW",
+    "DK",
+    "MM",
+    "GF",
+    "RW",
+    "KZ",
+    "HU",
+    "TM",
+    "AN",
+    "CR",
+    "CL",
+    "LC",
+    "MQ",
+    "UM",
+    "DO",
+    "LR",
+    "IN",
+    "GN",
+    "GE",
+    "MV",
+    "UY",
+    "EC",
+    "ZA",
+    "LK",
+    "NO",
+    "TL",
+    "LS",
+    "SY",
+    "AL",
+    "WF",
+    "SL",
+    "CH",
+    "YE",
+    "PN",
+    "VA",
+    "CD",
+    "VN",
+    "TC",
+    "BZ",
+    "SO",
+    "ET",
+    "GD",
+    "BY",
+    "PG",
+    "US",
+    "SS",
+    "CS",
+    "ES",
+    "LI",
+    "GQ",
+    "MW",
+    "AE",
+    "IS",
+    "NE",
+    "BS",
+    "CK",
+    "SC",
+    "GR",
+    "FM",
+    "MK",
+    "MH",
+    "RE",
+    "SA",
+    "SB",
+    "TJ",
+    "TW",
+    "BV",
+    "UG",
+    "VU",
+    "IQ",
+    "BA",
+    "RO",
+    "GA",
+    "UA",
+    "SE",
+    "NU",
+    "ME",
+    "BR",
+    "CI",
+    "BN",
+    "KH",
+    "EE",
+    "AR",
+    "BO",
+    "CC",
+    "AG",
+    "BW",
+    "CZ",
+    "JM",
+    "MP",
+    "NZ",
+    "PY",
+    "MS",
+    "CX",
+    "KI",
+    "PH",
+    "MT",
+    "IE",
+    "KP",
+    "MZ"
+  ],
+  "supportedCurrencies": [
+    "USD"
+  ],
+  "availableToResellers": true,
+  "useCheckoutForSpecialPricingMessage": false,
+  "childVisibleOnNetwork": false,
+  "sourcedProduct": false,
+  "sourceId": null,
+  "links": [],
+  "_embedded": {
+    "associatedAddons": []
+  },
+  "id": 457161
+}

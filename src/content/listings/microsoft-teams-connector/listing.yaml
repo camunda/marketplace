@@ -1,0 +1,76 @@
+id: 418727
+slug: "microsoft-teams-connector"
+name: "Microsoft Teams Connector"
+type: 
+  - "connector"
+creatorType: "camunda"
+creatorName: "Camunda"
+creatorUrl: "https://camunda.com/"
+categories: 
+  - "Collaboration Tools"
+industries: []
+useCases: []
+resourceTypes: []
+bpmnTypes: 
+  - "bpmn:Task"
+runtimes: 
+  - "bundle"
+compatibleVersions: 
+  - "8.2"
+  - "8.3"
+  - "8.4"
+  - "8.5"
+availability: "open-source"
+description: "Facilitate communication with Teams integration"
+tagline: "Orchestrate Communication and Collaboration with Camunda and Microsoft Teams"
+body: |-
+  Bring Microsoft Teams into Camunda processes to facilitate real-time communication, notifications, and contextual workflow enhancements.
+features: 
+  - header: "Get Chat by ID"
+    description: "Retrieve specific chat data from Teams to inform or drive subsequent activities in Camunda processes, such as condition-based branching or notifications."
+  - header: "List Chat Members"
+    description: "Enumerate members of a chat to establish context or permissions in orchestrated processes; for example, dynamic task assignment based on chat participants."
+  - header: "Send Message in Chat"
+    description: "Enable Camunda to send messages in a Teams chat, be it for notifications, status updates, or data collection within a workflow."
+  - header: "List Messages in Chat"
+    description: "Obtain a list of chat messages to process historical data, sentiment analysis, or compliance checks within Camunda processes."
+  - header: "Get Message in Chat"
+    description: "Retrieve specific messages for fine-grained information extraction or context establishment in Camunda."
+  - header: "Create Channel"
+    description: "Automatically create new Teams channels from Camunda for project-based collaborations or specialized communication streams."
+  - header: "Get Channel"
+    description: "Fetch details of a specific Teams channel to facilitate information-driven or context-driven actions in Camunda."
+  - header: "List Channels"
+    description: "Enumerate all available channels to aid in decision-making or routing within orchestrated Camunda processes."
+  - header: "Send Message to Channel"
+    description: "Disseminate messages to Teams channels directly from Camunda. This feature is useful for announcements, alerts, and data sharing."
+  - header: "Get Channel Message"
+    description: "Extract specific messages from a channel for targeted actions or data utilization in Camunda-based processes."
+  - header: "List Channel Messages"
+    description: "Gather a list of all messages within a channel for aggregate processing, reporting, or auditing in Camunda."
+  - header: "List Message Replies"
+    description: "Get replies to a specific message for threaded conversations, thereby enhancing context and data collection within workflows."
+  - header: "List Members"
+    description: "List channel members to establish context or to perform role-based assignments or notifications within Camunda."
+templates: 
+  - id: null
+    name: "MS Teams Outbound"
+    url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.MSTeams.v1/latest/microsoft-teams-outbound-connector.json"
+saasTemplate: null
+smTemplate: "https://raw.githubusercontent.com/camunda/connectors/main/connectors/microsoft-teams/element-templates/microsoft-teams-outbound-connector.json"
+githubRepo: null
+docsUrl: null
+previewImage: null
+demoRequestUrl: null
+relatedConnectors: null
+demoVideo: null
+icon: "icon.png"
+image: "thumb.png"
+heroImage: "hero.png"
+screenshots: []
+resources: []
+supportUrl: null
+termsUrl: null
+referUrl: "https://camunda.com"
+publishedOn: "2023-09-04"
+lastModified: "2025-09-08"

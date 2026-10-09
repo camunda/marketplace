@@ -1,0 +1,1100 @@
+{
+  "resources": [],
+  "screenshots": [],
+  "addonOfferings": [],
+  "featuredCustomers": [],
+  "featuredMedia": [],
+  "href": "https://marketplace.camunda.com/api/marketplace/v1/products/682917",
+  "uuid": "0c222094-8072-4e24-a3c5-6164d4f8975a",
+  "productRefId": "d43bef45-d259-4907-a9e0-92ac587d2b46",
+  "publishedApp": null,
+  "workingApp": {
+    "id": "681359",
+    "href": "https://marketplace.camunda.com/api/marketplace/v1/products/681359"
+  },
+  "name": "MCP Client Connector",
+  "type": "WEB_APP",
+  "usesVariants": false,
+  "provider": {
+    "uuid": "948d0eed-a7db-479e-a7f2-423909d2e333",
+    "name": "Camunda",
+    "url": "camunda.com",
+    "creatorUserUuid": null,
+    "creatorName": null
+  },
+  "listing": {
+    "myAppLogoIconUrl": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/682917/myAppIcon/img4499846448645513827.png",
+    "imageUrl": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/682917/thumbs_64/img10061580958073438947.png",
+    "profileImageUrl": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/682917/thumbs_112/img13748040525169125872.png",
+    "myAppLogoIconSrcset": {
+      "default": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/682917/myAppIcon/img4499846448645513827.png",
+      "2x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/682917/myAppIcon/img4499846448645513827-2x.png",
+      "1x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/682917/myAppIcon/img4499846448645513827.png"
+    },
+    "imageSrcset": {
+      "default": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/682917/thumbs_64/img10061580958073438947.png",
+      "2x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/682917/thumbs_64/img10061580958073438947-2x.png",
+      "1x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/682917/thumbs_64/img10061580958073438947.png"
+    },
+    "profileImageSrcset": {
+      "default": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/682917/thumbs_112/img13748040525169125872.png",
+      "2x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/682917/thumbs_112/img13748040525169125872-2x.png",
+      "1x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/682917/thumbs_112/img13748040525169125872.png"
+    },
+    "blurb": "Bring MCP tools into processes",
+    "overview": "Provides a reusable integration building block to run MCP clients in a connector runtime and let the AI agent connector discover and call MCP tools from local STDIO servers or remote Streamable HTTP and SSE endpoints.",
+    "rating": null,
+    "reviewCount": 0,
+    "mobileBundleId": null,
+    "mobileAppStoreId": null
+  },
+  "overview": {
+    "splashTitle": "Orchestrate MCP tool use with AI",
+    "splashDescription": "Integrate Model Context Protocol (MCP) clients with agentic orchestration so your AI agent can discover and call tools provided by MCP servers. Use standard input/output (stdio) servers started and managed as operating system processes by the connector runtime, or connect to remote servers via Streamable HTTP or HTTP SSE. Model tool discovery and tool calling in a BPMN ad-hoc sub-process to support distributed deployments, including connecting a custom connector runtime to Camunda 8 SaaS. Note that this connector is in early access.",
+    "imageUrl": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/682917/overview/img14199206004623531588.png?f1a3bfbfcd698e1c6a1e5bf66036bc02",
+    "imageSrcset": {
+      "default": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/682917/overview/img14199206004623531588.png",
+      "2x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/682917/overview/img14199206004623531588-2x.png",
+      "1x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/682917/overview/img14199206004623531588.png"
+    },
+    "demoUrl": null,
+    "documentationUrl": "https://docs.camunda.io/docs/components/connectors/out-of-the-box-connectors/agentic-ai-mcp-client/",
+    "downloadDocumentationUrl": null,
+    "systemRequirements": null,
+    "downloadFileSize": null,
+    "benefits": [],
+    "versions": {}
+  },
+  "support": {
+    "email": null,
+    "phone": null,
+    "knowledgebaseUrl": "https://forum.camunda.io/",
+    "description": null
+  },
+  "privacyUrl": null,
+  "termsUrl": null,
+  "referUrl": null,
+  "hostedLocation": null,
+  "lastModified": 1782909923000,
+  "pricing": {
+    "pricingSummary": null,
+    "footnotes": [],
+    "bullets": [],
+    "editions": [
+      {
+        "id": 939726,
+        "uuid": "1aeaa536-75d2-4d06-9fec-9989ffd11e79",
+        "productEditionRefId": "805ce318-e392-4285-bb5b-5a6a1350f2bc",
+        "rank": 1,
+        "name": "MCP Client Element Template v0",
+        "primary": false,
+        "trial": {
+          "length": 0,
+          "unit": "DAY"
+        },
+        "expiredTrialGracePeriod": null,
+        "bundleOnly": false,
+        "targetAudience": null,
+        "code": "0",
+        "defaultFreeTrial": false,
+        "invisible": false,
+        "leadGen": false,
+        "lastModified": 1782909922000,
+        "revenueType": "RECURRING",
+        "restricted": false,
+        "freeTrialDuration": 0,
+        "freeTrialType": "DAY",
+        "privacyUrl": null,
+        "termsUrl": null,
+        "freeTrialEditionRequireBillingInfo": null,
+        "freeTrialEditionAutomaticUpgradeToPaidEnabled": null,
+        "plans": [
+          {
+            "href": "https://marketplace.camunda.com/api/marketplace/v1/products/682917/editions/939726/paymentPlans/1139951",
+            "id": 1139951,
+            "uuid": "e8dbf3c5-7fc9-4ff9-9af0-a247a035169b",
+            "frequency": "MONTHLY",
+            "status": "ACTIVE",
+            "contract": null,
+            "allowCustomUsage": false,
+            "keepBillDateOnUsageChange": true,
+            "keepBillDateOnPricingPlanChange": true,
+            "separatePrepaid": false,
+            "isPrimaryPrice": false,
+            "costs": [
+              {
+                "id": 1677123,
+                "editionPricingItemId": 1484235,
+                "editionPricingItemUuid": "c18fc910-bff4-4d80-a0c0-d218fb6657b7",
+                "status": "ACTIVE",
+                "unit": "NOT_APPLICABLE",
+                "unitDependency": null,
+                "minUnits": 0.0,
+                "maxUnits": null,
+                "meteredUsage": false,
+                "increment": 1.0,
+                "pricePerIncrement": false,
+                "blockContractDecrease": false,
+                "blockContractIncrease": false,
+                "blockOriginalContractDecrease": false,
+                "canIncreaseUnits": true,
+                "canDecreaseUnits": true,
+                "amount": null,
+                "pricingStrategy": "UNIT"
+              }
+            ],
+            "discount": null,
+            "creditOnCancellation": false,
+            "primaryPrice": false
+          }
+        ],
+        "bullets": [
+          {
+            "id": null,
+            "content": "templateLink",
+            "tooltip": "https://raw.githubusercontent.com/camunda/connectors/refs/heads/main/connectors/agentic-ai/connector-agentic-ai/element-templates/versioned/agenticai-mcp-client-outbound-connector-0.json"
+          },
+          {
+            "id": null,
+            "content": "appliesTo",
+            "tooltip": "bpmn:Task"
+          }
+        ],
+        "items": [
+          {
+            "unit": "USER",
+            "amount": 1.0,
+            "unlimited": false
+          }
+        ],
+        "customizations": [],
+        "customAttributes": []
+      },
+      {
+        "id": 939727,
+        "uuid": "53278753-f6e1-4025-b826-092d30c96054",
+        "productEditionRefId": "429f85dc-58e6-4045-a058-8bcd08506005",
+        "rank": 1,
+        "name": "MCP Client Element Template",
+        "primary": false,
+        "trial": {
+          "length": 0,
+          "unit": "DAY"
+        },
+        "expiredTrialGracePeriod": null,
+        "bundleOnly": false,
+        "targetAudience": null,
+        "code": "1",
+        "defaultFreeTrial": false,
+        "invisible": false,
+        "leadGen": false,
+        "lastModified": 1782909922000,
+        "revenueType": "RECURRING",
+        "restricted": false,
+        "freeTrialDuration": 0,
+        "freeTrialType": "DAY",
+        "privacyUrl": null,
+        "termsUrl": null,
+        "freeTrialEditionRequireBillingInfo": null,
+        "freeTrialEditionAutomaticUpgradeToPaidEnabled": null,
+        "plans": [
+          {
+            "href": "https://marketplace.camunda.com/api/marketplace/v1/products/682917/editions/939727/paymentPlans/1139952",
+            "id": 1139952,
+            "uuid": "141275a6-3557-4b09-90ec-4ce654349184",
+            "frequency": "MONTHLY",
+            "status": "ACTIVE",
+            "contract": null,
+            "allowCustomUsage": false,
+            "keepBillDateOnUsageChange": true,
+            "keepBillDateOnPricingPlanChange": true,
+            "separatePrepaid": false,
+            "isPrimaryPrice": false,
+            "costs": [
+              {
+                "id": 1677124,
+                "editionPricingItemId": 1484236,
+                "editionPricingItemUuid": "89e3aad4-13d0-405e-ae2e-92c64bdec069",
+                "status": "ACTIVE",
+                "unit": "NOT_APPLICABLE",
+                "unitDependency": null,
+                "minUnits": 0.0,
+                "maxUnits": null,
+                "meteredUsage": false,
+                "increment": 1.0,
+                "pricePerIncrement": false,
+                "blockContractDecrease": false,
+                "blockContractIncrease": false,
+                "blockOriginalContractDecrease": false,
+                "canIncreaseUnits": true,
+                "canDecreaseUnits": true,
+                "amount": null,
+                "pricingStrategy": "UNIT"
+              }
+            ],
+            "discount": null,
+            "creditOnCancellation": false,
+            "primaryPrice": false
+          }
+        ],
+        "bullets": [
+          {
+            "id": null,
+            "content": "templateLink",
+            "tooltip": "https://raw.githubusercontent.com/camunda/connectors/refs/heads/main/connectors/agentic-ai/connector-agentic-ai/element-templates/agenticai-mcp-client-outbound-connector.json"
+          },
+          {
+            "id": null,
+            "content": "appliesTo",
+            "tooltip": "bpmn:Task"
+          }
+        ],
+        "items": [
+          {
+            "unit": "USER",
+            "amount": 1.0,
+            "unlimited": false
+          }
+        ],
+        "customizations": [],
+        "customAttributes": []
+      },
+      {
+        "id": 939728,
+        "uuid": "c52cce49-2a7d-4b62-92aa-c9f253b77447",
+        "productEditionRefId": "4915c006-ca5d-494a-9b00-fc037e20c73a",
+        "rank": 1,
+        "name": "MCP Remote Client Element Template v0",
+        "primary": false,
+        "trial": {
+          "length": 0,
+          "unit": "DAY"
+        },
+        "expiredTrialGracePeriod": null,
+        "bundleOnly": false,
+        "targetAudience": null,
+        "code": "3",
+        "defaultFreeTrial": false,
+        "invisible": false,
+        "leadGen": false,
+        "lastModified": 1782909922000,
+        "revenueType": "RECURRING",
+        "restricted": false,
+        "freeTrialDuration": 0,
+        "freeTrialType": "DAY",
+        "privacyUrl": null,
+        "termsUrl": null,
+        "freeTrialEditionRequireBillingInfo": null,
+        "freeTrialEditionAutomaticUpgradeToPaidEnabled": null,
+        "plans": [
+          {
+            "href": "https://marketplace.camunda.com/api/marketplace/v1/products/682917/editions/939728/paymentPlans/1139953",
+            "id": 1139953,
+            "uuid": "f894b2a8-1bea-45fe-aa02-77a92e9e4a1a",
+            "frequency": "MONTHLY",
+            "status": "ACTIVE",
+            "contract": null,
+            "allowCustomUsage": false,
+            "keepBillDateOnUsageChange": true,
+            "keepBillDateOnPricingPlanChange": true,
+            "separatePrepaid": false,
+            "isPrimaryPrice": false,
+            "costs": [
+              {
+                "id": 1677125,
+                "editionPricingItemId": 1484237,
+                "editionPricingItemUuid": "e3b495fe-a0ea-4fe3-86b2-281815fce3f8",
+                "status": "ACTIVE",
+                "unit": "NOT_APPLICABLE",
+                "unitDependency": null,
+                "minUnits": 0.0,
+                "maxUnits": null,
+                "meteredUsage": false,
+                "increment": 1.0,
+                "pricePerIncrement": false,
+                "blockContractDecrease": false,
+                "blockContractIncrease": false,
+                "blockOriginalContractDecrease": false,
+                "canIncreaseUnits": true,
+                "canDecreaseUnits": true,
+                "amount": null,
+                "pricingStrategy": "UNIT"
+              }
+            ],
+            "discount": null,
+            "creditOnCancellation": false,
+            "primaryPrice": false
+          }
+        ],
+        "bullets": [
+          {
+            "id": null,
+            "content": "templateLink",
+            "tooltip": "https://raw.githubusercontent.com/camunda/connectors/refs/heads/main/connectors/agentic-ai/connector-agentic-ai/element-templates/versioned/agenticai-mcp-remote-client-outbound-connector-0.json"
+          },
+          {
+            "id": null,
+            "content": "appliesTo",
+            "tooltip": "bpmn:Task"
+          }
+        ],
+        "items": [
+          {
+            "unit": "USER",
+            "amount": 1.0,
+            "unlimited": false
+          }
+        ],
+        "customizations": [],
+        "customAttributes": []
+      },
+      {
+        "id": 939729,
+        "uuid": "037480ec-1a57-4048-9498-177aeeca6c35",
+        "productEditionRefId": "d1aee3fb-028b-48ca-abb2-c01d818aa7c6",
+        "rank": 1,
+        "name": "MCP Remote Client Element Template",
+        "primary": false,
+        "trial": {
+          "length": 0,
+          "unit": "DAY"
+        },
+        "expiredTrialGracePeriod": null,
+        "bundleOnly": false,
+        "targetAudience": null,
+        "code": "4",
+        "defaultFreeTrial": false,
+        "invisible": false,
+        "leadGen": false,
+        "lastModified": 1782909922000,
+        "revenueType": "RECURRING",
+        "restricted": false,
+        "freeTrialDuration": 0,
+        "freeTrialType": "DAY",
+        "privacyUrl": null,
+        "termsUrl": null,
+        "freeTrialEditionRequireBillingInfo": null,
+        "freeTrialEditionAutomaticUpgradeToPaidEnabled": null,
+        "plans": [
+          {
+            "href": "https://marketplace.camunda.com/api/marketplace/v1/products/682917/editions/939729/paymentPlans/1139954",
+            "id": 1139954,
+            "uuid": "dc18fef1-698d-4ee2-ac0a-30ec03ed7a5e",
+            "frequency": "MONTHLY",
+            "status": "ACTIVE",
+            "contract": null,
+            "allowCustomUsage": false,
+            "keepBillDateOnUsageChange": true,
+            "keepBillDateOnPricingPlanChange": true,
+            "separatePrepaid": false,
+            "isPrimaryPrice": false,
+            "costs": [
+              {
+                "id": 1677126,
+                "editionPricingItemId": 1484238,
+                "editionPricingItemUuid": "4b253396-8958-4268-b116-f82f878d20d4",
+                "status": "ACTIVE",
+                "unit": "NOT_APPLICABLE",
+                "unitDependency": null,
+                "minUnits": 0.0,
+                "maxUnits": null,
+                "meteredUsage": false,
+                "increment": 1.0,
+                "pricePerIncrement": false,
+                "blockContractDecrease": false,
+                "blockContractIncrease": false,
+                "blockOriginalContractDecrease": false,
+                "canIncreaseUnits": true,
+                "canDecreaseUnits": true,
+                "amount": null,
+                "pricingStrategy": "UNIT"
+              }
+            ],
+            "discount": null,
+            "creditOnCancellation": false,
+            "primaryPrice": false
+          }
+        ],
+        "bullets": [
+          {
+            "id": null,
+            "content": "templateLink",
+            "tooltip": "https://raw.githubusercontent.com/camunda/connectors/refs/heads/main/connectors/agentic-ai/connector-agentic-ai/element-templates/agenticai-mcp-remote-client-outbound-connector.json"
+          },
+          {
+            "id": null,
+            "content": "appliesTo",
+            "tooltip": "bpmn:Task"
+          }
+        ],
+        "items": [
+          {
+            "unit": "USER",
+            "amount": 1.0,
+            "unlimited": false
+          }
+        ],
+        "customizations": [],
+        "customAttributes": []
+      }
+    ]
+  },
+  "publishedOn": 1765977309000,
+  "rating": null,
+  "absoluteRating": null,
+  "numRatings": null,
+  "buyable": true,
+  "importable": false,
+  "importableAppApprovalMode": null,
+  "free": false,
+  "freeTrialOrEditionPresent": false,
+  "referable": false,
+  "hidePricings": true,
+  "useCheckoutV2": true,
+  "visibleToCurrentUser": true,
+  "collectLeads": true,
+  "collectLeadsWithPurchaseEnabled": false,
+  "assignLeadsToDevelopers": true,
+  "newSubscriptionEnabled": true,
+  "multipleSubscriptionsEnabled": true,
+  "changeSubscriptionAllowed": true,
+  "displayQuestions": true,
+  "displayReviews": true,
+  "oneClickPurchasable": true,
+  "autoUpgradeToPaid": false,
+  "downloadFileSize": null,
+  "startingPrice": {
+    "unit": null,
+    "billingFrequency": "MONTHLY",
+    "amount": null,
+    "discount": null
+  },
+  "highestPercentageDiscount": null,
+  "highestFixedDiscount": null,
+  "bundledPlanIds": null,
+  "customIntegration": null,
+  "usageType": "MULTI_USER",
+  "linkedImportableApplicationUuid": null,
+  "liveChatEnabled": false,
+  "liveChatAvailable": false,
+  "showThirdPartyLegalDisclosure": false,
+  "showSelfServiceRestriction": false,
+  "integrationConfiguration": {
+    "multipleSubscriptionsEnabled": true,
+    "integrationEventConfigurationWS": null,
+    "domainAssociationConfiguration": {
+      "settingsUrl": null,
+      "verificationUrl": null,
+      "maxDomainAssociation": null,
+      "linkUrl": null,
+      "unlinkUrl": null
+    },
+    "domainManagementEnabled": false,
+    "productSettings": null
+  },
+  "addon": false,
+  "supportsMultipleEditions": true,
+  "sellerName": null,
+  "features": [
+    {
+      "id": "6634704",
+      "refId": "8e1e9498-3155-4990-bc34-9361c50e0cff",
+      "header": "Connect AI agents to MCP tools",
+      "description": "Use the AI agent connector with MCP clients to access tools from locally started stdio servers or remote MCP servers over Streamable HTTP or HTTP with SSE.",
+      "hideOnOverview": false,
+      "position": 1,
+      "characteristics": []
+    },
+    {
+      "id": "6634705",
+      "refId": "d3697ca3-f5c6-449b-81da-5e57da3f44cd",
+      "header": "Use persistent MCP client connections",
+      "description": "Run MCP clients as part of the connector runtime so connections are managed persistently and you reduce overhead in tool discovery and tool calling.",
+      "hideOnOverview": false,
+      "position": 2,
+      "characteristics": []
+    },
+    {
+      "id": "6634706",
+      "refId": "1cd20b31-9c05-46ee-b0ae-b28d03b13c3e",
+      "header": "Support SaaS with a custom runtime",
+      "description": "Connect a custom connector runtime running the MCP Client connector to Camunda SaaS when you need MCP client capabilities in a SaaS cluster.",
+      "hideOnOverview": false,
+      "position": 3,
+      "characteristics": []
+    },
+    {
+      "id": "6634707",
+      "refId": "df68abb1-0ced-4483-be25-b3749b1fc784",
+      "header": "Filter and govern tool access",
+      "description": "Allow specific tools or exclude risky tools to control what an AI agent can call; for example, enabling read-only file operations while blocking write actions.",
+      "hideOnOverview": false,
+      "position": 4,
+      "characteristics": []
+    },
+    {
+      "id": "6634708",
+      "refId": "218f745b-ef97-4a63-b956-ae4832ff48d2",
+      "header": "Call MCP operations without an agent",
+      "description": "Use standalone mode to list available tools or call a tool directly from a BPMN process without an AI agent.",
+      "hideOnOverview": false,
+      "position": 5,
+      "characteristics": []
+    },
+    {
+      "id": "6634709",
+      "refId": "501864eb-4ebe-4be9-b43a-494bc029872b",
+      "header": "Add human approval steps",
+      "description": "Combine MCP tool flows with other BPMN elements such as user tasks or intermediate events to create a human-in-the-loop interaction for tool calls.",
+      "hideOnOverview": false,
+      "position": 6,
+      "characteristics": []
+    }
+  ],
+  "tags": [
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 4068,
+      "name": "Industry",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20935,
+          "name": "Any",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 4069,
+      "name": "Use Case",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 22520,
+          "name": "Agentic AI orchestration",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 3984,
+      "name": "Supported BPMN Types",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20541,
+          "name": "bpmn:Task",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": "This relates to the template attribute \"appliesTo\""
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 4070,
+      "name": "Application",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20945,
+          "name": "AI Services",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 4005,
+      "name": "Version Compatibility",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 22546,
+          "name": "8.8",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        },
+        {
+          "type": "ATTRIBUTE",
+          "id": 23367,
+          "name": "8.9",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 3974,
+      "name": "Creator",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20486,
+          "name": "Camunda",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 3983,
+      "name": "Connector Runtime",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20536,
+          "name": "Camunda Connectors Bundle",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        },
+        {
+          "type": "ATTRIBUTE",
+          "id": 20537,
+          "name": "Host yourself",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": "SDK Connectors are made based on an SDK. Here you need to install the runtime and the template.\r\nFor protocol-based connector you only need to upload the template, they are reusing the runtime of our OOTB protocol connectors (REST, GraphQL etc.)."
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 4067,
+      "name": "Availability",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20922,
+          "name": "Open Source",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "CATEGORY",
+      "id": 107792,
+      "name": "Connectors",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "SUB_CATEGORY",
+          "id": 63914,
+          "name": "AI Services",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 4177,
+      "name": "Resource Types Included",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 21606,
+          "name": "Connector Template",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 3954,
+      "name": "Connector Type",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20535,
+          "name": "Outbound Connector",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    }
+  ],
+  "supportedLanguages": [
+    "en-US"
+  ],
+  "mosiConnectorType": "CREST",
+  "platforms": [],
+  "customAttributes": [
+    {
+      "attributeType": "TEXT_WITH_LOCALIZATION",
+      "label": "Creator Website Link",
+      "attributeKey": "0-creator-link",
+      "value": "https://camunda.com"
+    },
+    {
+      "attributeType": "TEXT_WITH_LOCALIZATION",
+      "label": "For SAAS",
+      "attributeKey": "1-template-only-for-SAAS",
+      "value": "useEditionTemplateLinks"
+    },
+    {
+      "attributeType": "TEXT_WITH_LOCALIZATION",
+      "label": "For SM",
+      "attributeKey": "2-template-only-for-sm",
+      "value": "https://github.com/camunda/connectors/tree/main/connectors/agentic-ai/connector-agentic-ai/element-templates"
+    }
+  ],
+  "productRibbon": null,
+  "merchandisingBadges": [],
+  "supportedCountries": [
+    "KN",
+    "KP",
+    "YE",
+    "AT",
+    "MU",
+    "US",
+    "VG",
+    "FJ",
+    "ER",
+    "JP",
+    "BV",
+    "CU",
+    "VA",
+    "IT",
+    "CY",
+    "RO",
+    "MX",
+    "ZW",
+    "GY",
+    "TT",
+    "AI",
+    "AX",
+    "SY",
+    "LT",
+    "GG",
+    "AZ",
+    "DK",
+    "MT",
+    "AN",
+    "WS",
+    "DE",
+    "ZM",
+    "ET",
+    "NF",
+    "GQ",
+    "PA",
+    "ME",
+    "PR",
+    "BO",
+    "ST",
+    "RS",
+    "GE",
+    "TC",
+    "GH",
+    "EC",
+    "KH",
+    "BZ",
+    "BF",
+    "IN",
+    "LI",
+    "SX",
+    "JE",
+    "CH",
+    "MR",
+    "AF",
+    "TD",
+    "WF",
+    "KZ",
+    "MM",
+    "MD",
+    "NU",
+    "JO",
+    "VC",
+    "NE",
+    "AL",
+    "DM",
+    "MO",
+    "NZ",
+    "GR",
+    "TK",
+    "GF",
+    "PM",
+    "FK",
+    "GS",
+    "GW",
+    "MC",
+    "IR",
+    "TJ",
+    "GL",
+    "SO",
+    "CK",
+    "SR",
+    "GM",
+    "MG",
+    "CC",
+    "GB",
+    "GP",
+    "AM",
+    "RE",
+    "NI",
+    "AU",
+    "NA",
+    "PH",
+    "HT",
+    "TV",
+    "BL",
+    "SV",
+    "SE",
+    "MH",
+    "BR",
+    "UG",
+    "BW",
+    "BM",
+    "LU",
+    "LA",
+    "LR",
+    "BY",
+    "NC",
+    "SG",
+    "RW",
+    "EH",
+    "HN",
+    "DZ",
+    "TO",
+    "CR",
+    "SZ",
+    "IS",
+    "MF",
+    "IQ",
+    "AG",
+    "PT",
+    "FM",
+    "FR",
+    "TM",
+    "AW",
+    "NL",
+    "DJ",
+    "HM",
+    "KY",
+    "MZ",
+    "CZ",
+    "DO",
+    "IL",
+    "YT",
+    "CG",
+    "SA",
+    "LS",
+    "SH",
+    "MV",
+    "BT",
+    "TR",
+    "BB",
+    "IO",
+    "MW",
+    "SN",
+    "TG",
+    "MY",
+    "KE",
+    "NO",
+    "SK",
+    "VU",
+    "AS",
+    "KW",
+    "ZA",
+    "BA",
+    "CX",
+    "HK",
+    "KR",
+    "CN",
+    "GU",
+    "LC",
+    "BE",
+    "PL",
+    "TW",
+    "AD",
+    "BG",
+    "NR",
+    "VN",
+    "BI",
+    "PY",
+    "UM",
+    "CS",
+    "JM",
+    "IM",
+    "SL",
+    "SC",
+    "CA",
+    "MS",
+    "VI",
+    "SJ",
+    "CL",
+    "HR",
+    "LB",
+    "LK",
+    "MA",
+    "MQ",
+    "NP",
+    "EE",
+    "SB",
+    "FO",
+    "CD",
+    "NG",
+    "QA",
+    "BS",
+    "CM",
+    "SI",
+    "BD",
+    "AR",
+    "KG",
+    "GD",
+    "PG",
+    "RU",
+    "ID",
+    "KI",
+    "TN",
+    "BQ",
+    "OM",
+    "BN",
+    "PK",
+    "PN",
+    "PS",
+    "BJ",
+    "LV",
+    "BH",
+    "CO",
+    "GA",
+    "PE",
+    "IE",
+    "GI",
+    "SS",
+    "SM",
+    "HU",
+    "PW",
+    "UZ",
+    "GT",
+    "MP",
+    "UY",
+    "CI",
+    "GN",
+    "CF",
+    "TF",
+    "LY",
+    "TZ",
+    "AQ",
+    "ES",
+    "MN",
+    "EG",
+    "AE",
+    "CW",
+    "FI",
+    "TH",
+    "UA",
+    "MK",
+    "PF",
+    "CV",
+    "AO",
+    "KM",
+    "TL",
+    "VE",
+    "SD",
+    "ML"
+  ],
+  "supportedCurrencies": [
+    "USD"
+  ],
+  "availableToResellers": true,
+  "useCheckoutForSpecialPricingMessage": false,
+  "childVisibleOnNetwork": false,
+  "sourcedProduct": false,
+  "sourceId": null,
+  "links": [],
+  "_embedded": {
+    "associatedAddons": []
+  },
+  "id": 682917
+}

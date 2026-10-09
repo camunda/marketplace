@@ -1,0 +1,57 @@
+id: 782061
+slug: "zoom-connector"
+name: "Zoom Connector"
+type: 
+  - "connector"
+creatorType: "community"
+creatorName: "Camunda / Calvin Robbins"
+creatorUrl: "https://www.linkedin.com/in/calvinrobbins/"
+categories: 
+  - "Enterprise Applications"
+industries: []
+useCases: 
+  - "Human Task orchestration"
+resourceTypes: 
+  - "Connector Template"
+bpmnTypes: 
+  - "bpmn:Task"
+runtimes: 
+  - "bundle"
+compatibleVersions: 
+  - "8.7"
+  - "8.8"
+  - "8.9"
+availability: "open-source"
+description: "Create and manage Zoom meetings"
+tagline: "Automate Zoom Meeting Management"
+body: |-
+  Automate Zoom meeting workflows in Camunda using a ready-to-use element template built on the REST connector. Create, update, retrieve and delete meetings, plus manage registrants and meeting details via the Zoom API.
+features: 
+  - header: "Create and schedule meetings"
+    description: "Create scheduled or instant meetings (and retrieve, update, or delete them) directly from a BPMN service task, enabling meeting provisioning as part of onboarding, incident response, approvals, and customer workflows."
+  - header: "Manage registrants and invitations"
+    description: "Support key meeting administration flows, including creating and managing registrants and accessing invitation-related details, so processes can automate attendee onboarding and meeting communications."
+  - header: "Secure authorization and flexible output mapping"
+    description: "Use Camunda secrets for the Zoom API authorization and map API responses to process variables via standard output mapping, keeping sensitive values out of BPMN and making results immediately usable downstream."
+templates: 
+  - id: null
+    name: "Zoom Connector Outbound Template"
+    url: "https://raw.githubusercontent.com/camunda-community-hub/camunda-zoom-connector/refs/heads/main/element-templates/zoom_connector.json"
+saasTemplate: null
+smTemplate: "https://github.com/camunda-community-hub/camunda-zoom-connector"
+githubRepo: null
+docsUrl: "https://github.com/crobbins215/camunda-zoom-connector/blob/main/README.md"
+previewImage: null
+demoRequestUrl: null
+relatedConnectors: null
+demoVideo: null
+icon: "icon.png"
+image: "thumb.png"
+heroImage: "hero.png"
+screenshots: []
+resources: []
+supportUrl: "https://forum.camunda.io/"
+termsUrl: null
+referUrl: null
+publishedOn: "2026-02-27"
+lastModified: "2026-05-27"

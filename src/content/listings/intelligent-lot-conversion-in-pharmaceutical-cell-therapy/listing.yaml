@@ -1,0 +1,63 @@
+id: 780873
+slug: "intelligent-lot-conversion-in-pharmaceutical-cell-therapy"
+name: "Intelligent Lot Conversion in Pharmaceutical Cell Therapy"
+type: 
+  - "solution"
+  - "blueprint"
+creatorType: "partner"
+creatorName: "Cognizant"
+creatorUrl: "https://www.cognizant.com"
+categories: 
+  - "Solution Accelerators"
+industries: 
+  - "Healthcare"
+useCases: 
+  - "Simplified case management"
+  - "Agentic AI orchestration"
+resourceTypes: []
+bpmnTypes: []
+runtimes: []
+compatibleVersions: 
+  - "8.8"
+  - "8.9"
+availability: "listing-only"
+description: "Automate OOS lot conversion orchestration"
+tagline: "Lot conversion process orchestration for commercial to clinical case execution"
+body: |-
+  Automate out-of-spec (OOS) lot conversion for cell therapy with agentic process orchestration, physician communication capture, and full auditability for compliance. Agentic orchestration handles real-time physician communications and routes actions through governed processes with human-in-the-loop oversight.
+features: 
+  - header: "Orchestrate cross-team lot conversion"
+    description: "Automates and orchestrate the end-to-end lot conversion process during an OOS event, ensuring faster and more reliable decision-making without compromising compliance. Reduce manual intervention, enable real-time data absorption, support AI-driven disposition decisions, and ensure synchronized updates across downstream enterprise systems."
+  - header: "Real-time process orchestration"
+    description: "Coordinates lot conversion processes from commercial operations to clinical execution, minimizing disruption to patient treatment timelines."
+  - header: "Agent-driven decision support"
+    description: "Automatically extracts data from physician emails and QC reports, improving accuracy and accelerating lot disposition decisions."
+  - header: "Human-in-the-loop governance"
+    description: "Maintains regulatory compliance and quality oversight while reducing manual workload and error risk."
+  - header: "Multi-system integration with downstream updates"
+    description: "Synchronizes updates across quality, manufacturing, regulatory, and supply chain systems in real time, eliminating reconciliation gaps."
+  - header: "Enhanced traceability and scalability"
+    description: "Provides end-to-end auditability and a scalable automation framework to support growing commercial cell therapy operations."
+templates: []
+saasTemplate: null
+smTemplate: null
+githubRepo: null
+docsUrl: null
+previewImage: null
+demoRequestUrl: null
+relatedConnectors: null
+demoVideo: 
+  provider: "youtube"
+  id: "nY0eTVygdPg"
+  url: "https://youtu.be/nY0eTVygdPg"
+icon: "icon.png"
+image: "thumb.png"
+heroImage: "hero.png"
+screenshots: 
+  - "screenshot-1.png"
+resources: []
+supportUrl: "https://forum.camunda.io/"
+termsUrl: null
+referUrl: null
+publishedOn: "2026-02-24"
+lastModified: "2026-06-05"

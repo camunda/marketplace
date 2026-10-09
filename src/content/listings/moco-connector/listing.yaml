@@ -1,0 +1,60 @@
+id: 453215
+slug: "moco-connector"
+name: "MOCO Connector"
+type: 
+  - "connector"
+creatorType: "community"
+creatorName: "Consid Gmbh / Stefan Schultz"
+creatorUrl: "https://www.consid.com"
+categories: 
+  - "Technical Protocols"
+industries: []
+useCases: 
+  - "Human Task orchestration"
+resourceTypes: 
+  - "Connector Template"
+bpmnTypes: 
+  - "bpmn:Task"
+runtimes: 
+  - "bundle"
+compatibleVersions: 
+  - "8.5"
+availability: "open-source"
+description: "Streamline your HR Workflows with MOCO and Camunda"
+tagline: "Streamline your HR processes with MOCO and Camunda"
+body: |-
+  Automate HR processes and synchronize data effortlessly with the MORO ERP Connector for Camunda. Boost productivity and streamline workflows with seamless integration into your existing systems.
+features: 
+  - header: "User and Team Management"
+    description: "Manage user and team entities and integrate them into your on- and off-boarding processes without disrupting your current workflows."
+  - header: "Manage Absences for Accurate Planning"
+    description: "Align your schedule with planned and unplanned absences to be always up to date in your planning."
+  - header: "Get Absence Reporting for Better Oversight"
+    description: "Integrate absence numbers into your planning processes. Easily track and analyze patterns without the need for additional tools."
+  - header: "Travel Expense Integration"
+    description: "Create your own customized travel expense process and integrate MOCO right into it as the leading data system."
+  - header: "Invoice Handling"
+    description: "Integrate invoice handling into your HR and financial processes, allowing you e.g. to monitor and manage late payments."
+templates: 
+  - id: null
+    name: "Moco Connector Outbound Template"
+    url: "https://raw.githubusercontent.com/consid-germany/camunda-moco-connector/refs/heads/main/element-templates/moco-rest-connector.json"
+saasTemplate: "https://raw.githubusercontent.com/consid-germany/camunda-moco-connector/refs/heads/main/element-templates/moco-rest-connector.json"
+smTemplate: "https://github.com/consid-germany/camunda-moco-connector"
+githubRepo: null
+docsUrl: "https://github.com/consid-germany/camunda-moco-connector/blob/main/README.md"
+previewImage: null
+demoRequestUrl: null
+relatedConnectors: null
+demoVideo: null
+icon: "icon.png"
+image: "thumb.png"
+heroImage: "hero.png"
+screenshots: 
+  - "screenshot-1.png"
+resources: []
+supportUrl: "https://github.com/consid-germany/camunda-moco-connector/issues"
+termsUrl: null
+referUrl: null
+publishedOn: "2024-09-20"
+lastModified: "2024-10-07"

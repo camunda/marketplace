@@ -1,0 +1,59 @@
+id: 778691
+slug: "hospital-integration-blueprint"
+name: "Hospital Integration Blueprint"
+type: 
+  - "solution"
+  - "blueprint"
+creatorType: "partner"
+creatorName: "PragmaEdge Inc"
+creatorUrl: "https://pragmaedge.com"
+categories: 
+  - "Agentic Solutions"
+  - "Solution Accelerators"
+industries: 
+  - "Healthcare"
+useCases: 
+  - "Simplified case management"
+  - "Agentic AI orchestration"
+resourceTypes: []
+bpmnTypes: []
+runtimes: []
+compatibleVersions: 
+  - "8.8"
+  - "8.9"
+availability: "listing-only"
+description: "Intelligent hospital workflows with AI"
+tagline: "AI-Powered Healthcare Workflow Automation"
+body: |-
+  Automate hospital workflows from patient discharge to insurance claims using Camunda 8 and AWS Bedrock AI. Includes emergency triage, resource management, nurse scheduling, and prior authorization with agentic AI.
+features: 
+  - header: " AI-Powered Patient Discharge to Claim Processing"
+    description: "Automates the complete workflow from patient discharge through insurance claim submission and payment using AWS Bedrock (Mistral 7B). Each step — discharge validation, claim preparation, submission, and payment processing —\n  uses dynamically generated AI prompts with full healthcare context including ICD-10 codes, CPT codes, and DRG classifications."
+  - header: "Emergency Department Workflow with Intelligent Triage"
+    description: "Manages the full ED workflow including patient registration, vital signs assessment, AI-powered symptom analysis and triage scoring, automated diagnostic ordering based on protocols, real-time resource reservation for rooms\n  and equipment, and multi-channel specialist notifications with automatic escalation."
+  - header: "Agentic AI Prior Authorization"
+    description: "An autonomous AI agent system that handles prior authorization screening and submission with goal-oriented planning, self-directed execution, confidence-based decision-making, and a learning mechanism that extracts patterns\n  from past outcomes to improve future decisions."
+  - header: "AI-Optimized Nurse Scheduling"
+    description: "Uses AWS Bedrock to analyze historical staffing data, patient acuity levels, and nurse skills to generate optimized shift schedules. Includes Redis-based real-time shift management, cost estimation, and workload balancing\n  across departments."
+  - header: " Real-Time Resource Management"
+    description: "Dynamic room, equipment, and staff reservation powered by Redis caching and AI-driven conflict resolution. Includes predictive demand forecasting over a 4-hour window with multi-factor optimization targeting 85%+ utilization\n  across departments."
+templates: []
+saasTemplate: null
+smTemplate: null
+githubRepo: null
+docsUrl: null
+previewImage: null
+demoRequestUrl: null
+relatedConnectors: null
+demoVideo: null
+icon: "icon.png"
+image: "thumb.png"
+heroImage: "hero.png"
+screenshots: 
+  - "screenshot-1.png"
+resources: []
+supportUrl: "https://forum.camunda.io/"
+termsUrl: null
+referUrl: null
+publishedOn: "2026-02-18"
+lastModified: "2026-02-19"

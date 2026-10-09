@@ -1,0 +1,1457 @@
+{
+  "resources": [],
+  "screenshots": [
+    {
+      "name": "AI Agent Task",
+      "imageUrl": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/522488/screenshot/img4392635403667417707.png",
+      "imageUrlSrcset": {
+        "default": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/522488/screenshot/img4392635403667417707.png",
+        "2x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/522488/screenshot/img4493780933607340061.png",
+        "1x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/522488/screenshot/img4392635403667417707.png"
+      }
+    }
+  ],
+  "addonOfferings": [],
+  "featuredCustomers": [],
+  "featuredMedia": [],
+  "href": "https://marketplace.camunda.com/api/marketplace/v1/products/522488",
+  "uuid": "e375be93-1510-42af-8efb-ccdecdc3e60c",
+  "productRefId": "cec28391-fce2-4cdb-8c93-40d1092c0ccd",
+  "publishedApp": null,
+  "workingApp": {
+    "id": "522486",
+    "href": "https://marketplace.camunda.com/api/marketplace/v1/products/522486"
+  },
+  "name": "AI Agent Connector",
+  "type": "WEB_APP",
+  "usesVariants": false,
+  "provider": {
+    "uuid": "948d0eed-a7db-479e-a7f2-423909d2e333",
+    "name": "Camunda",
+    "url": "camunda.com",
+    "creatorUserUuid": null,
+    "creatorName": null
+  },
+  "listing": {
+    "myAppLogoIconUrl": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/522488/myAppIcon/img13002160882541807421.png",
+    "imageUrl": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/522488/thumbs_64/img4120639925832910945.png",
+    "profileImageUrl": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/522488/thumbs_112/img4873832390456675931.png",
+    "myAppLogoIconSrcset": {
+      "default": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/522488/myAppIcon/img13002160882541807421.png",
+      "2x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/522488/myAppIcon/img13002160882541807421-2x.png",
+      "1x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/522488/myAppIcon/img13002160882541807421.png"
+    },
+    "imageSrcset": {
+      "default": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/522488/thumbs_64/img4120639925832910945.png",
+      "2x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/522488/thumbs_64/img4120639925832910945-2x.png",
+      "1x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/522488/thumbs_64/img4120639925832910945.png"
+    },
+    "profileImageSrcset": {
+      "default": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/522488/thumbs_112/img4873832390456675931.png",
+      "2x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/522488/thumbs_112/img4873832390456675931-2x.png",
+      "1x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/522488/thumbs_112/img4873832390456675931.png"
+    },
+    "blurb": "Bring the power of AI agents to business processes",
+    "overview": "Enhance business processes with AI agents that make decisions, generate content, and execute tasks intelligently.",
+    "rating": null,
+    "reviewCount": 0,
+    "mobileBundleId": null,
+    "mobileAppStoreId": null
+  },
+  "overview": {
+    "splashTitle": "Bring the power of AI agents to business processes",
+    "splashDescription": "AI agents are powerful, but without orchestration, they lack the coordination, accountability, and reliability needed for real-world, business-critical processes. Camunda orchestrates AI agents, ensures their work is transparent, and provides the reliability your customers are looking for. This connector makes it easy to add agents to processes and leverage advanced AI capabilities for complex automation use cases. Enhance processes with AI-powered decision-making, content generation, and intelligent task execution, all while using your AI service provider of choice.",
+    "imageUrl": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/522488/overview/img3413129807889304746.png?22b4f0345003c023b77704d70499d4eb",
+    "imageSrcset": {
+      "default": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/522488/overview/img3413129807889304746.png",
+      "2x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/522488/overview/img3413129807889304746-2x.png",
+      "1x": "https://d3bql97l1ytoxn.cloudfront.net/app_resources/522488/overview/img3413129807889304746.png"
+    },
+    "demoUrl": null,
+    "documentationUrl": "https://docs.camunda.io/docs/8.9/components/connectors/out-of-the-box-connectors/agentic-ai-aiagent/",
+    "downloadDocumentationUrl": null,
+    "systemRequirements": null,
+    "downloadFileSize": null,
+    "benefits": [],
+    "versions": {}
+  },
+  "support": {
+    "email": null,
+    "phone": null,
+    "knowledgebaseUrl": "https://forum.camunda.io/",
+    "description": null
+  },
+  "privacyUrl": null,
+  "termsUrl": null,
+  "referUrl": null,
+  "hostedLocation": null,
+  "lastModified": 1790165493000,
+  "pricing": {
+    "pricingSummary": null,
+    "footnotes": [],
+    "bullets": [],
+    "editions": [
+      {
+        "id": 979558,
+        "uuid": "194356b8-a3a9-4c6b-ae97-4fde91d36387",
+        "productEditionRefId": "a11412cb-f3fe-4714-831a-914f49ae76fa",
+        "rank": 1,
+        "name": "AI Agent Subprocess Element Template (v2)",
+        "primary": false,
+        "trial": {
+          "length": 0,
+          "unit": "DAY"
+        },
+        "expiredTrialGracePeriod": null,
+        "bundleOnly": false,
+        "targetAudience": null,
+        "code": "0",
+        "defaultFreeTrial": false,
+        "invisible": false,
+        "leadGen": false,
+        "lastModified": 1790165491000,
+        "revenueType": "RECURRING",
+        "restricted": false,
+        "freeTrialDuration": 0,
+        "freeTrialType": "DAY",
+        "privacyUrl": null,
+        "termsUrl": null,
+        "freeTrialEditionRequireBillingInfo": null,
+        "freeTrialEditionAutomaticUpgradeToPaidEnabled": null,
+        "plans": [
+          {
+            "href": "https://marketplace.camunda.com/api/marketplace/v1/products/522488/editions/979558/paymentPlans/1184359",
+            "id": 1184359,
+            "uuid": "1c4e0dfc-ed83-478c-90f8-b7b4e5d234cf",
+            "frequency": "MONTHLY",
+            "status": "ACTIVE",
+            "contract": null,
+            "allowCustomUsage": false,
+            "keepBillDateOnUsageChange": true,
+            "keepBillDateOnPricingPlanChange": true,
+            "separatePrepaid": false,
+            "isPrimaryPrice": false,
+            "costs": [
+              {
+                "id": 1755895,
+                "editionPricingItemId": 1540819,
+                "editionPricingItemUuid": "67820899-1bc9-4dcc-ba8b-791ca0816f3f",
+                "status": "ACTIVE",
+                "unit": "NOT_APPLICABLE",
+                "unitDependency": null,
+                "minUnits": 0.0,
+                "maxUnits": null,
+                "meteredUsage": false,
+                "increment": 1.0,
+                "pricePerIncrement": false,
+                "blockContractDecrease": false,
+                "blockContractIncrease": false,
+                "blockOriginalContractDecrease": false,
+                "canIncreaseUnits": true,
+                "canDecreaseUnits": true,
+                "amount": null,
+                "pricingStrategy": "UNIT"
+              }
+            ],
+            "discount": null,
+            "creditOnCancellation": false,
+            "primaryPrice": false
+          }
+        ],
+        "bullets": [
+          {
+            "id": null,
+            "content": "templateLink",
+            "tooltip": "https://raw.githubusercontent.com/camunda/connectors/refs/heads/main/connectors/agentic-ai/connector-agentic-ai/element-templates/agenticai-ai-agent-subprocess.v2.json"
+          },
+          {
+            "id": null,
+            "content": "appliesTo",
+            "tooltip": "bpmn:SubProcess"
+          }
+        ],
+        "items": [
+          {
+            "unit": "USER",
+            "amount": 1.0,
+            "unlimited": false
+          }
+        ],
+        "customizations": [],
+        "customAttributes": []
+      },
+      {
+        "id": 929542,
+        "uuid": "5520c9ea-484d-43bf-bf29-5afbcac609c6",
+        "productEditionRefId": "61181eab-90e6-4283-9a40-a9489c72bb36",
+        "rank": 1,
+        "name": "AI Agent Subprocess Element Template (v1)",
+        "primary": false,
+        "trial": {
+          "length": 0,
+          "unit": "DAY"
+        },
+        "expiredTrialGracePeriod": null,
+        "bundleOnly": false,
+        "targetAudience": null,
+        "code": "0",
+        "defaultFreeTrial": false,
+        "invisible": false,
+        "leadGen": false,
+        "lastModified": 1790165491000,
+        "revenueType": "RECURRING",
+        "restricted": false,
+        "freeTrialDuration": 0,
+        "freeTrialType": "DAY",
+        "privacyUrl": null,
+        "termsUrl": null,
+        "freeTrialEditionRequireBillingInfo": null,
+        "freeTrialEditionAutomaticUpgradeToPaidEnabled": null,
+        "plans": [
+          {
+            "href": "https://marketplace.camunda.com/api/marketplace/v1/products/522488/editions/929542/paymentPlans/1128163",
+            "id": 1128163,
+            "uuid": "4206a028-1c5d-4c3f-9d68-1154e65c5268",
+            "frequency": "MONTHLY",
+            "status": "ACTIVE",
+            "contract": null,
+            "allowCustomUsage": false,
+            "keepBillDateOnUsageChange": true,
+            "keepBillDateOnPricingPlanChange": true,
+            "separatePrepaid": false,
+            "isPrimaryPrice": false,
+            "costs": [
+              {
+                "id": 1659525,
+                "editionPricingItemId": 1469897,
+                "editionPricingItemUuid": "145e4c54-2f50-4cf2-994f-7844bacbd6d8",
+                "status": "ACTIVE",
+                "unit": "NOT_APPLICABLE",
+                "unitDependency": null,
+                "minUnits": 0.0,
+                "maxUnits": null,
+                "meteredUsage": false,
+                "increment": 1.0,
+                "pricePerIncrement": false,
+                "blockContractDecrease": false,
+                "blockContractIncrease": false,
+                "blockOriginalContractDecrease": false,
+                "canIncreaseUnits": true,
+                "canDecreaseUnits": true,
+                "amount": null,
+                "pricingStrategy": "UNIT"
+              }
+            ],
+            "discount": null,
+            "creditOnCancellation": false,
+            "primaryPrice": false
+          }
+        ],
+        "bullets": [
+          {
+            "id": null,
+            "content": "templateLink",
+            "tooltip": "https://raw.githubusercontent.com/camunda/connectors/refs/heads/main/connectors/agentic-ai/connector-agentic-ai/element-templates/agenticai-aiagent-job-worker.json"
+          },
+          {
+            "id": null,
+            "content": "appliesTo",
+            "tooltip": "bpmn:SubProcess"
+          }
+        ],
+        "items": [
+          {
+            "unit": "USER",
+            "amount": 1.0,
+            "unlimited": false
+          }
+        ],
+        "customizations": [],
+        "customAttributes": []
+      },
+      {
+        "id": 957478,
+        "uuid": "f725e106-b9d6-42a5-86b7-f57cbf24f101",
+        "productEditionRefId": "d073f336-c04c-414e-bdda-42ac6a5e3d37",
+        "rank": 1,
+        "name": "AI Agent Subprocess Element Template (v1, 8.9)",
+        "primary": false,
+        "trial": {
+          "length": 0,
+          "unit": "DAY"
+        },
+        "expiredTrialGracePeriod": null,
+        "bundleOnly": false,
+        "targetAudience": null,
+        "code": "0",
+        "defaultFreeTrial": false,
+        "invisible": false,
+        "leadGen": false,
+        "lastModified": 1790165491000,
+        "revenueType": "RECURRING",
+        "restricted": false,
+        "freeTrialDuration": 0,
+        "freeTrialType": "DAY",
+        "privacyUrl": null,
+        "termsUrl": null,
+        "freeTrialEditionRequireBillingInfo": null,
+        "freeTrialEditionAutomaticUpgradeToPaidEnabled": null,
+        "plans": [
+          {
+            "href": "https://marketplace.camunda.com/api/marketplace/v1/products/522488/editions/957478/paymentPlans/1160672",
+            "id": 1160672,
+            "uuid": "3c3798dd-f970-460f-ac37-66150eadc32b",
+            "frequency": "MONTHLY",
+            "status": "ACTIVE",
+            "contract": null,
+            "allowCustomUsage": false,
+            "keepBillDateOnUsageChange": true,
+            "keepBillDateOnPricingPlanChange": true,
+            "separatePrepaid": false,
+            "isPrimaryPrice": false,
+            "costs": [
+              {
+                "id": 1708245,
+                "editionPricingItemId": 1514469,
+                "editionPricingItemUuid": "19928153-4288-410a-bee7-2b2c3f00a9ba",
+                "status": "ACTIVE",
+                "unit": "NOT_APPLICABLE",
+                "unitDependency": null,
+                "minUnits": 0.0,
+                "maxUnits": null,
+                "meteredUsage": false,
+                "increment": 1.0,
+                "pricePerIncrement": false,
+                "blockContractDecrease": false,
+                "blockContractIncrease": false,
+                "blockOriginalContractDecrease": false,
+                "canIncreaseUnits": true,
+                "canDecreaseUnits": true,
+                "amount": null,
+                "pricingStrategy": "UNIT"
+              }
+            ],
+            "discount": null,
+            "creditOnCancellation": false,
+            "primaryPrice": false
+          }
+        ],
+        "bullets": [
+          {
+            "id": null,
+            "content": "templateLink",
+            "tooltip": "https://raw.githubusercontent.com/camunda/connectors/main/connectors/agentic-ai/connector-agentic-ai/element-templates/versioned/agenticai-aiagent-job-worker-7.json"
+          },
+          {
+            "id": null,
+            "content": "appliesTo",
+            "tooltip": "bpmn:SubProcess"
+          }
+        ],
+        "items": [
+          {
+            "unit": "USER",
+            "amount": 1.0,
+            "unlimited": false
+          }
+        ],
+        "customizations": [],
+        "customAttributes": []
+      },
+      {
+        "id": 957479,
+        "uuid": "88b57240-68c7-491d-b010-f8b4122fc607",
+        "productEditionRefId": "b5cf8cd9-52e9-42b6-b7c0-e00906e5cd76",
+        "rank": 1,
+        "name": "AI Agent Subprocess Element Template (v1, 8.8)",
+        "primary": false,
+        "trial": {
+          "length": 0,
+          "unit": "DAY"
+        },
+        "expiredTrialGracePeriod": null,
+        "bundleOnly": false,
+        "targetAudience": null,
+        "code": "0",
+        "defaultFreeTrial": false,
+        "invisible": false,
+        "leadGen": false,
+        "lastModified": 1790165491000,
+        "revenueType": "RECURRING",
+        "restricted": false,
+        "freeTrialDuration": 0,
+        "freeTrialType": "DAY",
+        "privacyUrl": null,
+        "termsUrl": null,
+        "freeTrialEditionRequireBillingInfo": null,
+        "freeTrialEditionAutomaticUpgradeToPaidEnabled": null,
+        "plans": [
+          {
+            "href": "https://marketplace.camunda.com/api/marketplace/v1/products/522488/editions/957479/paymentPlans/1160673",
+            "id": 1160673,
+            "uuid": "659ab7b2-6bcd-491a-a668-55793fbf215b",
+            "frequency": "MONTHLY",
+            "status": "ACTIVE",
+            "contract": null,
+            "allowCustomUsage": false,
+            "keepBillDateOnUsageChange": true,
+            "keepBillDateOnPricingPlanChange": true,
+            "separatePrepaid": false,
+            "isPrimaryPrice": false,
+            "costs": [
+              {
+                "id": 1708246,
+                "editionPricingItemId": 1514470,
+                "editionPricingItemUuid": "65a49a4d-9cb1-4d10-bf2d-cd2dcf9b15f4",
+                "status": "ACTIVE",
+                "unit": "NOT_APPLICABLE",
+                "unitDependency": null,
+                "minUnits": 0.0,
+                "maxUnits": null,
+                "meteredUsage": false,
+                "increment": 1.0,
+                "pricePerIncrement": false,
+                "blockContractDecrease": false,
+                "blockContractIncrease": false,
+                "blockOriginalContractDecrease": false,
+                "canIncreaseUnits": true,
+                "canDecreaseUnits": true,
+                "amount": null,
+                "pricingStrategy": "UNIT"
+              }
+            ],
+            "discount": null,
+            "creditOnCancellation": false,
+            "primaryPrice": false
+          }
+        ],
+        "bullets": [
+          {
+            "id": null,
+            "content": "templateLink",
+            "tooltip": "https://raw.githubusercontent.com/camunda/connectors/main/connectors/agentic-ai/connector-agentic-ai/element-templates/versioned/agenticai-aiagent-job-worker-5.json"
+          },
+          {
+            "id": null,
+            "content": "appliesTo",
+            "tooltip": "bpmn:SubProcess"
+          }
+        ],
+        "items": [
+          {
+            "unit": "USER",
+            "amount": 1.0,
+            "unlimited": false
+          }
+        ],
+        "customizations": [],
+        "customAttributes": []
+      },
+      {
+        "id": 979559,
+        "uuid": "fc5b3536-4ec9-47e3-b8d8-b08d2ace2cd9",
+        "productEditionRefId": "1cb7af91-f5a0-4d86-8036-8a70cd3f879c",
+        "rank": 1,
+        "name": "AI Agent Task Element Template (v2)",
+        "primary": false,
+        "trial": {
+          "length": 0,
+          "unit": "DAY"
+        },
+        "expiredTrialGracePeriod": null,
+        "bundleOnly": false,
+        "targetAudience": null,
+        "code": "0",
+        "defaultFreeTrial": false,
+        "invisible": false,
+        "leadGen": false,
+        "lastModified": 1790165491000,
+        "revenueType": "RECURRING",
+        "restricted": false,
+        "freeTrialDuration": 0,
+        "freeTrialType": "DAY",
+        "privacyUrl": null,
+        "termsUrl": null,
+        "freeTrialEditionRequireBillingInfo": null,
+        "freeTrialEditionAutomaticUpgradeToPaidEnabled": null,
+        "plans": [
+          {
+            "href": "https://marketplace.camunda.com/api/marketplace/v1/products/522488/editions/979559/paymentPlans/1184360",
+            "id": 1184360,
+            "uuid": "66afec0b-5194-49f5-acb1-ff9227aa8008",
+            "frequency": "MONTHLY",
+            "status": "ACTIVE",
+            "contract": null,
+            "allowCustomUsage": false,
+            "keepBillDateOnUsageChange": true,
+            "keepBillDateOnPricingPlanChange": true,
+            "separatePrepaid": false,
+            "isPrimaryPrice": false,
+            "costs": [
+              {
+                "id": 1755896,
+                "editionPricingItemId": 1540820,
+                "editionPricingItemUuid": "431b04c8-6d36-4f36-ae00-3de2ddf7ac88",
+                "status": "ACTIVE",
+                "unit": "NOT_APPLICABLE",
+                "unitDependency": null,
+                "minUnits": 0.0,
+                "maxUnits": null,
+                "meteredUsage": false,
+                "increment": 1.0,
+                "pricePerIncrement": false,
+                "blockContractDecrease": false,
+                "blockContractIncrease": false,
+                "blockOriginalContractDecrease": false,
+                "canIncreaseUnits": true,
+                "canDecreaseUnits": true,
+                "amount": null,
+                "pricingStrategy": "UNIT"
+              }
+            ],
+            "discount": null,
+            "creditOnCancellation": false,
+            "primaryPrice": false
+          }
+        ],
+        "bullets": [
+          {
+            "id": null,
+            "content": "templateLink",
+            "tooltip": "https://raw.githubusercontent.com/camunda/connectors/refs/heads/main/connectors/agentic-ai/connector-agentic-ai/element-templates/agenticai-ai-agent-task.v2.json"
+          },
+          {
+            "id": null,
+            "content": "appliesTo",
+            "tooltip": "bpmn:Task"
+          }
+        ],
+        "items": [
+          {
+            "unit": "USER",
+            "amount": 1.0,
+            "unlimited": false
+          }
+        ],
+        "customizations": [],
+        "customAttributes": []
+      },
+      {
+        "id": 911447,
+        "uuid": "fe05b597-19fa-426e-80a6-380b068f07af",
+        "productEditionRefId": "16d167fa-eeb5-4985-a906-2f1ff1a5bf6e",
+        "rank": 1,
+        "name": "AI Agent Task Element Template (v1)",
+        "primary": false,
+        "trial": {
+          "length": 0,
+          "unit": "DAY"
+        },
+        "expiredTrialGracePeriod": null,
+        "bundleOnly": false,
+        "targetAudience": null,
+        "code": "0",
+        "defaultFreeTrial": false,
+        "invisible": false,
+        "leadGen": false,
+        "lastModified": 1790165491000,
+        "revenueType": "RECURRING",
+        "restricted": false,
+        "freeTrialDuration": 0,
+        "freeTrialType": "DAY",
+        "privacyUrl": null,
+        "termsUrl": null,
+        "freeTrialEditionRequireBillingInfo": null,
+        "freeTrialEditionAutomaticUpgradeToPaidEnabled": null,
+        "plans": [
+          {
+            "href": "https://marketplace.camunda.com/api/marketplace/v1/products/522488/editions/911447/paymentPlans/1116503",
+            "id": 1116503,
+            "uuid": "c40f5f16-1a53-4a17-a2d7-e9ff79ae3993",
+            "frequency": "MONTHLY",
+            "status": "ACTIVE",
+            "contract": null,
+            "allowCustomUsage": false,
+            "keepBillDateOnUsageChange": true,
+            "keepBillDateOnPricingPlanChange": true,
+            "separatePrepaid": false,
+            "isPrimaryPrice": false,
+            "costs": [
+              {
+                "id": 1646356,
+                "editionPricingItemId": 1456395,
+                "editionPricingItemUuid": "47d59d07-deaa-4efe-a4f3-30229da6365c",
+                "status": "ACTIVE",
+                "unit": "NOT_APPLICABLE",
+                "unitDependency": null,
+                "minUnits": 0.0,
+                "maxUnits": null,
+                "meteredUsage": false,
+                "increment": 1.0,
+                "pricePerIncrement": false,
+                "blockContractDecrease": false,
+                "blockContractIncrease": false,
+                "blockOriginalContractDecrease": false,
+                "canIncreaseUnits": true,
+                "canDecreaseUnits": true,
+                "amount": null,
+                "pricingStrategy": "UNIT"
+              }
+            ],
+            "discount": null,
+            "creditOnCancellation": false,
+            "primaryPrice": false
+          }
+        ],
+        "bullets": [
+          {
+            "id": null,
+            "content": "templateLink",
+            "tooltip": "https://raw.githubusercontent.com/camunda/connectors/refs/heads/main/connectors/agentic-ai/connector-agentic-ai/element-templates/agenticai-aiagent-outbound-connector.json"
+          },
+          {
+            "id": null,
+            "content": "appliesTo",
+            "tooltip": "bpmn:Task"
+          }
+        ],
+        "items": [
+          {
+            "unit": "USER",
+            "amount": 1.0,
+            "unlimited": false
+          }
+        ],
+        "customizations": [],
+        "customAttributes": []
+      },
+      {
+        "id": 957480,
+        "uuid": "39f282c6-169e-44eb-b12d-1bf3bed375d4",
+        "productEditionRefId": "1eb4e552-fb7d-4ea2-a26c-79fea2f26e3c",
+        "rank": 1,
+        "name": "AI Agent Task Element Template (v1, 8.9)",
+        "primary": false,
+        "trial": {
+          "length": 0,
+          "unit": "DAY"
+        },
+        "expiredTrialGracePeriod": null,
+        "bundleOnly": false,
+        "targetAudience": null,
+        "code": "0",
+        "defaultFreeTrial": false,
+        "invisible": false,
+        "leadGen": false,
+        "lastModified": 1790165491000,
+        "revenueType": "RECURRING",
+        "restricted": false,
+        "freeTrialDuration": 0,
+        "freeTrialType": "DAY",
+        "privacyUrl": null,
+        "termsUrl": null,
+        "freeTrialEditionRequireBillingInfo": null,
+        "freeTrialEditionAutomaticUpgradeToPaidEnabled": null,
+        "plans": [
+          {
+            "href": "https://marketplace.camunda.com/api/marketplace/v1/products/522488/editions/957480/paymentPlans/1160674",
+            "id": 1160674,
+            "uuid": "d5b33592-43ee-4fe4-a731-d738f4a719c6",
+            "frequency": "MONTHLY",
+            "status": "ACTIVE",
+            "contract": null,
+            "allowCustomUsage": false,
+            "keepBillDateOnUsageChange": true,
+            "keepBillDateOnPricingPlanChange": true,
+            "separatePrepaid": false,
+            "isPrimaryPrice": false,
+            "costs": [
+              {
+                "id": 1708247,
+                "editionPricingItemId": 1514471,
+                "editionPricingItemUuid": "692c346c-ae72-4d54-98fc-9f032e46f18d",
+                "status": "ACTIVE",
+                "unit": "NOT_APPLICABLE",
+                "unitDependency": null,
+                "minUnits": 0.0,
+                "maxUnits": null,
+                "meteredUsage": false,
+                "increment": 1.0,
+                "pricePerIncrement": false,
+                "blockContractDecrease": false,
+                "blockContractIncrease": false,
+                "blockOriginalContractDecrease": false,
+                "canIncreaseUnits": true,
+                "canDecreaseUnits": true,
+                "amount": null,
+                "pricingStrategy": "UNIT"
+              }
+            ],
+            "discount": null,
+            "creditOnCancellation": false,
+            "primaryPrice": false
+          }
+        ],
+        "bullets": [
+          {
+            "id": null,
+            "content": "templateLink",
+            "tooltip": "https://raw.githubusercontent.com/camunda/connectors/main/connectors/agentic-ai/connector-agentic-ai/element-templates/versioned/agenticai-aiagent-outbound-connector-7.json"
+          },
+          {
+            "id": null,
+            "content": "appliesTo",
+            "tooltip": "bpmn:Task"
+          }
+        ],
+        "items": [
+          {
+            "unit": "USER",
+            "amount": 1.0,
+            "unlimited": false
+          }
+        ],
+        "customizations": [],
+        "customAttributes": []
+      },
+      {
+        "id": 957481,
+        "uuid": "a982def0-8fd0-43d9-aaf3-f027420d85d8",
+        "productEditionRefId": "1b18c10a-aef6-4f71-810e-81ef8e941611",
+        "rank": 1,
+        "name": "AI Agent Task Element Template (v1, 8.8)",
+        "primary": false,
+        "trial": {
+          "length": 0,
+          "unit": "DAY"
+        },
+        "expiredTrialGracePeriod": null,
+        "bundleOnly": false,
+        "targetAudience": null,
+        "code": "0",
+        "defaultFreeTrial": false,
+        "invisible": false,
+        "leadGen": false,
+        "lastModified": 1790165491000,
+        "revenueType": "RECURRING",
+        "restricted": false,
+        "freeTrialDuration": 0,
+        "freeTrialType": "DAY",
+        "privacyUrl": null,
+        "termsUrl": null,
+        "freeTrialEditionRequireBillingInfo": null,
+        "freeTrialEditionAutomaticUpgradeToPaidEnabled": null,
+        "plans": [
+          {
+            "href": "https://marketplace.camunda.com/api/marketplace/v1/products/522488/editions/957481/paymentPlans/1160675",
+            "id": 1160675,
+            "uuid": "477397de-f366-4168-9274-10f3dbc48200",
+            "frequency": "MONTHLY",
+            "status": "ACTIVE",
+            "contract": null,
+            "allowCustomUsage": false,
+            "keepBillDateOnUsageChange": true,
+            "keepBillDateOnPricingPlanChange": true,
+            "separatePrepaid": false,
+            "isPrimaryPrice": false,
+            "costs": [
+              {
+                "id": 1708248,
+                "editionPricingItemId": 1514472,
+                "editionPricingItemUuid": "cb91459e-fa34-42aa-8f07-5136c9d206c8",
+                "status": "ACTIVE",
+                "unit": "NOT_APPLICABLE",
+                "unitDependency": null,
+                "minUnits": 0.0,
+                "maxUnits": null,
+                "meteredUsage": false,
+                "increment": 1.0,
+                "pricePerIncrement": false,
+                "blockContractDecrease": false,
+                "blockContractIncrease": false,
+                "blockOriginalContractDecrease": false,
+                "canIncreaseUnits": true,
+                "canDecreaseUnits": true,
+                "amount": null,
+                "pricingStrategy": "UNIT"
+              }
+            ],
+            "discount": null,
+            "creditOnCancellation": false,
+            "primaryPrice": false
+          }
+        ],
+        "bullets": [
+          {
+            "id": null,
+            "content": "templateLink",
+            "tooltip": "https://raw.githubusercontent.com/camunda/connectors/main/connectors/agentic-ai/connector-agentic-ai/element-templates/versioned/agenticai-aiagent-outbound-connector-5.json"
+          },
+          {
+            "id": null,
+            "content": "appliesTo",
+            "tooltip": "bpmn:Task"
+          }
+        ],
+        "items": [
+          {
+            "unit": "USER",
+            "amount": 1.0,
+            "unlimited": false
+          }
+        ],
+        "customizations": [],
+        "customAttributes": []
+      }
+    ]
+  },
+  "publishedOn": 1747127734000,
+  "rating": null,
+  "absoluteRating": null,
+  "numRatings": null,
+  "buyable": true,
+  "importable": false,
+  "importableAppApprovalMode": null,
+  "free": false,
+  "freeTrialOrEditionPresent": false,
+  "referable": false,
+  "hidePricings": true,
+  "useCheckoutV2": true,
+  "visibleToCurrentUser": true,
+  "collectLeads": true,
+  "collectLeadsWithPurchaseEnabled": false,
+  "assignLeadsToDevelopers": true,
+  "newSubscriptionEnabled": true,
+  "multipleSubscriptionsEnabled": false,
+  "changeSubscriptionAllowed": true,
+  "displayQuestions": true,
+  "displayReviews": true,
+  "oneClickPurchasable": true,
+  "autoUpgradeToPaid": false,
+  "downloadFileSize": null,
+  "startingPrice": {
+    "unit": null,
+    "billingFrequency": "MONTHLY",
+    "amount": null,
+    "discount": null
+  },
+  "highestPercentageDiscount": null,
+  "highestFixedDiscount": null,
+  "bundledPlanIds": null,
+  "customIntegration": null,
+  "usageType": "SINGLE_USER",
+  "linkedImportableApplicationUuid": null,
+  "liveChatEnabled": false,
+  "liveChatAvailable": false,
+  "showThirdPartyLegalDisclosure": false,
+  "showSelfServiceRestriction": false,
+  "integrationConfiguration": {
+    "multipleSubscriptionsEnabled": false,
+    "integrationEventConfigurationWS": null,
+    "domainAssociationConfiguration": {
+      "settingsUrl": null,
+      "verificationUrl": null,
+      "maxDomainAssociation": null,
+      "linkUrl": null,
+      "unlinkUrl": null
+    },
+    "domainManagementEnabled": false,
+    "productSettings": null
+  },
+  "addon": false,
+  "supportsMultipleEditions": true,
+  "sellerName": null,
+  "features": [
+    {
+      "id": "6703438",
+      "refId": "c40eef18-dde4-4511-9990-f7ba21bb0ce5",
+      "header": "Multi-provider support",
+      "description": "Connect to various AI service providers including Anthropic, AWS Bedrock, Azure OpenAI, Google Vertex AI, OpenAI, and providers compatible to the OpenAI API.",
+      "hideOnOverview": false,
+      "position": 1,
+      "characteristics": []
+    },
+    {
+      "id": "6703439",
+      "refId": "53d1e365-46e0-4a2d-91d0-55268c7887ad",
+      "header": "Tool calling",
+      "description": "Empower AI agents with access to tools modeled as BPMN elements within an ad-hoc sub-process. Use the custom fromAi() FEEL function to obtain agent-generated text or structured JSON directly within FEEL expressions.",
+      "hideOnOverview": false,
+      "position": 2,
+      "characteristics": []
+    },
+    {
+      "id": "6703440",
+      "refId": "12113b43-22d3-41f6-9d49-963497b2e270",
+      "header": "Customizable prompts",
+      "description": "Design and configure AI prompts that align with your specific business requirements and use cases. Use document references to include non-text data in prompts.",
+      "hideOnOverview": false,
+      "position": 3,
+      "characteristics": []
+    },
+    {
+      "id": "6703441",
+      "refId": "c943db05-515c-4b04-89ce-cd7628c2f707",
+      "header": "Response formatting",
+      "description": "Define the structure of AI responses to fit your process needs.",
+      "hideOnOverview": false,
+      "position": 4,
+      "characteristics": []
+    },
+    {
+      "id": "6703442",
+      "refId": "5cc0f2ed-3dcd-4efc-bc40-591ecffd77b4",
+      "header": "Event handling",
+      "description": "React to external events while the AI agent is processing.",
+      "hideOnOverview": false,
+      "position": 5,
+      "characteristics": []
+    }
+  ],
+  "tags": [
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 4068,
+      "name": "Industry",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20935,
+          "name": "Any",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 4069,
+      "name": "Use Case",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 22520,
+          "name": "Agentic AI orchestration",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 4070,
+      "name": "Application",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20945,
+          "name": "AI Services",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 4005,
+      "name": "Version Compatibility",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 22546,
+          "name": "8.8",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        },
+        {
+          "type": "ATTRIBUTE",
+          "id": 23367,
+          "name": "8.9",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 3974,
+      "name": "Creator",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20486,
+          "name": "Camunda",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 4067,
+      "name": "Availability",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20922,
+          "name": "Open Source",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 3983,
+      "name": "Connector Runtime",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20536,
+          "name": "Camunda Connectors Bundle",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": "SDK Connectors are made based on an SDK. Here you need to install the runtime and the template.\r\nFor protocol-based connector you only need to upload the template, they are reusing the runtime of our OOTB protocol connectors (REST, GraphQL etc.)."
+    },
+    {
+      "type": "CATEGORY",
+      "id": 107792,
+      "name": "Connectors",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "SUB_CATEGORY",
+          "id": 63914,
+          "name": "AI Services",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 4177,
+      "name": "Resource Types Included",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 21606,
+          "name": "Connector Template",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 3954,
+      "name": "Connector Type",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20535,
+          "name": "Outbound Connector",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": null
+    },
+    {
+      "type": "ATTRIBUTE_GROUP",
+      "id": 3984,
+      "name": "Supported BPMN Types",
+      "badge": null,
+      "showBadge": false,
+      "showOnNavigation": true,
+      "children": [
+        {
+          "type": "ATTRIBUTE",
+          "id": 20541,
+          "name": "bpmn:Task",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        },
+        {
+          "type": "ATTRIBUTE",
+          "id": 23319,
+          "name": "bpmn:SubProcess",
+          "badge": null,
+          "showBadge": false,
+          "showOnNavigation": true,
+          "children": null,
+          "description": null
+        }
+      ],
+      "description": "This relates to the template attribute \"appliesTo\""
+    }
+  ],
+  "supportedLanguages": [
+    "en-US"
+  ],
+  "mosiConnectorType": "CREST",
+  "platforms": [],
+  "customAttributes": [
+    {
+      "attributeType": "TEXT_WITH_LOCALIZATION",
+      "label": "Creator Website Link",
+      "attributeKey": "0-creator-link",
+      "value": "https://camunda.com"
+    },
+    {
+      "attributeType": "TEXT_WITH_LOCALIZATION",
+      "label": "For SAAS",
+      "attributeKey": "1-template-only-for-SAAS",
+      "value": "useEditionTemplateLinks"
+    },
+    {
+      "attributeType": "TEXT_WITH_LOCALIZATION",
+      "label": "For SM",
+      "attributeKey": "2-template-only-for-sm",
+      "value": "https://github.com/camunda/connectors/tree/main/connectors/agentic-ai/connector-agentic-ai/element-templates"
+    }
+  ],
+  "productRibbon": null,
+  "merchandisingBadges": [],
+  "supportedCountries": [
+    "KN",
+    "KP",
+    "YE",
+    "AT",
+    "MU",
+    "US",
+    "VG",
+    "FJ",
+    "ER",
+    "JP",
+    "BV",
+    "CU",
+    "VA",
+    "IT",
+    "CY",
+    "RO",
+    "MX",
+    "ZW",
+    "GY",
+    "TT",
+    "AI",
+    "SY",
+    "AX",
+    "LT",
+    "GG",
+    "DK",
+    "AZ",
+    "MT",
+    "AN",
+    "WS",
+    "DE",
+    "ZM",
+    "NF",
+    "ET",
+    "GQ",
+    "PA",
+    "ME",
+    "PR",
+    "BO",
+    "ST",
+    "RS",
+    "GE",
+    "TC",
+    "GH",
+    "KH",
+    "EC",
+    "BZ",
+    "BF",
+    "IN",
+    "LI",
+    "SX",
+    "JE",
+    "CH",
+    "MR",
+    "TD",
+    "AF",
+    "WF",
+    "KZ",
+    "MM",
+    "MD",
+    "NU",
+    "JO",
+    "VC",
+    "NE",
+    "MO",
+    "AL",
+    "DM",
+    "NZ",
+    "GR",
+    "TK",
+    "PM",
+    "GF",
+    "FK",
+    "MC",
+    "GS",
+    "GW",
+    "TJ",
+    "IR",
+    "GL",
+    "SO",
+    "CK",
+    "SR",
+    "MG",
+    "GM",
+    "GB",
+    "CC",
+    "GP",
+    "AM",
+    "RE",
+    "NI",
+    "AU",
+    "NA",
+    "PH",
+    "TV",
+    "HT",
+    "BL",
+    "SV",
+    "SE",
+    "MH",
+    "BR",
+    "UG",
+    "BW",
+    "BM",
+    "LU",
+    "LA",
+    "LR",
+    "NC",
+    "BY",
+    "SG",
+    "RW",
+    "EH",
+    "HN",
+    "DZ",
+    "TO",
+    "CR",
+    "SZ",
+    "IS",
+    "MF",
+    "IQ",
+    "PT",
+    "AG",
+    "FM",
+    "FR",
+    "TM",
+    "AW",
+    "NL",
+    "DJ",
+    "HM",
+    "KY",
+    "MZ",
+    "CZ",
+    "DO",
+    "IL",
+    "YT",
+    "CG",
+    "SA",
+    "LS",
+    "SH",
+    "MV",
+    "BT",
+    "TR",
+    "BB",
+    "IO",
+    "MW",
+    "TG",
+    "SN",
+    "MY",
+    "NO",
+    "KE",
+    "SK",
+    "VU",
+    "AS",
+    "KW",
+    "ZA",
+    "BA",
+    "HK",
+    "CX",
+    "KR",
+    "CN",
+    "GU",
+    "LC",
+    "BE",
+    "PL",
+    "TW",
+    "AD",
+    "BG",
+    "VN",
+    "NR",
+    "BI",
+    "PY",
+    "UM",
+    "CS",
+    "JM",
+    "IM",
+    "SL",
+    "SC",
+    "CA",
+    "MS",
+    "VI",
+    "SJ",
+    "CL",
+    "HR",
+    "LB",
+    "LK",
+    "MQ",
+    "MA",
+    "NP",
+    "SB",
+    "EE",
+    "FO",
+    "CD",
+    "NG",
+    "QA",
+    "BS",
+    "CM",
+    "SI",
+    "BD",
+    "AR",
+    "KG",
+    "GD",
+    "PG",
+    "RU",
+    "ID",
+    "KI",
+    "TN",
+    "BQ",
+    "OM",
+    "BN",
+    "PK",
+    "PS",
+    "PN",
+    "BJ",
+    "LV",
+    "BH",
+    "CO",
+    "PE",
+    "GA",
+    "IE",
+    "GI",
+    "SS",
+    "SM",
+    "HU",
+    "PW",
+    "UZ",
+    "GT",
+    "MP",
+    "UY",
+    "CI",
+    "GN",
+    "CF",
+    "TF",
+    "LY",
+    "TZ",
+    "MN",
+    "AQ",
+    "ES",
+    "EG",
+    "AE",
+    "CW",
+    "FI",
+    "TH",
+    "UA",
+    "MK",
+    "PF",
+    "CV",
+    "AO",
+    "KM",
+    "TL",
+    "VE",
+    "SD",
+    "ML"
+  ],
+  "supportedCurrencies": [
+    "USD"
+  ],
+  "availableToResellers": true,
+  "useCheckoutForSpecialPricingMessage": false,
+  "childVisibleOnNetwork": false,
+  "sourcedProduct": false,
+  "sourceId": null,
+  "links": [],
+  "_embedded": {
+    "associatedAddons": []
+  },
+  "id": 522488
+}

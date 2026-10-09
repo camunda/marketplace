@@ -1,0 +1,56 @@
+id: 632606
+slug: "sap-eventing-outbound-connector"
+name: "SAP Eventing Outbound Connector"
+type: 
+  - "connector"
+creatorType: "camunda"
+creatorName: "Camunda"
+creatorUrl: "https://camunda.com/"
+categories: 
+  - "Enterprise Applications"
+industries: []
+useCases: []
+resourceTypes: 
+  - "Connector Template"
+bpmnTypes: 
+  - "bpmn:Task"
+runtimes: 
+  - "bundle"
+compatibleVersions: 
+  - "8.6"
+  - "8.7"
+  - "8.8"
+availability: "open-source"
+description: "Send CloudEvents to SAP AEM"
+tagline: "Send CloudEvents to SAP Advanced Event Mesh"
+body: |-
+  Enables real-time, event-driven integrations across SAP BTP, S/4HANA, and ECC systems.
+features: 
+  - header: "CloudEvent publishing made simple"
+    description: "Send CloudEvents directly from Camunda to SAP AEM topics or queues using HTTP POST."
+  - header: "Native CloudEvent structure"
+    description: "Automatically handles CloudEvent metadata and JSON body formatting—no manual mapping required."
+  - header: "Built-in authentication options"
+    description: "Supports basic, API key, OAuth 2.0, and bearer token authentication for secure AEM access."
+templates: 
+  - id: null
+    name: "SAP Eventing Outbound Connector Outbound Template"
+    url: "https://raw.githubusercontent.com/camunda/sap-connectors/ec7ed38ed3cae366e905bacc81c132b0a73b1afa/eventing-connectors/element-templates/sap-eventing-outbound-connector.json"
+saasTemplate: null
+smTemplate: "https://github.com/camunda/sap-connectors/tree/ec7ed38ed3cae366e905bacc81c132b0a73b1afa/eventing-connectors/element-templates"
+githubRepo: null
+docsUrl: "https://docs.camunda.io/docs/components/camunda-integrations/sap/eventing"
+previewImage: null
+demoRequestUrl: null
+relatedConnectors: null
+demoVideo: null
+icon: "icon.png"
+image: "thumb.png"
+heroImage: "hero.png"
+screenshots: []
+resources: []
+supportUrl: "https://forum.camunda.io/"
+termsUrl: null
+referUrl: null
+publishedOn: "2025-10-15"
+lastModified: "2025-10-15"
