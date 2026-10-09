@@ -10,12 +10,12 @@ export async function GET() {
   const items = listings.filter(isBlueprint).filter(hasSourceFiles).map((l) => ({
     id: String(l.id),
     name: l.name,
-    overview: l.tagline ?? l.description,
+    overview: l.description,
     description: l.description,
-    creatorName: l.creatorName,
+    creatorName: l.creatorName ?? null,
     documentationUrl: new URL(`/listings/${l.slug}/`, import.meta.env.SITE).toString(),
     iconUrl: assetUrl(l, l.icon) ? new URL(assetUrl(l, l.icon)!, import.meta.env.SITE).toString() : null,
-    overviewImageUrl: assetUrl(l, l.heroImage) ? new URL(assetUrl(l, l.heroImage)!, import.meta.env.SITE).toString() : null,
+    overviewImageUrl: l.gallery[0] ? new URL(assetUrl(l, l.gallery[0])!, import.meta.env.SITE).toString() : null,
     requiredCamundaVersion: requiredVersion(l),
     cta: saasTemplateUrls(l).length
       ? { text: 'Use in Web Modeler', iconRef: 'web-modeler' }

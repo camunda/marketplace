@@ -1,0 +1,40 @@
+---
+id: 437162
+name: "Error Handling"
+creatorType: "camunda"
+creatorName: "Camunda"
+creatorUrl: "https://camunda.com/"
+categories: 
+  - "Patterns"
+useCases: 
+  - "Microservices orchestration"
+compatibleVersions: 
+  - "8.2"
+  - "8.3"
+  - "8.4"
+  - "8.5"
+availability: "open-source"
+description: "Robust error management for processes"
+templates: 
+  - url: "https://raw.githubusercontent.com/camunda/camunda-platform-tutorials/main/solutions/error-handling/Error%20Handling.bpmn"
+    name: "Error Handling.bpmn"
+smTemplate: "https://github.com/camunda/camunda-platform-tutorials/tree/main/solutions/error-handling"
+links: 
+  preview: "https://raw.githubusercontent.com/camunda/camunda-platform-tutorials/main/solutions/error-handling/Error%20Handling.bpmn"
+  support: "https://forum.camunda.io/"
+lastModified: "2026-04-09"
+---
+
+*Mastering BPMN Error Handling*
+
+Implement advanced error handling within BPMN processes with a focus on catching, managing, and resolving errors efficiently.
+
+## Features
+
+### Manual Error Handling Workflows
+
+Provides workflows for manual error handling where automated resolution is not feasible, ensuring process continuity.
+
+### Error Monitoring and Alerts
+
+Offers tools for monitoring errors and alerting relevant stakeholders, enabling proactive management.

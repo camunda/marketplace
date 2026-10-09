@@ -1,18 +1,18 @@
 ---
 import Base from '../../../layouts/Base.astro';
-import { getCollection, render } from 'astro:content';
-import { webModelerImportUrl, videoEmbedUrl, assetUrl } from '../../../lib/data';
+import { render } from 'astro:content';
+import { getListings, webModelerImportUrl, videoEmbedUrl, parseVideo, assetUrl } from '../../../lib/data';
 
 export async function getStaticPaths() {
-  const entries = await getCollection('listings');
-  return entries.map((entry) => ({ params: { slug: entry.data.slug }, props: { entry } }));
+  const listings = await getListings();
+  return listings.map((l) => ({ params: { slug: l.slug }, props: { l } }));
 }
 
-const { entry } = Astro.props;
-const { Content } = await render(entry);
-const l = entry.data;
+const { l } = Astro.props;
+const { Content } = await render(l.entry);
 const importUrl = webModelerImportUrl(l);
 const embedUrl = videoEmbedUrl(l);
+const videoLink = !embedUrl && l.video ? parseVideo(l.video)?.url : null;
 
 const sidebar: [string, string[]][] = [
   ['Categories', l.categories],
@@ -21,7 +21,17 @@ const sidebar: [string, string[]][] = [
   ['Resources included', l.resourceTypes],
   ['BPMN types', l.bpmnTypes],
   ['Runtime', l.runtimes.map((r) => (r === 'bundle' ? 'Camunda connectors' : 'Self-hosted'))],
+  ['Connector type', l.connectorTypes],
   ['Compatible versions', l.compatibleVersions],
+];
+
+const links: [string, string | undefined][] = [
+  ['GitHub repository', l.links.github],
+  ['Documentation', l.links.docs],
+  ['Process preview', l.links.preview],
+  ['Request demo', l.links.demo],
+  ['Support', l.links.support],
+  ['Website', l.links.website],
 ];
 ---
 
@@ -47,22 +57,17 @@ const sidebar: [string, string[]][] = [
             )}
             {l.availability && <span class="pill">{l.availability}</span>}
           </p>
-          {l.tagline && <p class="tagline">{l.tagline}</p>}
         </div>
       </header>
 
       <div class="ctas">
         {importUrl && <a class="button primary" href={importUrl} target="_blank" rel="noopener">Use in SaaS</a>}
         {l.smTemplate && <a class="button" href={l.smTemplate} target="_blank" rel="noopener">Use Self-Managed</a>}
-        {l.githubRepo && <a class="button" href={l.githubRepo} target="_blank" rel="noopener">GitHub repository</a>}
-        {l.docsUrl && <a class="button" href={l.docsUrl} target="_blank" rel="noopener">Documentation</a>}
-        {l.demoRequestUrl && <a class="button" href={l.demoRequestUrl} target="_blank" rel="noopener">Request demo</a>}
-        {l.referUrl && <a class="button" href={l.referUrl} target="_blank" rel="noopener">Visit website</a>}
+        {l.links.github && <a class="button" href={l.links.github} target="_blank" rel="noopener">GitHub repository</a>}
+        {l.links.docs && <a class="button" href={l.links.docs} target="_blank" rel="noopener">Documentation</a>}
+        {l.links.demo && <a class="button" href={l.links.demo} target="_blank" rel="noopener">Request demo</a>}
+        {l.links.website && <a class="button" href={l.links.website} target="_blank" rel="noopener">Visit website</a>}
         <a class="button" href={`/listings/${l.slug}/contact/`}>Contact</a>
-      </div>
-
-      <div class="body">
-        <Content />
       </div>
 
       {
@@ -72,24 +77,21 @@ const sidebar: [string, string[]][] = [
           </div>
         )
       }
+      {videoLink && <p><a href={videoLink} target="_blank" rel="noopener">Watch the demo video</a></p>}
+
       {
-        !embedUrl && l.demoVideo && (
-          <p><a href={l.demoVideo.url} target="_blank" rel="noopener">Watch the demo video</a></p>
+        l.gallery.length > 0 && (
+          <div class="gallery" role="region" aria-label="Screenshots">
+            {l.gallery.map((g, i) => (
+              <img src={assetUrl(l, g)!} alt={`${l.name} image ${i + 1}`} loading="lazy" />
+            ))}
+          </div>
         )
       }
 
-      {
-        l.screenshots.length > 0 && (
-          <>
-            <h2>Screenshots</h2>
-            <div class="screens">
-              {l.screenshots.map((s) => (
-                <img src={assetUrl(l, s)!} alt={`${l.name} screenshot`} loading="lazy" />
-              ))}
-            </div>
-          </>
-        )
-      }
+      <div class="body">
+        <Content />
+      </div>
 
       {
         l.resources.length > 0 && (
@@ -122,8 +124,9 @@ const sidebar: [string, string[]][] = [
       <div class="facet">
         <h3>Links</h3>
         <p>
-          {l.supportUrl && <><a href={l.supportUrl} target="_blank" rel="noopener">Support</a><br /></>}
-          {l.previewImage && <><a href={l.previewImage} target="_blank" rel="noopener">Process preview</a><br /></>}
+          {links.filter(([, href]) => href).map(([label, href]) => (
+            <><a href={href} target="_blank" rel="noopener">{label}</a><br /></>
+          ))}
         </p>
       </div>
       {l.lastModified && <p class="updated">Last updated {l.lastModified}</p>}
@@ -140,18 +143,31 @@ const sidebar: [string, string[]][] = [
   }
   .head { display: flex; gap: 20px; align-items: flex-start; }
   .head h1 { margin: 0 0 4px; }
-  .creator { color: var(--muted); margin: 0 0 4px; display: flex; gap: 8px; align-items: center; }
-  .tagline { color: var(--muted); font-size: 18px; margin: 8px 0 0; }
+  .creator { color: var(--muted); margin: 0; display: flex; gap: 8px; align-items: center; }
   .ctas { display: flex; gap: 10px; flex-wrap: wrap; margin: 24px 0; }
-  .body { font-size: 16px; line-height: 1.6; }
   .video iframe {
     width: 100%;
     aspect-ratio: 16 / 9;
     border: 0;
     border-radius: 8px;
   }
-  .screens { display: grid; gap: 12px; }
-  .screens img { max-width: 100%; border: 1px solid var(--line); border-radius: 8px; }
+  .gallery {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 8px;
+    margin: 8px 0 24px;
+  }
+  .gallery img {
+    height: 260px;
+    width: auto;
+    flex: 0 0 auto;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    scroll-snap-align: start;
+  }
+  .body { font-size: 16px; line-height: 1.6; }
   .facet { border-top: 1px solid var(--line); padding: 12px 0; }
   .facet h3 { margin: 0 0 6px; font-size: 13px; text-transform: uppercase; color: var(--muted); }
   .facet p { margin: 0; font-size: 14px; }

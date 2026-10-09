@@ -14,7 +14,7 @@ export async function getStaticPaths() {
 export async function GET({ props }: { props: { l: Awaited<ReturnType<typeof getListings>>[number] } }) {
   const { l } = props;
   return Response.json({
-    creatorUrl: l.creatorUrl,
-    templates: l.templates,
+    creatorUrl: l.creatorUrl ?? null,
+    templates: l.templates.map((t) => ({ id: t.id ?? null, name: t.name ?? null, url: t.url })),
   });
 }

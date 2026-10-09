@@ -12,30 +12,35 @@ const CONTENT_TYPES: Record<string, string> = {
   webp: 'image/webp',
 };
 
+function listingDir(entryId: string) {
+  // entry.id from the glob loader: "<typeDir>/<slug>/listing"
+  return join(CONTENT_DIR, entryId.split('/').slice(0, -1).join('/'));
+}
+
 /**
- * Serves the media files that sit next to a listing's listing.yaml
- * (icon.png, screenshot-1.png, ...) as static files at
- * /listings/<slug>/assets/<file>. Keeps each listing self-contained.
+ * Serves the media files that sit next to a listing's listing.md
+ * (icon.png, gallery-*.png) as static files at /listings/<slug>/assets/<file>.
+ * Keeps each listing self-contained.
  */
 export async function getStaticPaths() {
   const listings = await getListings();
   const paths = [];
   for (const l of listings) {
-    const dir = join(CONTENT_DIR, l.slug);
+    const dir = listingDir(l.entry.id);
     if (!existsSync(dir)) continue;
     for (const file of readdirSync(dir)) {
       const ext = file.split('.').pop()?.toLowerCase() ?? '';
       if (ext in CONTENT_TYPES) {
-        paths.push({ params: { slug: l.slug, file }, props: { slug: l.slug, file } });
+        paths.push({ params: { slug: l.slug, file }, props: { entryId: l.entry.id, file } });
       }
     }
   }
   return paths;
 }
 
-export async function GET({ props }: { props: { slug: string; file: string } }) {
-  const { slug, file } = props;
-  const body = readFileSync(join(CONTENT_DIR, slug, file));
+export async function GET({ props }: { props: { entryId: string; file: string } }) {
+  const { entryId, file } = props;
+  const body = readFileSync(join(listingDir(entryId), file));
   const ext = file.split('.').pop()?.toLowerCase() ?? '';
   return new Response(new Uint8Array(body), {
     headers: {

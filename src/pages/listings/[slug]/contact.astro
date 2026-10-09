@@ -1,15 +1,13 @@
 ---
 import Base from '../../../layouts/Base.astro';
-import { getCollection } from 'astro:content';
-import { assetUrl } from '../../../lib/data';
+import { getListings, assetUrl } from '../../../lib/data';
 
 export async function getStaticPaths() {
-  const entries = await getCollection('listings');
-  return entries.map((entry) => ({ params: { slug: entry.data.slug }, props: { entry } }));
+  const listings = await getListings();
+  return listings.map((l) => ({ params: { slug: l.slug }, props: { l } }));
 }
 
-const { entry } = Astro.props;
-const l = entry.data;
+const { l } = Astro.props;
 ---
 
 <Base title={`Contact - ${l.name}`} description={`Contact the creator of ${l.name}.`}>

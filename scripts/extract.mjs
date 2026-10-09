@@ -3,15 +3,15 @@
  * Migrates the AppDirect export (appdirect-export/) into Astro content.
  *
  * Input : appdirect-export/listing.json + appdirect-export/products/<id>.json
- * Output: src/content/listings/<slug>/listing.yaml  (one directory per listing)
- *         src/content/listings/<slug>/*.png         (vendored icons, screenshots)
+ * Output: src/content/listings/<type>s/<slug>/listing.md  (frontmatter + markdown body)
+ *         src/content/listings/<type>s/<slug>/*.png       (icon.png, gallery-*.png)
  *
  * Re-runnable. Safe to execute before cutover to pick up AppDirect changes.
  *
  * Usage: node scripts/extract.mjs [--skip-images]
  */
 
-import { mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs';
+import { mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -34,6 +34,8 @@ const PRODUCT_TYPE_CATEGORIES = {
   Blueprints: 'blueprint',
   'Partner Solutions': 'solution',
 };
+
+const TYPE_DIRS = { connector: 'connectors', blueprint: 'blueprints', solution: 'solutions' };
 
 const RUNTIME_MAP = {
   'Camunda Connectors Bundle': 'bundle',
@@ -62,11 +64,10 @@ const CUSTOM_ATTRIBUTE_MAP = {
   '0-creator-link': 'creatorUrl',
   '1-template-only-for-SAAS': 'saasTemplate',
   '2-template-only-for-sm': 'smTemplate',
-  '1-github-repo-compile-yourself': 'githubRepo',
-  '2-compile-yourself-Guide': 'docsUrl',
-  '3-bpmn-process-preview': 'previewImage',
-  'related_connectors': 'relatedConnectors',
-  'request-demo': 'demoRequestUrl',
+  '1-github-repo-compile-yourself': 'github',
+  '2-compile-yourself-Guide': 'docs',
+  '3-bpmn-process-preview': 'preview',
+  'request-demo': 'demo',
 };
 
 // ---------------------------------------------------------------------------
@@ -108,15 +109,6 @@ function compareVersions(a, b) {
   return pa[0] - pb[0] || (pa[1] ?? 0) - (pb[1] ?? 0);
 }
 
-function parseVideo(url) {
-  if (!url) return null;
-  const yt = url.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|shorts\/))([\w-]{6,})/);
-  if (yt) return { provider: 'youtube', id: yt[1], url };
-  const vimeo = url.match(/(?:player\.)?vimeo\.com\/(?:video\/)?(\d+)/);
-  if (vimeo) return { provider: 'vimeo', id: vimeo[1], url };
-  return { provider: 'link', url };
-}
-
 function isoDate(epochMs) {
   return epochMs ? new Date(epochMs).toISOString().slice(0, 10) : null;
 }
@@ -130,7 +122,12 @@ function extractTemplates(product) {
       if (bullet.content === 'templateLink') link = bullet.tooltip;
       if (bullet.content === 'templateId') id = bullet.tooltip;
     }
-    if (link) templates.push({ id, name: edition.name ?? null, url: link });
+    if (link) {
+      const t = { url: link };
+      if (id) t.id = id;
+      if (edition.name) t.name = edition.name;
+      templates.push(t);
+    }
   }
   return templates;
 }
@@ -157,20 +154,19 @@ function buildVendorCanonicalizer(products) {
 }
 
 // ---------------------------------------------------------------------------
-// Minimal YAML emitter (strings are JSON-quoted => always valid YAML)
+// Minimal YAML emitter (strings are JSON-quoted => always valid YAML).
+// null/undefined/[] fields are omitted entirely.
 // ---------------------------------------------------------------------------
 
 function yamlValue(value, indent) {
-  if (value === null || value === undefined) return 'null';
   if (Array.isArray(value)) {
-    if (value.length === 0) return '[]';
     const pad = ' '.repeat(indent);
     return (
       '\n' +
       value
         .map((item) => {
           if (item !== null && typeof item === 'object') {
-            const entries = Object.entries(item).filter(([, v]) => v !== undefined);
+            const entries = Object.entries(item).filter(([, v]) => v !== undefined && v !== null);
             const [first, ...rest] = entries;
             let out = `${pad}- ${first[0]}: ${yamlValue(first[1], indent + 2)}`;
             for (const [k, v] of rest) out += `\n${pad}  ${k}: ${yamlValue(v, indent + 2)}`;
@@ -181,12 +177,11 @@ function yamlValue(value, indent) {
         .join('\n')
     );
   }
-  if (typeof value === 'object') {
+  if (typeof value === 'object' && value !== null) {
     const pad = ' '.repeat(indent);
     return (
       '\n' +
       Object.entries(value)
-        .filter(([, v]) => v !== undefined)
         .map(([k, v]) => `${pad}${k}: ${yamlValue(v, indent + 2)}`)
         .join('\n')
     );
@@ -198,32 +193,31 @@ function yamlValue(value, indent) {
 function toYaml(record) {
   const lines = [];
   for (const [key, value] of Object.entries(record)) {
-    if (key === 'body') {
-      lines.push('body: |-');
-      for (const line of String(value ?? '').split('\n')) lines.push('  ' + line.trimEnd());
-      continue;
-    }
+    if (value === null || value === undefined) continue;
+    if (Array.isArray(value) && value.length === 0) continue;
+    if (typeof value === 'object' && !Array.isArray(value) && Object.keys(value).length === 0) continue;
     lines.push(`${key}: ${yamlValue(value, 2)}`);
   }
   return lines.join('\n') + '\n';
 }
 
 // ---------------------------------------------------------------------------
-// Images
+// Images. icon.png plus a single gallery-*.png series (hero image first,
+// then screenshots - AppDirect used both for the same purpose).
 // ---------------------------------------------------------------------------
 
-const imageJobs = new Map(); // "<slug>|<url>" -> { slug, file }
+const imageJobs = new Map(); // "<dir>|<url>" -> { dir, file }
 
-function queueImage(url, slug, baseName) {
+function queueImage(url, dir, baseName) {
   if (!url) return null;
-  const key = `${slug}|${url}`;
+  const key = `${dir}|${url}`;
   if (imageJobs.has(key)) return imageJobs.get(key).file;
   const ext = url.match(/\.(png|jpe?g|gif|svg|webp)(\?|$)/i)?.[1]?.toLowerCase().replace('jpeg', 'jpg') ?? 'png';
-  const used = new Set([...imageJobs.values()].filter((j) => j.slug === slug).map((j) => j.file));
+  const used = new Set([...imageJobs.values()].filter((j) => j.dir === dir).map((j) => j.file));
   let name = `${baseName}.${ext}`;
   let n = 1;
   while (used.has(name)) name = `${baseName}-${++n}.${ext}`;
-  imageJobs.set(key, { slug, file: name });
+  imageJobs.set(key, { dir, file: name });
   return name;
 }
 
@@ -235,12 +229,12 @@ async function downloadImages() {
   const failures = [];
   async function worker() {
     while (jobs.length) {
-      const [key, { slug, file }] = jobs.pop();
+      const [key, { dir, file }] = jobs.pop();
       const url = key.slice(key.indexOf('|') + 1);
       try {
         const res = await fetch(url);
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        const target = join(CONTENT_DIR, slug, file);
+        const target = join(CONTENT_DIR, dir, file);
         mkdirSync(dirname(target), { recursive: true });
         writeFileSync(target, Buffer.from(await res.arrayBuffer()));
         ok++;
@@ -262,13 +256,13 @@ function toListing(product, canonicalVendor, usedSlugs) {
   const id = product.id;
   const attrs = customAttributes(product);
 
-  const categories = categoryTags(product);
-  const type = [...new Set(categories.map((t) => PRODUCT_TYPE_CATEGORIES[t.name]).filter(Boolean))];
+  const categoryTags = categoryTagsOf(product);
+  const types = [...new Set(categoryTags.map((t) => PRODUCT_TYPE_CATEGORIES[t.name]).filter(Boolean))];
 
   // Category children, e.g. "AI Services" (connector), "Quick Start" (blueprint).
   const categoryValues = [
     ...new Set(
-      categories.flatMap((t) => (t.children ?? []).map((c) => CATEGORY_MERGE[c.name] ?? c.name)),
+      categoryTags.flatMap((t) => (t.children ?? []).map((c) => CATEGORY_MERGE[c.name] ?? c.name)),
     ),
   ].sort();
 
@@ -276,27 +270,45 @@ function toListing(product, canonicalVendor, usedSlugs) {
 
   // "useEditionTemplateLinks" means: the editions carry the template links.
   const templates = extractTemplates(product);
-  const saasTemplate = attrs.saasTemplate && attrs.saasTemplate !== 'useEditionTemplateLinks' ? attrs.saasTemplate : null;
+  const saasTemplate =
+    attrs.saasTemplate &&
+    attrs.saasTemplate !== 'useEditionTemplateLinks' &&
+    !templates.some((t) => t.url === attrs.saasTemplate)
+      ? attrs.saasTemplate
+      : null;
 
   const listing = product.listing ?? {};
-  const overview = (listing.overview ?? '').trim();
-  const blurb = (listing.blurb ?? '').trim();
 
   let slug = slugify(product.name);
   if (usedSlugs.has(slug)) slug = `${slug}-${id}`;
   usedSlugs.add(slug);
 
-  const icon = queueImage(listing.myAppLogoIconUrl ?? listing.imageUrl, slug, 'icon');
-  const heroImage = queueImage(product.overview?.imageUrl, slug, 'hero');
-  const screenshots = (product.screenshots ?? [])
-    .map((s, i) => queueImage(s.imageUrl, slug, `screenshot-${i + 1}`))
-    .filter(Boolean);
+  // Directory: <type>s/<slug>/. Multi-type listings keep an explicit type field.
+  const typeDir = TYPE_DIRS[types[0]] ?? 'misc';
+  const dir = `${typeDir}/${slug}`;
 
-  return {
+  queueImage(listing.myAppLogoIconUrl ?? listing.imageUrl, dir, 'icon');
+  const gallerySources = [product.overview?.imageUrl, ...(product.screenshots ?? []).map((s) => s.imageUrl)];
+  gallerySources.filter(Boolean).forEach((url, i) => queueImage(url, dir, `gallery-${i + 1}`));
+
+  const links = {
+    github: attrs.github,
+    docs: attrs.docs,
+    preview: attrs.preview,
+    demo: attrs.demo,
+    support: product.support?.knowledgebaseUrl ?? undefined,
+    website: product.referUrl ?? undefined,
+  };
+  for (const k of Object.keys(links)) if (!links[k]) delete links[k];
+
+  const resources = (product.resources ?? [])
+    .map((r) => ({ type: r.resourceType ?? null, title: r.name ?? null, url: r.link ?? r.url ?? null }))
+    .filter((r) => r.url);
+
+  const record = {
     id,
-    slug,
     name: product.name,
-    type,
+    type: types.length > 1 ? types : undefined,
     creatorType: tagChildren(product, 'Creator')[0]?.toLowerCase() ?? null,
     creatorName: product.provider?.name ? canonicalVendor(product.provider.name) : null,
     creatorUrl: attrs.creatorUrl ?? null,
@@ -309,34 +321,31 @@ function toListing(product, canonicalVendor, usedSlugs) {
     connectorTypes: tagChildren(product, 'Connector Type').map((t) => CONNECTOR_TYPE_MAP[t]).filter(Boolean),
     compatibleVersions: versions,
     availability: AVAILABILITY_MAP[tagChildren(product, 'Availability')[0]] ?? null,
-    description: blurb || overview,
-    tagline: product.overview?.splashTitle ?? null,
+    description: ((listing.blurb ?? '').trim() || (listing.overview ?? '').trim()) ?? null,
     templates,
     saasTemplate,
     smTemplate: attrs.smTemplate ?? null,
-    githubRepo: attrs.githubRepo ?? null,
-    docsUrl: attrs.docsUrl ?? null,
-    previewImage: attrs.previewImage ?? null,
-    demoRequestUrl: attrs.demoRequestUrl ?? null,
-    demoVideo: parseVideo(product.overview?.demoUrl),
-    icon,
-    heroImage,
-    screenshots,
-    resources: (product.resources ?? [])
-      .map((r) => ({ type: r.resourceType ?? null, title: r.name ?? null, url: r.link ?? r.url ?? null }))
-      .filter((r) => r.url),
-    supportUrl: product.support?.knowledgebaseUrl ?? null,
-    referUrl: product.referUrl ?? null,
+    video: product.overview?.demoUrl ?? null,
+    links,
+    resources,
     lastModified: isoDate(product.lastModified),
   };
+
+  return { dir, record, body: toMarkdownBody(product) };
 }
 
-/** Overview text plus feature list as a single Markdown document. */
+function categoryTagsOf(product) {
+  return categoryTags(product).filter((t) => t.name in PRODUCT_TYPE_CATEGORIES);
+}
+
+/** Tagline (lead), overview text and feature list as a single Markdown document. */
 function toMarkdownBody(product) {
   const parts = [];
   const listing = product.listing ?? {};
   const overview = (listing.overview ?? '').trim();
   const blurb = (listing.blurb ?? '').trim();
+  const tagline = (product.overview?.splashTitle ?? '').trim();
+  if (tagline && !overview.includes(tagline)) parts.push(`*${tagline}*`);
   if (overview && overview !== blurb) parts.push(overview);
   const features = (product.features ?? []).filter((f) => f.header || f.description);
   if (features.length) {
@@ -358,24 +367,21 @@ const products = readdirSync(EXPORT_DIR)
 
 const canonicalVendor = buildVendorCanonicalizer(products);
 const usedSlugs = new Set();
-mkdirSync(CONTENT_DIR, { recursive: true });
 
 const listings = products
-  .map((p) => ({ record: toListing(p, canonicalVendor, usedSlugs), body: toMarkdownBody(p) }))
+  .map((p) => toListing(p, canonicalVendor, usedSlugs))
   .sort((a, b) => a.record.name.localeCompare(b.record.name));
 
-for (const { record, body } of listings) {
-  const dir = join(CONTENT_DIR, record.slug);
-  mkdirSync(dir, { recursive: true });
-  rmSync(join(dir, 'listing.yaml'), { force: true }); // replaced by listing.md
-  const markdown = `---\n${toYaml(record)}---\n\n${body}\n`;
-  writeFileSync(join(dir, 'listing.md'), markdown);
+for (const { dir, record, body } of listings) {
+  const absDir = join(CONTENT_DIR, dir);
+  mkdirSync(absDir, { recursive: true });
+  writeFileSync(join(absDir, 'listing.md'), `---\n${toYaml(record)}---\n\n${body}\n`);
 }
 
 const { ok, failed, failures } = await downloadImages();
 
-const byType = (t) => listings.filter((l) => l.record.type.includes(t)).length;
+const byDir = (d) => listings.filter((l) => l.dir.startsWith(d)).length;
 console.log(`extracted ${listings.length} listings -> ${CONTENT_DIR}`);
-console.log(`  connectors: ${byType('connector')}, blueprints: ${byType('blueprint')}, solutions: ${byType('solution')}`);
+console.log(`  connectors: ${byDir('connectors')}, blueprints: ${byDir('blueprints')}, solutions: ${byDir('solutions')}, misc: ${byDir('misc')}`);
 console.log(`images: ${ok} downloaded, ${failed} failed${SKIP_IMAGES ? ' (skipped)' : ''}`);
 for (const f of failures) console.log(`  FAILED ${f}`);

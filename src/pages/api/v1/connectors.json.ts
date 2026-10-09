@@ -11,7 +11,7 @@ export async function GET() {
     id: String(l.id),
     name: l.name,
     description: l.description,
-    creatorName: l.creatorName,
+    creatorName: l.creatorName ?? null,
     documentationUrl: new URL(`/listings/${l.slug}/`, import.meta.env.SITE).toString(),
     iconUrl: assetUrl(l, l.icon) ? new URL(assetUrl(l, l.icon)!, import.meta.env.SITE).toString() : null,
     requiredCamundaVersion: requiredVersion(l),

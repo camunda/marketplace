@@ -1,58 +1,65 @@
 import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 
+/**
+ * One directory per listing: src/content/listings/<type>s/<slug>/listing.md
+ * The directory path carries type and slug. All frontmatter fields beyond
+ * id/name/description are optional and omitted when empty.
+ */
 const listings = defineCollection({
   loader: glob({ pattern: '**/listing.md', base: './src/content/listings' }),
   schema: z.object({
     // Identity
     id: z.number(), // original AppDirect product id, kept for stable URLs/redirects
-    slug: z.string(),
     name: z.string(),
-    type: z.array(z.enum(['connector', 'blueprint', 'solution'])),
+    // Only set when a listing belongs to more than one type; otherwise the
+    // parent directory (connectors/ blueprints/ solutions/) is the type.
+    type: z.array(z.enum(['connector', 'blueprint', 'solution'])).optional(),
 
     // Creator
-    creatorType: z.enum(['camunda', 'partner', 'community']).nullable(),
-    creatorName: z.string().nullable(),
-    creatorUrl: z.string().nullable(),
+    creatorType: z.enum(['camunda', 'partner', 'community']).optional(),
+    creatorName: z.string().optional(),
+    creatorUrl: z.string().optional(),
 
-    // Filter facets (merged AppDirect tag groups; "Application" duplicates
-    // the category children and is dropped on import)
-    categories: z.array(z.string()),
-    industries: z.array(z.string()),
-    useCases: z.array(z.string()),
-    resourceTypes: z.array(z.string()),
-    bpmnTypes: z.array(z.string()),
-    runtimes: z.array(z.enum(['bundle', 'self-hosted'])),
-    connectorTypes: z.array(z.enum(['inbound', 'outbound'])),
-    compatibleVersions: z.array(z.string()),
-    availability: z.enum(['open-source', 'listing-only', 'coming-soon']).nullable(),
+    // Filter facets
+    categories: z.array(z.string()).default([]),
+    industries: z.array(z.string()).default([]),
+    useCases: z.array(z.string()).default([]),
+    resourceTypes: z.array(z.string()).default([]),
+    bpmnTypes: z.array(z.string()).default([]),
+    runtimes: z.array(z.enum(['bundle', 'self-hosted'])).default([]),
+    connectorTypes: z.array(z.enum(['inbound', 'outbound'])).default([]),
+    compatibleVersions: z.array(z.string()).default([]),
+    availability: z.enum(['open-source', 'listing-only', 'coming-soon']).optional(),
 
     // Content
     description: z.string(),
-    tagline: z.string().nullable(),
 
-    // Call-to-action targets
-    templates: z.array(z.object({ id: z.string().nullable(), name: z.string().nullable(), url: z.string() })),
-    saasTemplate: z.string().nullable(),
-    smTemplate: z.string().nullable(),
-    githubRepo: z.string().nullable(),
-    docsUrl: z.string().nullable(),
-    previewImage: z.string().nullable(),
-    demoRequestUrl: z.string().nullable(),
-    demoVideo: z.object({ provider: z.string(), id: z.string().optional(), url: z.string() }).nullable(),
+    // Action targets
+    templates: z
+      .array(z.object({ url: z.string(), id: z.string().optional(), name: z.string().optional() }))
+      .default([]),
+    saasTemplate: z.string().optional(), // only when different from the templates
+    smTemplate: z.string().optional(),
+    video: z.string().optional(), // YouTube/Vimeo URL; provider and id are parsed at build
 
-    // Media (files in the listing directory, served at /listings/<slug>/assets/)
-    icon: z.string().nullable(),
-    heroImage: z.string().nullable(),
-    screenshots: z.array(z.string()),
-
-    // Links
-    resources: z.array(z.object({ type: z.string().nullable(), title: z.string().nullable(), url: z.string() })),
-    supportUrl: z.string().nullable(),
-    referUrl: z.string().nullable(),
+    // Links (only set keys appear)
+    links: z
+      .object({
+        github: z.string().optional(),
+        docs: z.string().optional(),
+        preview: z.string().optional(),
+        demo: z.string().optional(),
+        support: z.string().optional(),
+        website: z.string().optional(),
+      })
+      .default({}),
+    resources: z
+      .array(z.object({ url: z.string(), type: z.string().optional(), title: z.string().optional() }))
+      .default([]),
 
     // Audit
-    lastModified: z.string().nullable(),
+    lastModified: z.string().optional(),
   }),
 });
 
