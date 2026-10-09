@@ -36,7 +36,8 @@ const facets = facetGroups.map(([label, key]) => ({ label, key, values: facetVal
               <summary>{label}</summary>
               {values.map((v) => (
                 <label>
-                  <input type="checkbox" data-facet={String(key)} value={v} /> {v}
+                  <input type="checkbox" data-facet={String(key)} value={v} />{' '}
+                  {key === 'creatorType' ? v[0].toUpperCase() + v.slice(1) : v}
                 </label>
               ))}
             </details>
@@ -68,12 +69,13 @@ const facets = facetGroups.map(([label, key]) => ({ label, key, values: facetVal
                   <h3>{l.name}</h3>
                   <p>{l.description}</p>
                   <span class="meta">
-                    {l.type.map((t) => (
-                      <span class="pill">{t}</span>
-                    ))}
+                    {l.creatorType && (
+                      <span class={`badge badge-${l.creatorType}`}>
+                        {l.creatorType[0].toUpperCase() + l.creatorType.slice(1)}
+                      </span>
+                    )}
                     {l.creatorName && <span class="pill">{l.creatorName}</span>}
                     {l.compatibleVersions[0] && <span class="pill">Camunda {l.compatibleVersions[0]}+</span>}
-                    {l.lastModified && <span class="pill">updated {l.lastModified}</span>}
                   </span>
                 </div>
               </a>

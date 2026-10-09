@@ -40,7 +40,11 @@ const sidebar: [string, string[]][] = [
                 l.creatorName
               )
             }
-            {l.creatorType && <span class="pill">{l.creatorType}</span>}
+            {l.creatorType && (
+              <span class={`badge badge-${l.creatorType}`}>
+                {l.creatorType[0].toUpperCase() + l.creatorType.slice(1)}
+              </span>
+            )}
             {l.availability && <span class="pill">{l.availability}</span>}
           </p>
           {l.tagline && <p class="tagline">{l.tagline}</p>}
