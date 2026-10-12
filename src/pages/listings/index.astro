@@ -132,40 +132,5 @@ const facets = facetGroups.map(([label, key]) => ({ label, key, values: facetVal
 </style>
 
 <script>
-  const cards = [...document.querySelectorAll<HTMLElement>('#results .card')];
-  const boxes = [...document.querySelectorAll<HTMLInputElement>('input[data-facet]')];
-  const search = document.querySelector<HTMLInputElement>('#search')!;
-  const count = document.querySelector('#count')!;
-
-  // Preselect ?type= from the URL (used by the navigation links).
-  const initialType = new URLSearchParams(location.search).get('type');
-  if (initialType) {
-    const box = boxes.find((b) => b.dataset.facet === 'type' && b.value === initialType);
-    if (box) box.checked = true;
-  }
-
-  function applyFilters() {
-    const query = search.value.trim().toLowerCase();
-    const selected = new Map<string, string[]>();
-    for (const b of boxes.filter((b) => b.checked)) {
-      const facet = b.dataset.facet!;
-      selected.set(facet, [...(selected.get(facet) ?? []), b.value]);
-    }
-    let visible = 0;
-    for (const card of cards) {
-      const textMatch =
-        !query || card.dataset.name!.includes(query) || card.dataset.description!.includes(query);
-      const facetMatch = [...selected].every(([facet, values]) => {
-        const haystack = (card.dataset[facet] ?? '').split('|');
-        return values.some((v) => haystack.includes(v));
-      });
-      card.classList.toggle('hidden', !(textMatch && facetMatch));
-      if (textMatch && facetMatch) visible++;
-    }
-    count.textContent = `${visible} listing${visible === 1 ? '' : 's'}`;
-  }
-
-  search.addEventListener('input', applyFilters);
-  for (const b of boxes) b.addEventListener('change', applyFilters);
-  applyFilters();
+  import '../../lib/browse.js';
 </script>
