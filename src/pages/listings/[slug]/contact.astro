@@ -14,7 +14,7 @@ const { l } = Astro.props;
 <Base title={`Contact - ${l.name}`} description={`Contact the creator of ${l.name}.`}>
   <div class="container">
     <header class="head">
-      {l.icon && <img src={assetUrl(l, l.icon)!} alt="" width="56" height="56" />}
+      {l.icon && <img src={assetUrl(l, l.icon)!} alt="" class="icon" />}
       <div>
         <h1>Contact</h1>
         <p class="muted">
@@ -68,6 +68,7 @@ const { l } = Astro.props;
 <style>
   .container { max-width: 720px; margin-top: 40px; }
   .head { display: flex; gap: 16px; align-items: center; margin-bottom: 24px; }
+  .head .icon { width: 56px; height: 56px; object-fit: contain; flex-shrink: 0; }
   .head h1 { margin: 0; }
   .muted { color: var(--muted); margin: 4px 0 0; }
 </style>

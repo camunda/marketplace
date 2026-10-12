@@ -43,7 +43,7 @@ const links: [string, string | undefined][] = [
   <div class="container layout">
     <article>
       <header class="head">
-        {l.icon && <img src={assetUrl(l, l.icon)!} alt="" width="72" height="72" />}
+        {l.icon && <img src={assetUrl(l, l.icon)!} alt="" class="icon" />}
         <div>
           <h1>{l.name}</h1>
           <p class="creator">
@@ -142,6 +142,12 @@ const links: [string, string | undefined][] = [
     margin-top: 40px;
   }
   .head { display: flex; gap: 20px; align-items: flex-start; }
+  .head .icon {
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
   .head h1 { margin: 0 0 4px; }
   .creator { color: var(--muted); margin: 0; display: flex; gap: 8px; align-items: center; }
   .ctas { display: flex; gap: 10px; flex-wrap: wrap; margin: 24px 0; }

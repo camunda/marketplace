@@ -11,7 +11,13 @@ export function ListingCard({ href, icon, name, description }) {
     <a href={href} className="block group no-underline">
       <Card className="h-full transition-shadow group-hover:shadow-md">
         <CardHeader>
-          {icon ? <img src={icon} alt="" width={40} height={40} className="rounded" /> : null}
+          {icon ? (
+            <img
+              src={icon}
+              alt=""
+              className="h-10 w-10 shrink-0 rounded object-contain"
+            />
+          ) : null}
           <CardTitle>{name}</CardTitle>
         </CardHeader>
         <CardContent>

@@ -74,7 +74,7 @@ export default function ListingBrowser({ listings, facets, initialType }) {
           {visible.map((l) => (
             <li key={l.slug}>
               <a href={l.href} className="row">
-                {l.icon && <img src={l.icon} alt="" width="48" height="48" loading="lazy" />}
+                {l.icon && <img src={l.icon} alt="" loading="lazy" />}
                 <div className="rowBody">
                   <h3>{l.name}</h3>
                   <p>{l.description}</p>
