@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 import { getListings, isConnector, isBlueprint, isSolution, assetUrl } from '../lib/data';
 import { u } from '../lib/url';
+import { ListingCard } from '../components/ListingCard.jsx';
 
 const listings = await getListings();
 const featured = listings.filter((l) => l.creatorType === 'camunda').slice(0, 6);
@@ -28,11 +29,12 @@ const featured = listings.filter((l) => l.creatorType === 'camunda').slice(0, 6)
     <h2>From Camunda</h2>
     <div class="grid">
       {featured.map((l) => (
-        <a class="card" href={u(`/listings/${l.slug}/`)}>
-          {l.icon && <img src={assetUrl(l, l.icon)!} alt="" width="48" height="48" loading="lazy" />}
-          <h3>{l.name}</h3>
-          <p>{l.description}</p>
-        </a>
+        <ListingCard
+          href={u(`/listings/${l.slug}/`)}
+          icon={assetUrl(l, l.icon)}
+          name={l.name}
+          description={l.description}
+        />
       ))}
     </div>
   </section>

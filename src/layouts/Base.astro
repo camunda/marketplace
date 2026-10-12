@@ -1,5 +1,6 @@
 ---
 import { u } from '../lib/url';
+import '@camunda/design-system/styles.css';
 
 interface Props {
   title: string;
@@ -88,7 +89,7 @@ const { title, description } = Astro.props;
       .badge-community { background: #2da44e; }
     </style>
   </head>
-  <body>
+  <body class="c4-ui">
     <header class="site">
       <div class="container">
         <a class="brand" href={u('/')}><img src={u('/logo.png')} alt="Camunda Marketplace" /></a>
