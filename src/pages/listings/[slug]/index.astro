@@ -3,6 +3,9 @@ import Base from '../../../layouts/Base.astro';
 import { render } from 'astro:content';
 import { getListings, webModelerImportUrl, videoEmbedUrl, parseVideo, assetUrl } from '../../../lib/data';
 import { u } from '../../../lib/url';
+import { CreatorBadge, Pill } from '../../../components/Badges.jsx';
+import { Cta } from '../../../components/Cta.jsx';
+import { u } from '../../../lib/url';
 
 export async function getStaticPaths() {
   const listings = await getListings();
@@ -51,24 +54,20 @@ const links: [string, string | undefined][] = [
                 l.creatorName
               )
             }
-            {l.creatorType && (
-              <span class={`badge badge-${l.creatorType}`}>
-                {l.creatorType[0].toUpperCase() + l.creatorType.slice(1)}
-              </span>
-            )}
-            {l.availability && <span class="pill">{l.availability}</span>}
+            {l.creatorType && <CreatorBadge creatorType={l.creatorType} />}
+            {l.availability && <Pill>{l.availability}</Pill>}
           </p>
         </div>
       </header>
 
       <div class="ctas">
-        {importUrl && <a class="button primary" href={importUrl} target="_blank" rel="noopener">Use in SaaS</a>}
-        {l.smTemplate && <a class="button" href={l.smTemplate} target="_blank" rel="noopener">Use Self-Managed</a>}
-        {l.links.github && <a class="button" href={l.links.github} target="_blank" rel="noopener">GitHub repository</a>}
-        {l.links.docs && <a class="button" href={l.links.docs} target="_blank" rel="noopener">Documentation</a>}
-        {l.links.demo && <a class="button" href={l.links.demo} target="_blank" rel="noopener">Request demo</a>}
-        {l.links.website && <a class="button" href={l.links.website} target="_blank" rel="noopener">Visit website</a>}
-        <a class="button" href={u(`/listings/${l.slug}/contact/`)}>Contact</a>
+        {importUrl && <Cta href={importUrl} primary external>Use in SaaS</Cta>}
+        {l.smTemplate && <Cta href={l.smTemplate} external>Use Self-Managed</Cta>}
+        {l.links.github && <Cta href={l.links.github} external>GitHub repository</Cta>}
+        {l.links.docs && <Cta href={l.links.docs} external>Documentation</Cta>}
+        {l.links.demo && <Cta href={l.links.demo} external>Request demo</Cta>}
+        {l.links.website && <Cta href={l.links.website} external>Visit website</Cta>}
+        <Cta href={u(`/listings/${l.slug}/contact/`)}>Contact</Cta>
       </div>
 
       {

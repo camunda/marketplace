@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import { ContributeCard } from '../components/ContributeCard.jsx';
 
 const TASKLIST = 'https://jfk-1.tasklist.camunda.io/e0d3996c-b748-424b-9283-142ce53df946/new';
 const forms = [
@@ -26,28 +27,15 @@ const forms = [
       >. A Camunda team member reviews each submission before publication.
     </p>
     <div class="cards">
-      {
-        forms.map((f) => (
-          <div class="card">
-            <h2>{f.title}</h2>
-            <p>{f.text}</p>
-            <a class="button primary" href={f.href} target="_blank" rel="noopener">
-              Start the submission form
-            </a>
-          </div>
-        ))
-      }
+      {forms.map((f) => <ContributeCard title={f.title} text={f.text} href={f.href} />)}
     </div>
   </div>
 </Base>
 
 <style>
   .container { margin-top: 40px; max-width: 900px; }
-  .intro { color: var(--muted); max-width: 640px; }
+  .intro { color: var(--muted-foreground); max-width: 640px; }
   .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 24px; }
-  .card { border: 1px solid var(--line); border-radius: 8px; padding: 24px; }
-  .card h2 { margin: 0 0 8px; font-size: 18px; }
-  .card p { color: var(--muted); margin: 0 0 16px; }
   @media (max-width: 700px) {
     .cards { grid-template-columns: 1fr; }
   }
