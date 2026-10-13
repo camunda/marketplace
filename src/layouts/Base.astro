@@ -25,6 +25,14 @@ const { title, description } = Astro.props;
         --bg-soft: #f6f7f9;
       }
       * { box-sizing: border-box; }
+      /* Utilities used by our components but not shipped in the DS stylesheet */
+      .object-contain { object-fit: contain; }
+      .line-clamp-3 {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
       body {
         margin: 0;
         font-family: 'IBM Plex Sans', 'Segoe UI', system-ui, sans-serif;

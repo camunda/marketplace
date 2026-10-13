@@ -95,7 +95,7 @@ const links: [string, string | undefined][] = [
 
       {
         l.resources.length > 0 && (
-          <>
+          <div class="resources">
             <h2>Resources</h2>
             <ul>
               {l.resources.map((r) => (
@@ -104,7 +104,7 @@ const links: [string, string | undefined][] = [
                 </li>
               ))}
             </ul>
-          </>
+          </div>
         )
       }
     </article>
@@ -174,6 +174,70 @@ const links: [string, string | undefined][] = [
     scroll-snap-align: start;
   }
   .body { font-size: 16px; line-height: 1.6; }
+  /* Prose styles for rendered markdown. The DS preflight (body.c4-ui) resets
+     all element defaults, and <Content /> children need :global() to be
+     reachable from Astro's scoped styles. */
+  .body :global(h1),
+  .body :global(h2),
+  .body :global(h3),
+  .body :global(h4) {
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 28px 0 12px;
+  }
+  .body :global(h1) { font-size: 26px; }
+  .body :global(h2) { font-size: 22px; }
+  .body :global(h3) { font-size: 18px; }
+  .body :global(h4) { font-size: 16px; }
+  .body :global(p) { margin: 0 0 16px; }
+  .body :global(a) { color: var(--blue); }
+  .body :global(a:hover) { text-decoration: underline; }
+  .body :global(ul),
+  .body :global(ol) {
+    margin: 0 0 16px;
+    padding-left: 24px;
+  }
+  .body :global(ul) { list-style: disc; }
+  .body :global(ol) { list-style: decimal; }
+  .body :global(li) { margin-bottom: 6px; }
+  .body :global(li > ul),
+  .body :global(li > ol) { margin: 6px 0 0; }
+  .body :global(code) {
+    background: var(--bg-soft);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 1px 5px;
+    font-size: 0.9em;
+  }
+  .body :global(pre) {
+    background: var(--bg-soft);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 14px 16px;
+    overflow-x: auto;
+    margin: 0 0 16px;
+  }
+  .body :global(pre code) {
+    background: none;
+    border: 0;
+    padding: 0;
+    font-size: 13px;
+  }
+  .body :global(blockquote) {
+    margin: 0 0 16px;
+    padding: 4px 16px;
+    border-left: 3px solid var(--line);
+    color: var(--muted);
+  }
+  .body :global(img) { max-width: 100%; height: auto; }
+  .body :global(hr) {
+    border: 0;
+    border-top: 1px solid var(--line);
+    margin: 24px 0;
+  }
+  .resources h2 { margin: 32px 0 8px; font-size: 20px; }
+  .resources ul { margin: 0; padding-left: 24px; list-style: disc; }
+  .resources li { margin-bottom: 4px; }
   .facet { border-top: 1px solid var(--line); padding: 12px 0; }
   .facet h3 { margin: 0 0 6px; font-size: 13px; text-transform: uppercase; color: var(--muted); }
   .facet p { margin: 0; font-size: 14px; }
