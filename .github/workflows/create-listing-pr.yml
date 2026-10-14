@@ -1,0 +1,99 @@
+name: Create listing PR
+
+# Triggered by the "Submit marketplace listing" process (processes/submit-listing.bpmn)
+# through the GitHub connector's workflow dispatch operation. Builds the listing
+# directory (listing.md + images) on a new branch and opens a pull request.
+
+on:
+  workflow_dispatch:
+    inputs:
+      listing_payload:
+        description: "JSON object with the form fields (base64-encoded values), built by the submission process"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  create-pr:
+    runs-on: ubuntu-latest
+    env:
+      DIR: ${{ steps.build.outputs.dir }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build listing files
+        id: build
+        env:
+          LISTING_PAYLOAD: ${{ inputs.listing_payload }}
+        run: |
+          python3 -c "import yaml" 2>/dev/null || python3 -m pip install --quiet pyyaml
+          printf '%s' "$LISTING_PAYLOAD" > /tmp/listing-payload.json
+          python3 scripts/build-listing.py /tmp/listing-payload.json
+
+      - name: Validate paths
+        run: |
+          case "$DIR" in
+            src/content/listings/connectors/*|src/content/listings/blueprints/*|src/content/listings/solutions/*) ;;
+            *) echo "::error::Invalid listing directory: $DIR"; exit 1 ;;
+          esac
+          if [ ! -s "$DIR/listing.md" ]; then echo "::error::listing.md was not created in $DIR"; exit 1; fi
+
+      - name: Create branch
+        env:
+          BRANCH: ${{ steps.build.outputs.branch }}
+        run: git checkout -b "$BRANCH"
+
+      - name: Download images
+        env:
+          ICON_URL: ${{ steps.build.outputs.icon_url }}
+          GALLERY_URLS: ${{ steps.build.outputs.gallery_urls }}
+        run: |
+          set -euo pipefail
+          download() {
+            url="$(printf '%s' "$1" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//')"
+            [ -z "$url" ] && return 0
+            tmp=$(mktemp)
+            curl -fsSL --max-time 30 --max-filesize 10485760 "$url" -o "$tmp"
+            case "$(file --mime-type -b "$tmp")" in
+              image/png) ext=png ;;
+              image/jpeg) ext=jpg ;;
+              image/gif) ext=gif ;;
+              image/svg+xml) ext=svg ;;
+              image/webp) ext=webp ;;
+              *) echo "::error::Unsupported image type for $url"; exit 1 ;;
+            esac
+            mv "$tmp" "$2.$ext"
+            echo "Downloaded $url -> $2.$ext"
+          }
+          download "$ICON_URL" "$DIR/icon"
+          i=1
+          while IFS= read -r line; do
+            [ -z "$(printf '%s' "$line" | tr -d '[:space:]')" ] && continue
+            download "$line" "$DIR/gallery-$i"
+            i=$((i+1))
+          done <<< "$GALLERY_URLS"
+
+      - name: Commit and push
+        env:
+          BRANCH: ${{ steps.build.outputs.branch }}
+          COMMIT_MESSAGE: ${{ steps.build.outputs.pr_title }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$DIR"
+          git commit -m "$COMMIT_MESSAGE"
+          git push origin "$BRANCH"
+
+      - name: Create pull request
+        env:
+          # A PAT (repo secret SUBMISSION_PAT) lets follow-up workflows such as the PR
+          # preview run on the created pull request. With the default GITHUB_TOKEN,
+          # GitHub does not trigger further workflow runs for the PR event.
+          GH_TOKEN: ${{ secrets.SUBMISSION_PAT || secrets.GITHUB_TOKEN }}
+          BRANCH: ${{ steps.build.outputs.branch }}
+          PR_TITLE: ${{ steps.build.outputs.pr_title }}
+          PR_BODY: ${{ steps.build.outputs.pr_body }}
+        run: gh pr create --title "$PR_TITLE" --body "$PR_BODY" --head "$BRANCH" --base main
