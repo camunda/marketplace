@@ -19,8 +19,6 @@ permissions:
 jobs:
   create-pr:
     runs-on: ubuntu-latest
-    env:
-      DIR: ${{ steps.build.outputs.dir }}
     steps:
       - uses: actions/checkout@v4
 
@@ -34,6 +32,8 @@ jobs:
           python3 scripts/build-listing.py /tmp/listing-payload.json
 
       - name: Validate paths
+        env:
+          DIR: ${{ steps.build.outputs.dir }}
         run: |
           case "$DIR" in
             src/content/listings/connectors/*|src/content/listings/blueprints/*|src/content/listings/solutions/*) ;;
@@ -48,6 +48,7 @@ jobs:
 
       - name: Download images
         env:
+          DIR: ${{ steps.build.outputs.dir }}
           ICON_URL: ${{ steps.build.outputs.icon_url }}
           GALLERY_URLS: ${{ steps.build.outputs.gallery_urls }}
         run: |
@@ -78,6 +79,7 @@ jobs:
 
       - name: Commit and push
         env:
+          DIR: ${{ steps.build.outputs.dir }}
           BRANCH: ${{ steps.build.outputs.branch }}
           COMMIT_MESSAGE: ${{ steps.build.outputs.pr_title }}
         run: |
