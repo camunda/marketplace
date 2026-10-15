@@ -5,15 +5,14 @@ Used by .github/workflows/create-listing-pr.yml. Reads the JSON payload that the
 submission process (processes/submit-listing.bpmn) sends and writes
 src/content/listings/<type>s/<slug>/listing.md.
 
-Payload format: a JSON object with one key per form field. Scalar values are
-base64-encoded strings or null; list values are lists of base64-encoded strings.
-The process encodes the values so that the JSON stays valid for any user input.
+Payload format: a JSON object with one key per form field, serialized by the process
+with the FEEL `to json` function. Scalar values are strings or null; list values are
+lists of strings; `resources` is a list of objects.
 
 Writes these GitHub Actions outputs: dir, branch, listing_id, icon_url, gallery_urls,
 pr_title, pr_body. Without GITHUB_OUTPUT (local use), prints them as JSON.
 """
 
-import base64
 import json
 import os
 import re
@@ -48,29 +47,9 @@ def fail(message):
     sys.exit(1)
 
 
-def decode(value):
-    if value is None:
-        return None
-    if isinstance(value, list):
-        return [base64.b64decode(v).decode("utf-8") for v in value]
-    return base64.b64decode(value).decode("utf-8")
-
-
-def decode_item(value):
-    if value is None:
-        return None
-    return {key: decode(raw) for key, raw in value.items()}
-
-
 def main(payload_path):
     with open(payload_path, encoding="utf-8") as f:
-        raw = json.load(f)
-    data = {}
-    for key, value in raw.items():
-        if key in ("resources",):
-            data[key] = [decode_item(item) for item in (value or [])]
-        else:
-            data[key] = decode(value)
+        data = json.load(f)
 
     for field in ["listingName", "listingType", "description", "content", "creatorName", "creatorUrl", "githubHandle"]:
         if not data.get(field):

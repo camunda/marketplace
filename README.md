@@ -8,6 +8,7 @@ Statically generated replacement for the AppDirect-based marketplace. GitHub is 
 |---|---|
 | `appdirect-export/` | Raw snapshot of the AppDirect API (seed for the migration). |
 | `scripts/extract.mjs` | Converts the AppDirect export into content files and downloads the images. |
+| `scripts/build-listing.py` | Builds a listing's `listing.md` from a submission payload. Used by the submission workflow. |
 | `src/content/listings/<type>s/<slug>/` | One directory per listing: `listing.md` plus its images. This is the source of truth. |
 | `src/pages/` | Site pages (home, browse, listing detail). |
 | `src/pages/api/v1/` | Static JSON endpoints. They keep the `camunda/marketplace-api` contract so Camunda Hub and Web Modeler work without changes. |
