@@ -9,6 +9,10 @@ Payload format: a JSON object with one key per form field, serialized by the pro
 with the FEEL `to json` function. Scalar values are strings or null; list values are
 lists of strings; `resources` is a list of objects.
 
+The element templates referenced by `resources[].templateUrl` are fetched and their
+`appliesTo` values are collected into the `bpmnTypes` frontmatter field. Fetching is
+best effort: failures produce a warning, not a failed run.
+
 Writes these GitHub Actions outputs: dir, branch, listing_id, icon_url, gallery_urls,
 pr_title, pr_body. Without GITHUB_OUTPUT (local use), prints them as JSON.
 """
@@ -18,6 +22,7 @@ import os
 import re
 import sys
 import time
+import urllib.request
 from datetime import date
 
 import yaml
@@ -41,10 +46,54 @@ LINK_FIELDS = {
 }
 VALID_TYPES = {"connector": "connectors", "blueprint": "blueprints", "solution": "solutions"}
 
+# Canonical order used for the bpmnTypes frontmatter field; unknown types are appended last.
+BPMN_TYPE_ORDER = [
+    "bpmn:Task",
+    "bpmn:StartEvent",
+    "bpmn:IntermediateCatchEvent",
+    "bpmn:IntermediateThrowEvent",
+    "bpmn:BoundaryEvent",
+    "bpmn:SubProcess",
+]
+
+
+def warn(message):
+    print(f"::warning::{message}")
+
 
 def fail(message):
     print(f"::error::{message}")
     sys.exit(1)
+
+
+def fetch_template_applies_to(url):
+    """Fetch an element template and return its `appliesTo` BPMN types. Best effort."""
+    if not url.startswith(("http://", "https://")):
+        warn(f"Skipping non-HTTP template URL: {url}")
+        return []
+    request = urllib.request.Request(url, headers={"User-Agent": "marketplace-listing-builder"})
+    try:
+        with urllib.request.urlopen(request, timeout=30) as response:
+            template = json.load(response)
+    except Exception as e:
+        warn(f"Could not fetch element template {url}: {e}")
+        return []
+    applies_to = template.get("appliesTo")
+    if not isinstance(applies_to, list):
+        warn(f"Element template {url} has no `appliesTo` list; add bpmnTypes manually")
+        return []
+    return [t for t in applies_to if isinstance(t, str)]
+
+
+def normalize_bpmn_type(value):
+    """Map a template `appliesTo` value to one of the BPMN type filter values."""
+    if value in BPMN_TYPE_ORDER:
+        return value
+    if value.startswith("bpmn:") and value.endswith("Task"):
+        # The filter only knows bpmn:Task; collapse typed tasks (ServiceTask, ReceiveTask, ...).
+        return "bpmn:Task"
+    warn(f"`appliesTo` value {value} is not a supported BPMN type filter value; add bpmnTypes manually")
+    return None
 
 
 def main(payload_path):
@@ -82,6 +131,12 @@ def main(payload_path):
         if resource.get("templateName"):
             template["name"] = resource["templateName"]
         templates.append(template)
+    bpmn_types = set()
+    for template in templates:
+        bpmn_types.update(t for t in map(normalize_bpmn_type, fetch_template_applies_to(template["url"])) if t)
+    bpmn_types = sorted(bpmn_types, key=lambda t: (BPMN_TYPE_ORDER.index(t) if t in BPMN_TYPE_ORDER else len(BPMN_TYPE_ORDER), t))
+    if bpmn_types:
+        frontmatter["bpmnTypes"] = bpmn_types
     if templates:
         frontmatter["templates"] = templates
     for key in ["smTemplate", "video"]:
@@ -114,7 +169,7 @@ def main(payload_path):
         "pr_body": (
             f"Adds a new {listing_type} listing at `{listing_dir}/listing.md`.\n\n"
             f"**Submitted by:** {data['creatorName']} (@{data['githubHandle']})\n\n"
-            "- [ ] Check name, description and facets\n"
+            "- [ ] Check name, description and facets (BPMN types are derived from the element templates)\n"
             "- [ ] Check the downloaded icon and gallery images\n"
             "- [ ] Check the PR preview deployment\n"
             "- [ ] For an existing AppDirect listing, replace the generated id with the AppDirect product id"
