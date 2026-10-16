@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@camunda/design-system/components/ui/card.js';
 import { Button } from '@camunda/design-system/components/ui/button.js';
 
-export function ContributeCard({ title, text, href }) {
+export function ContributeCard({ title, text, href, cta = 'Start the submission form' }) {
   return (
     <Card>
       <CardHeader>
@@ -14,7 +14,7 @@ export function ContributeCard({ title, text, href }) {
         </p>
         <Button asChild>
           <a href={href} target="_blank" rel="noopener">
-            Start the submission form
+            {cta}
           </a>
         </Button>
       </CardContent>

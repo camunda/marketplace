@@ -1,42 +1,171 @@
 ---
 import Base from '../layouts/Base.astro';
 import { ContributeCard } from '../components/ContributeCard.jsx';
+import { GuideDisclosure } from '../components/GuideDisclosure.jsx';
+import { Heading, Text } from '@camunda/design-system/components/ui/typography.js';
+import { Alert, AlertDescription } from '@camunda/design-system/components/ui/alert.js';
+import { u } from '../lib/url';
 
-const TASKLIST = 'https://jfk-1.tasklist.camunda.io/e0d3996c-b748-424b-9283-142ce53df946/new';
-const forms = [
+const SUBMIT_LISTING =
+  'https://jfk-1.api.camunda.io/e0d3996c-b748-424b-9283-142ce53df946/tasklist/new/submit-listing-process';
+const CERTIFY =
+  'https://jfk-1.tasklist.camunda.io/e0d3996c-b748-424b-9283-142ce53df946/new/SubmitCertificationRequestToMarketplace';
+const cards = [
   {
-    title: 'Submit a connector',
-    text: 'Share a connector or an element template with the Camunda community.',
-    href: `${TASKLIST}/SubmitConnector-V2`,
+    title: 'Submit a listing',
+    text: 'Share a connector, a blueprint, or a solution accelerator with the Camunda community.',
+    href: SUBMIT_LISTING,
   },
   {
-    title: 'Submit a blueprint',
-    text: 'Share a process blueprint, a pattern, or a solution accelerator.',
-    href: `${TASKLIST}/Submit_Blueprint`,
+    title: 'Certify a connector',
+    text: 'Get your connector certified through the Camunda connector certification program.',
+    href: CERTIFY,
+    cta: 'Submit certification request',
+  },
+  {
+    title: 'Suggest ideas',
+    text: 'Tell us which connector, blueprint, or other resource you would like to see, and vote for ideas from other users.',
+    href: u('/ideas/'),
+    cta: 'Visit Idea Portal',
   },
 ];
 ---
 
 <Base title="Contribute" description="Submit a connector or blueprint to the Camunda Marketplace.">
   <div class="container">
-    <h1>Contribute to the Marketplace</h1>
-    <p class="intro">
-      By contributing to the Camunda Marketplace, you agree to the
-      <a href="https://legal.camunda.com/licensing-and-other-legal-terms#terms-of-use-camunda-marketplace"
-        >Terms of use for Camunda Marketplace</a
-      >. A Camunda team member reviews each submission before publication.
-    </p>
-    <div class="cards">
-      {forms.map((f) => <ContributeCard title={f.title} text={f.text} href={f.href} />)}
+    <Heading as="h1" variant="heading-xl">Contribute to the Marketplace</Heading>
+    <div class="intro">
+      <Text as="p" variant="body-md">
+        By contributing to the Camunda Marketplace, you agree to the
+        <a href="https://legal.camunda.com/licensing-and-other-legal-terms#terms-of-use-camunda-marketplace"
+          >Terms of use for Camunda Marketplace</a
+        >. A Camunda team member reviews each submission before publication.
+      </Text>
     </div>
+
+    <div class="cards">
+      {cards.map((c) => <ContributeCard title={c.title} text={c.text} href={c.href} cta={c.cta} />)}
+    </div>
+
+    <GuideDisclosure client:load>
+      <div class="guide">
+        <Heading as="h2" variant="heading-lg">How to create a submission</Heading>
+
+        <div class="step">
+          <Heading as="h3" variant="heading-md">Step 1: Set up a GitHub repository</Heading>
+          <Text as="p" variant="body-md">
+            We support two types of contributions: open source and listing only. For a listing-only submission, skip
+            this step.
+          </Text>
+          <ol>
+            <li>
+              Create a new public GitHub repository, or use an existing one, that hosts the connector's code or the
+              blueprint's files. Blueprints must be executable and include example data.
+            </li>
+            <li>
+              Include a clear and comprehensive README.md file that explains how to use the listing. Add installation
+              instructions if necessary.
+            </li>
+            <li>Add a LICENSE.md file to the repository.</li>
+            <li>
+              Add the following legal terms before your license terms in LICENSE.md. For a blueprint, use the same
+              text and replace "Connector" with "Blueprint".
+              <Alert variant="info" className="legal">
+                <AlertDescription>
+                  This Connector is developed by Camunda's partners or independent third-party developers. To receive
+                  assistance or support for the Connector [Name of Connector], contact [Your Name] directly using the
+                  contact information provided. Camunda disclaims any support obligation for the Connector.
+                  <br /><br />
+                  By installing this connector, you consent to Camunda sharing your contact information with the
+                  developer of this connector so that you can receive more information about it directly from the
+                  developer.
+                </AlertDescription>
+              </Alert>
+            </li>
+          </ol>
+        </div>
+
+        <div class="step">
+          <Heading as="h3" variant="heading-md">Step 2: Submit the listing</Heading>
+          <ol>
+            <li>
+              Provide your company or contributor name, your type (community member, Camunda partner, or Camunda
+              employee), and your website. Add your GitHub handle so we can tag you on the pull request if we need
+              more input.
+            </li>
+            <li>
+              Give the listing a name, a type (connector, blueprint, or solution), a short description of one
+              sentence, and the detail page content in Markdown.
+            </li>
+            <li>
+              Add an icon URL and gallery image URLs. Host your images on a platform that gives you a downloadable
+              URL. You can also add a YouTube or Vimeo video URL.
+            </li>
+            <li>
+              Classify the listing with categories, industries, use cases, and compatible Camunda versions. For a
+              connector, also select the connector runtimes, the connector types, and the availability.
+            </li>
+            <li>
+              Add your resources (element templates, BPMN files, forms) with a raw URL each. The raw URLs are used
+              for the SaaS import. For Self-Managed setups, add a repository or template URL.
+            </li>
+            <li>Add links to the GitHub repository, documentation, support page, preview, demo, and website.</li>
+          </ol>
+        </div>
+
+        <div class="step">
+          <Heading as="h3" variant="heading-md">Step 3: Review by Camunda</Heading>
+          <ol>
+            <li>
+              On submit, a pull request with your listing is opened in the marketplace repository. You can follow the
+              review status on the pull request.
+            </li>
+            <li>We evaluate the submission against our guidelines. If it meets the requirements, we approve it and publish the listing.</li>
+            <li>If there are issues or we need more information, we tag you on the pull request.</li>
+          </ol>
+          <Text as="p" variant="body-md">Thank you for your submission. We look forward to working with you!</Text>
+        </div>
+      </div>
+    </GuideDisclosure>
   </div>
 </Base>
 
 <style>
-  .container { margin-top: 40px; max-width: 900px; }
-  .intro { color: var(--muted-foreground); max-width: 640px; }
-  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 24px; }
-  @media (max-width: 700px) {
-    .cards { grid-template-columns: 1fr; }
+  .container {
+    margin-top: 40px;
+    max-width: 900px;
+  }
+  .intro {
+    margin-top: 16px;
+    max-width: 640px;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+    margin: 32px 0 40px;
+  }
+  /* The DS preflight (body.c4-ui) resets element defaults. Content passed as
+     children to the hydrated disclosure keeps no Astro scope attributes, so
+     reach it with :global(). */
+  .guide :global([data-slot='heading'] + *) {
+    margin-top: 12px;
+  }
+  .guide :global(.step) {
+    margin-top: 28px;
+  }
+  .guide :global(p) {
+    margin: 12px 0;
+  }
+  .guide :global(ol) {
+    margin: 12px 0;
+    padding-left: 24px;
+    list-style: decimal;
+  }
+  .guide :global(li) {
+    margin-bottom: 10px;
+  }
+  .guide :global(.legal) {
+    margin-top: 8px;
   }
 </style>
