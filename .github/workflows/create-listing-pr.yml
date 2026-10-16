@@ -47,24 +47,37 @@ jobs:
         run: git checkout -b "$BRANCH"
 
       - name: Download images
+        id: images
         env:
           DIR: ${{ steps.build.outputs.dir }}
           ICON_URL: ${{ steps.build.outputs.icon_url }}
           GALLERY_URLS: ${{ steps.build.outputs.gallery_urls }}
+        # Invalid URLs or unsupported types do not fail the run. Failed URLs are
+        # reported as an output and noted in the pull request.
         run: |
-          set -euo pipefail
+          set -uo pipefail
+          FAILED=()
           download() {
             url="$(printf '%s' "$1" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//')"
             [ -z "$url" ] && return 0
             tmp=$(mktemp)
-            curl -fsSL --max-time 30 --max-filesize 10485760 "$url" -o "$tmp"
+            if ! curl -fsSL --max-time 30 --max-filesize 10485760 "$url" -o "$tmp"; then
+              echo "::warning::Could not download image: $url"
+              FAILED+=("$url")
+              rm -f "$tmp"
+              return 0
+            fi
             case "$(file --mime-type -b "$tmp")" in
               image/png) ext=png ;;
               image/jpeg) ext=jpg ;;
               image/gif) ext=gif ;;
               image/svg+xml) ext=svg ;;
               image/webp) ext=webp ;;
-              *) echo "::error::Unsupported image type for $url"; exit 1 ;;
+              *)
+                echo "::warning::Unsupported image type for $url"
+                FAILED+=("$url")
+                rm -f "$tmp"
+                return 0 ;;
             esac
             mv "$tmp" "$2.$ext"
             echo "Downloaded $url -> $2.$ext"
@@ -76,6 +89,11 @@ jobs:
             download "$line" "$DIR/gallery-$i"
             i=$((i+1))
           done <<< "$GALLERY_URLS"
+          {
+            echo 'failed_images<<GHEOF'
+            printf '%s\n' "${FAILED[@]}"
+            echo 'GHEOF'
+          } >> "$GITHUB_OUTPUT"
 
       - name: Commit and push
         env:
@@ -98,4 +116,14 @@ jobs:
           BRANCH: ${{ steps.build.outputs.branch }}
           PR_TITLE: ${{ steps.build.outputs.pr_title }}
           PR_BODY: ${{ steps.build.outputs.pr_body }}
-        run: gh pr create --title "$PR_TITLE" --body "$PR_BODY" --head "$BRANCH" --base main
+          FAILED_IMAGES: ${{ steps.images.outputs.failed_images }}
+        run: |
+          printf '%s\n' "$PR_BODY" > /tmp/pr-body.md
+          if [ -n "$(printf '%s' "$FAILED_IMAGES" | tr -d '[:space:]')" ]; then
+            {
+              printf '\n> [!WARNING]\n'
+              printf '> The following images could not be downloaded. Add them to the listing manually:\n'
+              printf '%s\n' "$FAILED_IMAGES" | sed 's/^[^[:space:]].*$/> - &/'
+            } >> /tmp/pr-body.md
+          fi
+          gh pr create --title "$PR_TITLE" --body-file /tmp/pr-body.md --head "$BRANCH" --base main
