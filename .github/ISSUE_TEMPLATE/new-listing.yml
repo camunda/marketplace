@@ -101,9 +101,11 @@ body:
     attributes:
       label: Detail page content
       description: |
-        Markdown. The main content of the listing detail page. You can use:
-        line breaks, bulleted lists, bold, and italic.
-        Do not use images, links, or headings. They are removed at build time.
+        Markdown. The main content of the listing detail page.
+        Use the Preview tab to check your text. Note: the preview can show
+        images and links, but they are removed at build time and do not
+        show on the Marketplace. You can use: line breaks, bulleted lists,
+        bold, and italic.
       render: markdown
     validations:
       required: true
