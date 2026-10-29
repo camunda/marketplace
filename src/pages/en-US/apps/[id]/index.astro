@@ -1,0 +1,15 @@
+---
+import Redirect from '../../../../components/Redirect.astro';
+import { getListings } from '../../../../lib/data';
+import { u } from '../../../../lib/url';
+
+/** Bare locale-prefixed AppDirect URLs: /en-US/apps/<id> (no slug). */
+export async function getStaticPaths() {
+  const listings = await getListings();
+  return listings.map((l) => ({ params: { id: String(l.id) }, props: { l } }));
+}
+
+const { l } = Astro.props;
+---
+
+<Redirect target={u(`/listings/${l.slug}/`)} name={l.name} />

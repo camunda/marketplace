@@ -1,14 +1,12 @@
 ---
+import Redirect from '../../components/Redirect.astro';
 import { getListings } from '../../lib/data';
 import { u } from '../../lib/url';
 
 /**
- * Old AppDirect URLs were /en-US/apps/<id>/<slug>. GitHub Pages has no
- * server-side redirects, so emit an HTML meta-refresh page per listing at
- * /apps/<id>/ that forwards to the new /listings/<slug>/ URL. A CDN in
- * front can turn these into real 301s later.
- *
- * The <id> segment is the stable identifier (slugs may differ).
+ * Old AppDirect URLs were /apps/<id>/<slug> (locale-prefixed variants live
+ * under /en-US/apps/). The <id> segment is the stable identifier (slugs may
+ * differ), so this page catches /apps/<id>/ regardless of slug.
  */
 export async function getStaticPaths() {
   const listings = await getListings();
@@ -16,18 +14,6 @@ export async function getStaticPaths() {
 }
 
 const { l } = Astro.props;
-const target = u(`/listings/${l.slug}/`);
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="refresh" content={`0; url=${target}`} />
-    <link rel="canonical" href={target} />
-    <title>Redirecting to {l.name}</title>
-  </head>
-  <body>
-    <p>Redirecting to <a href={target}>{l.name}</a>…</p>
-  </body>
-</html>
+<Redirect target={u(`/listings/${l.slug}/`)} name={l.name} />

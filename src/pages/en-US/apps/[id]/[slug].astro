@@ -1,0 +1,23 @@
+---
+import Redirect from '../../../../components/Redirect.astro';
+import { appDirectSlugs, getListings } from '../../../../lib/data';
+import { u } from '../../../../lib/url';
+
+/**
+ * Old locale-prefixed AppDirect listing URLs: /en-US/apps/<id>/<slug>. The
+ * slug came from the AppDirect product name, so emit one redirect page per
+ * exported <id, slug> pair, keyed to the new listing by id.
+ */
+export async function getStaticPaths() {
+  const oldSlugs = appDirectSlugs();
+  const listings = await getListings();
+  return listings.map((l) => ({
+    params: { id: String(l.id), slug: oldSlugs.get(l.id) ?? l.slug },
+    props: { l },
+  }));
+}
+
+const { l } = Astro.props;
+---
+
+<Redirect target={u(`/listings/${l.slug}/`)} name={l.name} />
