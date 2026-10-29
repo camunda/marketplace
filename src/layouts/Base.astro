@@ -51,7 +51,7 @@ const { title, description } = Astro.props;
         gap: 24px;
       }
       header.site .brand img { height: 28px; display: block; }
-      header.site nav { display: flex; gap: 18px; align-items: center; flex: 1; }
+      header.site nav { display: flex; gap: 18px; align-items: center; flex: 1; flex-wrap: wrap; }
       header.site nav a { color: var(--muted); }
       header.site nav a.contribute {
         margin-left: auto;
@@ -106,6 +106,11 @@ const { title, description } = Astro.props;
           <a href={u('/listings/?type=connector')}>Connectors</a>
           <a href={u('/listings/?type=blueprint')}>Blueprints</a>
           <a href={u('/listings/?type=solution')}>Solutions</a>
+          <a href={u('/listings/?type=blueprint&useCases=Agentic%20AI%20orchestration')}>AI Agents</a>
+          <a href={u('/listings/?categories=Solution%20Accelerators&categories=Agentic%20Solutions')}
+            >Solution Accelerators</a
+          >
+          <a href={u('/listings/?categories=Migration%20Solutions')}>Migration Partners</a>
           <a class="contribute" href={u('/contribute/')}>Contribute</a>
         </nav>
       </div>
