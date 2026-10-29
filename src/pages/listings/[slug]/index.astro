@@ -5,7 +5,6 @@ import { getListings, webModelerImportUrl, videoEmbedUrl, parseVideo, assetUrl }
 import { u } from '../../../lib/url';
 import { CreatorBadge, Pill } from '../../../components/Badges.jsx';
 import { Cta } from '../../../components/Cta.jsx';
-import { u } from '../../../lib/url';
 
 export async function getStaticPaths() {
   const listings = await getListings();
@@ -18,7 +17,10 @@ const importUrl = webModelerImportUrl(l);
 const embedUrl = videoEmbedUrl(l);
 const videoLink = !embedUrl && l.video ? parseVideo(l.video)?.url : null;
 
+const typeLabel = (t: string) => t[0].toUpperCase() + t.slice(1);
+
 const sidebar: [string, string[]][] = [
+  ['Type', l.type.map(typeLabel)],
   ['Categories', l.categories],
   ['Industries', l.industries],
   ['Use cases', l.useCases],
@@ -29,6 +31,24 @@ const sidebar: [string, string[]][] = [
   ['Compatible versions', l.compatibleVersions],
 ];
 
+// Call-to-action buttons. Duplicates (e.g. a "Use Self-Managed" URL that is
+// also the documentation URL) are shown only once, and any URL that already
+// has a button is not repeated in the sidebar links.
+const ctas: [string, string | null | undefined, { primary?: boolean }?][] = [
+  ['Use in SaaS', importUrl, { primary: true }],
+  ['Use Self-Managed', l.smTemplate],
+  ['GitHub repository', l.links.github],
+  ['Documentation', l.links.docs],
+  ['Request demo', l.links.demo],
+  ['Visit website', l.links.website],
+];
+const seen = new Set<string>();
+const ctaButtons = ctas.filter(([, href]) => {
+  if (!href || seen.has(href)) return false;
+  seen.add(href);
+  return true;
+}) as [string, string][];
+
 const links: [string, string | undefined][] = [
   ['GitHub repository', l.links.github],
   ['Documentation', l.links.docs],
@@ -37,9 +57,22 @@ const links: [string, string | undefined][] = [
   ['Support', l.links.support],
   ['Website', l.links.website],
 ];
+const sidebarLinks = links.filter(
+  ([, href]) => href && !seen.has(href),
+) as [string, string][];
+
+// Media carousel: the video is the first slide, screenshots follow.
+const mediaSlides = [
+  ...(embedUrl ? [{ kind: 'video' as const, src: embedUrl }] : []),
+  ...l.gallery.map((g, i) => ({ kind: 'image' as const, src: assetUrl(l, g)!, alt: `${l.name} image ${i + 1}` })),
+];
+
+// "Open-source"/"listing-only" are internal terms and stay hidden;
+// "coming-soon" is meaningful to visitors.
+const showAvailability = l.availability === 'coming-soon';
 ---
 
-<Base title={l.name} description={l.description}>
+<Base title={l.name} description={l.seoDescription ?? l.description}>
   <div class="container layout">
     <article>
       <header class="head">
@@ -48,46 +81,47 @@ const links: [string, string | undefined][] = [
           <h1>{l.name}</h1>
           <p class="creator">
             {
-              l.creatorUrl ? (
-                <a href={l.creatorUrl} rel="noopener">{l.creatorName}</a>
-              ) : (
-                l.creatorName
+              l.creatorName && (
+                <a href={u(`/listings/?creator=${encodeURIComponent(l.creatorName)}`)}>{l.creatorName}</a>
               )
             }
             {l.creatorType && <CreatorBadge creatorType={l.creatorType} />}
-            {l.availability && <Pill>{l.availability}</Pill>}
+            {showAvailability && <Pill>{l.availability}</Pill>}
           </p>
         </div>
       </header>
 
       <div class="ctas">
-        {importUrl && <Cta href={importUrl} primary external>Use in SaaS</Cta>}
-        {l.smTemplate && <Cta href={l.smTemplate} external>Use Self-Managed</Cta>}
-        {l.links.github && <Cta href={l.links.github} external>GitHub repository</Cta>}
-        {l.links.docs && <Cta href={l.links.docs} external>Documentation</Cta>}
-        {l.links.demo && <Cta href={l.links.demo} external>Request demo</Cta>}
-        {l.links.website && <Cta href={l.links.website} external>Visit website</Cta>}
+        {ctaButtons.map(([label, href, opts]) => (
+          <Cta href={href} primary={opts?.primary} external>{label}</Cta>
+        ))}
         <Cta href={u(`/listings/${l.slug}/contact/`)}>Contact</Cta>
       </div>
 
       {
-        embedUrl && (
-          <div class="video">
-            <iframe src={embedUrl} title={`${l.name} demo video`} allowfullscreen loading="lazy" />
+        mediaSlides.length > 0 && (
+          <div class="media" role="region" aria-label="Screenshots and videos">
+            <div class="media-track" id="media-track">
+              {mediaSlides.map((s) =>
+                s.kind === 'video' ? (
+                  <div class="slide slide-video">
+                    <iframe src={s.src} title={`${l.name} demo video`} allowfullscreen loading="lazy" />
+                  </div>
+                ) : (
+                  <img class="slide" src={s.src} alt={s.alt} loading="lazy" />
+                ),
+              )}
+            </div>
+            {mediaSlides.length > 1 && (
+              <div class="media-nav">
+                <button type="button" data-dir="-1" aria-label="Previous media">&#8249;</button>
+                <button type="button" data-dir="1" aria-label="Next media">&#8250;</button>
+              </div>
+            )}
           </div>
         )
       }
       {videoLink && <p><a href={videoLink} target="_blank" rel="noopener">Watch the demo video</a></p>}
-
-      {
-        l.gallery.length > 0 && (
-          <div class="gallery" role="region" aria-label="Screenshots">
-            {l.gallery.map((g, i) => (
-              <img src={assetUrl(l, g)!} alt={`${l.name} image ${i + 1}`} loading="lazy" />
-            ))}
-          </div>
-        )
-      }
 
       <div class="body">
         <Content />
@@ -121,14 +155,18 @@ const links: [string, string | undefined][] = [
             ),
         )
       }
-      <div class="facet">
-        <h3>Links</h3>
-        <p>
-          {links.filter(([, href]) => href).map(([label, href]) => (
-            <><a href={href} target="_blank" rel="noopener">{label}</a><br /></>
-          ))}
-        </p>
-      </div>
+      {
+        sidebarLinks.length > 0 && (
+          <div class="facet">
+            <h3>Links</h3>
+            <p>
+              {sidebarLinks.map(([label, href]) => (
+                <><a href={href} target="_blank" rel="noopener">{label}</a><br /></>
+              ))}
+            </p>
+          </div>
+        )
+      }
       {l.lastModified && <p class="updated">Last updated {l.lastModified}</p>}
     </aside>
   </div>
@@ -148,30 +186,65 @@ const links: [string, string | undefined][] = [
     object-fit: contain;
     flex-shrink: 0;
   }
-  .head h1 { margin: 0 0 4px; }
+  .head h1 { margin: 0 0 4px; font-size: 32px; font-weight: 600; letter-spacing: -0.01em; }
   .creator { color: var(--muted); margin: 0; display: flex; gap: 8px; align-items: center; }
   .ctas { display: flex; gap: 10px; flex-wrap: wrap; margin: 24px 0; }
-  .video iframe {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    border: 0;
-    border-radius: 8px;
-  }
-  .gallery {
+
+  /* Media carousel: video and screenshots side-scroll in one strip. */
+  .media { position: relative; margin: 8px 0 32px; }
+  .media-track {
     display: flex;
     gap: 12px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
     padding-bottom: 8px;
-    margin: 8px 0 24px;
   }
-  .gallery img {
-    height: 260px;
-    width: auto;
+  .slide {
     flex: 0 0 auto;
+    scroll-snap-align: start;
     border: 1px solid var(--line);
     border-radius: 8px;
-    scroll-snap-align: start;
+  }
+  img.slide {
+    height: 260px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    background: var(--bg-soft);
+  }
+  .slide-video {
+    width: min(480px, 100%);
+    aspect-ratio: 16 / 9;
+    border: 0;
+    overflow: hidden;
+  }
+  .slide-video iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+  }
+  .media-nav {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+    margin-top: 4px;
+  }
+  .media-nav button {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid var(--line);
+    background: var(--popover, #fff);
+    color: var(--foreground);
+    font-size: 18px;
+    line-height: 1;
+    cursor: pointer;
+  }
+  .media-nav button:hover {
+    border-color: var(--accent-action-default);
+    color: var(--accent-foreground-subtle);
   }
   .body { font-size: 16px; line-height: 1.6; }
   /* Prose styles for rendered markdown. The DS preflight (body.c4-ui) resets
@@ -243,3 +316,17 @@ const links: [string, string | undefined][] = [
   .facet p { margin: 0; font-size: 14px; }
   .updated { color: var(--muted); font-size: 13px; }
 </style>
+
+<script>
+  // Media carousel: prev/next scrolls one slide width at a time.
+  const track = document.querySelector('#media-track');
+  if (track) {
+    for (const btn of document.querySelectorAll('.media-nav button')) {
+      btn.addEventListener('click', () => {
+        const slide = track.querySelector('.slide');
+        const step = slide ? slide.getBoundingClientRect().width + 12 : track.clientWidth;
+        track.scrollBy({ left: step * Number(btn.dataset.dir) });
+      });
+    }
+  }
+</script>
