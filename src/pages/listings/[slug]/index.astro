@@ -126,8 +126,15 @@ const showAvailability = l.availability === 'coming-soon';
       {
         l.gallery.length > 0 && (
           <dialog id="lightbox" aria-label="Enlarged screenshot">
-            <button type="button" aria-label="Close">&times;</button>
+            <button type="button" class="lb-close" aria-label="Close">&times;</button>
+            {l.gallery.length > 1 && (
+              <>
+                <button type="button" class="lb-nav lb-prev" aria-label="Previous image">&#8249;</button>
+                <button type="button" class="lb-nav lb-next" aria-label="Next image">&#8250;</button>
+              </>
+            )}
             <img src="" alt="" />
+            {l.gallery.length > 1 && <p class="lb-count"></p>}
           </dialog>
         )
       }
@@ -230,6 +237,14 @@ const showAvailability = l.availability === 'coming-soon';
     background: transparent;
     max-width: 95vw;
     max-height: 95vh;
+    /* Explicit centering: the DS preflight resets the dialog's UA margins. */
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    /* The close button hangs over the edge; do not let that create scrollbars. */
+    overflow: visible;
   }
   #lightbox::backdrop {
     background: color-mix(in srgb, #000 75%, transparent);
@@ -246,8 +261,6 @@ const showAvailability = l.availability === 'coming-soon';
   }
   #lightbox button {
     position: absolute;
-    top: -8px;
-    right: -8px;
     width: 36px;
     height: 36px;
     border-radius: 50%;
@@ -258,6 +271,17 @@ const showAvailability = l.availability === 'coming-soon';
     line-height: 1;
     cursor: pointer;
     box-shadow: 0 2px 8px color-mix(in srgb, #000 40%, transparent);
+  }
+  #lightbox button:hover { background: var(--accent-background-subtle); }
+  .lb-close { top: -8px; right: -8px; }
+  .lb-nav { top: 50%; transform: translateY(-50%); }
+  .lb-prev { left: -18px; }
+  .lb-next { right: -18px; }
+  .lb-count {
+    margin: 8px 0 0;
+    text-align: center;
+    color: color-mix(in srgb, #fff 80%, transparent);
+    font-size: 13px;
   }
   .slide-video {
     width: min(480px, 100%);
@@ -376,18 +400,33 @@ const showAvailability = l.availability === 'coming-soon';
     }
   }
 
-  // Click to enlarge: screenshots open in a lightbox dialog.
+  // Click to enlarge: screenshots open in a lightbox dialog with
+  // gallery-style prev/next (buttons and arrow keys).
   const lightbox = document.querySelector('#lightbox');
   if (lightbox) {
+    const slides = [...document.querySelectorAll('#media-track img.slide')];
     const full = lightbox.querySelector('img');
-    for (const slide of document.querySelectorAll('#media-track img.slide')) {
+    const counter = lightbox.querySelector('.lb-count');
+    let index = 0;
+    const show = (i) => {
+      index = (i + slides.length) % slides.length;
+      full.src = slides[index].src;
+      full.alt = slides[index].alt;
+      if (counter) counter.textContent = `${index + 1} / ${slides.length}`;
+    };
+    slides.forEach((slide, i) =>
       slide.addEventListener('click', () => {
-        full.src = slide.src;
-        full.alt = slide.alt;
+        show(i);
         lightbox.showModal();
-      });
-    }
-    lightbox.querySelector('button').addEventListener('click', () => lightbox.close());
+      }),
+    );
+    lightbox.querySelector('.lb-close').addEventListener('click', () => lightbox.close());
+    lightbox.querySelector('.lb-prev')?.addEventListener('click', () => show(index - 1));
+    lightbox.querySelector('.lb-next')?.addEventListener('click', () => show(index + 1));
+    lightbox.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') show(index - 1);
+      if (e.key === 'ArrowRight') show(index + 1);
+    });
     // A click on the dialog element itself (not the image) hit the backdrop.
     lightbox.addEventListener('click', (e) => {
       if (e.target === lightbox) lightbox.close();
