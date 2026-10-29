@@ -7,8 +7,8 @@
 function init() {
   const cards = [...document.querySelectorAll('#results .card')];
   const boxes = [...document.querySelectorAll('input[data-facet]')];
-  // Free-text search lives on the main page; the browse page only applies
-  // the ?q= query it was opened with.
+  // Free-text search lives on the main page and the browse page. When the
+  // box is absent, the ?q= query from the URL still applies.
   const search = document.querySelector('#search');
   const count = document.querySelector('#count');
   if (!cards.length || !count) return;

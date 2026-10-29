@@ -22,9 +22,13 @@ const facets = facetGroups.map(([label, key]) => ({ label, key, values: facetVal
     <div class="container">
       <h1>Browse Marketplace</h1>
       <p>
-        Filter {listings.length} connectors, blueprints, and solutions for your
+        Search and filter {listings.length} connectors, blueprints, and solutions for your
         Camunda projects.
       </p>
+      <div class="searchwrap">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        <input id="search" type="search" placeholder="Search listings…" aria-label="Search listings" />
+      </div>
     </div>
   </section>
 
@@ -149,10 +153,34 @@ const facets = facetGroups.map(([label, key]) => ({ label, key, values: facetVal
     letter-spacing: -0.02em;
   }
   .pagehead p {
-    margin: 0;
+    margin: 0 0 28px;
     color: color-mix(in srgb, #fff 78%, transparent);
     font-size: 17px;
     max-width: 560px;
+  }
+  .searchwrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 560px;
+    background: var(--input-background, #fff);
+    border-radius: 10px;
+    padding: 0 16px;
+    color: var(--neutral-foreground-subtle);
+    box-shadow: 0 8px 24px color-mix(in srgb, #000 25%, transparent);
+  }
+  .searchwrap svg { width: 18px; height: 18px; flex-shrink: 0; }
+  #search {
+    width: 100%;
+    padding: 14px 0;
+    border: 0;
+    background: transparent;
+    font-size: 16px;
+    color: var(--foreground);
+  }
+  #search:focus { outline: none; }
+  .searchwrap:focus-within {
+    box-shadow: 0 0 0 3px var(--accent-action-default), 0 8px 24px color-mix(in srgb, #000 25%, transparent);
   }
 
   .layout {
