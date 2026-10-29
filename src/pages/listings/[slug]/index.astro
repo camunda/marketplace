@@ -108,7 +108,7 @@ const showAvailability = l.availability === 'coming-soon';
                     <iframe src={s.src} title={`${l.name} demo video`} allowfullscreen loading="lazy" />
                   </div>
                 ) : (
-                  <img class="slide" src={s.src} alt={s.alt} loading="lazy" />
+                  <img class="slide" src={s.src} alt={s.alt} loading="lazy" title="Click to enlarge" />
                 ),
               )}
             </div>
@@ -122,6 +122,15 @@ const showAvailability = l.availability === 'coming-soon';
         )
       }
       {videoLink && <p><a href={videoLink} target="_blank" rel="noopener">Watch the demo video</a></p>}
+
+      {
+        l.gallery.length > 0 && (
+          <dialog id="lightbox" aria-label="Enlarged screenshot">
+            <button type="button" aria-label="Close">&times;</button>
+            <img src="" alt="" />
+          </dialog>
+        )
+      }
 
       <div class="body">
         <Content />
@@ -212,6 +221,43 @@ const showAvailability = l.availability === 'coming-soon';
     max-width: 100%;
     object-fit: contain;
     background: var(--bg-soft);
+    cursor: zoom-in;
+  }
+  /* Click-to-enlarge lightbox (native <dialog>: Escape and ::backdrop for free) */
+  #lightbox {
+    border: 0;
+    padding: 0;
+    background: transparent;
+    max-width: 95vw;
+    max-height: 95vh;
+  }
+  #lightbox::backdrop {
+    background: color-mix(in srgb, #000 75%, transparent);
+  }
+  #lightbox img {
+    display: block;
+    max-width: 90vw;
+    max-height: 85vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    background: var(--bg-soft);
+  }
+  #lightbox button {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 0;
+    background: var(--popover, #fff);
+    color: var(--foreground);
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+    box-shadow: 0 2px 8px color-mix(in srgb, #000 40%, transparent);
   }
   .slide-video {
     width: min(480px, 100%);
@@ -328,5 +374,23 @@ const showAvailability = l.availability === 'coming-soon';
         track.scrollBy({ left: step * Number(btn.dataset.dir) });
       });
     }
+  }
+
+  // Click to enlarge: screenshots open in a lightbox dialog.
+  const lightbox = document.querySelector('#lightbox');
+  if (lightbox) {
+    const full = lightbox.querySelector('img');
+    for (const slide of document.querySelectorAll('#media-track img.slide')) {
+      slide.addEventListener('click', () => {
+        full.src = slide.src;
+        full.alt = slide.alt;
+        lightbox.showModal();
+      });
+    }
+    lightbox.querySelector('button').addEventListener('click', () => lightbox.close());
+    // A click on the dialog element itself (not the image) hit the backdrop.
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) lightbox.close();
+    });
   }
 </script>
