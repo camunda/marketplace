@@ -19,13 +19,12 @@ compatibleVersions:
   - "8.9"
 availability: "listing-only"
 description: "Bridge EHRs to process automation"
+seoDescription: "FHIR Connector for Camunda automates clinical workflows with SMART-on-FHIR security, real-time EHR triggers, and native FHIR R4 resource orchestration."
 links: 
   docs: "https://docs.camunda.io/docs/guides/host-custom-connectors/"
   support: "https://forum.camunda.io/"
 lastModified: "2026-06-10"
 ---
-
-*Bridge clinical systems and automate healthcare workflows*
 
 FHIR Connector for Camunda automates clinical workflows with SMART-on-FHIR security, real-time EHR triggers, and native FHIR R4 resource orchestration.
 

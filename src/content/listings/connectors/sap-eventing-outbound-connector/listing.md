@@ -20,6 +20,7 @@ compatibleVersions:
   - "8.8"
 availability: "open-source"
 description: "Send CloudEvents to SAP AEM"
+seoDescription: "Enables real-time, event-driven integrations across SAP BTP, S/4HANA, and ECC systems."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda/sap-connectors/ec7ed38ed3cae366e905bacc81c132b0a73b1afa/eventing-connectors/element-templates/sap-eventing-outbound-connector.json"
     name: "SAP Eventing Outbound Connector Outbound Template"
@@ -29,8 +30,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-10-15"
 ---
-
-*Send CloudEvents to SAP Advanced Event Mesh*
 
 Enables real-time, event-driven integrations across SAP BTP, S/4HANA, and ECC systems.
 

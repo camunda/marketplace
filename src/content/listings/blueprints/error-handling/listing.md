@@ -15,6 +15,7 @@ compatibleVersions:
   - "8.5"
 availability: "open-source"
 description: "Robust error management for processes"
+seoDescription: "Implement advanced error handling within BPMN processes with a focus on catching, managing, and resolving errors efficiently."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda/camunda-platform-tutorials/main/solutions/error-handling/Error%20Handling.bpmn"
     name: "Error Handling.bpmn"
@@ -24,8 +25,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2026-04-09"
 ---
-
-*Mastering BPMN Error Handling*
 
 Implement advanced error handling within BPMN processes with a focus on catching, managing, and resolving errors efficiently.
 

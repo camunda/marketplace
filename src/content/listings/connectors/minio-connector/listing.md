@@ -20,14 +20,13 @@ compatibleVersions:
   - "8.6"
 availability: "open-source"
 description: "Store, process, and manage large-scale data"
+seoDescription: "Optimize Camunda-based processes by storing, processing, and managing large-scale AI/ML data, files, and more with MinIO's high-performance, Amazon S3-compatible object storage."
 saasTemplate: "https://raw.githubusercontent.com/IBA-Poland/camunda-connector-minio/main/element-templates/template-connector.json"
 smTemplate: "https://github.com/IBA-Poland/camunda-connector-minio"
 links: 
   support: "https://forum.camunda.io/"
 lastModified: "2024-08-13"
 ---
-
-*Scalable Data Management with MinIO*
 
 Optimize Camunda-based processes by storing, processing, and managing large-scale AI/ML data, files, and more with MinIO's high-performance, Amazon S3-compatible object storage.
 

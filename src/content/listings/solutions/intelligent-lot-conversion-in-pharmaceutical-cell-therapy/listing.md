@@ -19,13 +19,12 @@ compatibleVersions:
   - "8.9"
 availability: "listing-only"
 description: "Automate OOS lot conversion orchestration"
+seoDescription: "Automate out-of-spec (OOS) lot conversion for cell therapy with agentic process orchestration, physician communication capture, and full auditability for compliance. Agentic orchestration handles real-time physician communications and routes actions through governed processes with human-in-the-loop oversight."
 video: "https://youtu.be/nY0eTVygdPg"
 links: 
   support: "https://forum.camunda.io/"
 lastModified: "2026-06-05"
 ---
-
-*Lot conversion process orchestration for commercial to clinical case execution*
 
 Automate out-of-spec (OOS) lot conversion for cell therapy with agentic process orchestration, physician communication capture, and full auditability for compliance. Agentic orchestration handles real-time physician communications and routes actions through governed processes with human-in-the-loop oversight.
 

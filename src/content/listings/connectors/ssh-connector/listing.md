@@ -17,14 +17,13 @@ compatibleVersions:
   - "8.3"
 availability: "open-source"
 description: "Remote command execution with Camunda"
+seoDescription: "Use SSH to securely connect to remote servers and execute commands on them as part of your Camunda-based business processes."
 links: 
   github: "https://github.com/Infosys/camunda-connectors/tree/main/connector-ssh"
   docs: "https://docs.camunda.io/docs/guides/host-custom-connectors/"
   website: "https://www.infosys.com/"
 lastModified: "2024-04-05"
 ---
-
-*Streamline Workflows with SSH Integration for Camunda*
 
 Use SSH to securely connect to remote servers and execute commands on them as part of your Camunda-based business processes.
 

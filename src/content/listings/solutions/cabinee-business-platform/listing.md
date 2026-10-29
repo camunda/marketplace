@@ -12,13 +12,12 @@ compatibleVersions:
   - "8.9"
 availability: "listing-only"
 description: "Flexible end-user app for Camunda"
+seoDescription: "A highly adaptable business platform, Cabinee combines a ready-to-use end-user application with native Camunda integration to automate virtually any process in days, not months."
 video: "https://www.youtube.com/watch?v=kmh_QQRWzZQ"
 links: 
   support: "https://cabinee.com/"
 lastModified: "2026-09-25"
 ---
-
-*Fast-track your end-to-end process automation in days*
 
 A highly adaptable business platform, Cabinee combines a ready-to-use end-user application with native Camunda integration to automate virtually any process in days, not months.
 

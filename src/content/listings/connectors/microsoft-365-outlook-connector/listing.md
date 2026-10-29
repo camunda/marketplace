@@ -19,6 +19,7 @@ compatibleVersions:
   - "8.5"
 availability: "open-source"
 description: "Send email via Outlook"
+seoDescription: "Bring the power of email management into your business processes with the Microsoft 365 Outlook Connector for Camunda. This Connector bridges your Camunda workflows with your Outlook email, allowing you to send emails, list messages, and organize folders without leaving the Camunda environment. Whether it's for automated email alerts, managing correspondence, or organizing your inbox, this Connector offers the tools you need for efficient email management."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.MSFT.O365.Mail.v1/latest/microsoft-office365-mail-connector.json"
     name: "Microsoft 365 Outlook Connector Outbound Template"
@@ -28,8 +29,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-09-10"
 ---
-
-*Enhance Your Workflows with Integrated Outlook Operations*
 
 Bring the power of email management into your business processes with the Microsoft 365 Outlook Connector for Camunda. This Connector bridges your Camunda workflows with your Outlook email, allowing you to send emails, list messages, and organize folders without leaving the Camunda environment. Whether it's for automated email alerts, managing correspondence, or organizing your inbox, this Connector offers the tools you need for efficient email management.
 

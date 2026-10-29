@@ -20,6 +20,7 @@ compatibleVersions:
   - "8.9"
 availability: "open-source"
 description: "Local, private AI for Camunda"
+seoDescription: "Run open-weight AI models locally with Ollama inside Camunda processes, with no cloud API costs, full data privacy, and a native BPMN task powered by a custom Java outbound connector."
 templates: 
   - url: "https://raw.githubusercontent.com/rajeshponna/ollama-custom-connector/main/element-templates/ollama-chat.json"
     name: "Ollama Connector"
@@ -30,8 +31,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2026-09-15"
 ---
-
-*Run local AI models inside your processes*
 
 Run open-weight AI models locally with Ollama inside Camunda processes, with no cloud API costs, full data privacy, and a native BPMN task powered by a custom Java outbound connector.
 

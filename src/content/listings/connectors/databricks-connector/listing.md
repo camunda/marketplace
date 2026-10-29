@@ -21,6 +21,7 @@ compatibleVersions:
   - "8.10"
 availability: "open-source"
 description: "Orchestrate Databricks data and AI"
+seoDescription: "Orchestrate the Databricks Data Intelligence Platform from BPMN with 15 operations across SQL Statement Execution, SQL warehouses, Jobs, Model Serving, and Vector Search. Authenticate with an OAuth service principal and run it on the Camunda Connectors Bundle."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda/connectors/refs/heads/main/connectors/databricks/element-templates/databricks-connector.json"
     name: "Databricks Connector"
@@ -31,8 +32,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2026-09-15"
 ---
-
-*Orchestrate Databricks SQL, Jobs, and AI models*
 
 Orchestrate the Databricks Data Intelligence Platform from BPMN with 15 operations across SQL Statement Execution, SQL warehouses, Jobs, Model Serving, and Vector Search. Authenticate with an OAuth service principal and run it on the Camunda Connectors Bundle.
 

@@ -19,6 +19,7 @@ compatibleVersions:
   - "8.5"
 availability: "open-source"
 description: "Automate Geolocation Services in Camunda"
+seoDescription: "Bring the power of Google Maps into your Camunda workflows. Camunda's Google Maps Connector automates address validation, place identification, and distance calculations, enabling streamlined operations across sectors such as e-commerce, logistics, and customer services"
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.GoogleMapsPlatform.v1/latest/google-maps-platform-connector.json"
     name: "Google Maps Outbound"
@@ -27,8 +28,6 @@ links:
   website: "https://camunda.com"
 lastModified: "2025-09-09"
 ---
-
-*Seamlessly Integrate Geographic Services with Camunda and Google Maps*
 
 Bring the power of Google Maps into your Camunda workflows. Camunda's Google Maps Connector automates address validation, place identification, and distance calculations, enabling streamlined operations across sectors such as e-commerce, logistics, and customer services
 

@@ -18,6 +18,7 @@ compatibleVersions:
   - "8.9"
 availability: "open-source"
 description: "End-to-end local AI workflow"
+seoDescription: "Run a complete Camunda 8 workflow powered by a locally hosted AI model via Ollama \u2014 no cloud API costs, full data privacy, fully self-hosted."
 templates: 
   - url: "https://raw.githubusercontent.com/rajeshponna/ollama-custom-connector/main/element-templates/ollama-chat.json"
     name: "Camunda + Ollama Blueprint"
@@ -27,8 +28,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2026-09-15"
 ---
-
-*Run local AI prompts without cloud costs*
 
 Run a complete Camunda 8 workflow powered by a locally hosted AI model via Ollama — no cloud API costs, full data privacy, fully self-hosted.
 

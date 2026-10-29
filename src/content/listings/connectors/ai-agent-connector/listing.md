@@ -23,6 +23,7 @@ compatibleVersions:
   - "8.10"
 availability: "open-source"
 description: "Bring the power of AI agents to business processes"
+seoDescription: "Enhance business processes with AI agents that make decisions, generate content, and execute tasks intelligently."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda/connectors/refs/heads/main/connectors/agentic-ai/connector-aiagent/element-templates/agenticai-ai-agent-subprocess.v2.json"
     name: "AI Agent Subprocess Element Template (v2)"
@@ -37,8 +38,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2026-10-19"
 ---
-
-*Bring the power of AI agents to business processes*
 
 Enhance business processes with AI agents that make decisions, generate content, and execute tasks intelligently.
 

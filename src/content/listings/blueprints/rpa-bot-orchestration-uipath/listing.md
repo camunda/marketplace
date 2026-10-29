@@ -25,6 +25,7 @@ compatibleVersions:
   - "8.6"
 availability: "open-source"
 description: "Orchestrate your UiPath bots"
+seoDescription: "This blueprint orchestrates UiPath RPA bots as part of Camunda-based processes."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda/camunda-platform-tutorials/main/solutions/rpa-orchestration-uipath/RPA%20Orchestration%20-%20with%20compensation.bpmn"
     name: "RPA Bot Orchestration (UiPath) Blueprint"
@@ -34,8 +35,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-06-30"
 ---
-
-*Efficient Orchestration of UiPath RPA Bots with Camunda*
 
 This blueprint orchestrates UiPath RPA bots as part of Camunda-based processes.
 

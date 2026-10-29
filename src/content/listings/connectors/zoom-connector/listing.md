@@ -22,6 +22,7 @@ compatibleVersions:
   - "8.9"
 availability: "open-source"
 description: "Create and manage Zoom meetings"
+seoDescription: "Automate Zoom meeting workflows in Camunda using a ready-to-use element template built on the REST connector. Create, update, retrieve and delete meetings, plus manage registrants and meeting details via the Zoom API."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda-community-hub/camunda-zoom-connector/refs/heads/main/element-templates/zoom_connector.json"
     name: "Zoom Connector Outbound Template"
@@ -31,8 +32,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2026-05-27"
 ---
-
-*Automate Zoom Meeting Management*
 
 Automate Zoom meeting workflows in Camunda using a ready-to-use element template built on the REST connector. Create, update, retrieve and delete meetings, plus manage registrants and meeting details via the Zoom API.
 

@@ -28,14 +28,13 @@ compatibleVersions:
   - "8.7"
 availability: "listing-only"
 description: "AI-driven invoice processing"
+seoDescription: "Leverage AI and process orchestration to streamline accounts payable invoice processing, with built-in compliance, reporting, exception handling, and more."
 video: "https://www.youtube.com/watch?v=leNII7Utgn0"
 links: 
   support: "https://forum.camunda.io/"
   website: "https://www.cognizant.com/us/en"
 lastModified: "2025-06-30"
 ---
-
-*Accounts Payable (AP) Invoice Processing*
 
 Leverage AI and process orchestration to streamline accounts payable invoice processing, with built-in compliance, reporting, exception handling, and more.
 

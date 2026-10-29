@@ -23,6 +23,7 @@ compatibleVersions:
   - "8.5"
 availability: "open-source"
 description: "Revolutionize SMS communication flows"
+seoDescription: "Send, receive, list, and get SMS messages with this robust, secure, and easy-to-use Connector."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.Twilio.Webhook.Intermediate.v1/latest/twilio-webhook-intermediate-connector.json"
     name: "Twilio Inbound Intermediate Template"
@@ -37,8 +38,6 @@ links:
   website: "https://camunda.com"
 lastModified: "2025-09-10"
 ---
-
-*Text, Receive, and Manage SMS Messages Seamlessly with the Twilio Connector*
 
 Send, receive, list, and get SMS messages with this robust, secure, and easy-to-use Connector.
 

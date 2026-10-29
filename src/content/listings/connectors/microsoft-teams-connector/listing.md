@@ -19,6 +19,7 @@ compatibleVersions:
   - "8.5"
 availability: "open-source"
 description: "Facilitate communication with Teams integration"
+seoDescription: "Bring Microsoft Teams into Camunda processes to facilitate real-time communication, notifications, and contextual workflow enhancements."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.MSTeams.v1/latest/microsoft-teams-outbound-connector.json"
     name: "MS Teams Outbound"
@@ -27,8 +28,6 @@ links:
   website: "https://camunda.com"
 lastModified: "2025-09-08"
 ---
-
-*Orchestrate Communication and Collaboration with Camunda and Microsoft Teams*
 
 Bring Microsoft Teams into Camunda processes to facilitate real-time communication, notifications, and contextual workflow enhancements.
 

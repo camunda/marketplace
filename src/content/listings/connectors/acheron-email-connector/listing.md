@@ -18,6 +18,7 @@ compatibleVersions:
   - "8.6"
   - "8.7"
 description: "Dynamic, automated email simplified"
+seoDescription: "Use FreeMarker and Amazon SES to generate and send personalized emails from business processes."
 templates: 
   - url: "https://raw.githubusercontent.com/Acheron-Camunda/email-connector/refs/heads/main/element-template/acheron-email-element-template.json"
     name: "Acheron Email Connector Outbound Template"
@@ -27,8 +28,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-01-20"
 ---
-
-*Streamline personalized emails in business processes*
 
 Use FreeMarker and Amazon SES to generate and send personalized emails from business processes.
 

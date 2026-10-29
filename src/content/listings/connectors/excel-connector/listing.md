@@ -20,6 +20,7 @@ compatibleVersions:
   - "8.9"
 availability: "open-source"
 description: "Read Excel data in Camunda"
+seoDescription: "Read and extract Excel data directly in your BPMN processes. The Camunda Excel connector supports file access via Document Reference and URL, with five flexible operations including range, sheet, cell address, and coordinate lookups."
 templates: 
   - url: "https://raw.githubusercontent.com/jeltechnologies/camunda-excel-connector/refs/heads/master/docs/excel-connector.json"
     name: "Excel Connector Outbound Template"
@@ -28,8 +29,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2026-06-22"
 ---
-
-*Read Excel data directly inside your BPMN processes*
 
 Read and extract Excel data directly in your BPMN processes. The Camunda Excel connector supports file access via Document Reference and URL, with five flexible operations including range, sheet, cell address, and coordinate lookups.
 

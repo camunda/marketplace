@@ -18,6 +18,7 @@ compatibleVersions:
   - "8.4"
 availability: "open-source"
 description: "Seamless Salesforce operations from Camunda"
+seoDescription: "Transform business process orchestration by integrating Salesforce SOQL and SObject operations directly within your Camunda processes for a unified, efficient experience."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda/connectors/main/connectors/salesforce/element-templates/salesforce-connector.json"
     id: "io.camunda.connectors.Salesforce.v1"
@@ -28,8 +29,6 @@ links:
   website: "https://camunda.com"
 lastModified: "2025-09-08"
 ---
-
-*Streamline Your Business Processes with Salesforce Integration*
 
 Transform business process orchestration by integrating Salesforce SOQL and SObject operations directly within your Camunda processes for a unified, efficient experience.
 

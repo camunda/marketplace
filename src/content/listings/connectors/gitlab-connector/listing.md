@@ -19,6 +19,7 @@ compatibleVersions:
   - "8.5"
 availability: "open-source"
 description: "Automate GitLab workflows with Camunda"
+seoDescription: "Automate GitLab project management, issue tracking, and software release processes to manage your entire DevOps cycle in one centralized Camunda environment."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.GitLab.v1/latest/gitlab-connector.json"
     name: "Gitlab Outbound"
@@ -27,8 +28,6 @@ links:
   website: "https://camunda.com"
 lastModified: "2025-09-08"
 ---
-
-*Elevate Your DevOps Journey with Camunda and GitLab*
 
 Automate GitLab project management, issue tracking, and software release processes to manage your entire DevOps cycle in one centralized Camunda environment.
 

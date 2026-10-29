@@ -19,14 +19,13 @@ compatibleVersions:
   - "8.9"
 availability: "open-source"
 description: "Send messages from Camunda processes"
+seoDescription: "Integrate Discord into Camunda 8 BPMN processes without writing code. Send messages, manage channels and roles, and trigger Discord actions directly from your process diagrams using a bot token or webhook."
 links: 
   github: "https://github.com/ecuriotto/camunda-8-connector-discord"
   docs: "https://docs.camunda.io/docs/guides/host-custom-connectors/"
   support: "https://forum.camunda.io/"
 lastModified: "2026-04-15"
 ---
-
-*Automate communication in Camunda processes*
 
 Integrate Discord into Camunda 8 BPMN processes without writing code. Send messages, manage channels and roles, and trigger Discord actions directly from your process diagrams using a bot token or webhook.
 

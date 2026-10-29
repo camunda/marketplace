@@ -18,6 +18,7 @@ compatibleVersions:
   - "8.4"
   - "8.5"
 description: "Automate Google Sheets in processes"
+seoDescription: "Integrate Camunda with Google Sheets for automated, real-time data management. Ideal for data collection, reporting, and dynamic data structuring within orchestrated processes."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.GoogleSheets.v1/latest/google-sheets-outbound-connector.json"
     name: "Google Sheets Outbound"
@@ -27,8 +28,6 @@ links:
   website: "https://camunda.com"
 lastModified: "2025-09-09"
 ---
-
-*Camunda and Google Sheets: Data Management and Workflow Automation United*
 
 Integrate Camunda with Google Sheets for automated, real-time data management. Ideal for data collection, reporting, and dynamic data structuring within orchestrated processes.
 

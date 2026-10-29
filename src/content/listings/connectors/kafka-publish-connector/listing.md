@@ -20,12 +20,11 @@ compatibleVersions:
   - "8.4"
 availability: "open-source"
 description: "Publish to Kafka using Camunda"
+seoDescription: "Connect to a Kafka broker and publish a message on a given topic."
 links: 
   website: "https://www.cognizant.com/"
 lastModified: "2024-04-05"
 ---
-
-*Publish a Message to Kafka with Minimal Configuration*
 
 Connect to a Kafka broker and publish a message on a given topic.
 

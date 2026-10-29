@@ -18,6 +18,7 @@ compatibleVersions:
   - "8.4"
 availability: "open-source"
 description: "Integrate Azure DevOps into Camunda"
+seoDescription: "Use the Azure DevOps Connector to access Azure's comprehensive DevOps tools. Managing issues can be automated and orchestrated from within Camunda."
 templates: 
   - url: "https://raw.githubusercontent.com/BP3/azure-devops-connector/main/element-templates/azure-devops-connector.json"
     name: "Azure DevOps Connector Outbound Template"
@@ -26,6 +27,7 @@ links:
   support: "https://support.bp-3.com/"
 lastModified: "2024-04-08"
 ---
+
 
 Use the Azure DevOps Connector to access Azure's comprehensive DevOps tools. Managing issues can be automated and orchestrated from within Camunda.
 

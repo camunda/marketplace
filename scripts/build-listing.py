@@ -96,6 +96,20 @@ def normalize_bpmn_type(value):
     return None
 
 
+def sanitize_rich_text(text):
+    """Guardrails for contributor-provided content: keep paragraphs, lists, bold
+    and italic; strip images, links (keeping the link text), raw HTML and
+    headings (converted to bold) so listings cannot embed off-site assets or
+    arbitrary markup."""
+    text = re.sub(r"!\[[^\]]*\]\([^)]*\)", "", text)  # images
+    text = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", text)  # links -> text
+    text = re.sub(r"<[^>]+>", "", text)  # raw HTML tags
+    text = re.sub(r"^#{1,6}\s+(.+)$", r"**\1**", text, flags=re.M)  # headings -> bold
+    text = re.sub(r"[ \t]+\n", "\n", text)
+    text = re.sub(r"\n{3,}", "\n\n", text)
+    return text.strip()
+
+
 def main(payload_path):
     with open(payload_path, encoding="utf-8") as f:
         data = json.load(f)
@@ -151,7 +165,7 @@ def main(payload_path):
         "---\n"
         + yaml.safe_dump(frontmatter, sort_keys=False, allow_unicode=True, width=4096)
         + "---\n\n"
-        + data["content"]
+        + sanitize_rich_text(data["content"])
         + "\n"
     )
     os.makedirs(listing_dir, exist_ok=True)

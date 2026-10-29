@@ -26,6 +26,7 @@ compatibleVersions:
   - "8.5"
 availability: "open-source"
 description: "Streamline Kafka messaging in Camunda"
+seoDescription: "Leverage the real-time data streaming of Apache Kafka with the process orchestration capabilities of Camunda. Perfect for real-time analytics, notifications, and multi-system orchestration."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.inbound.KafkaMessageStart.v1/latest/kafka-inbound-connector-start-message.json"
     name: "Kafka Inbound Start"
@@ -41,8 +42,6 @@ links:
   website: "https://camunda.com/"
 lastModified: "2025-09-09"
 ---
-
-*Camunda and Kafka: Orchestrating Real-Time Data Streams*
 
 Leverage the real-time data streaming of Apache Kafka with the process orchestration capabilities of Camunda. Perfect for real-time analytics, notifications, and multi-system orchestration.
 

@@ -17,6 +17,7 @@ compatibleVersions:
   - "8.3"
 availability: "open-source"
 description: "Send notifications using Firebase Cloud Messaging"
+seoDescription: "Discover how Firebase Cloud Messaging can help you integrate your Camunda BPMN workflows with any device or topic and send notifications with ease. Learn more about the benefits and features of this cross-platform messaging solution."
 templates: 
   - url: "https://raw.githubusercontent.com/NoderoDev/Firebase-Cloud-Messaging-Connector/master/element-templates/firebase-cloud-messaging-connector.json"
     name: "Firebase Cloud Messaging Outbound"
@@ -27,8 +28,6 @@ links:
   website: "https://nodero.com/"
 lastModified: "2024-04-08"
 ---
-
-*Integrate Firebase Cloud Messaging with your Camunda Flow to enable effortless notification delivery*
 
 Discover how Firebase Cloud Messaging can help you integrate your Camunda BPMN workflows with any device or topic and send notifications with ease. Learn more about the benefits and features of this cross-platform messaging solution.
 

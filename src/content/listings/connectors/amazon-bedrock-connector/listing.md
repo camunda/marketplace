@@ -19,6 +19,7 @@ compatibleVersions:
   - "8.6"
 availability: "open-source"
 description: "Orchestrate AI in business processes"
+seoDescription: "Integrate any AI model that Amazon Bedrock offers into your Camunda-based business processes."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.aws.bedrock.v1/latest/aws-bedrock-outbound-connector.json"
     name: "AWS Bedrock connector Outbound Template"
@@ -27,8 +28,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-09-05"
 ---
-
-*Integrate Leading AI Models Into Processes*
 
 Integrate any AI model that Amazon Bedrock offers into your Camunda-based business processes.
 

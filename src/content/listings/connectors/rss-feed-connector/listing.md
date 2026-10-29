@@ -19,6 +19,7 @@ compatibleVersions:
   - "8.8"
 availability: "open-source"
 description: "Fetch and parse RSS and Atom feeds"
+seoDescription: "Integrate RSS/Atom feeds into Camunda-based business processes. Fetch news, blog posts, or any RSS content directly into processes with powerful filtering and processing capabilities."
 templates: 
   - url: "https://raw.githubusercontent.com/aleksander-dytko/RSS-Feed-Connector/refs/heads/main/element-templates/rss-feed-connector.json"
     name: "RSS Feed Connector Outbound Template"
@@ -28,8 +29,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2026-04-24"
 ---
-
-*Fetch and parse RSS and Atom feeds with date filtering, sorting, and structured output*
 
 Integrate RSS/Atom feeds into Camunda-based business processes. Fetch news, blog posts, or any RSS content directly into processes with powerful filtering and processing capabilities.
 

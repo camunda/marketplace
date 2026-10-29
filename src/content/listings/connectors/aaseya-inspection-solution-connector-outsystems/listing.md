@@ -14,13 +14,12 @@ compatibleVersions:
   - "8.5"
 availability: "listing-only"
 description: "Automate inspection cases with Camunda and Outsystems"
+seoDescription: "Integrate Camunda with OutSystems for real-time data exchange, efficient case management, and streamlined business operations."
 links: 
   demo: "https://github.com/BadetiSriram/Outsystem-Connector.git"
   support: "https://forum.camunda.io/"
 lastModified: "2025-01-14"
 ---
-
-*Aaseya Inspection Solution Connector (OutSystems)*
 
 Integrate Camunda with OutSystems for real-time data exchange, efficient case management, and streamlined business operations.
 

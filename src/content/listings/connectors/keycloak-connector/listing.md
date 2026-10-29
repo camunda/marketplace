@@ -17,6 +17,7 @@ compatibleVersions:
   - "8.6"
 availability: "open-source"
 description: "Automate Camunda user management"
+seoDescription: "Combine Keycloak and Camunda to create, modify, and delete users and their roles."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda-community-hub/camunda-8-connector-keycloak/refs/heads/main/element-templates/keycloak-function.json"
     name: "Keycloak Outbound Template"
@@ -26,8 +27,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2024-10-31"
 ---
-
-*Automate user management with Keycloak and Camunda*
 
 Combine Keycloak and Camunda to create, modify, and delete users and their roles.
 

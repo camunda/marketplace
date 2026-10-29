@@ -16,6 +16,7 @@ compatibleVersions:
   - "8.6"
 availability: "open-source"
 description: "Seamless database integration in Camunda"
+seoDescription: "Simplify data exchange with MySQL, MSSQL, MariaDB, and PostgreSQL databases. Seamlessly integrate database operations into your Camunda-based processes."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.Jdbc.v1/latest/jdbc-outbound-connector.json"
     name: "SQL Connector Outbound Template"
@@ -24,8 +25,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-09-10"
 ---
-
-*Seamless Data Exchange with Camunda and Databases*
 
 Simplify data exchange with MySQL, MSSQL, MariaDB, and PostgreSQL databases. Seamlessly integrate database operations into your Camunda-based processes.
 

@@ -18,12 +18,11 @@ compatibleVersions:
   - "8.2"
 availability: "open-source"
 description: "Camel-powered AWS Lambda execution control"
+seoDescription: "This Connector uses Apache Camel with AWS Lambda to retrieve a list of functions and invoke a function that exists in AWS."
 links: 
   website: "https://www.cognizant.com/"
 lastModified: "2024-04-05"
 ---
-
-*Get the list of functions and invoke a function with provided details*
 
 This Connector uses Apache Camel with AWS Lambda to retrieve a list of functions and invoke a function that exists in AWS.
 

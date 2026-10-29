@@ -16,6 +16,7 @@ compatibleVersions:
   - "8.2"
 availability: "open-source"
 description: "Connect Camunda BPMN with MongoDB"
+seoDescription: "Enhance your Camunda BPMN workflows with the 'MongoDB Connector' by Acheron Software Consultancy Pvt Ltd. Seamlessly integrate MongoDB, enabling flexible data management within your workflow processes. Create, retrieve, update, and delete MongoDB documents effortlessly, while ensuring data accuracy and scalability. Connect Camunda with MongoDB for streamlined automation and dynamic data handling"
 templates: 
   - url: "https://raw.githubusercontent.com/Acheron-Camunda/mongodb-connector/main/element-templates/mongodb-operations-outbound-connector.json"
     name: "com.acheron.camunda.connectors.mongodb.v1"
@@ -32,8 +33,6 @@ resources:
     url: "https://www.youtube.com/watch?v=NgB-_4c7swE"
 lastModified: "2024-04-08"
 ---
-
-*Develop scalable applications with evolving data schemas using MongoDB Connector for Camunda BPMN*
 
 Enhance your Camunda BPMN workflows with the 'MongoDB Connector' by Acheron Software Consultancy Pvt Ltd. Seamlessly integrate MongoDB, enabling flexible data management within your workflow processes. Create, retrieve, update, and delete MongoDB documents effortlessly, while ensuring data accuracy and scalability. Connect Camunda with MongoDB for streamlined automation and dynamic data handling
 

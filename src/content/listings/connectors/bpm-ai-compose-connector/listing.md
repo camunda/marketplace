@@ -18,14 +18,13 @@ compatibleVersions:
   - "8.4"
 availability: "open-source"
 description: "Compose text with generative AI"
+seoDescription: "Automatically generate text for emails, chat messages, or social media posts using Large Language Models (LLMs)."
 links: 
   github: "https://github.com/holunda-io/bpm-ai-connectors-camunda-8"
   docs: "https://docs.camunda.io/docs/guides/host-custom-connectors/"
   support: "https://github.com/holunda-io/bpm-ai-connectors-camunda-8/discussions/categories/q-a"
 lastModified: "2024-04-08"
 ---
-
-*Compose text for emails and more using AI*
 
 Automatically generate text for emails, chat messages, or social media posts using Large Language Models (LLMs).
 

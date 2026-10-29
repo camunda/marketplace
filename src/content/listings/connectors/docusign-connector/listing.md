@@ -17,6 +17,7 @@ compatibleVersions:
   - "8.3"
 availability: "open-source"
 description: "Sign Documents Digitally With Camunda"
+seoDescription: "Maximize Efficiency with our Camunda Connector for DocuSign- Seamlessly automate DocuSign operations within Camunda BPM. Optimize your document workflows, from electronic signatures to document management, and boost productivity. Experience seamless integration and streamline your digital transactions today!"
 templates: 
   - url: "https://raw.githubusercontent.com/Infosys/camunda-connectors/refs/heads/main/connector-docusign/element-templates/docusign-connector.json"
     name: "DocuSign Connector outbound"
@@ -26,8 +27,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-02-13"
 ---
-
-*Unleash Effortless Docusign-Camunda Integration*
 
 Maximize Efficiency with our Camunda Connector for DocuSign- Seamlessly automate DocuSign operations within Camunda BPM. Optimize your document workflows, from electronic signatures to document management, and boost productivity. Experience seamless integration and streamline your digital transactions today!
 

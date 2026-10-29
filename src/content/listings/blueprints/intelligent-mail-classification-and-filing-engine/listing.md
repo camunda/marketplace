@@ -12,13 +12,12 @@ compatibleVersions:
   - "8.9"
 availability: "listing-only"
 description: "AI-powered email classification and filing engine"
+seoDescription: "Classify incoming emails by topic and file them into the right Microsoft Outlook folder automatically. Camunda orchestrates privacy-safe AI classification with Amazon Bedrock, with a review folder for unclear cases."
 video: "https://www.youtube.com/watch?v=7zCxdSq29kI"
 links: 
   support: "https://forum.camunda.io/"
 lastModified: "2026-10-08"
 ---
-
-*Stop sorting email by hand*
 
 Classify incoming emails by topic and file them into the right Microsoft Outlook folder automatically. Camunda orchestrates privacy-safe AI classification with Amazon Bedrock, with a review folder for unclear cases.
 

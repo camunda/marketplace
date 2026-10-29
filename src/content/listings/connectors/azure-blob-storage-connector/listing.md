@@ -19,6 +19,7 @@ compatibleVersions:
   - "8.8"
 availability: "open-source"
 description: "Upload and download Azure blobs"
+seoDescription: "Upload and download files in Camunda processes using Azure Blob Storage. Securely connect to Azure containers, manage files, and streamline cloud-based data storage from BPMN processes."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.azure.blobstorage.v1/latest/azure-blobstorage-outbound-connector.json"
     name: "Azure Blob Storage Connector Outbound Template"
@@ -27,8 +28,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-09-08"
 ---
-
-*Upload and download files from Azure Blob Storage*
 
 Upload and download files in Camunda processes using Azure Blob Storage. Securely connect to Azure containers, manage files, and streamline cloud-based data storage from BPMN processes.
 

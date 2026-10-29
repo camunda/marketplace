@@ -17,14 +17,13 @@ compatibleVersions:
   - "8.3"
 availability: "open-source"
 description: "Execute file operations on remote servers"
+seoDescription: "Orchestrate file operations on an FTP server as part of Camunda-based processes."
 links: 
   github: "https://github.com/Infosys/camunda-connectors/tree/main/connector-ftp"
   docs: "https://docs.camunda.io/docs/guides/host-custom-connectors/"
   website: "https://www.infosys.com/"
 lastModified: "2024-04-05"
 ---
-
-*Simplify File Management with the FTP Connector for Camunda*
 
 Orchestrate file operations on an FTP server as part of Camunda-based processes.
 

@@ -16,13 +16,12 @@ compatibleVersions:
   - "8.9"
 availability: "listing-only"
 description: "Automate financial spreading within workflows"
+seoDescription: "Automate complex financial spreading by transforming unstructured documents into decision-ready data. This AI-native agent integrates with Camunda to reduce manual workload by 80% with 100% traceability."
 video: "https://www.youtube.com/watch?v=aWRAzPt_sEI"
 links: 
   support: "https://forum.camunda.io/"
 lastModified: "2026-05-13"
 ---
-
-*An AI-native solution designed to automate one of the most complex and manual tasks in commercial lending.*
 
 Automate complex financial spreading by transforming unstructured documents into decision-ready data. This AI-native agent integrates with Camunda to reduce manual workload by 80% with 100% traceability.
 

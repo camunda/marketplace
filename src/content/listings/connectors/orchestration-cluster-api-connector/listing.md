@@ -19,6 +19,7 @@ compatibleVersions:
   - "8.10"
 availability: "open-source"
 description: "Read-only access to cluster data"
+seoDescription: "Query process instances, incidents, user tasks, audit logs and more from the Camunda Orchestration Cluster API v2. Read-only and OAuth 2.0 secured, it is the drop-in replacement for the deprecated Operate Connector."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda/connectors/refs/heads/main/connectors/orchestration/element-templates/orchestration-connector.json"
     name: "Orchestration Cluster API"
@@ -28,8 +29,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2026-08-26"
 ---
-
-*Get read-only visibility into your orchestration cluster*
 
 Query process instances, incidents, user tasks, audit logs and more from the Camunda Orchestration Cluster API v2. Read-only and OAuth 2.0 secured, it is the drop-in replacement for the deprecated Operate Connector.
 

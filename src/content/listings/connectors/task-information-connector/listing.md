@@ -20,14 +20,13 @@ compatibleVersions:
   - "8.8"
 availability: "open-source"
 description: "Retrieves active Camunda process tasks"
+seoDescription: "A smart Camunda connector that securely retrieves and monitors active human tasks from process instances using Operate, Tasklist, and Keycloak, enabling seamless automation and real-time process visibility."
 smTemplate: "https://github.com/DomingossDias/task-info-connector/tree/feature/task-connector-update"
 links: 
   docs: "https://github.com/DomingossDias/task-info-connector/tree/feature/task-connector-update"
   support: "https://forum.camunda.io/"
 lastModified: "2025-10-15"
 ---
-
-*Intelligent task retrieval and process monitoring*
 
 A smart Camunda connector that securely retrieves and monitors active human tasks from process instances using Operate, Tasklist, and Keycloak, enabling seamless automation and real-time process visibility.
 

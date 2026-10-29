@@ -15,6 +15,7 @@ compatibleVersions:
   - "8.5"
 availability: "open-source"
 description: "Guarantee SLA compliance in processes"
+seoDescription: "Use BPMN to orchestrate processes that enforce SLAs."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda/camunda-platform-tutorials/main/solutions/enforcing-sla/Enforcing%20SLA.bpmn"
     name: "Enforcing SLA.bpmn"
@@ -28,8 +29,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2026-04-09"
 ---
-
-*Enforcing SLA*
 
 Use BPMN to orchestrate processes that enforce SLAs.
 

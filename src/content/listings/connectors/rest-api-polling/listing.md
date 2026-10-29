@@ -21,6 +21,7 @@ compatibleVersions:
   - "8.4"
   - "8.5"
 description: "Efficient REST API Intermediate Polling"
+seoDescription: "Empower your Camunda workflows with the REST API Polling Connector. Keep tabs on external system changes by polling REST APIs and triggering intermediate events based on custom conditions. Perfect for when you're dealing with systems that don't support webhooks"
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.http.Polling/latest/http-polling-connector.json"
     name: "REST API Polling Inbound Intermediate Template"
@@ -31,8 +32,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-09-09"
 ---
-
-*Activate Dynamic Polling for REST APIs in Your Camunda Processes*
 
 Empower your Camunda workflows with the REST API Polling Connector. Keep tabs on external system changes by polling REST APIs and triggering intermediate events based on custom conditions. Perfect for when you're dealing with systems that don't support webhooks
 

@@ -16,12 +16,11 @@ compatibleVersions:
   - "8.3"
 availability: "open-source"
 description: "Integrate serverless functions in processes"
+seoDescription: "Retrieve a list of functions and invoke a function from Google Cloud Functions."
 links: 
   website: "https://www.cognizant.com/"
 lastModified: "2024-04-05"
 ---
-
-*Leverage Google Cloud serverless functionality in your processes*
 
 Retrieve a list of functions and invoke a function from Google Cloud Functions.
 

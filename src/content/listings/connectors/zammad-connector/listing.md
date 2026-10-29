@@ -20,6 +20,7 @@ compatibleVersions:
   - "8.10"
 availability: "open-source"
 description: "Automate Zammad tickets from Camunda"
+seoDescription: "Automate Zammad ticket management in Camunda 8. Create, retrieve, update, and delete support tickets, search users, and create customers directly from BPMN processes using the Zammad connector."
 templates: 
   - url: "https://raw.githubusercontent.com/ak-chaudhari423/zammad-connector/refs/heads/main/connector-template/zammad-connector.json"
     name: "Zammad Connector Outbound Template"
@@ -29,8 +30,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2026-07-15"
 ---
-
-*Manage Zammad ticket operations directly from Camunda*
 
 Automate Zammad ticket management in Camunda 8. Create, retrieve, update, and delete support tickets, search users, and create customers directly from BPMN processes using the Zammad connector.
 

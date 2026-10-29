@@ -18,14 +18,13 @@ compatibleVersions:
   - "8.3"
 availability: "open-source"
 description: "Drive processes using file updates"
+seoDescription: "This connector will start process instances or send messages to running process instances based on the creation, modification, or deletion of files in monitored directories."
 links: 
   github: "https://github.com/camunda-community-hub/camunda-8-inbound-connector-file-watch/tree/main"
   docs: "https://docs.camunda.io/docs/next/guides/host-custom-connectors/"
   support: "https://forum.camunda.io/"
 lastModified: "2024-04-08"
 ---
-
-*Start and drive Camunda processes using file updates in a monitored directory*
 
 This connector will start process instances or send messages to running process instances based on the creation, modification, or deletion of files in monitored directories.
 

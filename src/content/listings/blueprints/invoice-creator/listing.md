@@ -15,6 +15,7 @@ compatibleVersions:
   - "8.6"
 availability: "open-source"
 description: "Create and review invoices"
+seoDescription: "Create and review an invoice with a dynamic list of items and automatic total and tax calculations in a drag-and-drop editor."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda-community-hub/camunda-forms-examples/main/invoicing/create-invoice_8-5.form"
     name: "Resource 1"
@@ -24,8 +25,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2024-09-18"
 ---
-
-*Create and Review Invoices*
 
 Create and review an invoice with a dynamic list of items and automatic total and tax calculations in a drag-and-drop editor.
 

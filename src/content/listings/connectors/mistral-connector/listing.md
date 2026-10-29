@@ -21,6 +21,7 @@ compatibleVersions:
   - "8.7"
 availability: "open-source"
 description: "Add AI-powered language to business processes"
+seoDescription: "Integrate natural language understanding and generation capabilities into business processes using the Mistral language model."
 templates: 
   - url: "https://raw.githubusercontent.com/marcqw/camunda-connector-mistral/refs/heads/main/src/camunda8-connector-mistral.json"
     name: "Mistral Connector Outbound Template"
@@ -30,8 +31,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-01-20"
 ---
-
-*Enhance business processes with the Mistral language model*
 
 Integrate natural language understanding and generation capabilities into business processes using the Mistral language model.
 

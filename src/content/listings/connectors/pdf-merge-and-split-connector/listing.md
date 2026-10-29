@@ -20,6 +20,7 @@ compatibleVersions:
   - "8.9"
 availability: "open-source"
 description: "Provides out-of-the-box PDF manipulation"
+seoDescription: "Automate the splitting and merging of PDF documents, removing the need for external services, manual editing, or custom scripts. This connector is ideal for document-heavy processes, especially where scanned or multi-form PDFs need to be transformed into structured, workflow-ready files."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda-community-hub/pdf-merge-split-connector/refs/heads/main/element-templates/pdf-connector.json"
     name: "PDF Merge & Split Connector Outbound Template"
@@ -30,8 +31,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2026-05-27"
 ---
-
-*Provides out-of-the-box PDF manipulation.*
 
 Automate the splitting and merging of PDF documents, removing the need for external services, manual editing, or custom scripts. This connector is ideal for document-heavy processes, especially where scanned or multi-form PDFs need to be transformed into structured, workflow-ready files.
 

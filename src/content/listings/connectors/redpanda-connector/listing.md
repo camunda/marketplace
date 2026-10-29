@@ -20,6 +20,7 @@ compatibleVersions:
   - "8.9"
 availability: "open-source"
 description: "Connect Camunda to Redpanda streams"
+seoDescription: "Integrate Camunda and Redpanda by publishing messages to and subscribing to messages from the Redpanda streaming platform using Kafka APIs. Take advantage of event-driven orchestration with high-throughput streaming for real-time process triggers and state updates."
 templates: 
   - url: "https://raw.githubusercontent.com/charitha1310/Camunda-RedPanda-Outbound-Connector/refs/heads/master/element-templates/Red%20Panda%20Connector.json"
     name: "Red Panda Connector Outbound Template"
@@ -29,8 +30,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2026-02-19"
 ---
-
-*Stream events into Camunda-based business processes*
 
 Integrate Camunda and Redpanda by publishing messages to and subscribing to messages from the Redpanda streaming platform using Kafka APIs. Take advantage of event-driven orchestration with high-throughput streaming for real-time process triggers and state updates.
 

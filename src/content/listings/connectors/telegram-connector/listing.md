@@ -24,6 +24,7 @@ compatibleVersions:
   - "8.9"
 availability: "open-source"
 description: "Send and receive Telegram events"
+seoDescription: "Enable end-to-end bot automation with outbound API actions and inbound webhook events."
 templates: 
   - url: "https://raw.githubusercontent.com/deng-leon/telegram-connector/refs/heads/main/connectors/telegram-connector.json"
     name: "Telegram Connector Outbound Template"
@@ -39,8 +40,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2026-02-27"
 ---
-
-*Automate Telegram Messaging and Webhooks*
 
 Enable end-to-end bot automation with outbound API actions and inbound webhook events.
 

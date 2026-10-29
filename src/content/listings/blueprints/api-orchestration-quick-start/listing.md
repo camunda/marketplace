@@ -15,6 +15,7 @@ compatibleVersions:
   - "8.5"
 availability: "open-source"
 description: "Simplify API calls using BPMN"
+seoDescription: "Orchestrate API calls within a process modeled in BPMN."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda/camunda-platform-tutorials/main/quick-start/api-orchestration/Quick%20Start_%20API%20Orchestration.bpmn"
     name: "API Orchestration Quick Start Blueprint Template"
@@ -28,8 +29,6 @@ resources:
     url: "https://vimeo.com/762692362/025d801c73"
 lastModified: "2024-05-13"
 ---
-
-*API Orchestration Quick Start*
 
 Orchestrate API calls within a process modeled in BPMN.
 

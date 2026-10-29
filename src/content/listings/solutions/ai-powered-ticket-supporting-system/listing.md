@@ -12,14 +12,13 @@ compatibleVersions:
   - "8.8"
 availability: "listing-only"
 description: "Faster, smarter, automated support"
+seoDescription: "Reduce delays, automate ticket validation, and accelerate SLAs. Deliver smarter support, cost efficiency, and happier customers across time zones."
 video: "https://www.youtube.com/watch?v=w897mDH4Tz4&ab_channel=AcheronProcessAccelerator"
 links: 
   demo: "https://www.acheron-tech.com/contact"
   support: "https://forum.camunda.io/"
 lastModified: "2025-09-19"
 ---
-
-*Ticket support, reimagined with AI*
 
 Reduce delays, automate ticket validation, and accelerate SLAs. Deliver smarter support, cost efficiency, and happier customers across time zones.
 

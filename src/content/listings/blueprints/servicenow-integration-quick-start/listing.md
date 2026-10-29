@@ -14,6 +14,7 @@ compatibleVersions:
   - "8.8"
 availability: "open-source"
 description: "Accelerate integration between Camunda and ServiceNow"
+seoDescription: "Trigger ServiceNow flows, manage records in any data table, and handle incidents as native steps directly from Camunda."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda/connectors/refs/heads/main/connectors/servicenow/blueprints/servicenow-integration-blueprint.bpmn"
     name: "Resource 1"
@@ -24,8 +25,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-10-15"
 ---
-
-*Maximize ServiceNow and orchestrate everything*
 
 Trigger ServiceNow flows, manage records in any data table, and handle incidents as native steps directly from Camunda.
 

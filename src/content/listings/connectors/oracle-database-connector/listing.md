@@ -17,14 +17,13 @@ compatibleVersions:
   - "8.3"
 availability: "open-source"
 description: "Streamline Oracle SQL operations with Camunda"
+seoDescription: "Perform Oracle SQL database operations such as create database, create table, insert data, alter table, delete data, and more."
 links: 
   github: "https://github.com/Infosys/camunda-connectors/tree/main/connector-oracle"
   docs: "https://docs.camunda.io/docs/guides/host-custom-connectors/"
   website: "https://www.infosys.com/"
 lastModified: "2024-06-05"
 ---
-
-*Maximize Process Efficiency with Oracle SQL and Camunda*
 
 Perform Oracle SQL database operations such as create database, create table, insert data, alter table, delete data, and more.
 

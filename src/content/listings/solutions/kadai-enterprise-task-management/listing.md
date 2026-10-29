@@ -11,13 +11,12 @@ compatibleVersions:
   - "8.9"
 availability: "listing-only"
 description: "Consolidate and manage tasks across systems"
+seoDescription: "KADAI is an open-source Java library that consolidates tasks from Camunda 8, Camunda 7, and other systems into a single enterprise-grade tasklist. It provides dynamic prioritization, workbasket-based routing, fine-grained access control, and real-time monitoring for large-scale task management operations."
 links: 
   demo: "https://envite.de/green-bpm"
   support: "https://github.com/kadai-io/kadai/issues"
 lastModified: "2026-05-05"
 ---
-
-*Consolidate every Camunda task into one enterprise-grade tasklist*
 
 KADAI is an open-source Java library that consolidates tasks from Camunda 8, Camunda 7, and other systems into a single enterprise-grade tasklist. It provides dynamic prioritization, workbasket-based routing, fine-grained access control, and real-time monitoring for large-scale task management operations.
 

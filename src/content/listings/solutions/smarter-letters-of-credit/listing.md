@@ -17,12 +17,11 @@ compatibleVersions:
   - "8.9"
 availability: "listing-only"
 description: "Automated, transparent, resilient trade compliance."
+seoDescription: "We combine the power of agentic AI, human expertise and process automation to simplify every step of the Letters of Credit journey. From document validation to compliance enforcement and system integration, each feature is designed to eliminate inefficiencies, reduce uncertainties and deliver transparency across the trade ecosystem."
 links: 
   support: "https://forum.camunda.io/"
 lastModified: "2025-10-17"
 ---
-
-*Agentic AI-powered orchestration and compliance automation for trade finance*
 
 We combine the power of agentic AI, human expertise and process automation to simplify every step of the Letters of Credit journey. From document validation to compliance enforcement and system integration, each feature is designed to eliminate inefficiencies, reduce uncertainties and deliver transparency across the trade ecosystem.
 

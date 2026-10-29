@@ -20,6 +20,7 @@ compatibleVersions:
   - "8.10"
 availability: "open-source"
 description: "Manage Couchbase documents from Camunda"
+seoDescription: "Manage documents and run N1QL or SQL++ queries directly from BPMN processes with secure outbound integration."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda-community-hub/camunda-8-connector-couchbase/refs/heads/main/element-templates/couchbase-connector.json"
     name: "Couchbase DB Connector for Camunda 8 Outbound Template"
@@ -29,8 +30,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2026-07-15"
 ---
-
-*Integrate Couchbase document operations and queries into Camunda processes*
 
 Manage documents and run N1QL or SQL++ queries directly from BPMN processes with secure outbound integration.
 

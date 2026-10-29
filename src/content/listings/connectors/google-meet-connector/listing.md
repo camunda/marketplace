@@ -19,14 +19,13 @@ compatibleVersions:
   - "8.9"
 availability: "open-source"
 description: "Automate Google Meet across your processes"
+seoDescription: "Automate Google Meet meeting creation, scheduling, updates, and cancellations directly from Camunda processes. Connect to Google Calendar and Google Meet APIs using secure OAuth 2.0 authentication."
 smTemplate: "https://github.com/ak-chaudhari423/google-meet-connector/tree/main"
 links: 
   docs: "https://github.com/ak-chaudhari423/google-meet-connector/blob/main/README.md"
   support: "https://forum.camunda.io/"
 lastModified: "2026-06-30"
 ---
-
-*Automate meeting scheduling from any business process*
 
 Automate Google Meet meeting creation, scheduling, updates, and cancellations directly from Camunda processes. Connect to Google Calendar and Google Meet APIs using secure OAuth 2.0 authentication.
 

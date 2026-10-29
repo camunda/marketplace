@@ -15,6 +15,7 @@ compatibleVersions:
   - "8.5"
 availability: "open-source"
 description: "Streamline workflows across microservices easily"
+seoDescription: "Orchestrate microservices within BPMN-based processes using Camunda."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda/camunda-platform-tutorials/4c515a8b94c385cadf669ddca59b7024a7fbc3e1/quick-start/microservice-orchestration/Quick%20Start_%20Microservices.bpmn"
     name: "Microservice Orchestration Quick Start Blueprint"
@@ -28,8 +29,6 @@ resources:
     url: "https://vimeo.com/762694985/07220e785a"
 lastModified: "2025-08-25"
 ---
-
-*Microservice Orchestration Quick Start*
 
 Orchestrate microservices within BPMN-based processes using Camunda.
 

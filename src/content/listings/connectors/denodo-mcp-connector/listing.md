@@ -18,6 +18,7 @@ compatibleVersions:
   - "8.9"
 availability: "open-source"
 description: "Deliver live, governed enterprise data & context for AI process automation"
+seoDescription: "Connect Camunda process orchestration with the Denodo Platform via Model Context Protocol (MCP). Enable secure, governed data retrieval across enterprise sources to power intelligent processes."
 templates: 
   - url: "https://raw.githubusercontent.com/denodo/denodocommunity-camunda-vdp-connector/refs/heads/main/element-templates/denodo-mcp-connector-template.json"
     name: "Denodo MCP Connector Outbound Template"
@@ -27,8 +28,6 @@ links:
   support: "https://support.denodo.com/"
 lastModified: "2026-10-08"
 ---
-
-*The AI Data Layer: Live, Governed Data + Active Context for Enterprise Processes*
 
 Connect Camunda process orchestration with the Denodo Platform via Model Context Protocol (MCP). Enable secure, governed data retrieval across enterprise sources to power intelligent processes.
 

@@ -20,6 +20,7 @@ compatibleVersions:
   - "8.8"
 availability: "open-source"
 description: "Search Glean from business processes"
+seoDescription: "Integrate Glean's AI-powered search into enterprise processes to make more informed decisions."
 templates: 
   - url: "https://raw.githubusercontent.com/bojtospeter/camunda-glean-connector/refs/heads/main/element-templates/glean_search_connector.json"
     name: "Glean Search Connector Outbound Template"
@@ -29,8 +30,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-08-08"
 ---
-
-*Supercharge Camunda processes with Glean's AI-powered enterprise search*
 
 Integrate Glean's AI-powered search into enterprise processes to make more informed decisions.
 

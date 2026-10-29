@@ -18,14 +18,13 @@ compatibleVersions:
   - "8.4"
 availability: "open-source"
 description: "Orchestrate GIS location services"
+seoDescription: "Leverage geographic data in your business processes to make data-driven decisions."
 links: 
   github: "https://github.com/SayaliJadhav44/Aaseya-Esri-Connector"
   docs: "https://docs.camunda.io/docs/guides/host-custom-connectors/"
   support: "https://forum.camunda.io/"
 lastModified: "2024-08-14"
 ---
-
-*Aaseya ESRI ArcGIC Connector*
 
 Leverage geographic data in your business processes to make data-driven decisions.
 

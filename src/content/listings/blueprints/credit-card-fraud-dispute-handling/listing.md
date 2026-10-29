@@ -20,6 +20,7 @@ compatibleVersions:
   - "8.6"
 availability: "open-source"
 description: "Reduce time to resolve disputes"
+seoDescription: "Handling credit card fraud disputes can be expensive and time-consuming. This blueprint illustrates how to improve the process and increase customer satisfaction through a combination of automated and manual tasks."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda/camunda-platform-tutorials/main/solutions/bank-customer-complaint-dispute-handling/Bank_customer_complaint_dispute_handling.bpmn"
     name: "Resource 1"
@@ -33,8 +34,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-05-22"
 ---
-
-*Accelerate dispute handling and increase customer satisfaction*
 
 Handling credit card fraud disputes can be expensive and time-consuming. This blueprint illustrates how to improve the process and increase customer satisfaction through a combination of automated and manual tasks.
 

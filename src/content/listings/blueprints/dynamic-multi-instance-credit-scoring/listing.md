@@ -21,6 +21,7 @@ compatibleVersions:
   - "8.9"
 availability: "open-source"
 description: "Automated credit scoring with parallel orchestration"
+seoDescription: "This blueprint automates credit scoring for customer segments using parallel multi-instance orchestration in Camunda 8. It combines a DMN decision model and FEEL-driven forms to classify customers by risk category \u2014 designed for segments of up to 1,000 customers per instance."
 templates: 
   - url: "https://raw.githubusercontent.com/jcbereb/camunda8-multi-instance-scoring-blueprint/refs/heads/main/process-scoring.bpmn"
     name: "Resource 1"
@@ -34,8 +35,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2026-05-06"
 ---
-
-*Score customer credit risk in parallel using DMN and FEEL*
 
 This blueprint automates credit scoring for customer segments using parallel multi-instance orchestration in Camunda 8. It combines a DMN decision model and FEEL-driven forms to classify customers by risk category — designed for segments of up to 1,000 customers per instance.
 

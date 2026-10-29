@@ -18,6 +18,7 @@ compatibleVersions:
   - "8.7"
 availability: "open-source"
 description: "Audit-proof archiving for processes"
+seoDescription: "Connect Camunda-based business processes to a yuuvis\u00ae Momentum archive to ensure legally compliant document storage while significantly streamlining and accelerating processes."
 templates: 
   - url: "https://raw.githubusercontent.com/OPTIMALSYSTEMS/yuuvis-momentum-connector/refs/heads/main/yM-DMS%20Connector.json"
     name: "Yuuvis Momentum"
@@ -28,8 +29,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-11-25"
 ---
-
-*Secure, scalable archiving, seamlessly integrated into Camunda processes*
 
 Connect Camunda-based business processes to a yuuvis® Momentum archive to ensure legally compliant document storage while significantly streamlining and accelerating processes.
 

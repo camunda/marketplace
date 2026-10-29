@@ -14,6 +14,7 @@ compatibleVersions:
   - "8.4"
   - "8.5"
 description: "Update boundary timers based on variables"
+seoDescription: "Allow BPMN process designers to update boundary timers in tasks or subprocesses."
 templates: 
   - url: "https://raw.githubusercontent.com/brix-ag/bpmn-design-patterns/master/updatable-boundary-timer-pattern/updatable-boundary-timer-pattern.bpmn"
     name: "Updatable Boundary Timer Pattern Blueprint"
@@ -23,8 +24,6 @@ links:
   support: "https://www.brix.ch/en/about-us/contact"
 lastModified: "2024-05-31"
 ---
-
-*Separate boundary timers from tasks for increased flexibility*
 
 Allow BPMN process designers to update boundary timers in tasks or subprocesses.
 

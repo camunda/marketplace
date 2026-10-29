@@ -328,6 +328,8 @@ function toListing(product, canonicalVendor, usedSlugs) {
     compatibleVersions: versions,
     availability: AVAILABILITY_MAP[tagChildren(product, 'Availability')[0]] ?? null,
     description: ((listing.blurb ?? '').trim() || (listing.overview ?? '').trim()) ?? null,
+    // AppDirect "Brief overview / SEO description", used as the meta description.
+    seoDescription: (listing.overview ?? '').trim() || null,
     templates,
     saasTemplate,
     smTemplate: attrs.smTemplate ?? null,
@@ -344,14 +346,16 @@ function categoryTagsOf(product) {
   return categoryTags(product).filter((t) => t.name in PRODUCT_TYPE_CATEGORIES);
 }
 
-/** Tagline (lead), overview text and feature list as a single Markdown document. */
+/**
+ * Overview text and feature list as a single Markdown document. The AppDirect
+ * splash title is dropped on purpose: it almost always rephrases the 5-word
+ * description.
+ */
 function toMarkdownBody(product) {
   const parts = [];
   const listing = product.listing ?? {};
   const overview = (listing.overview ?? '').trim();
   const blurb = (listing.blurb ?? '').trim();
-  const tagline = (product.overview?.splashTitle ?? '').trim();
-  if (tagline && !overview.includes(tagline)) parts.push(`*${tagline}*`);
   if (overview && overview !== blurb) parts.push(overview);
   const features = (product.features ?? []).filter((f) => f.header || f.description);
   if (features.length) {
@@ -359,10 +363,27 @@ function toMarkdownBody(product) {
     for (const f of features) {
       const header = (f.header ?? '').replace(/:$/, '').trim();
       if (header) parts.push(`### ${header}`);
-      if (f.description) parts.push(f.description.trim());
+      if (f.description) parts.push(sanitizeRichText(f.description));
     }
   }
   return parts.join('\n\n');
+}
+
+/**
+ * Guardrails for contributor-provided rich text: keep paragraphs, lists,
+ * bold and italic; strip links (keeping the link text), images, headings and
+ * raw HTML so listings cannot embed off-site assets or arbitrary markup.
+ */
+function sanitizeRichText(text) {
+  return text
+    .trim()
+    .replace(/!\[[^\]]*\]\([^)]*\)/g, '') // images
+    .replace(/\[([^\]]*)\]\([^)]*\)/g, '$1') // links -> text
+    .replace(/<[^>]+>/g, '') // raw HTML tags
+    .replace(/^#{1,6}\s+/gm, '') // headings -> plain text
+    .replace(/[ \t]+\n/g, '\n')
+    .replace(/\n{3,}/g, '\n\n')
+    .trim();
 }
 
 // ---------------------------------------------------------------------------

@@ -22,6 +22,7 @@ compatibleVersions:
   - "8.6"
 availability: "open-source"
 description: "Connect to any GraphQL API"
+seoDescription: "Simplify GraphQL queries and optimize process performance."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.GraphQL.v1/latest/graphql-outbound-connector.json"
     name: "GraphQL Outbound"
@@ -31,8 +32,6 @@ links:
   website: "https://github.com/camunda/connectors/tree/main/connectors/http/graphql"
 lastModified: "2025-09-09"
 ---
-
-*Execute Advanced Data Queries with GraphQL*
 
 Simplify GraphQL queries and optimize process performance.
 

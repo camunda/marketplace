@@ -19,6 +19,7 @@ compatibleVersions:
   - "8.4"
 availability: "open-source"
 description: "Drive processes using NATS"
+seoDescription: "Send messages to topics in NATS and start process instances or send messages to Camunda to drive process instances."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda-community-hub/camunda-8-inbound-connector-nats/main/element-templates/nats-start-connector.json"
     name: "io.camunda.connectors.InboundNATS.start"
@@ -30,8 +31,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-02-13"
 ---
-
-*Drive processes in Camunda using NATS*
 
 Send messages to topics in NATS and start process instances or send messages to Camunda to drive process instances.
 

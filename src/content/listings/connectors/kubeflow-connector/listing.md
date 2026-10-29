@@ -16,6 +16,7 @@ compatibleVersions:
   - "8.4"
 availability: "open-source"
 description: "Integrate Kubeflow pipelines into processes"
+seoDescription: "Retrieve Kubeflow pipelines, experiments, and runs, and trigger pipelines and consume their output in the subsequent process steps."
 templates: 
   - url: "placeholder"
     name: "Kubeflow Connector outbound"
@@ -25,8 +26,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2024-04-08"
 ---
-
-*Invoke Kubeflow pipelines from within a process, both synchronously and asynchronously*
 
 Retrieve Kubeflow pipelines, experiments, and runs, and trigger pipelines and consume their output in the subsequent process steps.
 

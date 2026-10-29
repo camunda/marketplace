@@ -17,14 +17,13 @@ compatibleVersions:
   - "8.3"
 availability: "open-source"
 description: "Streamline Workflows with JIRA-Camunda Integration"
+seoDescription: "The JIRA Connector can be used for performing various kind of jira operations using templates from your BPMN process."
 links: 
   github: "https://github.com/Infosys/camunda-connectors/tree/main/connector-jira"
   docs: "https://docs.camunda.io/docs/guides/host-custom-connectors/"
   website: "https://www.infosys.com/"
 lastModified: "2024-04-05"
 ---
-
-*Streamline Workflows with JIRA-Camunda Integration*
 
 The JIRA Connector can be used for performing various kind of jira operations using templates from your BPMN process.
 

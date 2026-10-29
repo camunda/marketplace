@@ -18,14 +18,13 @@ compatibleVersions:
   - "8.3"
 availability: "open-source"
 description: "Drive processes using MongoDB"
+seoDescription: "Using the Change Streams feature in MongoDB, monitor updates in databases or collections and start process instances or send messages to Camunda to drive process instances."
 links: 
   github: "https://github.com/camunda-community-hub/camunda-8-inbound-connector-mongodb/tree/main"
   docs: "https://docs.camunda.io/docs/next/guides/host-custom-connectors/"
   support: "https://forum.camunda.io/"
 lastModified: "2024-04-08"
 ---
-
-*Drive processes in Camunda using MongoDB*
 
 Using the Change Streams feature in MongoDB, monitor updates in databases or collections and start process instances or send messages to Camunda to drive process instances.
 

@@ -20,6 +20,7 @@ compatibleVersions:
   - "8.8"
 availability: "open-source"
 description: "Decisioning platform for financial institutions"
+seoDescription: "Taktile's AI Decision Platform enables financial institutions to design, test, and deploy automated risk strategies with unmatched speed and usability. Non-technical teams can iterate on decision-making strategies and connect to third-party integrations in real time, continuously improving outcomes across underwriting, onboarding, fraud, collections, and more."
 templates: 
   - url: "https://raw.githubusercontent.com/taktilehq/Taktile-Camunda/refs/heads/main/element-templates/Taktile%20Outbound%20Connector.json"
     name: "Taktile Connector Outbound Template"
@@ -32,6 +33,7 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-10-06"
 ---
+
 
 Taktile's AI Decision Platform enables financial institutions to design, test, and deploy automated risk strategies with unmatched speed and usability. Non-technical teams can iterate on decision-making strategies and connect to third-party integrations in real time, continuously improving outcomes across underwriting, onboarding, fraud, collections, and more.
 

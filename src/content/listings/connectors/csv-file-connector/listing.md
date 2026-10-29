@@ -19,6 +19,7 @@ compatibleVersions:
   - "8.6"
 availability: "open-source"
 description: "Load, filter, and update CSV files"
+seoDescription: "Work with CSV files in business processes by reading and updating data."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.csv/latest/csv-outbound-connector.json"
     name: "CSV Outbound Template"
@@ -28,6 +29,7 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2026-10-15"
 ---
+
 
 Work with CSV files in business processes by reading and updating data.
 

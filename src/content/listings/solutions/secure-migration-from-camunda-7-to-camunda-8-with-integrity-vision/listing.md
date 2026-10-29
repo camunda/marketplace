@@ -16,13 +16,12 @@ compatibleVersions:
   - "8.8"
 availability: "listing-only"
 description: "Safe. Transparent. Reliable. Future-ready Migration."
+seoDescription: "Seamlessly migrate from Camunda 7 to Camunda 8 with Integrity Vision. We deliver secure, low-risk transitions with expert support, architecture alignment, API adaptation, and historical data migration \u2014 tailored for your business needs."
 video: "https://youtu.be/zd4mQJueHOM?feature=shared"
 links: 
   support: "https://forum.camunda.io/"
 lastModified: "2025-07-07"
 ---
-
-*Seamless Migration to Camunda 8 — Structured, Secure, Predictable.*
 
 Seamlessly migrate from Camunda 7 to Camunda 8 with Integrity Vision. We deliver secure, low-risk transitions with expert support, architecture alignment, API adaptation, and historical data migration — tailored for your business needs.
 

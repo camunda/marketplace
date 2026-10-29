@@ -19,6 +19,7 @@ compatibleVersions:
   - "8.7"
 availability: "open-source"
 description: "Integrate Camunda bots into processes"
+seoDescription: "Integrate Camunda RPA bots into end-to-end business processes with the RPA Connector, which allows you to execute scripts in the Camunda RPA worker."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/camunda.connectors.rpa/latest/rpa-connector.json"
     name: "RPA Connector Outbound Template"
@@ -27,8 +28,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-09-10"
 ---
-
-*Integrate RPA bots into business processes with the Camunda RPA worker*
 
 Integrate Camunda RPA bots into end-to-end business processes with the RPA Connector, which allows you to execute scripts in the Camunda RPA worker.
 

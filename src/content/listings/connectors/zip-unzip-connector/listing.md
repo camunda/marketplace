@@ -18,6 +18,7 @@ compatibleVersions:
   - "8.9"
 availability: "open-source"
 description: "Work with archives in processes"
+seoDescription: "Create and extract ZIP or RAR archives in Camunda-based business processes. Zip multiple documents into one file or expand archives using FileStorage-backed storage."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda-community-hub/camunda-8-connector-zip/refs/heads/main/element-templates/zip-connector.json"
     name: "Zip/Unzip connector Outbound Template"
@@ -27,8 +28,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2026-03-05"
 ---
-
-*Compress and decompress files in business processes*
 
 Create and extract ZIP or RAR archives in Camunda-based business processes. Zip multiple documents into one file or expand archives using FileStorage-backed storage.
 

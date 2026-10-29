@@ -22,6 +22,7 @@ compatibleVersions:
   - "8.8"
 availability: "open-source"
 description: "Execute your business processes sustainably"
+seoDescription: "The Camunda Carbon Reductor allows you to time shift your processes' carbon emissions when energy is green"
 templates: 
   - url: "https://raw.githubusercontent.com/envite-consulting/camunda-carbon-reductor/main/exampleprocess/c8/.camunda/element-templates/carbon-reductor-c8-connector.json"
     name: "de.envite.greenbpm.carbonreductorconnector.carbonreductortask.v1"
@@ -36,8 +37,6 @@ resources:
     url: "https://www.youtube.com/watch?v=sGW5MJoOxPk"
 lastModified: "2026-02-09"
 ---
-
-*Contribute to climate protection*
 
 The Camunda Carbon Reductor allows you to time shift your processes' carbon emissions when energy is green
 

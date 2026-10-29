@@ -19,6 +19,7 @@ compatibleVersions:
   - "8.5"
 availability: "open-source"
 description: "Manage Alfresco documents with Camunda"
+seoDescription: "Create and update folders in Alfresco as part of business processes that are orchestrated by Camunda."
 templates: 
   - url: "https://raw.githubusercontent.com/incentro/camunda-connectors/main/alfresco/element-templates/alfresco-connector.json"
     id: "io.incentro.connectors.Aflresco.v1"
@@ -28,8 +29,6 @@ links:
   website: "https://www.incentro.com/en"
 lastModified: "2024-04-05"
 ---
-
-*Optimized Document Management with Camunda and Alfresco*
 
 Create and update folders in Alfresco as part of business processes that are orchestrated by Camunda.
 

@@ -25,6 +25,7 @@ compatibleVersions:
   - "8.9"
 availability: "open-source"
 description: "Versatile email management for multiple protocols"
+seoDescription: "Integrate email into business processes with support for IMAP, POP3, and SMTP, plus advanced search, organizational capabilities, and messaging functions."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.email.v1/latest/email-outbound-connector.json"
     name: "Email Outbound"
@@ -39,8 +40,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-12-08"
 ---
-
-*Orchestrate email communications in business processes*
 
 Integrate email into business processes with support for IMAP, POP3, and SMTP, plus advanced search, organizational capabilities, and messaging functions.
 

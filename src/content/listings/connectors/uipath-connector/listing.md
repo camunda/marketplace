@@ -21,6 +21,7 @@ compatibleVersions:
   - "8.5"
 availability: "open-source"
 description: "Orchestrate UiPath bots with Camunda"
+seoDescription: "Orchestrate RPA bots by creating UiPath queue items and retrieving their results in Camunda-powered processes."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.UIPath.v1/latest/uipath-connector.json"
     name: "UiPath Outbound Template"
@@ -35,8 +36,6 @@ resources:
     url: "https://player.vimeo.com/video/869077954?badge=0&autopause=0&player_id=0&app_id=58479"
 lastModified: "2025-09-10"
 ---
-
-*Combine UiPath and Camunda for Advanced RPA Bot Orchestration*
 
 Orchestrate RPA bots by creating UiPath queue items and retrieving their results in Camunda-powered processes.
 
