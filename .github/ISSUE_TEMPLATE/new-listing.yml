@@ -133,6 +133,87 @@ body:
 
   - type: markdown
     attributes:
+      value: "## Resources"
+
+  - type: textarea
+    id: resources
+    attributes:
+      label: Resources
+      description: |
+        Optional. Element templates, BPMN files, forms, and so on. One resource per line:
+        `Name | https://raw-url-of-the-file`
+        Use the raw URL of the file so it can be imported into SaaS.
+      placeholder: "Approval process BPMN | https://raw.githubusercontent.com/example/repo/main/process.bpmn"
+    validations:
+      required: false
+
+  - type: input
+    id: sm-template
+    attributes:
+      label: Self-Managed template URL
+      description: Optional. Repository or template URL for Self-Managed setups.
+      placeholder: "https://github.com/example/repo"
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: "## Links"
+
+  - type: input
+    id: link-github
+    attributes:
+      label: GitHub repository
+      description: Link to the repository root, not to a raw README file.
+      placeholder: "https://github.com/example/repo"
+    validations:
+      required: false
+
+  - type: input
+    id: link-docs
+    attributes:
+      label: Documentation
+      description: Use a different page than the repository URL, for example the rendered README or a docs site.
+      placeholder: "https://example.com/docs"
+    validations:
+      required: false
+
+  - type: input
+    id: link-preview
+    attributes:
+      label: Preview
+      placeholder: "https://example.com/preview"
+    validations:
+      required: false
+
+  - type: input
+    id: link-demo
+    attributes:
+      label: Demo
+      placeholder: "https://example.com/demo"
+    validations:
+      required: false
+
+  - type: input
+    id: link-support
+    attributes:
+      label: Support
+      description: Where users can get help.
+      placeholder: "https://example.com/support"
+    validations:
+      required: false
+
+  - type: input
+    id: link-website
+    attributes:
+      label: Website
+      description: Optional. A product page with more information.
+      placeholder: "https://example.com/product"
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
       value: "## Classification"
 
   - type: dropdown
@@ -239,86 +320,5 @@ body:
         - Open source
         - Listing only
         - Coming soon
-    validations:
-      required: false
-
-  - type: markdown
-    attributes:
-      value: "## Resources"
-
-  - type: textarea
-    id: resources
-    attributes:
-      label: Resources
-      description: |
-        Optional. Element templates, BPMN files, forms, and so on. One resource per line:
-        `Name | https://raw-url-of-the-file`
-        Use the raw URL of the file so it can be imported into SaaS.
-      placeholder: "Approval process BPMN | https://raw.githubusercontent.com/example/repo/main/process.bpmn"
-    validations:
-      required: false
-
-  - type: input
-    id: sm-template
-    attributes:
-      label: Self-Managed template URL
-      description: Optional. Repository or template URL for Self-Managed setups.
-      placeholder: "https://github.com/example/repo"
-    validations:
-      required: false
-
-  - type: markdown
-    attributes:
-      value: "## Links"
-
-  - type: input
-    id: link-github
-    attributes:
-      label: GitHub repository
-      description: Link to the repository root, not to a raw README file.
-      placeholder: "https://github.com/example/repo"
-    validations:
-      required: false
-
-  - type: input
-    id: link-docs
-    attributes:
-      label: Documentation
-      description: Use a different page than the repository URL, for example the rendered README or a docs site.
-      placeholder: "https://example.com/docs"
-    validations:
-      required: false
-
-  - type: input
-    id: link-preview
-    attributes:
-      label: Preview
-      placeholder: "https://example.com/preview"
-    validations:
-      required: false
-
-  - type: input
-    id: link-demo
-    attributes:
-      label: Demo
-      placeholder: "https://example.com/demo"
-    validations:
-      required: false
-
-  - type: input
-    id: link-support
-    attributes:
-      label: Support
-      description: Where users can get help.
-      placeholder: "https://example.com/support"
-    validations:
-      required: false
-
-  - type: input
-    id: link-website
-    attributes:
-      label: Website
-      description: Optional. A product page with more information.
-      placeholder: "https://example.com/product"
     validations:
       required: false
