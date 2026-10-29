@@ -7,7 +7,6 @@ const listings = await getListings();
 
 const facetGroups: [string, keyof (typeof listings)[number]][] = [
   ['Creator', 'creatorType'],
-  ['Contributor', 'creatorName'],
   ['Category', 'categories'],
   ['Industry', 'industries'],
   ['Use case', 'useCases'],
@@ -69,7 +68,15 @@ const facets = facetGroups.map(([label, key]) => ({ label, key, values: facetVal
     </aside>
 
     <section>
-      <p id="count" class="count"></p>
+      <div class="filterbar">
+        <p id="count" class="count"></p>
+        {/* The contributor filter is not a sidebar facet (the list of all
+            contributors would be too long); it shows as a chip instead. */}
+        <p id="creator-filter" class="creator-filter" hidden>
+          Contributor: <strong data-creator-name></strong>
+          <button type="button" aria-label="Clear contributor filter">&times;</button>
+        </p>
+      </div>
       <ul id="results" class="results">
         {
           listings.map((l) => (
@@ -77,7 +84,7 @@ const facets = facetGroups.map(([label, key]) => ({ label, key, values: facetVal
               class="card"
               data-name={l.name.toLowerCase()}
               data-description={l.description.toLowerCase()}
-              data-creator-name={l.creatorName ?? ''}
+              data-creator={l.creatorName ?? ''}
               data-type={l.type.join('|')}
               data-creator-type={l.creatorType ?? ''}
               data-categories={l.categories.join('|')}
@@ -108,13 +115,7 @@ const facets = facetGroups.map(([label, key]) => ({ label, key, values: facetVal
                   </button>
                 )}
                 {l.creatorName && (
-                  <button
-                    type="button"
-                    class="pill"
-                    data-pill-facet="creatorName"
-                    data-pill-value={l.creatorName}
-                    title={`Show all listings by ${l.creatorName}`}
-                  >
+                  <button type="button" class="pill" data-pill-creator={l.creatorName} title={`Show all listings by ${l.creatorName}`}>
                     {l.creatorName}
                   </button>
                 )}
@@ -247,14 +248,45 @@ const facets = facetGroups.map(([label, key]) => ({ label, key, values: facetVal
     outline: none;
     box-shadow: 0 0 0 2px var(--ring);
   }
+  .filterbar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 8px 0 16px;
+  }
   /* The results column overlaps the dark page header band, so the count
      needs a light color to stay readable. */
   .count {
     color: color-mix(in srgb, #fff 80%, transparent);
     font-size: 14px;
     font-weight: 600;
-    margin: 8px 0 16px;
+    margin: 0;
   }
+  /* `hidden` loses to the display below, so hide the chip explicitly. */
+  .creator-filter[hidden] { display: none; }
+  .creator-filter {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    padding: 4px 12px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--accent-background-subtle);
+    font-size: 14px;
+    color: var(--foreground);
+  }
+  .creator-filter button {
+    border: 0;
+    background: transparent;
+    font-size: 16px;
+    line-height: 1;
+    cursor: pointer;
+    color: var(--neutral-foreground-subtle);
+    padding: 2px 4px;
+  }
+  .creator-filter button:hover { color: var(--foreground); }
   .results {
     list-style: none;
     margin: 0;
@@ -333,7 +365,7 @@ const facets = facetGroups.map(([label, key]) => ({ label, key, values: facetVal
   @media (max-width: 800px) {
     .layout { grid-template-columns: 1fr; }
     aside { position: static; }
-    /* Single-column layout: the count sits on the white background. */
+    /* Single-column layout: the filterbar sits on the white background. */
     .count { color: var(--neutral-foreground-strong, var(--foreground)); }
   }
 </style>
