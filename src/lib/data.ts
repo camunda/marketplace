@@ -56,6 +56,10 @@ export const isConnector = (l: Listing) => l.type.includes('connector');
 export const isBlueprint = (l: Listing) => l.type.includes('blueprint');
 export const isSolution = (l: Listing) => l.type.includes('solution');
 
+/** Display label for a runtime facet value (raw values are `bundle`/`self-hosted`). */
+export const runtimeLabel = (r: string): string =>
+  r === 'bundle' ? 'Camunda Connectors Runtime' : r === 'self-hosted' ? 'Self Hosted' : r;
+
 /** URL of a media file that sits next to listing.md. */
 export function assetUrl(l: Listing, file: string | null): string | null {
   return file ? u(`/listings/${l.slug}/assets/${file}`) : null;

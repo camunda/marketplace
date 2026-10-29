@@ -1,7 +1,7 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import { render } from 'astro:content';
-import { getListings, webModelerImportUrl, videoEmbedUrl, parseVideo, assetUrl } from '../../../lib/data';
+import { getListings, webModelerImportUrl, videoEmbedUrl, parseVideo, assetUrl, runtimeLabel } from '../../../lib/data';
 import { u } from '../../../lib/url';
 import { CreatorBadge, Pill } from '../../../components/Badges.jsx';
 import { Cta } from '../../../components/Cta.jsx';
@@ -26,7 +26,7 @@ const sidebar: [string, string[]][] = [
   ['Use cases', l.useCases],
   ['Resources included', l.resourceTypes],
   ['BPMN types', l.bpmnTypes],
-  ['Runtime', l.runtimes.map((r) => (r === 'bundle' ? 'Camunda connectors' : 'Self-hosted'))],
+  ['Runtime', l.runtimes.map(runtimeLabel)],
   ['Connector type', l.connectorTypes],
   ['Compatible versions', l.compatibleVersions],
 ];
@@ -82,7 +82,7 @@ const showAvailability = l.availability === 'coming-soon';
           <p class="creator">
             {
               l.creatorName && (
-                <a href={u(`/listings/?creator=${encodeURIComponent(l.creatorName)}`)}>{l.creatorName}</a>
+                <a href={u(`/listings/?creatorName=${encodeURIComponent(l.creatorName)}`)}>{l.creatorName}</a>
               )
             }
             {l.creatorType && <CreatorBadge creatorType={l.creatorType} />}

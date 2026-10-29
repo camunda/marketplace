@@ -1,12 +1,13 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { getListings, facetValues, assetUrl } from '../../lib/data';
+import { getListings, facetValues, assetUrl, runtimeLabel } from '../../lib/data';
 import { u } from '../../lib/url';
 
 const listings = await getListings();
 
 const facetGroups: [string, keyof (typeof listings)[number]][] = [
   ['Creator', 'creatorType'],
+  ['Contributor', 'creatorName'],
   ['Category', 'categories'],
   ['Industry', 'industries'],
   ['Use case', 'useCases'],
@@ -53,7 +54,11 @@ const facets = facetGroups.map(([label, key]) => ({ label, key, values: facetVal
                 {values.map((v) => (
                   <label>
                     <input type="checkbox" data-facet={String(key)} value={v} />{' '}
-                    {key === 'creatorType' ? v[0].toUpperCase() + v.slice(1) : v}
+                    {key === 'creatorType'
+                      ? v[0].toUpperCase() + v.slice(1)
+                      : key === 'runtimes'
+                        ? runtimeLabel(v)
+                        : v}
                   </label>
                 ))}
               </details>
@@ -64,10 +69,6 @@ const facets = facetGroups.map(([label, key]) => ({ label, key, values: facetVal
     </aside>
 
     <section>
-      <p id="creator-filter" class="creator-filter" hidden>
-        Showing listings by <strong data-creator-name></strong>
-        <button type="button" aria-label="Clear contributor filter">&times;</button>
-      </p>
       <p id="count" class="count"></p>
       <ul id="results" class="results">
         {
@@ -76,7 +77,7 @@ const facets = facetGroups.map(([label, key]) => ({ label, key, values: facetVal
               class="card"
               data-name={l.name.toLowerCase()}
               data-description={l.description.toLowerCase()}
-              data-creator={l.creatorName ?? ''}
+              data-creator-name={l.creatorName ?? ''}
               data-type={l.type.join('|')}
               data-creator-type={l.creatorType ?? ''}
               data-categories={l.categories.join('|')}
@@ -85,22 +86,50 @@ const facets = facetGroups.map(([label, key]) => ({ label, key, values: facetVal
               data-runtimes={l.runtimes.join('|')}
               data-compatible-versions={l.compatibleVersions.join('|')}
             >
-              <a href={u(`/listings/${l.slug}/`)}>
+              {/* Stretched link: the name link covers the whole card via
+                  ::after, so the pills stay separately clickable. */}
+              <a class="card-link" href={u(`/listings/${l.slug}/`)}>
                 {l.icon && <img src={assetUrl(l, l.icon)!} alt="" width="48" height="48" loading="lazy" />}
                 <div>
                   <h3>{l.name}</h3>
                   <p>{l.description}</p>
-                  <span class="meta">
-                    {l.creatorType && (
-                      <span class={`badge badge-${l.creatorType}`}>
-                        {l.creatorType[0].toUpperCase() + l.creatorType.slice(1)}
-                      </span>
-                    )}
-                    {l.creatorName && <span class="pill">{l.creatorName}</span>}
-                    {l.compatibleVersions[0] && <span class="pill">Camunda {l.compatibleVersions[0]}+</span>}
-                  </span>
                 </div>
               </a>
+              <span class="meta">
+                {l.creatorType && (
+                  <button
+                    type="button"
+                    class={`badge badge-${l.creatorType}`}
+                    data-pill-facet="creatorType"
+                    data-pill-value={l.creatorType}
+                    title={`Filter by ${l.creatorType}`}
+                  >
+                    {l.creatorType[0].toUpperCase() + l.creatorType.slice(1)}
+                  </button>
+                )}
+                {l.creatorName && (
+                  <button
+                    type="button"
+                    class="pill"
+                    data-pill-facet="creatorName"
+                    data-pill-value={l.creatorName}
+                    title={`Show all listings by ${l.creatorName}`}
+                  >
+                    {l.creatorName}
+                  </button>
+                )}
+                {l.compatibleVersions[0] && (
+                  <button
+                    type="button"
+                    class="pill"
+                    data-pill-facet="compatibleVersions"
+                    data-pill-value={l.compatibleVersions[0]}
+                    title={`Filter by Camunda ${l.compatibleVersions[0]}`}
+                  >
+                    Camunda {l.compatibleVersions[0]}+
+                  </button>
+                )}
+              </span>
             </li>
           ))
         }
@@ -218,33 +247,14 @@ const facets = facetGroups.map(([label, key]) => ({ label, key, values: facetVal
     outline: none;
     box-shadow: 0 0 0 2px var(--ring);
   }
+  /* The results column overlaps the dark page header band, so the count
+     needs a light color to stay readable. */
   .count {
-    color: var(--neutral-foreground-subtle);
+    color: color-mix(in srgb, #fff 80%, transparent);
     font-size: 14px;
+    font-weight: 600;
     margin: 8px 0 16px;
   }
-  .creator-filter {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    margin: 0 0 12px;
-    padding: 6px 12px;
-    border-radius: 999px;
-    border: 1px solid var(--border);
-    background: var(--accent-background-subtle);
-    font-size: 14px;
-    color: var(--foreground);
-  }
-  .creator-filter button {
-    border: 0;
-    background: transparent;
-    font-size: 16px;
-    line-height: 1;
-    cursor: pointer;
-    color: var(--neutral-foreground-subtle);
-    padding: 2px 4px;
-  }
-  .creator-filter button:hover { color: var(--foreground); }
   .results {
     list-style: none;
     margin: 0;
@@ -253,10 +263,8 @@ const facets = facetGroups.map(([label, key]) => ({ label, key, values: facetVal
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 16px;
   }
-  .card a {
-    display: flex;
-    gap: 16px;
-    align-items: flex-start;
+  .card {
+    position: relative;
     height: 100%;
     border: 1px solid var(--border);
     border-radius: 12px;
@@ -265,12 +273,26 @@ const facets = facetGroups.map(([label, key]) => ({ label, key, values: facetVal
     background: var(--popover, #fff);
     transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
   }
-  .card a:hover {
-    text-decoration: none;
+  .card:hover {
     border-color: var(--accent-action-default);
     box-shadow: 0 8px 24px color-mix(in srgb, var(--accent-action-default) 15%, transparent);
     transform: translateY(-2px);
   }
+  /* Stretched link: covers the whole card, pills sit above it. */
+  .card-link {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    color: var(--foreground);
+  }
+  .card-link::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+  }
+  .card-link:hover { text-decoration: none; }
+  .card-link:hover h3 { text-decoration: underline; }
   .card img {
     width: 48px;
     height: 48px;
@@ -280,7 +302,7 @@ const facets = facetGroups.map(([label, key]) => ({ label, key, values: facetVal
   }
   .card h3 { margin: 0 0 4px; font-size: 16px; }
   .card p {
-    margin: 0 0 10px;
+    margin: 0;
     color: var(--neutral-foreground-subtle);
     font-size: 14px;
     line-height: 1.5;
@@ -289,12 +311,30 @@ const facets = facetGroups.map(([label, key]) => ({ label, key, values: facetVal
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
-  .meta { display: flex; gap: 6px; flex-wrap: wrap; }
+  .meta {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    position: relative;
+    z-index: 1;
+  }
+  .meta button {
+    font-family: inherit;
+    cursor: pointer;
+  }
+  .meta .pill:hover {
+    border-color: var(--accent-action-default);
+    color: var(--accent-foreground-subtle);
+  }
+  .meta .badge:hover { opacity: 0.85; }
   .card.hidden { display: none; }
 
   @media (max-width: 800px) {
     .layout { grid-template-columns: 1fr; }
     aside { position: static; }
+    /* Single-column layout: the count sits on the white background. */
+    .count { color: var(--neutral-foreground-strong, var(--foreground)); }
   }
 </style>
 
