@@ -1,0 +1,332 @@
+name: New Marketplace listing
+description: Submit a new connector, blueprint, or solution for the Camunda Marketplace. A pull request is created from your submission.
+title: "[Listing]: "
+labels: ["listing-submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Fill in the details of your connector, blueprint, or solution.
+        On submit, a pull request with your listing is opened automatically.
+        You can follow the review status on the pull request.
+
+        By contributing, you agree to the [Terms of use for Camunda Marketplace](https://legal.camunda.com/licensing-and-other-legal-terms#terms-of-use-camunda-marketplace).
+
+  - type: markdown
+    attributes:
+      value: "## Your information"
+
+  - type: input
+    id: creator-name
+    attributes:
+      label: Company / Contributor
+      description: Shown on your Marketplace profile. Users can select this name to see all your listings.
+      placeholder: "Example: Denodo Technologies"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: creator-type
+    attributes:
+      label: I am a
+      options:
+        - Community Member
+        - Camunda Partner
+        - Camunda Employee
+    validations:
+      required: true
+
+  - type: input
+    id: creator-url
+    attributes:
+      label: Link to your website
+      placeholder: "https://example.com"
+    validations:
+      required: true
+
+  - type: input
+    id: github-handle
+    attributes:
+      label: GitHub handle
+      description: Used to tag you on the pull request if we need more input.
+      placeholder: "octocat"
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: "## Your listing"
+
+  - type: input
+    id: listing-name
+    attributes:
+      label: Listing name
+      description: Shown as the title on cards and the detail page.
+      placeholder: "Example: ACME ERP Connector"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: listing-type
+    attributes:
+      label: Listing type
+      description: Determines where the listing appears on the Marketplace.
+      options:
+        - Connector
+        - Blueprint
+        - Solution
+    validations:
+      required: true
+
+  - type: input
+    id: description
+    attributes:
+      label: Short description
+      description: Maximum five words. Shown on cards and in search results.
+      placeholder: "Example: Orchestrate GIS location services"
+    validations:
+      required: true
+
+  - type: textarea
+    id: seo-description
+    attributes:
+      label: SEO description
+      description: One or two sentences (about 160 characters). Search engines show this text. It is not shown on the page itself.
+      placeholder: "Leverage geographic data in your business processes to make data-driven decisions."
+    validations:
+      required: true
+
+  - type: textarea
+    id: content
+    attributes:
+      label: Detail page content
+      description: |
+        Markdown. The main content of the listing detail page. You can use:
+        line breaks, bulleted lists, bold, and italic.
+        Do not use images, links, or headings. They are removed at build time.
+      render: markdown
+    validations:
+      required: true
+
+  - type: input
+    id: icon-url
+    attributes:
+      label: Icon URL
+      description: Link to a square icon or logo (SVG or PNG).
+      placeholder: "https://example.com/icon.svg"
+    validations:
+      required: true
+
+  - type: input
+    id: video
+    attributes:
+      label: Video URL
+      description: Optional. YouTube or Vimeo URL, shown in the media carousel on the detail page.
+      placeholder: "https://www.youtube.com/watch?v=..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: gallery
+    attributes:
+      label: Gallery images
+      description: |
+        Optional. One image URL per line. Shown in the media carousel on the detail page.
+        Use landscape images with a normal aspect ratio. Very wide or very tall images
+        can show distorted in the carousel.
+        You can also drag and drop image files into this field.
+      placeholder: "https://example.com/screenshot-1.png"
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: "## Classification"
+
+  - type: dropdown
+    id: categories
+    attributes:
+      label: Categories
+      multiple: true
+      options:
+        - AI Services
+        - Agentic Solutions
+        - Automation Services
+        - Cloud Computing Services
+        - Collaboration Tools
+        - Data & Analytics
+        - Enterprise Applications
+        - External Data Services
+        - Migration Solutions
+        - Patterns
+        - Quick Start
+        - Solution Accelerators
+        - Technical Protocols
+    validations:
+      required: false
+
+  - type: dropdown
+    id: industries
+    attributes:
+      label: Industries
+      multiple: true
+      options:
+        - Financial Services
+        - Healthcare
+        - Insurance
+        - Manufacturing
+        - Media and Entertainment
+        - Public Sector
+        - Retail
+        - Supply Chain & Logistics
+        - Technology
+        - Telecommunications
+    validations:
+      required: false
+
+  - type: dropdown
+    id: use-cases
+    attributes:
+      label: Use cases
+      multiple: true
+      options:
+        - Agentic AI orchestration
+        - Human Task orchestration
+        - Microservices orchestration
+        - RPA bot orchestration
+        - Simplified case management
+    validations:
+      required: false
+
+  - type: dropdown
+    id: compatible-versions
+    attributes:
+      label: Compatible Camunda versions
+      multiple: true
+      options:
+        - "8.2"
+        - "8.3"
+        - "8.4"
+        - "8.5"
+        - "8.6"
+        - "8.7"
+        - "8.8"
+        - "8.9"
+        - "8.10"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: runtimes
+    attributes:
+      label: Connector runtimes
+      multiple: true
+      options:
+        - Camunda Connectors Runtime
+        - Self Hosted
+    validations:
+      required: false
+
+  - type: dropdown
+    id: connector-types
+    attributes:
+      label: Connector types
+      description: Only for connectors.
+      multiple: true
+      options:
+        - inbound
+        - outbound
+    validations:
+      required: false
+
+  - type: dropdown
+    id: availability
+    attributes:
+      label: Availability
+      options:
+        - Open source
+        - Listing only
+        - Coming soon
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: "## Resources"
+
+  - type: textarea
+    id: resources
+    attributes:
+      label: Resources
+      description: |
+        Optional. Element templates, BPMN files, forms, and so on. One resource per line:
+        `Name | https://raw-url-of-the-file`
+        Use the raw URL of the file so it can be imported into SaaS.
+      placeholder: "Approval process BPMN | https://raw.githubusercontent.com/example/repo/main/process.bpmn"
+    validations:
+      required: false
+
+  - type: input
+    id: sm-template
+    attributes:
+      label: Self-Managed template URL
+      description: Optional. Repository or template URL for Self-Managed setups.
+      placeholder: "https://github.com/example/repo"
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: "## Links"
+
+  - type: input
+    id: link-github
+    attributes:
+      label: GitHub repository
+      description: Link to the repository root, not to a raw README file.
+      placeholder: "https://github.com/example/repo"
+    validations:
+      required: false
+
+  - type: input
+    id: link-docs
+    attributes:
+      label: Documentation
+      description: Use a different page than the repository URL, for example the rendered README or a docs site.
+      placeholder: "https://example.com/docs"
+    validations:
+      required: false
+
+  - type: input
+    id: link-preview
+    attributes:
+      label: Preview
+      placeholder: "https://example.com/preview"
+    validations:
+      required: false
+
+  - type: input
+    id: link-demo
+    attributes:
+      label: Demo
+      placeholder: "https://example.com/demo"
+    validations:
+      required: false
+
+  - type: input
+    id: link-support
+    attributes:
+      label: Support
+      description: Where users can get help.
+      placeholder: "https://example.com/support"
+    validations:
+      required: false
+
+  - type: input
+    id: link-website
+    attributes:
+      label: Website
+      description: Optional. A product page with more information.
+      placeholder: "https://example.com/product"
+    validations:
+      required: false
