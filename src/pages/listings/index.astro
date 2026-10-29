@@ -16,10 +16,10 @@ const facetGroups: [string, keyof (typeof listings)[number]][] = [
 const facets = facetGroups.map(([label, key]) => ({ label, key, values: facetValues(listings, key) }));
 ---
 
-<Base title="Browse listings">
+<Base title="Browse Marketplace">
   <section class="pagehead">
     <div class="container">
-      <h1>Browse the Marketplace</h1>
+      <h1>Browse Marketplace</h1>
       <p>
         Search and filter {listings.length} connectors, blueprints, and solutions for your
         Camunda projects.
@@ -64,6 +64,10 @@ const facets = facetGroups.map(([label, key]) => ({ label, key, values: facetVal
     </aside>
 
     <section>
+      <p id="creator-filter" class="creator-filter" hidden>
+        Showing listings by <strong data-creator-name></strong>
+        <button type="button" aria-label="Clear contributor filter">&times;</button>
+      </p>
       <p id="count" class="count"></p>
       <ul id="results" class="results">
         {
@@ -72,6 +76,7 @@ const facets = facetGroups.map(([label, key]) => ({ label, key, values: facetVal
               class="card"
               data-name={l.name.toLowerCase()}
               data-description={l.description.toLowerCase()}
+              data-creator={l.creatorName ?? ''}
               data-type={l.type.join('|')}
               data-creator-type={l.creatorType ?? ''}
               data-categories={l.categories.join('|')}
@@ -218,6 +223,28 @@ const facets = facetGroups.map(([label, key]) => ({ label, key, values: facetVal
     font-size: 14px;
     margin: 8px 0 16px;
   }
+  .creator-filter {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 12px;
+    padding: 6px 12px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--accent-background-subtle);
+    font-size: 14px;
+    color: var(--foreground);
+  }
+  .creator-filter button {
+    border: 0;
+    background: transparent;
+    font-size: 16px;
+    line-height: 1;
+    cursor: pointer;
+    color: var(--neutral-foreground-subtle);
+    padding: 2px 4px;
+  }
+  .creator-filter button:hover { color: var(--foreground); }
   .results {
     list-style: none;
     margin: 0;
