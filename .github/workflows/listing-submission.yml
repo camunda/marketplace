@@ -1,0 +1,76 @@
+name: Listing submission
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  create-pr:
+    if: contains(github.event.issue.labels.*.name, 'listing-submission')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Write issue body to file
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: printf '%s' "$ISSUE_BODY" > /tmp/issue-body.md
+
+      - name: Create listing from issue
+        id: listing
+        run: |
+          node scripts/submit-listing.mjs /tmp/issue-body.md | tee submission.log
+          grep '^dir=' submission.log | tail -1 >> "$GITHUB_OUTPUT"
+
+      - name: Validate the build
+        run: npm ci && npm run build
+
+      - name: Create pull request
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_URL: ${{ github.event.issue.html_url }}
+          SUBMITTER: ${{ github.event.issue.user.login }}
+          DIR: ${{ steps.listing.outputs.dir }}
+        run: |
+          slug="${DIR#*/}"
+          branch="listing/${ISSUE_NUMBER}-${slug}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add "src/content/listings/${DIR}"
+          git commit -m "Add listing: ${slug}
+
+          Submitted in ${ISSUE_URL} by @${SUBMITTER}."
+          git push origin "$branch"
+
+          pr_url=$(gh pr create \
+            --title "New listing: ${slug}" \
+            --label listing-submission \
+            --base main \
+            --body "$(cat <<EOF
+          Submitted by @${SUBMITTER} in ${ISSUE_URL}.
+
+          ## Review checklist
+
+          - [ ] The listing metadata is complete and correct.
+          - [ ] The detail page content follows the content rules (line breaks, lists, bold, italic only).
+          - [ ] The icon and the gallery images show correctly.
+          - [ ] The links go to the correct targets. The source code URL and the documentation URL are different pages.
+          - [ ] The listing type and the facets are correct.
+
+          Close this pull request to reject the submission.
+          EOF
+          )")
+
+          gh issue comment "$ISSUE_NUMBER" \
+            --body "Thank you for your submission, @${SUBMITTER}. We opened pull request ${pr_url} for it. You can follow the review status there."
