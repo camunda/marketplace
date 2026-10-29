@@ -7,16 +7,19 @@
 function init() {
   const cards = [...document.querySelectorAll('#results .card')];
   const boxes = [...document.querySelectorAll('input[data-facet]')];
+  // Free-text search lives on the main page; the browse page only applies
+  // the ?q= query it was opened with.
   const search = document.querySelector('#search');
   const count = document.querySelector('#count');
-  if (!cards.length || !search || !count) return;
+  if (!cards.length || !count) return;
 
   const params = new URLSearchParams(location.search);
 
   // Restore state from the URL. Multi-value facets use repeated params,
   // e.g. ?categories=Solution%20Accelerators&categories=Agentic%20Solutions.
   // ?creator= is kept as an alias for the contributor facet.
-  search.value = params.get('q') ?? '';
+  let query = params.get('q') ?? '';
+  if (search) search.value = query;
   const legacyCreator = params.get('creator');
   for (const box of boxes) {
     box.checked =
@@ -27,7 +30,8 @@ function init() {
   }
 
   function applyFilters() {
-    const query = search.value.trim().toLowerCase();
+    if (search) query = search.value.trim().toLowerCase();
+    const q = query.toLowerCase();
     const selected = new Map();
     for (const b of boxes.filter((b) => b.checked)) {
       const facet = b.dataset.facet;
@@ -35,8 +39,7 @@ function init() {
     }
     let visible = 0;
     for (const card of cards) {
-      const textMatch =
-        !query || card.dataset.name.includes(query) || card.dataset.description.includes(query);
+      const textMatch = !q || card.dataset.name.includes(q) || card.dataset.description.includes(q);
       const facetMatch = [...selected].every(([facet, values]) => {
         const haystack = (card.dataset[facet] ?? '').split('|');
         return values.some((v) => haystack.includes(v));
@@ -53,7 +56,6 @@ function init() {
   // always match the address bar).
   function syncUrl() {
     const next = new URLSearchParams();
-    const query = search.value.trim();
     if (query) next.set('q', query);
     for (const b of boxes.filter((b) => b.checked)) {
       next.append(b.dataset.facet, b.value);
@@ -62,7 +64,7 @@ function init() {
     history.replaceState(null, '', location.pathname + (qs ? `?${qs}` : ''));
   }
 
-  search.addEventListener('input', applyFilters);
+  search?.addEventListener('input', applyFilters);
   for (const b of boxes) b.addEventListener('change', applyFilters);
 
   // Clickable pills on result cards check the matching facet checkbox.
