@@ -64,7 +64,6 @@ const KNOWN_LABELS = new Set([
   'Company / Contributor',
   'I am a',
   'Link to your website',
-  'GitHub handle',
   'Listing name',
   'Listing type',
   'Short description',
