@@ -27,7 +27,7 @@ templates:
 smTemplate: "https://github.com/camunda-community-hub/camunda-nice-cxone-connector"
 video: "https://www.youtube.com/watch?v=qaqH9yw9N3U"
 links: 
-  docs: "https://github.com/camunda-community-hub/camunda-nice-cxone-connector"
+  docs: "https://github.com/camunda-community-hub/camunda-nice-cxone-connector#readme"
   support: "https://forum.camunda.io/"
 lastModified: "2026-08-06"
 ---

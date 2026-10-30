@@ -24,7 +24,7 @@ templates:
     name: "Zip/Unzip connector Outbound Template"
 smTemplate: "https://github.com/camunda-community-hub/camunda-8-connector-zip"
 links: 
-  docs: "https://github.com/camunda-community-hub/camunda-8-connector-zip"
+  docs: "https://github.com/camunda-community-hub/camunda-8-connector-zip#readme"
   support: "https://forum.camunda.io/"
 lastModified: "2026-03-05"
 ---

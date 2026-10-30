@@ -305,6 +305,16 @@ function toListing(product, canonicalVendor, usedSlugs) {
   };
   for (const k of Object.keys(links)) if (!links[k]) delete links[k];
 
+  // Rule for duplicate targets: when the documentation URL is also the
+  // Self-Managed template URL, point the documentation at the README.
+  if (
+    links.docs &&
+    attrs.smTemplate &&
+    links.docs.replace(/\/$/, '') === attrs.smTemplate.replace(/\/$/, '')
+  ) {
+    links.docs = `${links.docs}#readme`;
+  }
+
   const resources = (product.resources ?? [])
     .map((r) => ({ type: r.resourceType ?? null, title: r.name ?? null, url: r.link ?? r.url ?? null }))
     .filter((r) => r.url);

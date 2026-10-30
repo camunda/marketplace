@@ -317,6 +317,13 @@ const links = {
 };
 for (const key of Object.keys(links)) if (!links[key]) delete links[key];
 
+const smTemplate = get('Self-Managed template URL') || undefined;
+// Rule for duplicate targets: when the documentation URL is also the
+// Self-Managed template URL, point the documentation at the README.
+if (links.docs && smTemplate && links.docs.replace(/\/$/, '') === smTemplate.replace(/\/$/, '')) {
+  links.docs = `${links.docs}#readme`;
+}
+
 const record = {
   id: nextId(files),
   name,
@@ -338,7 +345,7 @@ const record = {
   description,
   seoDescription: get('SEO description') || undefined,
   templates: parseResources(get('Resources')),
-  smTemplate: get('Self-Managed template URL') || undefined,
+  smTemplate,
   video: get('Video URL') || undefined,
   links,
   lastModified: new Date().toISOString().slice(0, 10),

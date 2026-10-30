@@ -32,7 +32,7 @@ templates:
     name: "Resource 6"
 smTemplate: "https://github.com/camunda/BizSol_bb-AI-Communication-Agent"
 links: 
-  docs: "https://github.com/camunda/BizSol_bb-AI-Communication-Agent"
+  docs: "https://github.com/camunda/BizSol_bb-AI-Communication-Agent#readme"
   support: "https://forum.camunda.io/"
 lastModified: "2026-05-06"
 ---

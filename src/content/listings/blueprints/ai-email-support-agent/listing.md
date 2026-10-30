@@ -40,7 +40,7 @@ templates:
 smTemplate: "https://github.com/camunda/camunda-platform-tutorials/tree/main/solutions/bank-ai-loan-approval"
 video: "https://www.youtube.com/watch?v=32299Ksezp0"
 links: 
-  docs: "https://github.com/camunda/camunda-platform-tutorials/tree/main/solutions/bank-ai-loan-approval"
+  docs: "https://github.com/camunda/camunda-platform-tutorials/tree/main/solutions/bank-ai-loan-approval#readme"
   support: "https://forum.camunda.io/"
 lastModified: "2026-10-12"
 ---

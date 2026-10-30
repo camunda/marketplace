@@ -25,7 +25,7 @@ seoDescription: "Protect sensitive data in Camunda-powered business processes. T
 smTemplate: "https://github.com/mathieu-stennier/skyflow-camunda-connector"
 video: "https://youtu.be/UZJrN1oXlyE"
 links: 
-  docs: "https://github.com/mathieu-stennier/skyflow-camunda-connector"
+  docs: "https://github.com/mathieu-stennier/skyflow-camunda-connector#readme"
   support: "https://forum.camunda.io/"
 lastModified: "2026-02-12"
 ---

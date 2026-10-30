@@ -24,7 +24,7 @@ templates:
     name: "Acheron Email Connector Outbound Template"
 smTemplate: "https://github.com/Acheron-Camunda/email-connector"
 links: 
-  docs: "https://github.com/Acheron-Camunda/email-connector"
+  docs: "https://github.com/Acheron-Camunda/email-connector#readme"
   support: "https://forum.camunda.io/"
 lastModified: "2025-01-20"
 ---

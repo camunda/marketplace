@@ -31,7 +31,7 @@ templates:
     name: "Resource 3"
 smTemplate: "https://github.com/jcbereb/camunda8-multi-instance-scoring-blueprint"
 links: 
-  docs: "https://github.com/jcbereb/camunda8-multi-instance-scoring-blueprint"
+  docs: "https://github.com/jcbereb/camunda8-multi-instance-scoring-blueprint#readme"
   support: "https://forum.camunda.io/"
 lastModified: "2026-05-06"
 ---

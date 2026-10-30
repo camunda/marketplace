@@ -23,7 +23,7 @@ templates:
     name: "Resource 2"
 smTemplate: "https://github.com/camunda/BizSol_bb-ai-firewall-agent"
 links: 
-  docs: "https://github.com/camunda/BizSol_bb-ai-firewall-agent"
+  docs: "https://github.com/camunda/BizSol_bb-ai-firewall-agent#readme"
   support: "https://forum.camunda.io/"
 lastModified: "2026-05-06"
 ---

@@ -33,7 +33,7 @@ templates:
     name: "Docuseal Connector Inbound Template"
 smTemplate: "https://github.com/marcqw/camunda-connector-docuseal"
 links: 
-  docs: "https://github.com/marcqw/camunda-connector-docuseal"
+  docs: "https://github.com/marcqw/camunda-connector-docuseal#readme"
   support: "https://forum.camunda.io/"
 lastModified: "2026-07-02"
 ---

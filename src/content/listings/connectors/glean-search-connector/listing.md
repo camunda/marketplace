@@ -26,7 +26,7 @@ templates:
     name: "Glean Search Connector Outbound Template"
 smTemplate: "https://github.com/bojtospeter/camunda-glean-connector"
 links: 
-  docs: "https://github.com/bojtospeter/camunda-glean-connector"
+  docs: "https://github.com/bojtospeter/camunda-glean-connector#readme"
   support: "https://forum.camunda.io/"
 lastModified: "2025-08-08"
 ---

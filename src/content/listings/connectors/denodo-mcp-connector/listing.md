@@ -24,7 +24,7 @@ templates:
     name: "Denodo MCP Connector Outbound Template"
 smTemplate: "https://github.com/denodo/denodocommunity-camunda-vdp-connector"
 links: 
-  docs: "https://github.com/denodo/denodocommunity-camunda-vdp-connector"
+  docs: "https://github.com/denodo/denodocommunity-camunda-vdp-connector#readme"
   support: "https://support.denodo.com/"
 lastModified: "2026-10-08"
 ---
