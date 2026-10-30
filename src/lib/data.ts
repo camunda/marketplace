@@ -119,5 +119,6 @@ export function facetValues(listings: Listing[], key: keyof Listing): string[] {
       values.add(v);
     }
   }
-  return [...values].sort();
+  // Numeric-aware, so "8.10" sorts after "8.9", not after "8.1".
+  return [...values].sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
 }

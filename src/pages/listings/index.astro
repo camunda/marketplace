@@ -13,7 +13,15 @@ const facetGroups: [string, keyof (typeof listings)[number]][] = [
   ['Runtime', 'runtimes'],
   ['Camunda version', 'compatibleVersions'],
 ];
-const facets = facetGroups.map(([label, key]) => ({ label, key, values: facetValues(listings, key) }));
+const facets = facetGroups.map(([label, key]) => ({
+  label,
+  key,
+  // Camunda versions: newest on top.
+  values:
+    key === 'compatibleVersions'
+      ? facetValues(listings, key).reverse()
+      : facetValues(listings, key),
+}));
 ---
 
 <Base title="Browse Marketplace">
