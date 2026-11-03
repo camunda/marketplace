@@ -2,7 +2,7 @@
 id: 471651
 name: "CSV File Connector"
 creatorType: "community"
-creatorName: "Camunda"
+creatorName: "Camunda / Pierre-Yves Monnet"
 creatorUrl: "http://www.camunda.com"
 categories: 
   - "External Data Services"
@@ -26,7 +26,7 @@ smTemplate: "https://github.com/camunda-community-hub/camunda-8-connector-csv/"
 links: 
   docs: "https://github.com/camunda-community-hub/camunda-8-connector-csv/blob/main/README.md"
   support: "https://forum.camunda.io/"
-lastModified: "2025-09-08"
+lastModified: "2026-10-15"
 ---
 
 Work with CSV files in business processes by reading and updating data.
