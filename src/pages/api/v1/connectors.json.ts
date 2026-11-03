@@ -1,4 +1,5 @@
-import { getListings, isConnector, requiredVersion, selfHosted, assetUrl, type Listing } from '../../../lib/data';
+import { getListings, isConnector } from '../../../lib/data';
+import { connectorListEntry } from '../../../lib/api';
 
 /**
  * Replicates marketplace-api: GET /api/v1/connectors
@@ -7,15 +8,6 @@ import { getListings, isConnector, requiredVersion, selfHosted, assetUrl, type L
  */
 export async function GET() {
   const listings = await getListings();
-  const items = listings.filter(isConnector).map((l: Listing) => ({
-    id: String(l.id),
-    name: l.name,
-    description: l.description,
-    creatorName: l.creatorName ?? null,
-    documentationUrl: new URL(`/listings/${l.slug}/`, import.meta.env.SITE).toString(),
-    iconUrl: assetUrl(l, l.icon) ? new URL(assetUrl(l, l.icon)!, import.meta.env.SITE).toString() : null,
-    requiredCamundaVersion: requiredVersion(l),
-    selfHosted: selfHosted(l),
-  }));
+  const items = listings.filter(isConnector).map(connectorListEntry);
   return Response.json({ items });
 }
