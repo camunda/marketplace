@@ -1,6 +1,7 @@
 ---
 id: 797186
 name: "Migrate & Accelerate to Camunda (MAC)"
+legacySlug: "migrate-accelerate-to-camunda-mac"
 creatorType: "partner"
 creatorName: "EY"
 creatorUrl: "https://www.ey.com/"

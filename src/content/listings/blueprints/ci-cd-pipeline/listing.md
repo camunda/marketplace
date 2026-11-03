@@ -1,6 +1,7 @@
 ---
 id: 439170
 name: "CI/CD Pipeline"
+legacySlug: "cicd-pipeline"
 creatorType: "camunda"
 creatorName: "Camunda"
 creatorUrl: "https://camunda.com/"

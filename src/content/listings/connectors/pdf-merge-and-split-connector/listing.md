@@ -1,6 +1,7 @@
 ---
 id: 670909
 name: "PDF Merge & Split Connector"
+legacySlug: "pdf-merge-split-connector"
 creatorType: "community"
 creatorName: "Camunda / Calvin Robbins"
 creatorUrl: "https://www.linkedin.com/in/calvinrobbins/"

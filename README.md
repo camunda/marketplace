@@ -49,6 +49,7 @@ gallery. Example:
 ---
 id: 418963                    # AppDirect product id, keep stable
 name: "Salesforce Connector"
+legacySlug: "salesforce"      # old AppDirect URL slug, only when different from the directory slug
 creatorType: "camunda"        # camunda | partner | community
 creatorName: "Camunda"
 creatorUrl: "https://camunda.com/"

@@ -312,6 +312,8 @@ function toListing(product, canonicalVendor, usedSlugs) {
   const record = {
     id,
     name: product.name,
+    // Old AppDirect URL slug, when it differs from the new one (redirects).
+    legacySlug: legacySlugById.get(id) !== slug ? legacySlugById.get(id) : undefined,
     type: types.length > 1 ? types : undefined,
     creatorType: tagChildren(product, 'Creator')[0]?.toLowerCase() ?? null,
     creatorName: product.provider?.name ? canonicalVendor(product.provider.name) : null,
@@ -368,6 +370,14 @@ function toMarkdownBody(product) {
 const products = readdirSync(EXPORT_DIR)
   .filter((f) => f.endsWith('.json'))
   .map((f) => JSON.parse(readFileSync(join(EXPORT_DIR, f), 'utf8')));
+
+// Old AppDirect URL slugs (from the catalog index; product records carry no
+// public URL). Needed to emit redirect pages for /en-US/apps/<id>/<slug>.
+const legacySlugById = new Map(
+  JSON.parse(readFileSync(join(ROOT, 'appdirect-export', 'listing.json'), 'utf8'))
+    .map((p) => [p.id, p.url?.split(`/apps/${p.id}/`)[1]?.replace(/\/+$/, '') ?? null])
+    .filter(([, slug]) => slug),
+);
 
 const canonicalVendor = buildVendorCanonicalizer(products);
 const usedSlugs = new Set();

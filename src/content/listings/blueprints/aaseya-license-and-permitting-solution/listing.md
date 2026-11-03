@@ -1,6 +1,7 @@
 ---
 id: 475968
 name: "Aaseya License & Permitting Solution"
+legacySlug: "aaseya-license-permitting-solution"
 creatorType: "partner"
 creatorName: "Aaseya IT Services Pvt. Ltd."
 creatorUrl: "https://aaseya.com/"

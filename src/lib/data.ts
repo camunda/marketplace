@@ -1,6 +1,6 @@
 import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
-import { readdirSync, readFileSync, existsSync } from 'node:fs';
+import { readdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { u } from './url';
 
@@ -42,19 +42,6 @@ function toListing(entry: ListingEntry): Listing {
     gallery,
     entry,
   };
-}
-
-/** Old AppDirect URL slugs by product id, from the export snapshot. */
-export function appDirectSlugs(): Map<number, string> {
-  const raw = JSON.parse(
-    readFileSync(join(process.cwd(), 'appdirect-export', 'listing.json'), 'utf8'),
-  ) as { id: number; url: string | null }[];
-  const map = new Map<number, string>();
-  for (const p of raw) {
-    const slug = p.url?.split(`/apps/${p.id}/`)[1]?.replace(/\/+$/, '');
-    if (slug) map.set(p.id, slug);
-  }
-  return map;
 }
 
 export async function getListings(): Promise<Listing[]> {

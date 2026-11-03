@@ -1,6 +1,7 @@
 ---
 id: 418915
 name: "Google Cloud Pub/Sub Connector"
+legacySlug: "google-cloud-pubsub-connector"
 creatorType: "partner"
 creatorName: "Cognizant"
 creatorUrl: "https://www.cognizant.com/"

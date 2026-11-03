@@ -1,6 +1,7 @@
 ---
 id: 719979
 name: "Agentic AI Orchestration with Form.io"
+legacySlug: "agentic-ai-orchestration-with-formio"
 type: 
   - "solution"
   - "blueprint"
