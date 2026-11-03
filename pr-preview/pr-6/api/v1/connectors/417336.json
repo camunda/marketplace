@@ -1,1 +1,0 @@
-{"creatorUrl":"https://camunda.com/","templates":[{"id":"io.camunda.connectors.AWSDynamoDB.v1","name":"Amazon DynamoDB outbound","url":"https://raw.githubusercontent.com/camunda/connectors/main/connectors/aws/aws-dynamodb/element-templates/aws-dynamodb-outbound-connector.json"}]}
