@@ -1,41 +1,22 @@
-import { getListings, isConnector, facetValues } from '../../../lib/data';
-
-const CONNECTOR_TYPE_LABELS: Record<string, string> = { inbound: 'Inbound', outbound: 'Outbound' };
-const RUNTIME_LABELS: Record<string, string> = {
-  bundle: 'Camunda connectors',
-  'self-hosted': 'Self-hosted connectors',
-};
-const CREATOR_LABELS: Record<string, string> = {
-  camunda: 'Camunda',
-  partner: 'Partner',
-  community: 'Community',
-};
-
-const bpmnValue = (s: string) => {
-  const name = s.replace('bpmn:', '');
-  return name.charAt(0).toLowerCase() + name.slice(1);
-};
-const bpmnLabel = (s: string) => {
-  const label = s
-    .replace('bpmn:', '')
-    .replace(/([A-Z])/g, ' $1')
-    .trim()
-    .replace(/\b\w/g, (c) => c.toUpperCase());
-  return label === 'Sub Process' ? 'Subprocess' : label;
-};
-
-function options(values: string[], group: string, labels: Record<string, string> = {}) {
-  return values.map((v) => ({ value: v, label: labels[v] ?? v, group }));
-}
-
 /**
  * Replicates marketplace-api: GET /api/v1/connector-filters
- * Same keys, values and labels as the live contract; options computed from the data.
+ *
+ * Static payload, byte-compatible with the live contract: the Java service
+ * built these groups from its filter enums (fixed values, labels and order),
+ * not from the listing data. Keep in sync with the live response when the
+ * enums change (camunda/marketplace-api service/appdirect/*).
  */
 export async function GET() {
-  const connectors = (await getListings()).filter(isConnector);
-  const groups = [
-    { value: 'creatorType', label: 'Creator', link: null, options: options(facetValues(connectors, 'creatorType'), 'creator', CREATOR_LABELS) },
+  return Response.json([
+    {
+      value: 'creatorType',
+      label: 'Creator',
+      options: [
+        { value: 'camunda', label: 'Camunda' },
+        { value: 'partner', label: 'Partner' },
+        { value: 'community', label: 'Community' },
+      ],
+    },
     {
       value: 'connectorType',
       label: 'Type',
@@ -43,7 +24,10 @@ export async function GET() {
         href: 'https://docs.camunda.io/docs/components/connectors/connector-types/',
         text: 'Learn about connector types',
       },
-      options: options(facetValues(connectors, 'connectorTypes'), 'connectorType', CONNECTOR_TYPE_LABELS),
+      options: [
+        { value: 'inbound', label: 'Inbound' },
+        { value: 'outbound', label: 'Outbound' },
+      ],
     },
     {
       value: 'connectorRuntime',
@@ -52,33 +36,33 @@ export async function GET() {
         href: 'https://docs.camunda.io/docs/components/connectors/introduction-to-connectors/',
         text: 'Learn about connector runtimes',
       },
-      options: options(facetValues(connectors, 'runtimes'), 'runtime', RUNTIME_LABELS),
+      options: [
+        { value: 'bundle', label: 'Camunda connectors' },
+        { value: 'self-hosted', label: 'Self-hosted connectors' },
+      ],
     },
     {
       value: 'requiredCamundaVersion',
       label: 'Compatible version',
-      link: null,
-      options: facetValues(connectors, 'compatibleVersions')
-        .sort((a, b) => b.localeCompare(a, undefined, { numeric: true }))
-        .map((v) => ({ value: v, label: `Zeebe ${v}`, group: 'version' })),
+      options: [
+        { value: '8.9', label: 'Zeebe 8.9' },
+        { value: '8.8', label: 'Zeebe 8.8' },
+        { value: '8.7', label: 'Zeebe 8.7' },
+        { value: '8.6', label: 'Zeebe 8.6' },
+        { value: '8.5', label: 'Zeebe 8.5' },
+      ],
     },
     {
       value: 'supportedBpmnType',
       label: 'Supported BPMN type',
-      link: null,
-      options: facetValues(connectors, 'bpmnTypes')
-        // live enum order
-        .sort(
-          (a, b) =>
-            ['bpmn:Task', 'bpmn:StartEvent', 'bpmn:IntermediateCatchEvent', 'bpmn:IntermediateThrowEvent', 'bpmn:BoundaryEvent', 'bpmn:SubProcess'].indexOf(a) -
-            ['bpmn:Task', 'bpmn:StartEvent', 'bpmn:IntermediateCatchEvent', 'bpmn:IntermediateThrowEvent', 'bpmn:BoundaryEvent', 'bpmn:SubProcess'].indexOf(b),
-        )
-        .map((v) => ({
-          value: bpmnValue(v),
-          label: bpmnLabel(v),
-          group: 'bpmnType',
-        })),
+      options: [
+        { value: 'task', label: 'Task' },
+        { value: 'startEvent', label: 'Start Event' },
+        { value: 'intermediateCatchEvent', label: 'Intermediate Catch Event' },
+        { value: 'intermediateThrowEvent', label: 'Intermediate Throw Event' },
+        { value: 'boundaryEvent', label: 'Boundary Event' },
+        { value: 'subProcess', label: 'Subprocess' },
+      ],
     },
-  ];
-  return Response.json(groups.filter((g) => g.options.length > 0));
+  ]);
 }
