@@ -17,6 +17,7 @@ Statically generated replacement for the AppDirect-based marketplace. GitHub is 
 
 ```sh
 npm install
+npm run fetch-export  # pull a fresh AppDirect snapshot -> appdirect-export/
 npm run extract   # re-import AppDirect data -> src/content/listings + images
 npm run dev       # local development server
 npm run build     # static site -> dist/
