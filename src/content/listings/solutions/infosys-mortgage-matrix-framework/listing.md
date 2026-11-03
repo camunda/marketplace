@@ -1,6 +1,9 @@
 ---
 id: 576456
 name: "Infosys Mortgage Matrix Framework"
+type: 
+  - "solution"
+  - "blueprint"
 creatorType: "partner"
 creatorName: "Infosys"
 creatorUrl: "https://www.infosys.com/"

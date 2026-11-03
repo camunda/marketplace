@@ -1,6 +1,9 @@
 ---
 id: 775500
 name: "Migrating from Camunda 7 to 8"
+type: 
+  - "solution"
+  - "blueprint"
 creatorType: "partner"
 creatorName: "envite"
 creatorUrl: "https://envite.de"

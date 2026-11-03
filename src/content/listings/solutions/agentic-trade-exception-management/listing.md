@@ -1,6 +1,9 @@
 ---
 id: 519051
 name: "Agentic Trade Exception Management"
+type: 
+  - "solution"
+  - "blueprint"
 creatorType: "partner"
 creatorName: "EY"
 creatorUrl: "https://www.ey.com"

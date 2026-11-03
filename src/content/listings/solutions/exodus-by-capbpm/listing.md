@@ -1,6 +1,9 @@
 ---
 id: 480548
 name: "Exodus by CapBPM"
+type: 
+  - "solution"
+  - "blueprint"
 creatorType: "partner"
 creatorName: "Capital BPM"
 creatorUrl: "https://capbpm.com/exodus"

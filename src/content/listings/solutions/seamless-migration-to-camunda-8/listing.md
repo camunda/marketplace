@@ -1,6 +1,9 @@
 ---
 id: 622811
 name: "Seamless Migration to Camunda 8"
+type: 
+  - "solution"
+  - "blueprint"
 creatorType: "partner"
 creatorName: "Nterra"
 creatorUrl: "https://www.nterra.com/?utm_source=camundamarketplace&utm_medium=link"

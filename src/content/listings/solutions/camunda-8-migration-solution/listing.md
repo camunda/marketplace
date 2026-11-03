@@ -1,6 +1,9 @@
 ---
 id: 786674
 name: "Camunda 8 Migration Solution"
+type: 
+  - "solution"
+  - "blueprint"
 creatorType: "partner"
 creatorName: "cimt AG"
 creatorUrl: "https://www.cimt-ag.de/"

@@ -1,6 +1,9 @@
 ---
 id: 519670
 name: "Compliance Monitoring Agent"
+type: 
+  - "solution"
+  - "blueprint"
 creatorType: "partner"
 creatorName: "BP3"
 creatorUrl: "https://www.bp-3.com/"

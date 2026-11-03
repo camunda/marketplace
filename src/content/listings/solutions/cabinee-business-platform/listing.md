@@ -1,6 +1,9 @@
 ---
 id: 862177
 name: "Cabinee Business Platform"
+type: 
+  - "solution"
+  - "blueprint"
 creatorType: "partner"
 creatorName: "Reunico LLP"
 creatorUrl: "https://cabinee.com"

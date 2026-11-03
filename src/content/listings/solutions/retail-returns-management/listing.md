@@ -1,6 +1,9 @@
 ---
 id: 775482
 name: "Retail Returns Management"
+type: 
+  - "solution"
+  - "blueprint"
 creatorType: "partner"
 creatorName: "Tech Mahindra"
 creatorUrl: "https://www.techmahindra.com/services/artificial-intelligence/redefining-retail-cpg-ai/"

@@ -1,6 +1,9 @@
 ---
 id: 783477
 name: "AI-Powered Motor Insurance Claims Blueprint"
+type: 
+  - "solution"
+  - "blueprint"
 creatorType: "partner"
 creatorName: "Acheron Software Consultancy Private Limited"
 creatorUrl: "https://www.acheron-tech.com"

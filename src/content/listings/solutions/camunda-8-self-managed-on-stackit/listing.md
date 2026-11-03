@@ -1,6 +1,9 @@
 ---
 id: 844739
 name: "Camunda 8 Self-Managed on STACKIT"
+type: 
+  - "solution"
+  - "blueprint"
 creatorType: "partner"
 creatorName: "Consid GmbH"
 creatorUrl: "https://www.consid.com"

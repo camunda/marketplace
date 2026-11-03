@@ -2,6 +2,9 @@
 id: 784361
 name: "AI Process Analysis & Optimization Agent"
 legacySlug: "ai-process-analysis-optimization-agent"
+type: 
+  - "solution"
+  - "blueprint"
 creatorType: "partner"
 creatorName: "mpmX GmbH"
 creatorUrl: "https://mpmx.ai/"

@@ -1,6 +1,9 @@
 ---
 id: 808029
 name: "KADAI Enterprise Task Management"
+type: 
+  - "solution"
+  - "blueprint"
 creatorType: "partner"
 creatorName: "envite consulting GmbH"
 creatorUrl: "https://envite.de/green-bpm"

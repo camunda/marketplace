@@ -1,6 +1,9 @@
 ---
 id: 519694
 name: "Migration of Camunda 7 to 8"
+type: 
+  - "solution"
+  - "blueprint"
 creatorType: "partner"
 creatorName: "\"J-IT\" IT-Dienstleistungs GesmbH"
 creatorUrl: "https://jit.at/"

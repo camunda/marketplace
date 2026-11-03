@@ -1,6 +1,9 @@
 ---
 id: 808449
 name: "The Taktile Financial Spreading Agent"
+type: 
+  - "solution"
+  - "blueprint"
 creatorType: "partner"
 creatorName: "Taktile"
 categories: 
