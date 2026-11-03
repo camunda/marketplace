@@ -12,6 +12,9 @@ const listings = defineCollection({
     // Identity
     id: z.number(), // original AppDirect product id, kept for stable URLs/redirects
     name: z.string(),
+    // Old AppDirect URL slug (/apps/<id>/<slug>), set only when it differs
+    // from the directory slug. Used for redirect pages.
+    legacySlug: z.string().optional(),
     // Only set when a listing belongs to more than one type; otherwise the
     // parent directory (connectors/ blueprints/ solutions/) is the type.
     type: z.array(z.enum(['connector', 'blueprint', 'solution'])).optional(),

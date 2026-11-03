@@ -1,7 +1,7 @@
 ---
 id: 873328
 name: "User Task Update Connector"
-creatorType: "camunda"
+creatorType: "community"
 creatorName: "Camunda / Pierre-Yves Monnet"
 creatorUrl: "http://www.camunda.com"
 categories: 
@@ -25,7 +25,7 @@ smTemplate: "https://github.com/camunda-community-hub/camunda-8-connector-userta
 links: 
   docs: "https://raw.githubusercontent.com/camunda-community-hub/camunda-8-connector-usertask-update/main/README.md"
   support: "https://forum.camunda.io/"
-lastModified: "2026-10-08"
+lastModified: "2026-10-15"
 ---
 
 *Adjust user tasks automatically as processes run*

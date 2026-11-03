@@ -24,6 +24,7 @@ resourceTypes:
   - "Form"
 compatibleVersions: 
   - "8.8"
+  - "8.9"
 availability: "open-source"
 description: "End-to-end email orchestration with AI"
 templates: 
@@ -40,7 +41,7 @@ video: "https://www.youtube.com/watch?v=32299Ksezp0"
 links: 
   docs: "https://github.com/camunda/camunda-platform-tutorials/tree/main/solutions/bank-ai-loan-approval"
   support: "https://forum.camunda.io/"
-lastModified: "2025-10-22"
+lastModified: "2026-10-12"
 ---
 
 *Orchestrate AI-driven email communication with guardrails*

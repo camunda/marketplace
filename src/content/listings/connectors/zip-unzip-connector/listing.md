@@ -1,6 +1,7 @@
 ---
 id: 783478
 name: "Zip/Unzip Connector"
+legacySlug: "zipunzip-connector"
 creatorType: "community"
 creatorName: "Camunda / Pierre-Yves Monnet"
 creatorUrl: "https://camunda.com/"

@@ -20,29 +20,22 @@ connectorTypes:
 compatibleVersions: 
   - "8.8"
   - "8.9"
+  - "8.10"
 availability: "open-source"
 description: "Bring the power of AI agents to business processes"
 templates: 
-  - url: "https://raw.githubusercontent.com/camunda/connectors/refs/heads/main/connectors/agentic-ai/connector-agentic-ai/element-templates/agenticai-ai-agent-subprocess.v2.json"
+  - url: "https://raw.githubusercontent.com/camunda/connectors/refs/heads/main/connectors/agentic-ai/connector-aiagent/element-templates/agenticai-ai-agent-subprocess.v2.json"
     name: "AI Agent Subprocess Element Template (v2)"
-  - url: "https://raw.githubusercontent.com/camunda/connectors/refs/heads/main/connectors/agentic-ai/connector-agentic-ai/element-templates/agenticai-aiagent-job-worker.json"
-    name: "AI Agent Subprocess Element Template (v1)"
-  - url: "https://raw.githubusercontent.com/camunda/connectors/main/connectors/agentic-ai/connector-agentic-ai/element-templates/versioned/agenticai-aiagent-job-worker-7.json"
-    name: "AI Agent Subprocess Element Template (v1, 8.9)"
-  - url: "https://raw.githubusercontent.com/camunda/connectors/main/connectors/agentic-ai/connector-agentic-ai/element-templates/versioned/agenticai-aiagent-job-worker-5.json"
-    name: "AI Agent Subprocess Element Template (v1, 8.8)"
-  - url: "https://raw.githubusercontent.com/camunda/connectors/refs/heads/main/connectors/agentic-ai/connector-agentic-ai/element-templates/agenticai-ai-agent-task.v2.json"
+  - url: "https://raw.githubusercontent.com/camunda/connectors/refs/heads/main/connectors/agentic-ai/connector-aiagent/element-templates/agenticai-ai-agent-task.v2.json"
     name: "AI Agent Task Element Template (v2)"
-  - url: "https://raw.githubusercontent.com/camunda/connectors/refs/heads/main/connectors/agentic-ai/connector-agentic-ai/element-templates/agenticai-aiagent-outbound-connector.json"
+  - url: "https://raw.githubusercontent.com/camunda/connectors/refs/heads/main/connectors/agentic-ai/connector-aiagent/element-templates/agenticai-aiagent-job-worker.json"
+    name: "AI Agent Subprocess Element Template (v1)"
+  - url: "https://raw.githubusercontent.com/camunda/connectors/refs/heads/main/connectors/agentic-ai/connector-aiagent/element-templates/agenticai-aiagent-outbound-connector.json"
     name: "AI Agent Task Element Template (v1)"
-  - url: "https://raw.githubusercontent.com/camunda/connectors/main/connectors/agentic-ai/connector-agentic-ai/element-templates/versioned/agenticai-aiagent-outbound-connector-7.json"
-    name: "AI Agent Task Element Template (v1, 8.9)"
-  - url: "https://raw.githubusercontent.com/camunda/connectors/main/connectors/agentic-ai/connector-agentic-ai/element-templates/versioned/agenticai-aiagent-outbound-connector-5.json"
-    name: "AI Agent Task Element Template (v1, 8.8)"
-smTemplate: "https://github.com/camunda/connectors/tree/main/connectors/agentic-ai/connector-agentic-ai/element-templates"
+smTemplate: "https://github.com/camunda/connectors/tree/main/connectors/agentic-ai/connector-aiagent/element-templates"
 links: 
   support: "https://forum.camunda.io/"
-lastModified: "2026-09-23"
+lastModified: "2026-10-19"
 ---
 
 *Bring the power of AI agents to business processes*

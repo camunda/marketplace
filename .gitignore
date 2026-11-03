@@ -1,4 +1,5 @@
 node_modules/
 dist/
+appdirect-export/
 .astro/
 .DS_Store

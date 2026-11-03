@@ -1,6 +1,7 @@
 ---
 id: 475969
 name: "TELCO Fiber Sales & Deployment"
+legacySlug: "telco-fiber-sales-deployment"
 creatorType: "partner"
 creatorName: "NTConsult"
 creatorUrl: "https://ntconsultcorp.com/"

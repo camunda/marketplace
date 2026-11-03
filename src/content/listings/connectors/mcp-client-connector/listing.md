@@ -20,21 +20,18 @@ connectorTypes:
 compatibleVersions: 
   - "8.8"
   - "8.9"
+  - "8.10"
 availability: "open-source"
 description: "Bring MCP tools into processes"
 templates: 
-  - url: "https://raw.githubusercontent.com/camunda/connectors/refs/heads/main/connectors/agentic-ai/connector-agentic-ai/element-templates/versioned/agenticai-mcp-client-outbound-connector-0.json"
-    name: "MCP Client Element Template v0"
-  - url: "https://raw.githubusercontent.com/camunda/connectors/refs/heads/main/connectors/agentic-ai/connector-agentic-ai/element-templates/agenticai-mcp-client-outbound-connector.json"
+  - url: "https://raw.githubusercontent.com/camunda/connectors/refs/heads/main/connectors/agentic-ai/connector-mcp/element-templates/agenticai-mcp-client-outbound-connector.json"
     name: "MCP Client Element Template"
-  - url: "https://raw.githubusercontent.com/camunda/connectors/refs/heads/main/connectors/agentic-ai/connector-agentic-ai/element-templates/versioned/agenticai-mcp-remote-client-outbound-connector-0.json"
-    name: "MCP Remote Client Element Template v0"
-  - url: "https://raw.githubusercontent.com/camunda/connectors/refs/heads/main/connectors/agentic-ai/connector-agentic-ai/element-templates/agenticai-mcp-remote-client-outbound-connector.json"
+  - url: "https://raw.githubusercontent.com/camunda/connectors/refs/heads/main/connectors/agentic-ai/connector-mcp/element-templates/agenticai-mcp-remote-client-outbound-connector.json"
     name: "MCP Remote Client Element Template"
-smTemplate: "https://github.com/camunda/connectors/tree/main/connectors/agentic-ai/connector-agentic-ai/element-templates"
+smTemplate: "https://github.com/camunda/connectors/tree/main/connectors/agentic-ai/connector-mcp/element-templates"
 links: 
   support: "https://forum.camunda.io/"
-lastModified: "2026-07-01"
+lastModified: "2026-10-19"
 ---
 
 *Orchestrate MCP tool use with AI*

@@ -8,6 +8,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "fetch-export": "node scripts/fetch-export.mjs",
     "extract": "node scripts/extract.mjs"
   },
   "dependencies": {

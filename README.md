@@ -17,6 +17,7 @@ Statically generated replacement for the AppDirect-based marketplace. GitHub is 
 
 ```sh
 npm install
+npm run fetch-export  # pull a fresh AppDirect snapshot -> appdirect-export/
 npm run extract   # re-import AppDirect data -> src/content/listings + images
 npm run dev       # local development server
 npm run build     # static site -> dist/
@@ -48,6 +49,7 @@ gallery. Example:
 ---
 id: 418963                    # AppDirect product id, keep stable
 name: "Salesforce Connector"
+legacySlug: "salesforce"      # old AppDirect URL slug, only when different from the directory slug
 creatorType: "camunda"        # camunda | partner | community
 creatorName: "Camunda"
 creatorUrl: "https://camunda.com/"

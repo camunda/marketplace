@@ -1,6 +1,7 @@
 ---
 id: 418939
 name: "S/FTP Connector"
+legacySlug: "sftp-connector"
 creatorType: "partner"
 creatorName: "Cognizant"
 creatorUrl: "https://www.cognizant.com/"
