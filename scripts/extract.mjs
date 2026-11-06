@@ -14,6 +14,7 @@
 import { mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { stripMarkdownReferences } from './markdown-references.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const EXPORT_DIR = join(ROOT, 'appdirect-export', 'products');
@@ -385,7 +386,7 @@ function toMarkdownBody(product) {
  * raw HTML so listings cannot embed off-site assets or arbitrary markup.
  */
 function sanitizeRichText(text) {
-  return text
+  return stripMarkdownReferences(text)
     .trim()
     .replace(/!\[[^\]]*\]\([^)]*\)/g, '') // images
     .replace(/\[([^\]]*)\]\([^)]*\)/g, '$1') // links -> text

@@ -12,6 +12,7 @@
  */
 import { readFileSync, readdirSync, mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
+import { stripMarkdownReferences } from './markdown-references.mjs';
 
 const CONTENT_DIR = join(process.cwd(), 'src/content', 'listings');
 const MAX_IMAGES = 8;
@@ -159,7 +160,7 @@ function slugify(name) {
  * raw HTML so listings cannot embed off-site assets or arbitrary markup.
  */
 function sanitizeRichText(text) {
-  return text
+  return stripMarkdownReferences(text)
     .trim()
     .replace(/!\[[^\]]*\]\([^)]*\)/g, '') // images
     .replace(/\[([^\]]*)\]\([^)]*\)/g, '$1') // links -> text
@@ -245,6 +246,14 @@ function nextId(files) {
   return max + 1;
 }
 
+function listingId(files) {
+  const runId = process.env.GITHUB_RUN_ID;
+  if (!runId) return nextId(files);
+  const id = Number(runId);
+  if (!Number.isSafeInteger(id) || id <= 0) fail(`invalid GitHub run id: ${runId}`);
+  return id;
+}
+
 function uniqueSlug(name, files) {
   const used = new Set(files.map((f) => f.slug));
   const base = slugify(name) || 'listing';
@@ -325,7 +334,7 @@ if (links.docs && smTemplate && links.docs.replace(/\/$/, '') === smTemplate.rep
 }
 
 const record = {
-  id: nextId(files),
+  id: listingId(files),
   name,
   creatorType: CREATOR_TYPES[get('I am a')] ?? undefined,
   creatorName: get('Company / Contributor') || undefined,

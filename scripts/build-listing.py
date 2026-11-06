@@ -96,11 +96,49 @@ def normalize_bpmn_type(value):
     return None
 
 
+def strip_markdown_references(text):
+    definitions = set()
+    definition_pattern = re.compile(
+        r"""^[ \t]{0,3}\[([^\]\n]+)\]:[ \t]*(?:<[^>\n]*>|[^ \t\n]+)"""
+        r"""(?:[ \t]+(?:"[^"\n]*"|'[^'\n]*'|\([^)\n]*\)))?"""
+        r"""(?:\r?\n[ \t]+(?:"[^"\n]*"|'[^'\n]*'|\([^)\n]*\)))?[ \t]*\r?$""",
+        re.M,
+    )
+
+    def normalize_label(label):
+        return " ".join(label.split()).lower()
+
+    def remove_definition(match):
+        definitions.add(normalize_label(match.group(1)))
+        return ""
+
+    text = definition_pattern.sub(remove_definition, text)
+    reference_pattern = re.compile(r"(!?)\[([^\]\n]*)\](?:[ \t]*\r?\n?[ \t]*)\[([^\]\n]*)\]")
+
+    def replace_reference(match):
+        image, label, reference = match.groups()
+        if normalize_label(reference or label) not in definitions:
+            return match.group(0)
+        return "" if image else label
+
+    text = reference_pattern.sub(replace_reference, text)
+    shortcut_pattern = re.compile(r"(!?)\[([^\]\n]+)\](?![ \t]*(?:\(|\[))")
+
+    def replace_shortcut(match):
+        image, label = match.groups()
+        if normalize_label(label) not in definitions:
+            return match.group(0)
+        return "" if image else label
+
+    return shortcut_pattern.sub(replace_shortcut, text)
+
+
 def sanitize_rich_text(text):
     """Guardrails for contributor-provided content: keep paragraphs, lists, bold
     and italic; strip images, links (keeping the link text), raw HTML and
     headings (converted to bold) so listings cannot embed off-site assets or
     arbitrary markup."""
+    text = strip_markdown_references(text)
     text = re.sub(r"!\[[^\]]*\]\([^)]*\)", "", text)  # images
     text = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", text)  # links -> text
     text = re.sub(r"<[^>]+>", "", text)  # raw HTML tags
@@ -120,7 +158,10 @@ def main(payload_path):
     if data["listingType"] not in VALID_TYPES:
         fail(f"Invalid listingType: {data['listingType']}")
 
-    listing_id = int(time.time())
+    run_id = os.environ.get("GITHUB_RUN_ID")
+    if run_id and not run_id.isdecimal():
+        fail(f"Invalid GitHub run ID: {run_id}")
+    listing_id = int(run_id) if run_id else int(time.time())
     name = data["listingName"]
     listing_type = data["listingType"]
     slug = re.sub(r"(^-+|-+$)", "", re.sub(r"[^a-z0-9]+", "-", name.lower()))
