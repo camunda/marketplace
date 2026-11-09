@@ -1,5 +1,6 @@
 ---
 id: 437162
+apiAnyIndustry: true
 name: "Error Handling"
 creatorType: "camunda"
 creatorName: "Camunda"

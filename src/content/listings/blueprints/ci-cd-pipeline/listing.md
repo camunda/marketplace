@@ -1,5 +1,7 @@
 ---
 id: 439170
+apiSolutionCategory: true
+apiAnyIndustry: true
 name: "CI/CD Pipeline"
 legacySlug: "cicd-pipeline"
 creatorType: "camunda"

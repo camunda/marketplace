@@ -38,6 +38,11 @@ JSON bodies compared field by field.
 - Use-case facet normalization: AppDirect tag "Microservices orchestration"
   maps to the live filter value "microservice orchestration" (the Java
   service matches by attribute id, not by string).
+- Blueprint facets retain the AppDirect "Any" industry tag and distinguish
+  the blueprint "Solution Accelerators" category from the partner category
+  with the same name. The API also maps "Supply Chain & Logistics" to the
+  live filter value "supply chain and logistics". These fields do not change
+  the site's display facets.
 - Blueprint 587865: the integration-test template points at the renamed
   `camunda-platform-tutorials` repository.
 
@@ -54,8 +59,8 @@ JSON bodies compared field by field.
   `io.camunda:soap`
 - ootb unknown id / unknown version: 404 on both (body differs, see below)
 - `search=zzznomatchzzz`: empty result on both
-- Facet membership: every filter value returns the same set of ids on both
-  sides, except the content drift listed below
+- Facet membership: filter values return the same set of ids on both sides,
+  except for the content drift and category merge listed below
 - Filter combination rules: AND across groups, OR within a group, repeated
   parameters and comma-separated values behave the same
 - Health endpoints on port 8090 (`/health`, `/health/readiness`,

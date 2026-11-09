@@ -1,5 +1,6 @@
 ---
 id: 437143
+apiAnyIndustry: true
 name: "Microservice Orchestration Quick Start"
 creatorType: "camunda"
 creatorName: "Camunda"

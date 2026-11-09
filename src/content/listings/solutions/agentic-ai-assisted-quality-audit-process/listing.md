@@ -1,5 +1,6 @@
 ---
 id: 519046
+apiAnyIndustry: true
 name: "Agentic AI Assisted Quality Audit Process"
 type: 
   - "solution"

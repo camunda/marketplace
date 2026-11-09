@@ -1,5 +1,6 @@
 ---
 id: 829718
+apiAnyIndustry: true
 name: "Camunda Agent Starter Project"
 creatorType: "community"
 creatorName: "Camunda / Niall Deehan"

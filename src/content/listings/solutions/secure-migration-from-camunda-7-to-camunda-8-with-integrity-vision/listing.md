@@ -1,5 +1,6 @@
 ---
 id: 556812
+apiAnyIndustry: true
 name: "Secure Migration from Camunda 7 to Camunda 8 with Integrity Vision"
 type: 
   - "solution"

@@ -1,5 +1,6 @@
 ---
 id: 437163
+apiSolutionCategory: true
 name: "Event Registration"
 creatorType: "camunda"
 creatorName: "Camunda"

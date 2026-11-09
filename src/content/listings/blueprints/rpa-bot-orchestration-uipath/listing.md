@@ -1,5 +1,6 @@
 ---
 id: 441351
+apiAnyIndustry: true
 name: "RPA Bot Orchestration (UiPath)"
 creatorType: "camunda"
 creatorName: "Camunda"

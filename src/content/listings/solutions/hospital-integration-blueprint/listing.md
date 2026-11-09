@@ -1,5 +1,6 @@
 ---
 id: 778691
+apiSolutionCategory: true
 name: "Hospital Integration Blueprint"
 type: 
   - "solution"

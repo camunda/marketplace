@@ -1,5 +1,6 @@
 ---
 id: 808028
+apiAnyIndustry: true
 name: "AI Firewall Agent"
 creatorType: "camunda"
 creatorName: "Camunda"

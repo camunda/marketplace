@@ -1,5 +1,6 @@
 ---
 id: 490021
+apiAnyIndustry: true
 name: "Fraud Detection AI Agent Tutorial"
 creatorType: "camunda"
 creatorName: "Camunda"

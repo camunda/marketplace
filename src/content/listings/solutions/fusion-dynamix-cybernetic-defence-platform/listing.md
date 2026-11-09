@@ -1,5 +1,6 @@
 ---
 id: 773510
+apiAnyIndustry: true
 name: "Fusion Dynamix - Cybernetic Defence Platform"
 legacySlug: "fusion-dynamix---cybernetic-defence-platform"
 type: 

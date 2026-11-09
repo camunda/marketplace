@@ -1,5 +1,6 @@
 ---
 id: 449351
+apiAnyIndustry: true
 name: "Invoice Creator"
 creatorType: "community"
 creatorName: "Camunda Community Hub"

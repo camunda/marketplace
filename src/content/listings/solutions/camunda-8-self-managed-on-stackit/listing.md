@@ -1,5 +1,6 @@
 ---
 id: 844739
+apiAnyIndustry: true
 name: "Camunda 8 Self-Managed on STACKIT"
 type: 
   - "solution"

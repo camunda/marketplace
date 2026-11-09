@@ -1,5 +1,6 @@
 ---
 id: 451492
+apiSolutionCategory: true
 name: "Income Verification Process"
 creatorType: "partner"
 creatorName: "Capital BPM"

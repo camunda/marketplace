@@ -1,5 +1,7 @@
 ---
 id: 437161
+apiSolutionCategory: true
+apiAnyIndustry: true
 name: "Enforcing SLA"
 creatorType: "camunda"
 creatorName: "Camunda"

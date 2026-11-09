@@ -1,5 +1,6 @@
 ---
 id: 480548
+apiAnyIndustry: true
 name: "Exodus by CapBPM"
 type: 
   - "solution"

@@ -1,5 +1,6 @@
 ---
 id: 440239
+apiSolutionCategory: true
 name: "Aaseya Order Management Solution"
 creatorType: "partner"
 creatorName: "Aaseya IT Services"

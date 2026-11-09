@@ -1,5 +1,6 @@
 ---
 id: 450143
+apiSolutionCategory: true
 name: "Loan Origination and Processing"
 creatorType: "camunda"
 creatorName: "Camunda"

@@ -27,6 +27,9 @@ const listings = defineCollection({
     // Filter facets
     categories: z.array(z.string()).default([]),
     industries: z.array(z.string()).default([]),
+    // AppDirect tags that are not represented by the site's display facets.
+    apiAnyIndustry: z.boolean().default(false),
+    apiSolutionCategory: z.boolean().default(false),
     useCases: z.array(z.string()).default([]),
     resourceTypes: z.array(z.string()).default([]),
     bpmnTypes: z.array(z.string()).default([]),

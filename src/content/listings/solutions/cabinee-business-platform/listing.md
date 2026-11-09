@@ -1,5 +1,6 @@
 ---
 id: 862177
+apiAnyIndustry: true
 name: "Cabinee Business Platform"
 type: 
   - "solution"

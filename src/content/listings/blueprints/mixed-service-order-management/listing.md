@@ -1,5 +1,6 @@
 ---
 id: 450144
+apiSolutionCategory: true
 name: "Mixed Service Order Management"
 creatorType: "camunda"
 creatorName: "Camunda"

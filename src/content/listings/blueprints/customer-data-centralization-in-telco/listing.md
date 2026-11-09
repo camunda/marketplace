@@ -1,5 +1,6 @@
 ---
 id: 475970
+apiSolutionCategory: true
 name: "Customer Data Centralization in TELCO"
 creatorType: "partner"
 creatorName: "NTConsult"

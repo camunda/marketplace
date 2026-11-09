@@ -1,5 +1,6 @@
 ---
 id: 451491
+apiAnyIndustry: true
 name: "Automate Batch Predictions"
 creatorType: "partner"
 creatorName: "Acheron Software Consultancy Private Limited"

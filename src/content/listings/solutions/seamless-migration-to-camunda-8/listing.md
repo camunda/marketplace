@@ -1,5 +1,6 @@
 ---
 id: 622811
+apiAnyIndustry: true
 name: "Seamless Migration to Camunda 8"
 type: 
   - "solution"

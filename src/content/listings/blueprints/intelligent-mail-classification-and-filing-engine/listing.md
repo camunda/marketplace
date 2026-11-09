@@ -1,5 +1,6 @@
 ---
 id: 873327
+apiSolutionCategory: true
 name: "Intelligent Mail Classification and Filing Engine"
 creatorType: "partner"
 creatorName: "ilume informatik AG"

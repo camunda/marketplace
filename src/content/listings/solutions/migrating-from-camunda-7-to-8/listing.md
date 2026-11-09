@@ -1,5 +1,6 @@
 ---
 id: 775500
+apiAnyIndustry: true
 name: "Migrating from Camunda 7 to 8"
 type: 
   - "solution"

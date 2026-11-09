@@ -1,5 +1,6 @@
 ---
 id: 632605
+apiAnyIndustry: true
 name: "ServiceNow Integration Quick Start"
 creatorType: "camunda"
 creatorName: "Camunda"

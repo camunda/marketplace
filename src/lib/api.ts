@@ -65,8 +65,13 @@ export function blueprintFacets(l: Listing) {
     useCases: l.useCases.map((u) =>
       u.toLowerCase() === 'microservices orchestration' ? 'microservice orchestration' : u,
     ),
-    categories: l.categories,
-    industries: l.industries,
+    categories: [...l.categories, ...(l.apiSolutionCategory ? ['solutions'] : [])],
+    industries: [
+      ...l.industries.map((i) =>
+        i.toLowerCase() === 'supply chain & logistics' ? 'supply chain and logistics' : i,
+      ),
+      ...(l.apiAnyIndustry ? ['any'] : []),
+    ],
     creatorType: l.creatorType ?? null,
     compatibleVersions: l.compatibleVersions,
     hasSourceFiles: hasSourceFiles(l),

@@ -1,5 +1,6 @@
 ---
 id: 519685
+apiAnyIndustry: true
 name: "AI Customer Service Agent"
 type: 
   - "solution"

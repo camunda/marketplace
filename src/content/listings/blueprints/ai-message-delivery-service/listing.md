@@ -1,5 +1,7 @@
 ---
 id: 583287
+apiSolutionCategory: true
+apiAnyIndustry: true
 name: "AI Message Delivery Service"
 creatorType: "camunda"
 creatorName: "Niall Deehan"

@@ -1,5 +1,6 @@
 ---
 id: 613092
+apiAnyIndustry: true
 name: "AI-Powered Ticket Supporting System"
 type: 
   - "solution"

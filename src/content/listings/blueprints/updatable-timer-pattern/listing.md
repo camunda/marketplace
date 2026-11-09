@@ -1,5 +1,6 @@
 ---
 id: 439438
+apiAnyIndustry: true
 name: "Updatable Timer Pattern"
 creatorType: "partner"
 creatorName: "brix IT solutions"

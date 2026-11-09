@@ -1,5 +1,6 @@
 ---
 id: 808029
+apiAnyIndustry: true
 name: "KADAI Enterprise Task Management"
 type: 
   - "solution"

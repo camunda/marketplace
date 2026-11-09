@@ -1,5 +1,6 @@
 ---
 id: 587865
+apiAnyIndustry: true
 name: "AI Agent Chat Quick Start"
 creatorType: "camunda"
 creatorName: "Camunda"

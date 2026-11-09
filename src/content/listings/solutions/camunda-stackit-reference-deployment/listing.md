@@ -1,5 +1,6 @@
 ---
 id: 836160
+apiAnyIndustry: true
 name: "Camunda STACKIT Reference Deployment"
 type: 
   - "solution"

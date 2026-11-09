@@ -1,5 +1,6 @@
 ---
 id: 475968
+apiSolutionCategory: true
 name: "Aaseya License & Permitting Solution"
 legacySlug: "aaseya-license-permitting-solution"
 creatorType: "partner"

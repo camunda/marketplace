@@ -1,5 +1,6 @@
 ---
 id: 597911
+apiAnyIndustry: true
 name: "SAP Business Partner Search"
 creatorType: "camunda"
 creatorName: "Camunda"

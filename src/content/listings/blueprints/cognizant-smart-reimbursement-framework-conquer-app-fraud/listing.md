@@ -1,5 +1,6 @@
 ---
 id: 483754
+apiSolutionCategory: true
 name: "Cognizant Smart Reimbursement Framework: Conquer APP Fraud"
 creatorType: "partner"
 creatorName: "Cognizant"

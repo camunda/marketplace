@@ -1,5 +1,6 @@
 ---
 id: 797186
+apiAnyIndustry: true
 name: "Migrate & Accelerate to Camunda (MAC)"
 legacySlug: "migrate-accelerate-to-camunda-mac"
 type: 
