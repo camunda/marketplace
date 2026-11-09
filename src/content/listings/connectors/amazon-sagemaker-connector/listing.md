@@ -16,6 +16,7 @@ compatibleVersions:
   - "8.6"
 availability: "coming-soon"
 description: "Trigger SageMaker models from Camunda processes"
+seoDescription: "Orchestrate machine learning with Camunda and the Amazon SageMaker service."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.AWSSAGEMAKER.v1/latest/aws-sagemaker-outbound-connector.json"
     name: "AWS Sage Maker"
@@ -24,8 +25,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-09-03"
 ---
-
-*Orchestrate machine learning with Amazon SageMaker*
 
 Orchestrate machine learning with Camunda and the Amazon SageMaker service.
 

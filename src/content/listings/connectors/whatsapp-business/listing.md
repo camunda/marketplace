@@ -20,6 +20,7 @@ compatibleVersions:
   - "8.4"
 availability: "open-source"
 description: "Easy WhatsApp messaging from Camunda"
+seoDescription: "Upgrade your Camunda workflows with integrated WhatsApp messaging. The WhatsApp Connector enables automated, secure, and efficient communications directly from your business processes."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.WhatsApp.v1/latest/whatsapp-connector.json"
     name: "WhatsApp Outbound"
@@ -28,8 +29,6 @@ links:
   website: "https://camunda.com"
 lastModified: "2025-09-08"
 ---
-
-*Empower Your Camunda Workflows with WhatsApp Messaging*
 
 Upgrade your Camunda workflows with integrated WhatsApp messaging. The WhatsApp Connector enables automated, secure, and efficient communications directly from your business processes.
 

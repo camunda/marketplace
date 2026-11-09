@@ -36,7 +36,8 @@ const listings = defineCollection({
     availability: z.enum(['open-source', 'listing-only', 'coming-soon']).optional(),
 
     // Content
-    description: z.string(),
+    description: z.string(), // 5-word description, shown on cards and in search
+    seoDescription: z.string().optional(), // brief overview, used as the meta description
 
     // Action targets
     templates: z

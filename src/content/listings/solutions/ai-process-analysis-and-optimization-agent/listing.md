@@ -15,14 +15,13 @@ compatibleVersions:
   - "8.9"
 availability: "listing-only"
 description: "AI-driven process analysis and optimization"
+seoDescription: "An AI agent continuously analyzes process performance and orchestrates optimization actions with governance and human oversight."
 video: "https://www.youtube.com/watch?v=A5x1gkrIDaM"
 links: 
   demo: "https://mpmx.ai/"
   support: "https://forum.camunda.io/"
 lastModified: "2026-03-05"
 ---
-
-*Continuously Analyze and Optimize Processes with AI*
 
 An AI agent continuously analyzes process performance and orchestrates optimization actions with governance and human oversight.
 

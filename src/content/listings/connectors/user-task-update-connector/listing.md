@@ -18,6 +18,7 @@ compatibleVersions:
   - "8.9"
 availability: "open-source"
 description: "Update parameters on user tasks"
+seoDescription: "Update the priority, due date, follow-up date, assignment, and candidates of one or several user tasks in a running process instance."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda-community-hub/camunda-8-connector-usertask-update/main/element-templates/usertask-update-function.json"
     name: "User task Update Outbound Template"
@@ -27,8 +28,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2026-10-15"
 ---
-
-*Adjust user tasks automatically as processes run*
 
 Update the priority, due date, follow-up date, assignment, and candidates of one or several user tasks in a running process instance.
 

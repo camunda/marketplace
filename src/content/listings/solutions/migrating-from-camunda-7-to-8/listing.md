@@ -19,12 +19,11 @@ compatibleVersions:
   - "8.9"
 availability: "listing-only"
 description: "Structured, reliable, & future-proof migrations"
+seoDescription: "envite consulting is a top-level Platinum Camunda Partner delivering reliable, future-proof migrations from Camunda 7 to Camunda 8."
 links: 
   support: "https://forum.camunda.io/"
 lastModified: "2026-02-12"
 ---
-
-*Migrating from Camunda 7 to 8*
 
 envite consulting is a top-level Platinum Camunda Partner delivering reliable, future-proof migrations from Camunda 7 to Camunda 8.
 

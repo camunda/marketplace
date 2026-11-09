@@ -20,12 +20,11 @@ compatibleVersions:
   - "8.8"
 availability: "listing-only"
 description: "Improve the effectiveness of claims management"
+seoDescription: "Agentic automation simplifies insurance claims with seamless account access and real-time support."
 links: 
   support: "https://forum.camunda.io/"
 lastModified: "2025-07-30"
 ---
-
-*Agentic AI Enabled Automobile Claims Management*
 
 Agentic automation simplifies insurance claims with seamless account access and real-time support.
 

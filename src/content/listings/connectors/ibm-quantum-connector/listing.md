@@ -19,6 +19,7 @@ compatibleVersions:
   - "8.9"
 availability: "open-source"
 description: "Quantum circuits inside BPMN workflows"
+seoDescription: "Execute quantum circuits on real IBM Quantum hardware directly from your Camunda 8 BPMN workflows. It supports Sampler and Estimator primitives, blocking and polling execution modes, and OpenQASM circuit input."
 templates: 
   - url: "https://raw.githubusercontent.com/envite-consulting/ibmq-connector-camunda-8/refs/heads/main/element-templates/ibmq-connector.json"
     name: "IBM Quantum Connector Outbound Template"
@@ -28,8 +29,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2026-05-05"
 ---
-
-*Connect your BPMN processes to real IBM Quantum hardware*
 
 Execute quantum circuits on real IBM Quantum hardware directly from your Camunda 8 BPMN workflows. It supports Sampler and Estimator primitives, blocking and polling execution modes, and OpenQASM circuit input.
 

@@ -16,6 +16,7 @@ compatibleVersions:
   - "8.3"
 availability: "open-source"
 description: "Use Redis in business processes"
+seoDescription: "Transact JSON data with Redis as your back-end database system."
 links: 
   github: "https://github.com/rchari-ml/redis-connector-nodejs/tree/main"
   docs: "https://docs.camunda.io/docs/guides/host-custom-connectors/"
@@ -23,8 +24,6 @@ links:
   website: "https://linkedin.com/in/chari"
 lastModified: "2024-04-05"
 ---
-
-*Simplify data operations in business processes*
 
 Transact JSON data with Redis as your back-end database system.
 

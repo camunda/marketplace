@@ -12,14 +12,13 @@ compatibleVersions:
   - "8.10"
 availability: "listing-only"
 description: "Camunda 8 deployment blueprint for STACKIT"
+seoDescription: "A blueprint for deploying Camunda 8 on the sovereign STACKIT cloud via Terraform. Get high availability, secrets management, and observability configured from day one."
 smTemplate: "https://github.com/envite-consulting/camunda-stackit-deployment"
 links: 
   docs: "https://github.com/envite-consulting/camunda-stackit-deployment#camunda-stackit-deployment"
   support: "https://github.com/envite-consulting/camunda-stackit-deployment/discussions"
 lastModified: "2026-07-15"
 ---
-
-*Deploy Camunda 8 on STACKIT with reference configurations and examples*
 
 A blueprint for deploying Camunda 8 on the sovereign STACKIT cloud via Terraform. Get high availability, secrets management, and observability configured from day one.
 

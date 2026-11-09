@@ -17,6 +17,7 @@ compatibleVersions:
   - "8.5"
 availability: "open-source"
 description: "Manage files in business processes"
+seoDescription: "Integrate key file operations into Camunda-based business processes."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda-community-hub/camunda-8-connector-filestorage/refs/heads/main/element-templates/file-storage-connector.json"
     name: "File Storage connectors Outbound Template"
@@ -26,8 +27,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-02-07"
 ---
-
-*Easy File Management with Camunda*
 
 Integrate key file operations into Camunda-based business processes.
 

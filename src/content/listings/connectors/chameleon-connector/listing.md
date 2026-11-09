@@ -19,6 +19,7 @@ compatibleVersions:
   - "8.10"
 availability: "open-source"
 description: "Simulate any connector for testing"
+seoDescription: "The Chameleon connector mimics any connector so you can build and test processes before the real integration is ready. Simulate delays, produce variables, trigger BPMN errors, or work with documents on demand."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda-community-hub/camunda-8-connector-chameleon/refs/heads/main/element-templates/chameleon-function.json"
     name: "Chameleon Outbound Template"
@@ -28,8 +29,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2026-07-28"
 ---
-
-*Simulate any Camunda connector*
 
 The Chameleon connector mimics any connector so you can build and test processes before the real integration is ready. Simulate delays, produce variables, trigger BPMN errors, or work with documents on demand.
 

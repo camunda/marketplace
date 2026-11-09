@@ -20,6 +20,7 @@ compatibleVersions:
   - "8.3"
 availability: "open-source"
 description: "Drive Camunda processes via email"
+seoDescription: "This inbound connector will monitor email inboxes to start and drive Camunda processes"
 templates: 
   - url: "https://raw.githubusercontent.com/camunda-community-hub/camunda-8-inbound-connector-email-watch/main/element-templates/email-watch-intermediate-connector.json"
     name: "io.camunda.connectors.EmailWatchService.intermediate"
@@ -31,8 +32,6 @@ links:
   website: "https://github.com/superbeagle"
 lastModified: "2024-04-08"
 ---
-
-*Start and drive Camunda processes using email*
 
 This inbound connector will monitor email inboxes to start and drive Camunda processes
 

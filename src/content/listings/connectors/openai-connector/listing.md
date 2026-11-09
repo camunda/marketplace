@@ -24,6 +24,7 @@ compatibleVersions:
   - "8.5"
 availability: "open-source"
 description: "Enhance processes with generative AI"
+seoDescription: "Leverage ChatGPT and OpenAI's Moderation API in your business processes."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.OpenAI.v1/latest/openai-connector.json"
     name: "OpenAI Outbound Template"
@@ -37,8 +38,6 @@ resources:
     url: "https://vimeo.com/892177466"
 lastModified: "2025-09-10"
 ---
-
-*Enhance business processes with generative AI*
 
 Leverage ChatGPT and OpenAI's Moderation API in your business processes.
 

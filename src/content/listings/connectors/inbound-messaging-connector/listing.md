@@ -20,6 +20,7 @@ compatibleVersions:
   - "8.9"
 availability: "open-source"
 description: "Arabic-ready inbound messaging for Camunda"
+seoDescription: "A GCC-focused inbound connector that brings WhatsApp, Telegram, and SMS messages into Camunda 8 workflows with Arabic normalization, message routing, and real-time process triggering."
 templates: 
   - url: "https://raw.githubusercontent.com/ganeshkumargunaseelan-web/camunda-inbound-connector/refs/heads/main/assets/connector-template.json"
     name: "Inbound Messaging Connector"
@@ -28,8 +29,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-12-17"
 ---
-
-*Real-Time Messaging Integration for GCC Workflows*
 
 A GCC-focused inbound connector that brings WhatsApp, Telegram, and SMS messages into Camunda 8 workflows with Arabic normalization, message routing, and real-time process triggering.
 

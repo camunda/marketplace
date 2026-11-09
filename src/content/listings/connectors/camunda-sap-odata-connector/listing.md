@@ -19,6 +19,7 @@ compatibleVersions:
   - "8.7"
 availability: "open-source"
 description: "Connect to SAP using OData"
+seoDescription: "Integrate SAP into business processes using OData v2 and V4. This connector complies with SAP's Clean Core strategy, ensuring it's future-proof."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda/sap-connectors/refs/heads/main/odata-connector/element-templates/sap-odata-connector.json"
     name: "OData"
@@ -29,8 +30,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-11-14"
 ---
-
-*Orchestrate SAP tasks and data with the Camunda OData V2 and V4 connector*
 
 Integrate SAP into business processes using OData v2 and V4. This connector complies with SAP's Clean Core strategy, ensuring it's future-proof.
 

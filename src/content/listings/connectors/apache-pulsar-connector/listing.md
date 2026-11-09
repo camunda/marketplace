@@ -19,6 +19,7 @@ compatibleVersions:
   - "8.8"
 availability: "open-source"
 description: "Easily integrate with Apache Pulsar"
+seoDescription: "Enables Camunda-based processes to publish real-time events to Apache Pulsar, driving seamless event-driven automation."
 templates: 
   - url: "https://raw.githubusercontent.com/charanteja469/Camunda-ApachePulsar-Outbound-Connector/refs/heads/master/element-templates/Apache%20Pulsar%20Connector.json"
     name: "Apache Pulsar Connector Outbound Template"
@@ -28,8 +29,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-08-26"
 ---
-
-*Perform message delivery to Apache Pulsar*
 
 Enables Camunda-based processes to publish real-time events to Apache Pulsar, driving seamless event-driven automation.
 

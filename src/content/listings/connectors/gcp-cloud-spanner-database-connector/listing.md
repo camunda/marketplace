@@ -16,6 +16,7 @@ compatibleVersions:
   - "8.2"
 availability: "open-source"
 description: "Connect Camunda with Cloud Spanner"
+seoDescription: "Elevate your Camunda workflows with the 'Cloud Spanner Connector' by Acheron. Seamlessly integrate Camunda with Google Cloud's NewSQL database, Cloud Spanner. Efficiently manage data by creating tables, inserting, updating, and deleting data, and retrieving records with advanced filtering options. Achieve limitless scalability and relational semantics for your applications and workflows with our Cloud Spanner Connector."
 templates: 
   - url: "https://raw.githubusercontent.com/Acheron-Camunda/cloud-spanner-connector/main/element-templates/spanner-connector.json"
     name: "io.camunda.connector.spanner.v1"
@@ -29,8 +30,6 @@ resources:
     url: "https://www.youtube.com/watch?v=RlnWS0kKwlU&t=110s"
 lastModified: "2024-04-08"
 ---
-
-*Take advantage of unlimited scalability with relational semantics by connecting you Applications and workflow to Google's NewSQL database i.e) Cloud Spanner with the help of Acheron's Cloud Spanner Connector*
 
 Elevate your Camunda workflows with the 'Cloud Spanner Connector' by Acheron. Seamlessly integrate Camunda with Google Cloud's NewSQL database, Cloud Spanner. Efficiently manage data by creating tables, inserting, updating, and deleting data, and retrieving records with advanced filtering options. Achieve limitless scalability and relational semantics for your applications and workflows with our Cloud Spanner Connector.
 

@@ -19,6 +19,7 @@ compatibleVersions:
   - "8.5"
 availability: "open-source"
 description: "Integrate Asana with Camunda processes"
+seoDescription: "Streamline business processes by bridging the gap between project management and Camunda-based processes."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.Asana.v1/latest/asana-connector.json"
     id: "io.camunda.connectors.Asana.v1"
@@ -29,8 +30,6 @@ links:
   website: "https://docs.camunda.io/docs/components/connectors/out-of-the-box-connectors/asana/"
 lastModified: "2025-09-03"
 ---
-
-*Unleash Seamless Asana-Camunda Integration*
 
 Streamline business processes by bridging the gap between project management and Camunda-based processes.
 

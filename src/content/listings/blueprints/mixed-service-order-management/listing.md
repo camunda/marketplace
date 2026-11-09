@@ -20,6 +20,7 @@ compatibleVersions:
   - "8.6"
 availability: "open-source"
 description: "Decompose and orchestrate mixed product orders"
+seoDescription: "This blueprint addresses challenges around retail mobile device orders to ensure a positive customer experience and reduce the chance of fraud."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda/camunda-platform-tutorials/main/solutions/telco-service-order-fulfillment-retail/telco-service-order-fulfillment-retail.bpmn"
     name: "Resource 1"
@@ -29,8 +30,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-06-30"
 ---
-
-*Orchestrate Hardware and Mobile Orders in Parallel*
 
 This blueprint addresses challenges around retail mobile device orders to ensure a positive customer experience and reduce the chance of fraud.
 

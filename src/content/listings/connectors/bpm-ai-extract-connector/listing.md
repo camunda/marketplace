@@ -18,14 +18,13 @@ compatibleVersions:
   - "8.4"
 availability: "open-source"
 description: "Extract critical information using AI"
+seoDescription: "Automatically extract information from unstructured input data given a JSON schema."
 links: 
   github: "https://github.com/holunda-io/bpm-ai-connectors-camunda-8"
   docs: "https://docs.camunda.io/docs/guides/host-custom-connectors/"
   support: "https://github.com/holunda-io/bpm-ai-connectors-camunda-8/discussions/categories/q-a"
 lastModified: "2024-04-08"
 ---
-
-*Leverage AI to extract information from unstructured data*
 
 Automatically extract information from unstructured input data given a JSON schema.
 

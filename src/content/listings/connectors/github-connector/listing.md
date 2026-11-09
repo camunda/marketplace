@@ -23,6 +23,7 @@ compatibleVersions:
   - "8.5"
 availability: "open-source"
 description: "Integrate GitHub tasks in Camunda"
+seoDescription: "Manage GitHub repositories, issues, and more directly through Camunda to automate your entire software development process."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.webhook.GithubWebhookConnectorMessageStart.v1/latest/github-webhook-connector-message-start.json"
     id: "io.camunda.connectors.webhook.GithubWebhookConnectorMessageStart.v1"
@@ -45,8 +46,6 @@ resources:
     url: "https://vimeo.com/840397436?share=copy"
 lastModified: "2025-09-05"
 ---
-
-*Orchestrate Your Software Development Lifecycle with Camunda and GitHub*
 
 Manage GitHub repositories, issues, and more directly through Camunda to automate your entire software development process.
 

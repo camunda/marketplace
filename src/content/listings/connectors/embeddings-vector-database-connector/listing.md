@@ -20,6 +20,7 @@ compatibleVersions:
   - "8.8"
 availability: "open-source"
 description: "Embed and download documents with vector databases"
+seoDescription: "Enable Camunda processes and AI agents to write new embeddings and retrieve the most relevant chunks at runtime. Typical use cases include long-term conversational memory, RAG, and semantic search."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.EmbeddingsVectorDB.v1/latest/embeddings-vector-database-outbound-connector.json"
     name: "Embeddings Vector Database Connector (Alpha) Outbound Template"
@@ -28,8 +29,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-09-09"
 ---
-
-*Semantic memory and intelligence for your processes*
 
 Enable Camunda processes and AI agents to write new embeddings and retrieve the most relevant chunks at runtime. Typical use cases include long-term conversational memory, RAG, and semantic search.
 

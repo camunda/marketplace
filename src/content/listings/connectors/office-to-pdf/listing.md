@@ -17,6 +17,7 @@ compatibleVersions:
   - "8.4"
 availability: "open-source"
 description: "Automatically create PDFs from documents"
+seoDescription: "Create a PDF from any Microsoft Office or Open Office document"
 templates: 
   - url: "https://raw.githubusercontent.com/camunda-community-hub/camunda-8-connector-officetopdf/refs/heads/main/element-templates/office-to-PDF.json"
     name: "Office to PDF Outbound Template"
@@ -26,8 +27,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-02-13"
 ---
-
-*Streamline Document-Based Business Processes*
 
 Create a PDF from any Microsoft Office or Open Office document
 

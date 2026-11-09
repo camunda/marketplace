@@ -19,12 +19,11 @@ compatibleVersions:
   - "8.3"
 availability: "open-source"
 description: "Publish to Google Cloud Pub/Sub using Camunda"
+seoDescription: "Send messages to Google Cloud Pub/Sub topics from Camunda-powered business processes."
 links: 
   website: "https://www.cognizant.com/"
 lastModified: "2024-04-05"
 ---
-
-*Publish Message to Google Cloud Pub/Sub*
 
 Send messages to Google Cloud Pub/Sub topics from Camunda-powered business processes.
 

@@ -16,14 +16,13 @@ compatibleVersions:
   - "8.9"
 availability: "listing-only"
 description: "MCP tool for process optimization"
+seoDescription: "mpmX AI gives business users the power to analyze and optimize processes through a chat-style interface, significantly reducing the technical threshold required to carry out significant and meaningful process optimization."
 video: "https://www.youtube.com/watch?v=UHlNLNJ-H0E"
 links: 
   demo: "https://mpmx.ai/"
   support: "https://forum.camunda.io/"
 lastModified: "2026-03-20"
 ---
-
-*mpmX AI-Powered Camunda Process Orchestration*
 
 mpmX AI gives business users the power to analyze and optimize processes through a chat-style interface, significantly reducing the technical threshold required to carry out significant and meaningful process optimization.
 

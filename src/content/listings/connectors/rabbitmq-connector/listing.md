@@ -25,6 +25,7 @@ compatibleVersions:
   - "8.5"
 availability: "open-source"
 description: "Integrate RabbitMQ messaging with Camunda"
+seoDescription: "Integrate reliable RabbitMQ messaging within orchestrated business processes. Ideal for real-time processing, task synchronization, and seamless multi-system communications."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.RabbitMQ.v1/latest/rabbitmq-outbound-connector.json"
     name: "Rabbit MQ Outbound"
@@ -39,8 +40,6 @@ links:
   website: "https://camunda.com"
 lastModified: "2025-09-10"
 ---
-
-*Synchronized Messaging in Orchestrated Workflows with Camunda and RabbitMQ*
 
 Integrate reliable RabbitMQ messaging within orchestrated business processes. Ideal for real-time processing, task synchronization, and seamless multi-system communications.
 

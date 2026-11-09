@@ -20,14 +20,13 @@ compatibleVersions:
   - "8.9"
 availability: "open-source"
 description: "Generate reports from Jasper templates"
+seoDescription: "Generate formatted reports from Jasper report templates within Camunda processes. The connector retrieves report templates from Camunda document storage, a URL, or a connected drive, and renders output with scoped process variable data."
 smTemplate: "https://github.com/camunda-community-hub/camunda-8-connector-jasper"
 links: 
   docs: "https://github.com/camunda-community-hub/camunda-8-connector-jasper/raw/refs/heads/main/README.md"
   support: "https://forum.camunda.io/"
 lastModified: "2026-06-05"
 ---
-
-*Render Jasper reports directly from business processes*
 
 Generate formatted reports from Jasper report templates within Camunda processes. The connector retrieves report templates from Camunda document storage, a URL, or a connected drive, and renders output with scoped process variable data.
 

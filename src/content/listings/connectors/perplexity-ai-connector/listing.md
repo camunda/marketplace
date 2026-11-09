@@ -22,6 +22,7 @@ compatibleVersions:
   - "8.8"
 availability: "open-source"
 description: "Ask AI questions in Camunda-based processes"
+seoDescription: "Query Perplexity AI from Camunda to enrich business processes with real-time, intelligent, natural language responses."
 templates: 
   - url: "https://raw.githubusercontent.com/surbhi1091996/perplexityAI/refs/heads/main/perplexity-ai-connector.json"
     name: "PerplexityAI Connector Outbound Template"
@@ -31,8 +32,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-10-17"
 ---
-
-*Integrate Perplexity AI responses into Camunda-based business processes*
 
 Query Perplexity AI from Camunda to enrich business processes with real-time, intelligent, natural language responses.
 

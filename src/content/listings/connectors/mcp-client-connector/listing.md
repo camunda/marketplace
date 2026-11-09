@@ -23,6 +23,7 @@ compatibleVersions:
   - "8.10"
 availability: "open-source"
 description: "Bring MCP tools into processes"
+seoDescription: "Provides a reusable integration building block to run MCP clients in a connector runtime and let the AI agent connector discover and call MCP tools from local STDIO servers or remote Streamable HTTP and SSE endpoints."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda/connectors/refs/heads/main/connectors/agentic-ai/connector-mcp/element-templates/agenticai-mcp-client-outbound-connector.json"
     name: "MCP Client Element Template"
@@ -33,8 +34,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2026-10-19"
 ---
-
-*Orchestrate MCP tool use with AI*
 
 Provides a reusable integration building block to run MCP clients in a connector runtime and let the AI agent connector discover and call MCP tools from local STDIO servers or remote Streamable HTTP and SSE endpoints.
 

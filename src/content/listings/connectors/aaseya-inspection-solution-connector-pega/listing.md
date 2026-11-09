@@ -16,14 +16,13 @@ compatibleVersions:
   - "8.4"
 availability: "open-source"
 description: "Easier inspections with Pega and Camunda"
+seoDescription: "The Aaseya Inspection Solution Connector enables seamless process execution and data exchange between Pegasystems and Camunda, ensuring end-to-end process automation and enhanced user experiences."
 links: 
   github: "https://github.com/SayaliJadhav44/Aaseya-Pega-Connector"
   docs: "https://docs.camunda.io/docs/guides/host-custom-connectors/"
   support: "https://forum.camunda.io/"
 lastModified: "2024-08-14"
 ---
-
-*Aaseya Inspection Solution Connector (Pega)*
 
 The Aaseya Inspection Solution Connector enables seamless process execution and data exchange between Pegasystems and Camunda, ensuring end-to-end process automation and enhanced user experiences.
 

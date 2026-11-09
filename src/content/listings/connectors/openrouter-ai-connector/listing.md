@@ -21,14 +21,13 @@ compatibleVersions:
   - "8.9"
 availability: "open-source"
 description: "Execute AI-driven task completion"
+seoDescription: "Call popular AI models and switch between models to test performance and response quality."
 smTemplate: "https://github.com/charanteja469/Camunda-FreeAIAgents"
 links: 
   docs: "https://github.com/charanteja469/Camunda-FreeAIAgents/blob/main/README.md"
   support: "https://forum.camunda.io/"
 lastModified: "2025-10-29"
 ---
-
-*OpenRouter AI Connector*
 
 Call popular AI models and switch between models to test performance and response quality.
 

@@ -19,6 +19,7 @@ compatibleVersions:
   - "8.7"
 availability: "open-source"
 description: "Manage HubSpot contacts, companies and deals"
+seoDescription: "Easily connect Camunda to HubSpot to manage contacts, companies, deals, and forms. Automate CRM tasks such as creating and updating records, searching data, and enrolling contacts in workflowsall without writing code."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.HubSpot.v1/latest/hubspot-outbound-connector.json"
     name: "HubSpot Connector Outbound Template"
@@ -28,8 +29,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-09-09"
 ---
-
-*Automate HubSpot CRM workflows*
 
 Easily connect Camunda to HubSpot to manage contacts, companies, deals, and forms. Automate CRM tasks such as creating and updating records, searching data, and enrolling contacts in workflowsall without writing code.
 

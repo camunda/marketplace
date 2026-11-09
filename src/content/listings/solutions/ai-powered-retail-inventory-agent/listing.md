@@ -23,12 +23,11 @@ compatibleVersions:
   - "8.9"
 availability: "listing-only"
 description: "AI-orchestrated retail inventory management"
+seoDescription: "Automate retail inventory with AI-driven demand forecasting, stock optimization, and perishable goods tracking, orchestrated by Camunda processes."
 links: 
   support: "https://forum.camunda.io/"
 lastModified: "2026-02-23"
 ---
-
-*Intelligent Inventory Orchestration With AI-Driven Forecasting and Automation*
 
 Automate retail inventory with AI-driven demand forecasting, stock optimization, and perishable goods tracking, orchestrated by Camunda processes.
 

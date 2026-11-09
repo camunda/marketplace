@@ -19,6 +19,7 @@ compatibleVersions:
   - "8.6"
 availability: "open-source"
 description: "Orchestrate car rental bookings"
+seoDescription: "Orchestrate and automate the car rental booking process, including issues such as a reserved car not being available or a rented car not being returned on time."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda/camunda-platform-tutorials/main/solutions/car-rental-booking-process/car-rental-booking-process.bpmn"
     name: "Resource 1"
@@ -34,8 +35,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2024-08-21"
 ---
-
-*Orchestrate and Monitor Car Rental Bookings*
 
 Orchestrate and automate the car rental booking process, including issues such as a reserved car not being available or a rented car not being returned on time.
 

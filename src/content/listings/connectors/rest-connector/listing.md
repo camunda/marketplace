@@ -19,6 +19,7 @@ compatibleVersions:
   - "8.5"
 availability: "open-source"
 description: "Universal REST API integration solution"
+seoDescription: "Connect, interact, and synchronize processes with any RESTful API across multiple platforms."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.HttpJson.v2/latest/http-json-connector.json"
     name: "Rest outbound"
@@ -32,8 +33,6 @@ resources:
     url: "https://vimeo.com/805893167?share=copy"
 lastModified: "2025-09-09"
 ---
-
-*Universal REST Connector for Camunda*
 
 Connect, interact, and synchronize processes with any RESTful API across multiple platforms.
 

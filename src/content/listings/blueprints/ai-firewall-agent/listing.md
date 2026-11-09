@@ -15,6 +15,7 @@ compatibleVersions:
   - "8.9"
 availability: "open-source"
 description: "AI prompt safeguarding for processes"
+seoDescription: "The AI Firewall Agent evaluates user prompts before they reach any AI task, classifying threats such as injection attacks, jailbreaks, and policy violations, and sanitizing unsafe content so the workflow can continue securely. A confidence-based retry mechanism ensures only reliable decisions reach your process."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda/BizSol_bb-AI-Firewall-Agent/refs/heads/main/camunda-artifacts/safeguard-agent.bpmn"
     name: "Resource 1"
@@ -22,12 +23,10 @@ templates:
     name: "Resource 2"
 smTemplate: "https://github.com/camunda/BizSol_bb-ai-firewall-agent"
 links: 
-  docs: "https://github.com/camunda/BizSol_bb-ai-firewall-agent"
+  docs: "https://github.com/camunda/BizSol_bb-ai-firewall-agent#readme"
   support: "https://forum.camunda.io/"
 lastModified: "2026-05-06"
 ---
-
-*Safeguard AI-powered processes from unsafe prompts*
 
 The AI Firewall Agent evaluates user prompts before they reach any AI task, classifying threats such as injection attacks, jailbreaks, and policy violations, and sanitizing unsafe content so the workflow can continue securely. A confidence-based retry mechanism ensures only reliable decisions reach your process.
 

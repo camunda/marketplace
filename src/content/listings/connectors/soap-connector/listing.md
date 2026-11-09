@@ -20,6 +20,7 @@ compatibleVersions:
   - "8.8"
 availability: "open-source"
 description: "SOAP web service integration"
+seoDescription: "Interact with SOAP-based web services directly within BPMN-based processes, enabling integration with legacy systems and enterprise services that rely on the SOAP protocol."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda:soap/latest/soap-outbound-connector.json"
     name: "SOAP Connector Outbound Template"
@@ -28,8 +29,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-09-03"
 ---
-
-*Integrate legacy systems with ease*
 
 Interact with SOAP-based web services directly within BPMN-based processes, enabling integration with legacy systems and enterprise services that rely on the SOAP protocol.
 

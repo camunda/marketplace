@@ -25,6 +25,7 @@ compatibleVersions:
   - "8.8"
 availability: "open-source"
 description: "Automate processes with Liferay data"
+seoDescription: "Automate processes that leverage entities and data from Liferay."
 templates: 
   - url: "https://raw.githubusercontent.com/liferay/liferay-portal/refs/heads/master/modules/integrations/camunda/element-templates/liferay-connector.json"
     name: "Liferay Connector Outbound Template"
@@ -43,8 +44,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-09-05"
 ---
-
-*Enable seamless communication between Liferay and Camunda*
 
 Automate processes that leverage entities and data from Liferay.
 

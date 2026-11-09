@@ -20,6 +20,7 @@ compatibleVersions:
   - "8.5"
 availability: "open-source"
 description: "Orchestrate AI in business processes"
+seoDescription: "Integrate advanced Azure OpenAI capabilities directly into Camunda processes."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.AzureOpenAI.outbound.v1/latest/azure-open-ai-connector.json"
     name: "Azure OpenAI Connector Outbound Template"
@@ -28,8 +29,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-09-08"
 ---
-
-*Orchestrate Azure OpenAI in complex business processes*
 
 Integrate advanced Azure OpenAI capabilities directly into Camunda processes.
 

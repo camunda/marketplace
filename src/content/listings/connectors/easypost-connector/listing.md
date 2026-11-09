@@ -18,6 +18,7 @@ compatibleVersions:
   - "8.4"
 availability: "open-source"
 description: "Automate shipping operations with Camunda"
+seoDescription: "Bring EasyPost shipping and logistics services into Camunda processes. Ideal for automated shipping workflows, address verification, and real-time tracking."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.EasyPost.v1/latest/easy-post-connector.json"
     name: "Easy Post Outbound"
@@ -26,8 +27,6 @@ links:
   website: "https://camunda.com"
 lastModified: "2025-09-08"
 ---
-
-*Orchestrate Shipping and Logistics with Camunda and EasyPost*
 
 Bring EasyPost shipping and logistics services into Camunda processes. Ideal for automated shipping workflows, address verification, and real-time tracking.
 

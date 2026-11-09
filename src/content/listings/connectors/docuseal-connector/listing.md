@@ -25,6 +25,7 @@ compatibleVersions:
   - "8.10"
 availability: "open-source"
 description: "Send and track DocuSeal e-signature requests"
+seoDescription: "Send documents for e-signature and manage DocuSeal templates and submissions directly from your Camunda processes. React instantly to signing events with the built-in inbound Form Webhook connector, no custom code required."
 templates: 
   - url: "https://raw.githubusercontent.com/marcqw/camunda-connector-docuseal/refs/heads/main/src/docuseal-connector.json"
     name: "Docuseal Connector Outbound Template"
@@ -32,12 +33,10 @@ templates:
     name: "Docuseal Connector Inbound Template"
 smTemplate: "https://github.com/marcqw/camunda-connector-docuseal"
 links: 
-  docs: "https://github.com/marcqw/camunda-connector-docuseal"
+  docs: "https://github.com/marcqw/camunda-connector-docuseal#readme"
   support: "https://forum.camunda.io/"
 lastModified: "2026-07-02"
 ---
-
-*Send, sign, and track documents without leaving Camunda*
 
 Send documents for e-signature and manage DocuSeal templates and submissions directly from your Camunda processes. React instantly to signing events with the built-in inbound Form Webhook connector, no custom code required.
 

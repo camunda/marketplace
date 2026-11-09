@@ -18,12 +18,11 @@ compatibleVersions:
   - "8.3"
 availability: "open-source"
 description: "Send messages to Azure from Camunda"
+seoDescription: "Publish messages to an Azure Service Bus queue based on a connection string."
 links: 
   website: "https://www.cognizant.com/"
 lastModified: "2024-04-05"
 ---
-
-*Effective cloud messaging with Azure Service Bus and Camunda*
 
 Publish messages to an Azure Service Bus queue based on a connection string.
 

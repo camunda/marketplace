@@ -15,6 +15,7 @@ compatibleVersions:
   - "8.8"
 availability: "open-source"
 description: "Use agentic orchestration to deliver messages"
+seoDescription: "Use this blueprint to get started with Camunda's agentic AI capabilities with a common agentic orchestration pattern."
 templates: 
   - url: "https://raw.githubusercontent.com/NPDeehan/Agentic-Orchestration-Tutorial/refs/heads/main/Agentic%20Process.bpmn"
     name: "BPMN"
@@ -30,8 +31,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-09-04"
 ---
-
-*AI Message Delivery Service*
 
 Use this blueprint to get started with Camunda's agentic AI capabilities with a common agentic orchestration pattern.
 

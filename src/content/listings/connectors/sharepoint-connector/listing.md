@@ -19,6 +19,7 @@ compatibleVersions:
   - "8.5"
 availability: "open-source"
 description: "Manage Sharepoint documents from Camunda"
+seoDescription: "Manage Sharepoint documents from Camunda"
 templates: 
   - url: "https://raw.githubusercontent.com/BP3/sharepoint-connector/main/element-templates/sharepoint-onedrive-connector-template.json"
     name: "Sharepoint Connector outbound"
@@ -27,6 +28,7 @@ links:
   support: "https://support.bp-3.com/"
 lastModified: "2024-04-08"
 ---
+
 
 ## Features
 

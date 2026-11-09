@@ -19,6 +19,7 @@ compatibleVersions:
   - "8.8"
 availability: "open-source"
 description: "Integrate Camunda with content management systems"
+seoDescription: "Manage folders and documents in a CMIS-compliant content management system from Camunda-based business processes."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda-community-hub/connector-8-CMIS/refs/heads/main/element-templates/CMIS-connector.json"
     name: "CMIS connector Outbound Template"
@@ -28,8 +29,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-10-21"
 ---
-
-*Connect Camunda processes to CMIS-compliant content management systems*
 
 Manage folders and documents in a CMIS-compliant content management system from Camunda-based business processes.
 

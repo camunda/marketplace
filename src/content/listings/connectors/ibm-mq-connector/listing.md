@@ -19,6 +19,7 @@ compatibleVersions:
   - "8.9"
 availability: "open-source"
 description: "Integrate Camunda processes with IBM queues"
+seoDescription: "Allow Camunda-based business processes to send messages to and receive messages from IBM MQ queues as part of a service task, enabling asynchronous communication and decoupling of processes."
 templates: 
   - url: "https://raw.githubusercontent.com/charanteja469/Camunda-IBM-MQ-Connector/refs/heads/master/element-templates/IBM%20MQ%20Outbound%20Connector.json"
     name: "IBM MQ Connector Outbound Template"
@@ -28,8 +29,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2026-01-06"
 ---
-
-*Streamline queues with Camunda and IBM MQ*
 
 Allow Camunda-based business processes to send messages to and receive messages from IBM MQ queues as part of a service task, enabling asynchronous communication and decoupling of processes.
 

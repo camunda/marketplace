@@ -20,6 +20,7 @@ compatibleVersions:
   - "8.6"
 availability: "open-source"
 description: "Web search for LLMs"
+seoDescription: "Extract web content in end-to-end business processes using Tavily's fast, structured, and API-driven search engine."
 templates: 
   - url: "https://github.com/mathieu-stennier/tavily-camunda-connector/blob/main/tavily_search_connector_template.json"
     name: "Tavily Search Outbound Template"
@@ -29,8 +30,6 @@ links:
   support: "https://forumhttps//github.com/mathieu-stennier/tavily-camunda-connector/.camunda.io/"
 lastModified: "2025-06-09"
 ---
-
-*Empower AI applications with real-time, accurate search results tailored for LLMs and RAG*
 
 Extract web content in end-to-end business processes using Tavily's fast, structured, and API-driven search engine.
 

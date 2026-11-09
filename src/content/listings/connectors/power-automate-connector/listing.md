@@ -19,6 +19,7 @@ compatibleVersions:
   - "8.5"
 availability: "open-source"
 description: "Orchestrate Power Automate with Camunda"
+seoDescription: "Integrate Camunda's process orchestration expertise with the flexibility of Microsoft Power Automate on the Power Platform."
 templates: 
   - url: "https://bitbucket.org/almatoag/almato_public/raw/ba3cf9828252742f0dff59b425117588bc1fa627/run_flow_add_queue/power-automate-outbound-connector.json,https://bitbucket.org/almatoag/almato_public/raw/ba3cf9828252742f0dff59b425117588bc1fa627/get_token/power-automate-outbound-connector-authorization.json"
     name: "Power Automate Connector Outbound Template"
@@ -27,8 +28,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2024-04-05"
 ---
-
-*Integrating Process Automation with the Power Automate Connector*
 
 Integrate Camunda's process orchestration expertise with the flexibility of Microsoft Power Automate on the Power Platform.
 

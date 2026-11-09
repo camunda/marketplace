@@ -17,6 +17,7 @@ compatibleVersions:
   - "8.8"
 availability: "open-source"
 description: "Chat with AI via MCP tools"
+seoDescription: "Deploy a Camunda blueprint for AI chat that uses MCP tools for memory, time, and file tasks, with human approval for safe, auditable execution in BPMN."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda/camunda-platform-tutorials/refs/heads/main/solutions/ai-agent-chat-with-mcp/README.md"
     name: "README.md"
@@ -35,8 +36,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2026-04-13"
 ---
-
-*Orchestrate AI chat with MCP tools*
 
 Deploy a Camunda blueprint for AI chat that uses MCP tools for memory, time, and file tasks, with human approval for safe, auditable execution in BPMN.
 

@@ -20,13 +20,12 @@ compatibleVersions:
   - "8.7"
 availability: "listing-only"
 description: "Fiber Sales and Deployment Blueprint"
+seoDescription: "Orchestrate the entire fiber service deployment journey, from initial partner selection to final service activation. This end-to-end automation minimizes manual intervention, integrating real-time data and system updates to ensure efficient, uninterrupted service delivery.\n\nBy leveraging automation, this blueprint helps you to reduce deployment times, improve accuracy in partner selection, and provide customers with faster, more reliable fiber optic service."
 links: 
   demo: "https://ntconsultcorp.com/camunda-blueprint-telco-fiber-sales/#form"
   support: "https://forum.camunda.io/"
 lastModified: "2025-01-31"
 ---
-
-*Transforming Telecom Service Delivery with Camunda*
 
 Orchestrate the entire fiber service deployment journey, from initial partner selection to final service activation. This end-to-end automation minimizes manual intervention, integrating real-time data and system updates to ensure efficient, uninterrupted service delivery.
 

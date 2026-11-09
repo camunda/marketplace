@@ -19,6 +19,7 @@ compatibleVersions:
   - "8.7"
 availability: "open-source"
 description: "Manage fraud cases with AI"
+seoDescription: "This blueprint shows how you can use the BPMN ad-hoc sub-process to blend deterministic and non-deterministic execution, leveraging AI agents for case management use cases."
 templates: 
   - url: "https://raw.githubusercontent.com/NPDeehan/AI-Fraud-Detection-Example/refs/heads/main/Fraud%20Detection%20Process.bpmn"
     name: "Fraud Detection Process"
@@ -33,8 +34,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-06-30"
 ---
-
-*Detect and manage insurance fraud with agentic AI*
 
 This blueprint shows how you can use the BPMN ad-hoc sub-process to blend deterministic and non-deterministic execution, leveraging AI agents for case management use cases.
 

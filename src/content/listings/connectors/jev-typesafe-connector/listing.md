@@ -19,6 +19,7 @@ compatibleVersions:
   - "8.10"
 availability: "open-source"
 description: "Turn text and structured data into decisions your processes can act on."
+seoDescription: "Use TypeSafe's Jev model to classify, score, or judge any piece of text or structured data, and get back reliable, structured answers your process can act on directly."
 templates: 
   - url: "https://raw.githubusercontent.com/maff/camunda-connector-typesafe-jev/refs/heads/main/element-templates/typesafe-jev-connector.json"
     name: "Jev (TypeSafe) Connector Outbound Template"
@@ -28,6 +29,7 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2026-09-23"
 ---
+
 
 Use TypeSafe's Jev model to classify, score, or judge any piece of text or structured data, and get back reliable, structured answers your process can act on directly.
 

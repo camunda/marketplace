@@ -24,12 +24,11 @@ compatibleVersions:
   - "8.9"
 availability: "listing-only"
 description: "Accelerate your migration to Camunda"
+seoDescription: "Transition legacy and proprietary process models into Camunda-compliant BPMN 2.0, reducing migration effort and delivery risk."
 links: 
   support: "https://forum.camunda.io/"
 lastModified: "2026-04-07"
 ---
-
-*Migrate to Camunda with speed and confidence*
 
 Transition legacy and proprietary process models into Camunda-compliant BPMN 2.0, reducing migration effort and delivery risk.
 

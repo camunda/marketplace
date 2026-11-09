@@ -18,6 +18,7 @@ compatibleVersions:
   - "8.7"
 availability: "open-source"
 description: "Accurately extract content from documents"
+seoDescription: "Use Textract to automatically extract text, handwriting, layout elements, and data from scanned documents as part of Camunda-powered business processes."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.AWSTEXTRACT.v1/latest/aws-textract-outbound-connector.json"
     name: "Amazon Textract Connector Outbound Template"
@@ -26,8 +27,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-09-08"
 ---
-
-*Extract text, data, and more from any document*
 
 Use Textract to automatically extract text, handwriting, layout elements, and data from scanned documents as part of Camunda-powered business processes.
 

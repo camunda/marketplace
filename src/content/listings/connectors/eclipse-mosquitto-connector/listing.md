@@ -19,6 +19,7 @@ compatibleVersions:
   - "8.8"
 availability: "open-source"
 description: "Streamline MQTT messaging in Camunda processes"
+seoDescription: "Eclipse Mosquitto is a small, open-source MQTT broker designed for fast and efficient messaging between devices and applications. It is ideal for IoT scenarios requiring real-time, topic-based communication. Easy to deploy and use, Mosquitto supports persistence, security, and cross-platform operation"
 templates: 
   - url: "https://raw.githubusercontent.com/charanteja469/Camunda-MQTT-Custom-Outbound-Connector/refs/heads/master/element-templates/Eclipse%20Mosquitto%20Outbound%20Connector.json"
     name: "Eclipse Mosquitto Connector"
@@ -29,8 +30,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-08-04"
 ---
-
-*Streamline MQTT messaging in Camunda processes*
 
 Eclipse Mosquitto is a small, open-source MQTT broker designed for fast and efficient messaging between devices and applications. It is ideal for IoT scenarios requiring real-time, topic-based communication. Easy to deploy and use, Mosquitto supports persistence, security, and cross-platform operation
 

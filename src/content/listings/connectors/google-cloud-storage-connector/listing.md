@@ -18,6 +18,7 @@ compatibleVersions:
   - "8.8"
 availability: "open-source"
 description: "Document storage with GCS"
+seoDescription: "Connect Camunda processes to Google Cloud Storage to upload and download files easily. Ideal for cloud-based document management and automation scenarios."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.google.gcp.v1/latest/google-cloud-storage-outbound-connector.json"
     name: "Google Cloud Storage Outbound Template"
@@ -27,8 +28,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-09-08"
 ---
-
-*Manage files on Google Cloud Storage*
 
 Connect Camunda processes to Google Cloud Storage to upload and download files easily. Ideal for cloud-based document management and automation scenarios.
 

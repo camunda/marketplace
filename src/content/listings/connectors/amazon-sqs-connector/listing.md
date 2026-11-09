@@ -25,6 +25,7 @@ compatibleVersions:
   - "8.5"
 availability: "open-source"
 description: "Scalable message queueing with SQS and Camunda"
+seoDescription: "Integrate Camunda with Amazon SQS for scalable, efficient message queuing. Perfect for triggering processes and enhancing asynchronous tasks within Camunda."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.AWSSQS.startmessage.v1/latest/aws-sqs-start-message.json"
     name: "Amazon SQS Start"
@@ -44,8 +45,6 @@ resources:
     url: "https://vimeo.com/823992376?share=copy"
 lastModified: "2025-09-05"
 ---
-
-*Camunda and Amazon SQS Orchestrate Queues and Simplify Business Processes*
 
 Integrate Camunda with Amazon SQS for scalable, efficient message queuing. Perfect for triggering processes and enhancing asynchronous tasks within Camunda.
 

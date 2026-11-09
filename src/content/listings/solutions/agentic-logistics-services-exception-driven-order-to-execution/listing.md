@@ -17,13 +17,12 @@ compatibleVersions:
   - "8.9"
 availability: "listing-only"
 description: "Don't let exceptions cap growth"
+seoDescription: "Turn messy orders and documents into clean data, then immediately orchestrate only the exceptions that matter. This creates the foundation for a control tower and AI-governed decisions later."
 video: "https://youtu.be/cIG9ygr092o"
 links: 
   support: "https://forum.camunda.io/"
 lastModified: "2026-04-30"
 ---
-
-*From Chaos to Capacity: How BP3 Turns Logistics Exceptions into Growth with ABBYY and Camunda*
 
 Turn messy orders and documents into clean data, then immediately orchestrate only the exceptions that matter. This creates the foundation for a control tower and AI-governed decisions later.
 

@@ -19,6 +19,7 @@ compatibleVersions:
   - "8.9"
 availability: "open-source"
 description: "Run quantum circuits in BPMN"
+seoDescription: "Camunda outbound connector for Amazon Braket. Submit and poll quantum computing jobs from BPMN workflows using OpenQASM circuits. Supports real quantum hardware, simulators, blocking and polling execution, and higher-level quantum algorithms via a Python sidecar."
 templates: 
   - url: "https://github.com/envite-consulting/aws-braket-connector-camunda-8/blob/main/element-templates/braket-connector.json"
     name: "AWS Braket Connector Outbound Template"
@@ -28,8 +29,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2026-06-10"
 ---
-
-*Integrate quantum computing into your BPMN processes*
 
 Camunda outbound connector for Amazon Braket. Submit and poll quantum computing jobs from BPMN workflows using OpenQASM circuits. Supports real quantum hardware, simulators, blocking and polling execution, and higher-level quantum algorithms via a Python sidecar.
 

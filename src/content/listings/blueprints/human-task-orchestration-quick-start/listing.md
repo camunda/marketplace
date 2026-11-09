@@ -15,6 +15,7 @@ compatibleVersions:
   - "8.5"
 availability: "open-source"
 description: "Integrate people in your processes"
+seoDescription: "Incorporate human work within automated business processes using BPMN and Camunda."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda/camunda-8-tutorials/refs/heads/main/quick-start/human-task-orchestration/Quick%20Start_%20Human%20Tasks.bpmn"
     name: "Human Task Orchestration Quick Start Blueprint"
@@ -34,8 +35,6 @@ resources:
     url: "https://vimeo.com/762699004/e9a54ba396"
 lastModified: "2026-06-15"
 ---
-
-*Human Task Orchestration Quick Start*
 
 Incorporate human work within automated business processes using BPMN and Camunda.
 

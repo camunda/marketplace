@@ -17,6 +17,7 @@ compatibleVersions:
   - "8.3"
   - "8.4"
 description: "Queue and monitor SS&C Blue Prism bots"
+seoDescription: "Unlock the full potential of RPA within your Camunda processes with the SS&C Blue Prism Connector. Seamlessly add work items to Blue Prism queues and monitor their status in real-time, enriching your business process orchestration capabilities."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.BluePrism.v1/latest/blue-prism-connector.json"
     name: "BluePrism Outbound"
@@ -25,8 +26,6 @@ links:
   website: "https://camunda.com"
 lastModified: "2025-09-08"
 ---
-
-*Extend Your Camunda Processes with Blue Prism RPA*
 
 Unlock the full potential of RPA within your Camunda processes with the SS&C Blue Prism Connector. Seamlessly add work items to Blue Prism queues and monitor their status in real-time, enriching your business process orchestration capabilities.
 

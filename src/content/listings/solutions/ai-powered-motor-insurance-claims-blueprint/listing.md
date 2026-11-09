@@ -15,14 +15,13 @@ compatibleVersions:
   - "8.9"
 availability: "listing-only"
 description: "Automate motor insurance claim handling"
+seoDescription: "Orchestrate motor insurance claims in Camunda with AI-assisted validation, document extraction, human approvals, and event-driven milestones from intake to payout."
 video: "https://youtu.be/mvWEIa4OtrA?si=eKpWRZmOC7y5zzhE"
 links: 
   demo: "https://www.acheron-tech.com/contact"
   support: "https://forum.camunda.io/"
 lastModified: "2026-03-03"
 ---
-
-*Accelerate motor claim decisions with AI*
 
 Orchestrate motor insurance claims in Camunda with AI-assisted validation, document extraction, human approvals, and event-driven milestones from intake to payout.
 

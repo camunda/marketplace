@@ -20,6 +20,7 @@ compatibleVersions:
   - "8.5"
 availability: "open-source"
 description: "Streamline your HR Workflows with MOCO and Camunda"
+seoDescription: "Automate HR processes and synchronize data effortlessly with the MORO ERP Connector for Camunda. Boost productivity and streamline workflows with seamless integration into your existing systems."
 templates: 
   - url: "https://raw.githubusercontent.com/consid-germany/camunda-moco-connector/refs/heads/main/element-templates/moco-rest-connector.json"
     name: "Moco Connector Outbound Template"
@@ -29,8 +30,6 @@ links:
   support: "https://github.com/consid-germany/camunda-moco-connector/issues"
 lastModified: "2024-10-07"
 ---
-
-*Streamline your HR processes with MOCO and Camunda*
 
 Automate HR processes and synchronize data effortlessly with the MORO ERP Connector for Camunda. Boost productivity and streamline workflows with seamless integration into your existing systems.
 

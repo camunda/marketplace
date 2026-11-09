@@ -20,6 +20,7 @@ compatibleVersions:
   - "8.9"
 availability: "open-source"
 description: "Simplify managing employee absence requests"
+seoDescription: "Create an absence request management system using BPMN and Camunda."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda/camunda-platform-tutorials/main/solutions/absence-request/Absence%20Request.bpmn"
     name: "Absence Request.bpmn"
@@ -43,8 +44,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2026-04-10"
 ---
-
-*Absence Request*
 
 Create an absence request management system using BPMN and Camunda.
 

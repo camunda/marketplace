@@ -29,13 +29,12 @@ compatibleVersions:
   - "8.8"
 availability: "listing-only"
 description: "Improve customer service NPS with Camunda and AI"
+seoDescription: "Leverage AI agents to automate the resolution of email inbound requests so you can grow support capacity and improve customer NPS and employee experience by reducing issue response and resolution times."
 video: "https://youtu.be/C88fBYop41w"
 links: 
   support: "https://forum.camunda.io/"
 lastModified: "2025-06-30"
 ---
-
-*AI Customer Service Agent*
 
 Leverage AI agents to automate the resolution of email inbound requests so you can grow support capacity and improve customer NPS and employee experience by reducing issue response and resolution times.
 

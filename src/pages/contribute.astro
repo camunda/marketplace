@@ -95,7 +95,8 @@ const cards = [
             </li>
             <li>
               Give the listing a name, a type (connector, blueprint, or solution), a short description of one
-              sentence, and the detail page content in Markdown.
+              sentence, and the detail page content in Markdown. The detail page supports paragraphs, lists, bold,
+              and italic only; images, links, and headings are removed automatically.
             </li>
             <li>
               Add an icon URL and gallery image URLs. Host your images on a platform that gives you a downloadable
@@ -162,8 +163,12 @@ const cards = [
     padding-left: 24px;
     list-style: decimal;
   }
+  /* Match the DS body-md text (14px/20px); otherwise the preflight-reset list
+     items fall back to the 16px page default and look bigger than the body. */
   .guide :global(li) {
     margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 20px;
   }
   .guide :global(.legal) {
     margin-top: 8px;
