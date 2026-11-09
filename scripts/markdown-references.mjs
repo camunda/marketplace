@@ -5,7 +5,7 @@ function normalizeLabel(label) {
 export function stripMarkdownReferences(text) {
   const definitions = new Set();
   const definitionPattern =
-    /^[ \t]{0,3}\[([^\]\n]+)\]:[ \t]*(?:<[^>\n]*>|[^ \t\n]+)(?:[ \t]+(?:"[^"\n]*"|'[^'\n]*'|\([^)\n]*\)))?(?:\r?\n[ \t]+(?:"[^"\n]*"|'[^'\n]*'|\([^)\n]*\)))?[ \t]*\r?$/gm;
+    /^[ \t]{0,3}\[([^\]\n]+)\]:[ \t]*(?:\r?\n[ \t]+)?(?:<[^>\n]*>|[^ \t\n]+)(?:[ \t]+(?:"[^"\n]*"|'[^'\n]*'|\([^)\n]*\)))?(?:\r?\n[ \t]+(?:"[^"\n]*"|'[^'\n]*'|\([^)\n]*\)))?[ \t]*\r?$/gm;
 
   text = text.replace(definitionPattern, (_, label) => {
     definitions.add(normalizeLabel(label));

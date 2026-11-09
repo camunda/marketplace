@@ -247,7 +247,7 @@ function nextId(files) {
 }
 
 function listingId(files) {
-  const runId = process.env.GITHUB_RUN_ID;
+  const runId = process.env.SUBMISSION_ID;
   if (!runId) return nextId(files);
   const id = Number(runId);
   if (!Number.isSafeInteger(id) || id <= 0) fail(`invalid GitHub run id: ${runId}`);

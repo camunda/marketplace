@@ -16,6 +16,13 @@ test('removes reference images and their definitions', () => {
   );
 });
 
+test('removes reference images with a next-line destination', () => {
+  assert.equal(
+    stripMarkdownReferences('![remote][asset]\n\n[asset]:\n  https://example.com/a.png').trim(),
+    '',
+  );
+});
+
 test('keeps reference link text and removes its definition', () => {
   assert.equal(
     stripMarkdownReferences('[docs][site]\n\n[site]: <https://example.com/docs> "Docs"').trim(),
@@ -43,7 +50,7 @@ test('issue submissions use the GitHub run ID', () => {
     );
     execFileSync('node', [join(ROOT, 'scripts/submit-listing.mjs'), issueBody], {
       cwd: work,
-      env: { ...process.env, GITHUB_RUN_ID: '900000002' },
+      env: { ...process.env, SUBMISSION_ID: '900000002' },
     });
 
     const listing = readFileSync(
