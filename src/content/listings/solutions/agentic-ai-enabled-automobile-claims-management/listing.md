@@ -1,6 +1,9 @@
 ---
 id: 520353
 name: "Agentic AI Enabled Automobile Claims Management"
+type: 
+  - "solution"
+  - "blueprint"
 creatorType: "partner"
 creatorName: "Infosys"
 creatorUrl: "https://www.infosys.com"

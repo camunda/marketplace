@@ -1,5 +1,6 @@
 ---
 id: 437142
+apiAnyIndustry: true
 name: "Human Task Orchestration Quick Start"
 creatorType: "camunda"
 creatorName: "Camunda"

@@ -1,6 +1,9 @@
 ---
 id: 519052
 name: "Agentic Financial Crime Compliance Transaction Monitoring"
+type: 
+  - "solution"
+  - "blueprint"
 creatorType: "partner"
 creatorName: "Capgemini"
 creatorUrl: "https://www.capgemini.com/"

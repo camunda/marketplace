@@ -1,5 +1,6 @@
 ---
 id: 808027
+apiAnyIndustry: true
 name: "AI Communication Agent"
 creatorType: "camunda"
 creatorName: "Camunda"

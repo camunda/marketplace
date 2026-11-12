@@ -1,6 +1,10 @@
 ---
 id: 836160
+apiAnyIndustry: true
 name: "Camunda STACKIT Reference Deployment"
+type: 
+  - "solution"
+  - "blueprint"
 creatorType: "partner"
 creatorName: "envite consulting GmbH"
 creatorUrl: "https://envite.de/green-bpm"

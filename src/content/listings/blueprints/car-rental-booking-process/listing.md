@@ -1,5 +1,6 @@
 ---
 id: 450289
+apiSolutionCategory: true
 name: "Car Rental Booking Process"
 creatorType: "camunda"
 creatorName: "Camunda"

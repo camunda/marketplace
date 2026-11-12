@@ -1,5 +1,7 @@
 ---
 id: 719979
+apiSolutionCategory: true
+apiAnyIndustry: true
 name: "Agentic AI Orchestration with Form.io"
 legacySlug: "agentic-ai-orchestration-with-formio"
 type: 

@@ -1,5 +1,6 @@
 ---
 id: 439437
+apiAnyIndustry: true
 name: "Updatable Boundary Timer Pattern"
 creatorType: "partner"
 creatorName: "brix IT solutions"

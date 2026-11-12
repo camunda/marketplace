@@ -1,6 +1,9 @@
 ---
 id: 773521
 name: "AI-Powered Procure to Pay System"
+type: 
+  - "solution"
+  - "blueprint"
 creatorType: "partner"
 creatorName: "Acheron Software Consultancy Private Limited"
 creatorUrl: "https://www.acheron-tech.com/"

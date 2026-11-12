@@ -1,5 +1,6 @@
 ---
 id: 449510
+apiSolutionCategory: true
 name: "Credit Card Fraud Dispute Handling"
 creatorType: "camunda"
 creatorName: "Camunda"

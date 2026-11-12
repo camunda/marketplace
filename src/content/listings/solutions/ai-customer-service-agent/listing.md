@@ -1,6 +1,10 @@
 ---
 id: 519685
+apiAnyIndustry: true
 name: "AI Customer Service Agent"
+type: 
+  - "solution"
+  - "blueprint"
 creatorType: "partner"
 creatorName: "Incentro"
 creatorUrl: "https://www.incentro.com/"

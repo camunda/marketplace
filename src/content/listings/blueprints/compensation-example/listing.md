@@ -1,5 +1,7 @@
 ---
 id: 437443
+apiSolutionCategory: true
+apiAnyIndustry: true
 name: "Compensation Example"
 creatorType: "community"
 creatorName: "Niall Deehan"

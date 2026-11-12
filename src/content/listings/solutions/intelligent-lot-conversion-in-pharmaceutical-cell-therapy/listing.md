@@ -1,5 +1,6 @@
 ---
 id: 780873
+apiSolutionCategory: true
 name: "Intelligent Lot Conversion in Pharmaceutical Cell Therapy"
 type: 
   - "solution"

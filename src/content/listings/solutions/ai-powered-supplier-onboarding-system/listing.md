@@ -1,6 +1,10 @@
 ---
 id: 636570
+apiAnyIndustry: true
 name: "AI-Powered Supplier Onboarding System"
+type: 
+  - "solution"
+  - "blueprint"
 creatorType: "partner"
 creatorName: "Acheron Software Consultancy Private Limited"
 creatorUrl: "https://www.acheron-tech.com/"

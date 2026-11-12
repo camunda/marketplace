@@ -1,5 +1,6 @@
 ---
 id: 449343
+apiSolutionCategory: true
 name: "Trade Exception Remediation Processing"
 creatorType: "camunda"
 creatorName: "Camunda"

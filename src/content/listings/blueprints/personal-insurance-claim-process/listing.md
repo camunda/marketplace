@@ -1,5 +1,6 @@
 ---
 id: 450145
+apiSolutionCategory: true
 name: "Personal Insurance Claim Process"
 creatorType: "camunda"
 creatorName: "Camunda"

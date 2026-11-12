@@ -1,5 +1,6 @@
 ---
 id: 778695
+apiSolutionCategory: true
 name: "AI-Powered Retail Inventory Agent"
 type: 
   - "solution"

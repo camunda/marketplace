@@ -11,9 +11,10 @@
  * Usage: node scripts/extract.mjs [--skip-images]
  */
 
-import { mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { parse as parseYaml } from 'yaml';
 import { stripMarkdownReferences } from './markdown-references.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -259,6 +260,9 @@ function toListing(product, canonicalVendor, usedSlugs) {
 
   const categoryTags = categoryTagsOf(product);
   const types = [...new Set(categoryTags.map((t) => PRODUCT_TYPE_CATEGORIES[t.name]).filter(Boolean))];
+  if (types.includes('solution') && curatedBlueprintIds.has(id) && !types.includes('blueprint')) {
+    types.push('blueprint');
+  }
 
   // Category children, e.g. "AI Services" (connector), "Quick Start" (blueprint).
   const categoryValues = [
@@ -331,6 +335,11 @@ function toListing(product, canonicalVendor, usedSlugs) {
     creatorUrl: attrs.creatorUrl ?? null,
     categories: categoryValues,
     industries: tagChildren(product, 'Industry').filter((i) => i !== 'Any'),
+    apiAnyIndustry: tagChildren(product, 'Industry').includes('Any') || undefined,
+    apiSolutionCategory:
+      categoryTags.some((tag) =>
+        tag.name === 'Blueprints' && (tag.children ?? []).some((child) => child.name === 'Solution Accelerators'),
+      ) || undefined,
     useCases: tagChildren(product, 'Use Case'),
     resourceTypes: tagChildren(product, 'Resource Types Included'),
     bpmnTypes: tagChildren(product, 'Supported BPMN Types'),
@@ -413,6 +422,22 @@ const legacySlugById = new Map(
 
 const canonicalVendor = buildVendorCanonicalizer(products);
 const usedSlugs = new Set();
+// Partner solution tags do not identify all listings in the blueprint product line.
+const curatedBlueprintIds = new Set();
+const solutionsDir = join(CONTENT_DIR, 'solutions');
+if (existsSync(solutionsDir)) {
+  for (const entry of readdirSync(solutionsDir, { withFileTypes: true })) {
+    if (!entry.isDirectory()) continue;
+    const file = join(solutionsDir, entry.name, 'listing.md');
+    if (!existsSync(file)) continue;
+    const frontmatter = readFileSync(file, 'utf8').match(/^---\r?\n([\s\S]*?)\r?\n---(?:\r?\n|$)/);
+    if (!frontmatter) continue;
+    const data = parseYaml(frontmatter[1]);
+    if (Array.isArray(data?.type) && data.type.includes('solution') && data.type.includes('blueprint')) {
+      curatedBlueprintIds.add(data.id);
+    }
+  }
+}
 
 const listings = products
   .map((p) => toListing(p, canonicalVendor, usedSlugs))

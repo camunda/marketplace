@@ -1,5 +1,6 @@
 ---
 id: 808469
+apiSolutionCategory: true
 name: "Dynamic Multi-Instance Credit Scoring"
 creatorType: "community"
 creatorName: "Juan Carlos Beltrán Rebaza"

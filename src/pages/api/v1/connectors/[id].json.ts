@@ -13,8 +13,14 @@ export async function getStaticPaths() {
 
 export async function GET({ props }: { props: { l: Awaited<ReturnType<typeof getListings>>[number] } }) {
   const { l } = props;
+  // Live contract (Jackson NON_ABSENT): creatorUrl is omitted when unset,
+  // templates carry id, name and url, each omitted when unset.
   return Response.json({
-    creatorUrl: l.creatorUrl ?? null,
-    templates: l.templates.map((t) => ({ id: t.id ?? null, name: t.name ?? null, url: t.url })),
+    ...(l.creatorUrl ? { creatorUrl: l.creatorUrl } : {}),
+    templates: l.templates.map((t) => ({
+      ...(t.id ? { id: t.id } : {}),
+      ...(t.name ? { name: t.name } : {}),
+      url: t.url,
+    })),
   });
 }

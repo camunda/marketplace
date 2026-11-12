@@ -1,5 +1,6 @@
 ---
 id: 587865
+apiAnyIndustry: true
 name: "AI Agent Chat Quick Start"
 creatorType: "camunda"
 creatorName: "Camunda"
@@ -26,7 +27,7 @@ templates:
     name: "README"
   - url: "https://raw.githubusercontent.com/camunda/camunda-8-tutorials/refs/heads/main/solutions/ai-agent-chat-with-tools/ai-agent-chat-initial-request.form"
     name: "Initial Request Form"
-  - url: "https://raw.githubusercontent.com/camunda/camunda-8-tutorials/refs/heads/main/solutions/ai-agent-chat-with-tools/ai-agent-chat-with-tools.integration.test.json"
+  - url: "https://raw.githubusercontent.com/camunda/camunda-platform-tutorials/refs/heads/main/solutions/ai-agent-chat-with-tools/ai-agent-chat-with-tools.integration.test.json"
     name: "ai-agent-chat-with-tools.integration.test.json"
 smTemplate: "https://github.com/camunda/camunda-platform-tutorials/tree/main/solutions/ai-agent-chat-with-tools"
 links: 

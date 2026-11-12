@@ -1,5 +1,6 @@
 ---
 id: 449339
+apiSolutionCategory: true
 name: "Mortgage Origination"
 creatorType: "partner"
 creatorName: "Capital BPM"

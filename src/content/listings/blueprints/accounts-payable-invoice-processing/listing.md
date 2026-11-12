@@ -1,5 +1,7 @@
 ---
 id: 461194
+apiSolutionCategory: true
+apiAnyIndustry: true
 name: "Accounts Payable Invoice Processing"
 creatorType: "partner"
 creatorName: "Cognizant"

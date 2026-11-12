@@ -1,5 +1,6 @@
 ---
 id: 522492
+apiAnyIndustry: true
 name: "AI Email Support Agent"
 creatorType: "camunda"
 creatorName: "Camunda / Bastian Körber"

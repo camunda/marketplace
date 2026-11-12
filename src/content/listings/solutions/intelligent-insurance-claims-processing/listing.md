@@ -1,6 +1,9 @@
 ---
 id: 622646
 name: "Intelligent Insurance Claims Processing"
+type: 
+  - "solution"
+  - "blueprint"
 creatorType: "partner"
 creatorName: "HCLTech"
 creatorUrl: "https://www.hcltech.com/camunda"

@@ -1,6 +1,10 @@
 ---
 id: 613092
+apiAnyIndustry: true
 name: "AI-Powered Ticket Supporting System"
+type: 
+  - "solution"
+  - "blueprint"
 creatorType: "partner"
 creatorName: "Acheron Software Consultancy Private Limited"
 creatorUrl: "https://acheron-tech.com/"

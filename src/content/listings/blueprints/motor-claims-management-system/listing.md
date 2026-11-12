@@ -1,5 +1,6 @@
 ---
 id: 453216
+apiSolutionCategory: true
 name: "Motor Claims Management System"
 creatorType: "partner"
 creatorName: "Acheron Software Consultancy Private Limited"

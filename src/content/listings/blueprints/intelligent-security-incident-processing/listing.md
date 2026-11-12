@@ -1,5 +1,7 @@
 ---
 id: 830621
+apiSolutionCategory: true
+apiAnyIndustry: true
 name: "Intelligent Security Incident Processing"
 creatorType: "partner"
 creatorName: "ilume informatik AG"

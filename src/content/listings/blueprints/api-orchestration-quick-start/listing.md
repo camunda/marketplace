@@ -1,5 +1,6 @@
 ---
 id: 437126
+apiAnyIndustry: true
 name: "API Orchestration Quick Start"
 creatorType: "camunda"
 creatorName: "Camunda"

@@ -1,7 +1,11 @@
 ---
 id: 773510
+apiAnyIndustry: true
 name: "Fusion Dynamix - Cybernetic Defence Platform"
 legacySlug: "fusion-dynamix---cybernetic-defence-platform"
+type: 
+  - "solution"
+  - "blueprint"
 creatorType: "partner"
 creatorName: "Blue Nebula"
 creatorUrl: "https://bluenebula.io"

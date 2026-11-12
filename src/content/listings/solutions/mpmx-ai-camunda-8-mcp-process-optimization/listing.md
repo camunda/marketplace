@@ -1,6 +1,9 @@
 ---
 id: 784360
 name: "mpmX AI: Camunda 8 MCP Process Optimization"
+type: 
+  - "solution"
+  - "blueprint"
 creatorType: "partner"
 creatorName: "mpmX GmbH"
 creatorUrl: "https://mpmx.ai/"

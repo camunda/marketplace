@@ -1,6 +1,9 @@
 ---
 id: 616063
 name: "Credit Card Onboarding Process"
+type: 
+  - "solution"
+  - "blueprint"
 creatorType: "partner"
 creatorName: "Wipro Limited"
 creatorUrl: "https://www.wipro.com/"

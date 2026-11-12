@@ -1,5 +1,6 @@
 ---
 id: 442138
+apiAnyIndustry: true
 name: "Recalculable Non-Interrupting Timer"
 creatorType: "partner"
 creatorName: "brix IT solutions"

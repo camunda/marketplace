@@ -1,5 +1,7 @@
 ---
 id: 676862
+apiSolutionCategory: true
+apiAnyIndustry: true
 name: "GCC FNOL Automation Connector"
 creatorType: "community"
 creatorName: "Ganesh Kumar"

@@ -1,5 +1,6 @@
 ---
 id: 872565
+apiAnyIndustry: true
 name: "Intelligent Security Mail Processing"
 creatorType: "partner"
 creatorName: "ilume informatik AG"

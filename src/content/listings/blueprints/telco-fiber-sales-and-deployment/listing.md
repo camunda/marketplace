@@ -1,5 +1,6 @@
 ---
 id: 475969
+apiSolutionCategory: true
 name: "TELCO Fiber Sales & Deployment"
 legacySlug: "telco-fiber-sales-deployment"
 creatorType: "partner"

@@ -1,6 +1,10 @@
 ---
 id: 519046
+apiAnyIndustry: true
 name: "Agentic AI Assisted Quality Audit Process"
+type: 
+  - "solution"
+  - "blueprint"
 creatorType: "partner"
 creatorName: "Cognizant"
 creatorUrl: "https://www.cognizant.com"

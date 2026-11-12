@@ -1,6 +1,10 @@
 ---
 id: 480548
+apiAnyIndustry: true
 name: "Exodus by CapBPM"
+type: 
+  - "solution"
+  - "blueprint"
 creatorType: "partner"
 creatorName: "Capital BPM"
 creatorUrl: "https://capbpm.com/exodus"

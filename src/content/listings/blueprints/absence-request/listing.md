@@ -1,5 +1,7 @@
 ---
 id: 437160
+apiSolutionCategory: true
+apiAnyIndustry: true
 name: "Absence Request"
 creatorType: "camunda"
 creatorName: "Camunda"
