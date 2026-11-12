@@ -42,6 +42,10 @@ test('extraction retains curated blueprint types and source Any tags', (t) => {
   symlinkSync(join(root, 'node_modules'), join(dir, 'node_modules'), 'dir');
   writeFileSync(join(dir, 'scripts/extract.mjs'), readFileSync(join(root, 'scripts/extract.mjs')));
   writeFileSync(
+    join(dir, 'scripts/markdown-references.mjs'),
+    readFileSync(join(root, 'scripts/markdown-references.mjs')),
+  );
+  writeFileSync(
     join(dir, 'src/content/listings/solutions/curated-solution/listing.md'),
     '---\nid: 1\ntype: [solution, blueprint]\n---\n',
   );
