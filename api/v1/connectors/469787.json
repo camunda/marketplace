@@ -1,1 +1,1 @@
-{"creatorUrl":"https://www.linkedin.com/in/william-marcq/","templates":[{"id":null,"name":"Mistral Connector Outbound Template","url":"https://raw.githubusercontent.com/marcqw/camunda-connector-mistral/refs/heads/main/src/camunda8-connector-mistral.json"}]}
+{"creatorUrl":"https://www.linkedin.com/in/william-marcq/","templates":[{"name":"Mistral Connector Outbound Template","url":"https://raw.githubusercontent.com/marcqw/camunda-connector-mistral/refs/heads/main/src/camunda8-connector-mistral.json"}]}

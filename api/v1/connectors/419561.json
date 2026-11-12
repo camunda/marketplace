@@ -1,1 +1,1 @@
-{"creatorUrl":"https://acheron-tech.com/","templates":[{"id":null,"name":"io.camunda.connector.spanner.v1","url":"https://raw.githubusercontent.com/Acheron-Camunda/cloud-spanner-connector/main/element-templates/spanner-connector.json"}]}
+{"creatorUrl":"https://acheron-tech.com/","templates":[{"name":"io.camunda.connector.spanner.v1","url":"https://raw.githubusercontent.com/Acheron-Camunda/cloud-spanner-connector/main/element-templates/spanner-connector.json"}]}

@@ -1,1 +1,1 @@
-{"creatorUrl":"https://camunda.com/","templates":[{"id":null,"name":"SendGrid Outbound","url":"https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.SendGrid.v2/latest/sendgrid-outbound-connector.json"}]}
+{"creatorUrl":"https://camunda.com/","templates":[{"name":"SendGrid Outbound","url":"https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.SendGrid.v2/latest/sendgrid-outbound-connector.json"}]}

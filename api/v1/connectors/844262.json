@@ -1,1 +1,1 @@
-{"creatorUrl":"http://www.camunda.com","templates":[{"id":null,"name":"Chameleon Outbound Template","url":"https://raw.githubusercontent.com/camunda-community-hub/camunda-8-connector-chameleon/refs/heads/main/element-templates/chameleon-function.json"}]}
+{"creatorUrl":"http://www.camunda.com","templates":[{"name":"Chameleon Outbound Template","url":"https://raw.githubusercontent.com/camunda-community-hub/camunda-8-connector-chameleon/refs/heads/main/element-templates/chameleon-function.json"}]}

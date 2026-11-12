@@ -1,1 +1,1 @@
-{"creatorUrl":"https://github.com/pierre-yves-monnet","templates":[{"id":null,"name":"Office to PDF Outbound Template","url":"https://raw.githubusercontent.com/camunda-community-hub/camunda-8-connector-officetopdf/refs/heads/main/element-templates/office-to-PDF.json"}]}
+{"creatorUrl":"https://github.com/pierre-yves-monnet","templates":[{"name":"Office to PDF Outbound Template","url":"https://raw.githubusercontent.com/camunda-community-hub/camunda-8-connector-officetopdf/refs/heads/main/element-templates/office-to-PDF.json"}]}

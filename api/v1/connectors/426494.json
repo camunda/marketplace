@@ -1,1 +1,1 @@
-{"creatorUrl":"https://www.bp-3.com/camunda","templates":[{"id":null,"name":"OpenBots Connector Outbound Template","url":"https://raw.githubusercontent.com/BP3/openbots-connector/main/element-templates/openbots_connector.json"}]}
+{"creatorUrl":"https://www.bp-3.com/camunda","templates":[{"name":"OpenBots Connector Outbound Template","url":"https://raw.githubusercontent.com/BP3/openbots-connector/main/element-templates/openbots_connector.json"}]}

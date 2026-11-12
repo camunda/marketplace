@@ -1,1 +1,1 @@
-{"creatorUrl":null,"templates":[{"id":null,"name":"Jev (TypeSafe) Connector Outbound Template","url":"https://raw.githubusercontent.com/maff/camunda-connector-typesafe-jev/refs/heads/main/element-templates/typesafe-jev-connector.json"}]}
+{"templates":[{"name":"Jev (TypeSafe) Connector Outbound Template","url":"https://raw.githubusercontent.com/maff/camunda-connector-typesafe-jev/refs/heads/main/element-templates/typesafe-jev-connector.json"}]}

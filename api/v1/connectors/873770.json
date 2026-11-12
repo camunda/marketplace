@@ -1,1 +1,1 @@
-{"creatorUrl":"http://camunda.com","templates":[{"id":null,"name":"Involved users Outbound Template","url":"https://raw.githubusercontent.com/camunda-community-hub/camunda-8-connector-involvedusers/28f52916bf50087c72142605c0aaeec453cb10d4/element-templates/involveduser-function.json"}]}
+{"creatorUrl":"http://camunda.com","templates":[{"name":"Involved users Outbound Template","url":"https://raw.githubusercontent.com/camunda-community-hub/camunda-8-connector-involvedusers/28f52916bf50087c72142605c0aaeec453cb10d4/element-templates/involveduser-function.json"}]}

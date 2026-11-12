@@ -1,1 +1,1 @@
-{"creatorUrl":"https://camunda.com/","templates":[{"id":null,"name":"Rest outbound","url":"https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.HttpJson.v2/latest/http-json-connector.json"}]}
+{"creatorUrl":"https://camunda.com/","templates":[{"name":"Rest outbound","url":"https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.HttpJson.v2/latest/http-json-connector.json"}]}
