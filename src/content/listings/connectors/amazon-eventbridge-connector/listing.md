@@ -28,6 +28,7 @@ compatibleVersions:
   - "8.5"
 availability: "open-source"
 description: "Real-time event handling in Camunda"
+seoDescription: "Supercharge your Camunda processes with the Amazon EventBridge Connector. Receive and send events in real time, effortlessly connecting Camunda processes with AWS services to establish a dynamic, event-driven architecture."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.AWSEventBridge.v1/latest/aws-eventbridge-outbound-connector.json"
     id: "io.camunda.connectors.AWSEventBridge.v1"
@@ -46,8 +47,6 @@ links:
   website: "https://camunda.com"
 lastModified: "2025-09-03"
 ---
-
-*Seamlessly Integrate Amazon EventBridge with Your Camunda Workflows*
 
 Supercharge your Camunda processes with the Amazon EventBridge Connector. Receive and send events in real time, effortlessly connecting Camunda processes with AWS services to establish a dynamic, event-driven architecture.
 

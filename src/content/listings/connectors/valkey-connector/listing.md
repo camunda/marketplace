@@ -20,6 +20,7 @@ compatibleVersions:
   - "8.9"
 availability: "open-source"
 description: "Integrate Valkey into your processes"
+seoDescription: "Connect Camunda processes with Valkey for caching, key-value storage, collections, counters, expiration, and Pub/Sub messaging. Connect to standalone and cluster deployments with authentication and SSL/TLS."
 saasTemplate: "https://raw.githubusercontent.com/ak-chaudhari423/valkey-connector/refs/heads/main/element-templates/valkey-connector.json"
 smTemplate: "https://github.com/ak-chaudhari423/valkey-connector"
 links: 
@@ -27,8 +28,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2026-10-01"
 ---
-
-*Connect Camunda processes to Valkey*
 
 Connect Camunda processes with Valkey for caching, key-value storage, collections, counters, expiration, and Pub/Sub messaging. Connect to standalone and cluster deployments with authentication and SSL/TLS.
 

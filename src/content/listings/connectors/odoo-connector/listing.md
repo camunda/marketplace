@@ -24,6 +24,7 @@ compatibleVersions:
   - "8.9"
 availability: "open-source"
 description: "Seamless Odoo ERP workflow integration"
+seoDescription: "Connect Camunda processes to Odoo 19 ERP. Supports CRUD operations, search, webhooks, and polling for seamless business process automation."
 templates: 
   - url: "https://raw.githubusercontent.com/Tehuti-Projects/Odoo-19-Camunda-8-Connector/refs/heads/Ver-wa/odoo-outbound-connector/element-templates/odoo-outbound-connector.json"
     name: "Odoo Connector Outbound Template"
@@ -39,8 +40,6 @@ links:
   support: "https://github.com/Tehuti-Projects/Odoo-19-Camunda-8-Connector/issues"
 lastModified: "2026-02-09"
 ---
-
-*Connect Camunda to Odoo ERP*
 
 Connect Camunda processes to Odoo 19 ERP. Supports CRUD operations, search, webhooks, and polling for seamless business process automation.
 

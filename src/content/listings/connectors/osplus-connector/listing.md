@@ -15,14 +15,13 @@ compatibleVersions:
   - "8.9"
 availability: "listing-only"
 description: "Call Sparkasse OSPlus DynS services"
+seoDescription: "Connect Camunda with OSPlus services used by Sparkassen with secure integration of OSPlus functions into automated banking processes in regulated environments."
 links: 
   docs: "https://docs.camunda.io/docs/guides/host-custom-connectors/"
   demo: "https://www.ppi-group.eu/en/contact.html?"
   support: "https://forum.camunda.io/"
 lastModified: "2026-05-27"
 ---
-
-*Connecting OSPlus and Camunda*
 
 Connect Camunda with OSPlus services used by Sparkassen with secure integration of OSPlus functions into automated banking processes in regulated environments.
 

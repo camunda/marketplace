@@ -17,6 +17,7 @@ connectorTypes:
 compatibleVersions: 
   - "8.5"
 description: "Orchestrate Microsoft Dataverse with Camunda"
+seoDescription: "Integrate Microsoft Dataverse into Camunda business processes and create, edit, and delete Dataverse entries on the fly."
 templates: 
   - url: "https://raw.githubusercontent.com/Ilume-Camunda/CamundaDataverseConnector/refs/heads/main/element-templates/ilume-dynamics-connector.json"
     name: "Dataverse Connector Outbound Template"
@@ -26,8 +27,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2024-10-31"
 ---
-
-*Orchestrate data in Dataverse environments with Camunda*
 
 Integrate Microsoft Dataverse into Camunda business processes and create, edit, and delete Dataverse entries on the fly.
 

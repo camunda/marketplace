@@ -18,14 +18,13 @@ compatibleVersions:
   - "8.5"
 availability: "open-source"
 description: "Seamless easyRPA and Camunda integration"
+seoDescription: "Enhance your business process automation with the easyRPA Connector for Camunda. Integrate easyRPA bots into Camunda processes to automate tasks and streamline operations."
 saasTemplate: "https://raw.githubusercontent.com/IBA-Poland/camunda-connector-easyrpa/main/element-templates/template-connector.json"
 smTemplate: "https://github.com/IBA-Poland/camunda-connector-easyrpa/tree/main"
 links: 
   support: "https://forum.camunda.io/"
 lastModified: "2024-06-05"
 ---
-
-*Orchestrate easyRPA robots with help of Camunda-based business process*
 
 Enhance your business process automation with the easyRPA Connector for Camunda. Integrate easyRPA bots into Camunda processes to automate tasks and streamline operations.
 

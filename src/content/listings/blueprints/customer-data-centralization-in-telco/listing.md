@@ -20,14 +20,13 @@ compatibleVersions:
   - "8.7"
 availability: "listing-only"
 description: "Centralized, consistent, integrated customer data"
+seoDescription: "Centralize customer information by integrating CRM tools and legacy systems to create a single source of truth. Ensure data consistency, minimize discrepancies, and keep customer records accurate and up-to-date for enhanced efficiency and reliability."
 video: "https://youtu.be/MxRnICj40W8"
 links: 
   demo: "https://ntconsultcorp.com/camunda-blueprint-telecom-data-centralization/"
   support: "https://forum.camunda.io/"
 lastModified: "2025-01-31"
 ---
-
-*Revolutionizing Data Consistency in Telecom with Camunda*
 
 Centralize customer information by integrating CRM tools and legacy systems to create a single source of truth. Ensure data consistency, minimize discrepancies, and keep customer records accurate and up-to-date for enhanced efficiency and reliability.
 

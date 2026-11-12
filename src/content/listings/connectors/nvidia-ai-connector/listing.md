@@ -21,14 +21,13 @@ compatibleVersions:
   - "8.9"
 availability: "open-source"
 description: "Integrate AI models into processes"
+seoDescription: "Integrate multiple AI models into Camunda-based business processes with dynamic prompts, structured responses, and cost-effective automation using free tiers and trial credits."
 links: 
   github: "https://github.com/ak-chaudhari423/nvidia-ai-connector.git"
   docs: "https://github.com/ak-chaudhari423/nvidia-ai-connector/blob/main/README.md"
   support: "https://forum.camunda.io/"
 lastModified: "2026-04-02"
 ---
-
-*Fast track to AI-powered process automation*
 
 Integrate multiple AI models into Camunda-based business processes with dynamic prompts, structured responses, and cost-effective automation using free tiers and trial credits.
 

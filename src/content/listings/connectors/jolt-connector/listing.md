@@ -18,14 +18,13 @@ compatibleVersions:
   - "8.6"
 availability: "open-source"
 description: "Perform JSON-to-JSON transformations"
+seoDescription: "Make complex data mapping tasks more accessible and efficient for process automation."
 smTemplate: "https://github.com/charanteja469/Camunda-JOLT-Custom-Outbound-Connector.git"
 links: 
   docs: "https://github.com/charanteja469/Camunda-JOLT-Custom-Outbound-Connector/blob/master/README.md"
   support: "https://forum.camunda.io/"
 lastModified: "2025-06-09"
 ---
-
-*Perform JSON-to-JSON transformations with ease*
 
 Make complex data mapping tasks more accessible and efficient for process automation.
 

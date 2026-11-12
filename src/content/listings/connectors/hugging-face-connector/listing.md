@@ -20,6 +20,7 @@ compatibleVersions:
   - "8.5"
 availability: "open-source"
 description: "Orchestrate machine learning in processes"
+seoDescription: "Integrate popular machine learning models into business processes using the Hugging Face Inference API."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.HuggingFace.v1/latest/hugging-face-connector.json"
     name: "Hugging Face Connector Outbound Template"
@@ -28,8 +29,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-09-09"
 ---
-
-*Orchestrate machine learning in business processes*
 
 Integrate popular machine learning models into business processes using the Hugging Face Inference API.
 

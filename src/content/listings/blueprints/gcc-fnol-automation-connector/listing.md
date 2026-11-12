@@ -24,6 +24,7 @@ compatibleVersions:
   - "8.9"
 availability: "open-source"
 description: "Streamlined FNOL intake for GCC insurers"
+seoDescription: "This solution validates First Notice of Loss (FNOL) inputs, triggers claim processes instantly, supports Gulf Cooperation Council (GCC) identity formats, and integrates with policy/claims systems."
 templates: 
   - url: "https://raw.githubusercontent.com/ganeshkumargunaseelan-web/camunda-fnol-automation/refs/heads/main/src/main/resources/bpmn/gcc-motor-fnol-process.bpmn"
     name: "GCC FNOL Automation Solution"
@@ -33,8 +34,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-12-10"
 ---
-
-*Automate GCC Motor Claims with Camunda*
 
 This solution validates First Notice of Loss (FNOL) inputs, triggers claim processes instantly, supports Gulf Cooperation Council (GCC) identity formats, and integrates with policy/claims systems.
 

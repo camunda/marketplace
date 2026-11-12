@@ -23,6 +23,7 @@ compatibleVersions:
   - "8.5"
 availability: "open-source"
 description: "Integrate any webhook seamlessly, securely"
+seoDescription: "Integrate any external webhook into your Camunda processes. Supports all HTTP methods and offers robust security through JWT, Basic, API KEY, and HMAC authentication."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.webhook.WebhookConnectorBoundary.v1/latest/webhook-connector-boundary.json"
     name: "Webhook Inbound Boundary Template"
@@ -36,8 +37,6 @@ links:
   website: "https://camunda.com"
 lastModified: "2025-09-10"
 ---
-
-*Unleash the Power of Webhooks in Your Camunda Processes*
 
 Integrate any external webhook into your Camunda processes. Supports all HTTP methods and offers robust security through JWT, Basic, API KEY, and HMAC authentication.
 

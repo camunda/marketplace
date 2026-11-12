@@ -20,13 +20,12 @@ compatibleVersions:
   - "8.9"
 availability: "listing-only"
 description: "Fast, fair, future-ready claims processing"
+seoDescription: "HCLTech combines hyper-intelligent automation and customer-centricity to transform claims handling into a source of efficiency and loyalty."
 video: "https://player.vimeo.com/video/1124980237?h=4b82c7aa01"
 links: 
   support: "https://forum.camunda.io/"
 lastModified: "2025-10-21"
 ---
-
-*Fast, fair, and future-ready insurance claims processing*
 
 HCLTech combines hyper-intelligent automation and customer-centricity to transform claims handling into a source of efficiency and loyalty.
 

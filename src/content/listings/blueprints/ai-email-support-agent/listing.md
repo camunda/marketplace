@@ -28,6 +28,7 @@ compatibleVersions:
   - "8.9"
 availability: "open-source"
 description: "End-to-end email orchestration with AI"
+seoDescription: "Orchestrate AI-driven email communications with Camunda. Short-term and long-term memory chunks enrich replies and built-in, configurable guardrails ensure a human knowledge worker is involved when necessary."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda/camunda-platform-tutorials/refs/heads/main/solutions/bank-ai-loan-approval/AI%20Email%20Support%20Agent.bpmn"
     name: "Resource 1"
@@ -40,12 +41,10 @@ templates:
 smTemplate: "https://github.com/camunda/camunda-platform-tutorials/tree/main/solutions/bank-ai-loan-approval"
 video: "https://www.youtube.com/watch?v=32299Ksezp0"
 links: 
-  docs: "https://github.com/camunda/camunda-platform-tutorials/tree/main/solutions/bank-ai-loan-approval"
+  docs: "https://github.com/camunda/camunda-platform-tutorials/tree/main/solutions/bank-ai-loan-approval#readme"
   support: "https://forum.camunda.io/"
 lastModified: "2026-10-12"
 ---
-
-*Orchestrate AI-driven email communication with guardrails*
 
 Orchestrate AI-driven email communications with Camunda. Short-term and long-term memory chunks enrich replies and built-in, configurable guardrails ensure a human knowledge worker is involved when necessary.
 

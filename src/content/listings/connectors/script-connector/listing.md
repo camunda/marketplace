@@ -21,6 +21,7 @@ compatibleVersions:
   - "8.9"
 availability: "open-source"
 description: "Execute scripts within your processes"
+seoDescription: "The Script Connector lets you call any scripting language directly from a Camunda process. It ships with built-in support for JavaScript, Kotlin, Groovy, and Mustache, plus an extensible framework for registering custom scripting engines via SPI."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda-community-hub/script-connector/refs/heads/main/connector/element-templates/script-connector.json"
     name: "Script Connector Outbound Template"
@@ -30,8 +31,6 @@ links:
   support: "https://github.com/camunda-community-hub/script-connector/issues/new"
 lastModified: "2026-05-12"
 ---
-
-*Execute any script from your Camunda processes*
 
 The Script Connector lets you call any scripting language directly from a Camunda process. It ships with built-in support for JavaScript, Kotlin, Groovy, and Mustache, plus an extensible framework for registering custom scripting engines via SPI.
 

@@ -20,6 +20,7 @@ compatibleVersions:
   - "8.8"
 availability: "open-source"
 description: "Create and manage ServiceNow incidents"
+seoDescription: "Automate creation and management of ServiceNow incidents directly from Camunda processes. Ideal for ITSM workflows, error handling, and incident lifecycle automation."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda/connectors/refs/heads/main/connectors/servicenow/element-templates/servicenow-incident-connector.json"
     name: "ServiceNow Incident Handler Outbound Template"
@@ -29,8 +30,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-10-15"
 ---
-
-*Create and manage ServiceNow incidents*
 
 Automate creation and management of ServiceNow incidents directly from Camunda processes. Ideal for ITSM workflows, error handling, and incident lifecycle automation.
 

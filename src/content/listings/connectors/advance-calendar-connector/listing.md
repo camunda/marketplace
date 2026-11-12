@@ -19,14 +19,13 @@ compatibleVersions:
   - "8.9"
 availability: "open-source"
 description: "Calculate SLA deadlines across business calendars"
+seoDescription: "The Advance Calendar Connector calculates a target date by advancing or moving backward from a starting date by a specified duration in hours or days, taking into account business hours, public holidays by country, and time zone differences. Use it to calculate SLA deadlines that respect the actual working hours of your team rather than raw calendar time."
 smTemplate: "https://github.com/camunda-community-hub/camunda-8-connector-calendaradvance"
 links: 
   docs: "https://github.com/camunda-community-hub/camunda-8-connector-calendaradvance/blob/main/README.md"
   support: "https://forum.camunda.io/"
 lastModified: "2026-05-06"
 ---
-
-*Calculate calendar date for SLA, taking into account custom calendar and holidays*
 
 The Advance Calendar Connector calculates a target date by advancing or moving backward from a starting date by a specified duration in hours or days, taking into account business hours, public holidays by country, and time zone differences. Use it to calculate SLA deadlines that respect the actual working hours of your team rather than raw calendar time.
 

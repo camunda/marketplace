@@ -19,6 +19,7 @@ compatibleVersions:
   - "8.4"
 availability: "open-source"
 description: "Orchestrate Robocorp automations with Camunda"
+seoDescription: "Orchestrate Robocorp automations in Camunda-powered business processes."
 templates: 
   - url: "https://raw.githubusercontent.com/incentro/camunda-connectors/main/Robocorp/robocorp-connector.json"
     name: "Robocorp Connector Outbound Template"
@@ -27,8 +28,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2024-04-05"
 ---
-
-*Orchestrate Robocorp automations without writing code*
 
 Orchestrate Robocorp automations in Camunda-powered business processes.
 

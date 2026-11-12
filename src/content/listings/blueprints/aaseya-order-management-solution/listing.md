@@ -15,6 +15,7 @@ compatibleVersions:
   - "8.3"
 availability: "open-source"
 description: "Orchestrate telecom orders for greater customer satisfaction"
+seoDescription: "Streamline telecom order management, eliminating delays, errors, and customer frustration. Address common industry challenges such as manual tasks, siloed data, and complex workflows."
 templates: 
   - url: "https://raw.githubusercontent.com/AkhilaPuram/AOMS/master/OrderFullFillment%20Main%20Bpmn(V1).bpmn"
     name: "Aaseya Order Management Solution (AOMS) Blueprint"
@@ -28,8 +29,6 @@ resources:
     url: "https://youtu.be/-zErYDBBFWs?si=5OqRTKuqQzhsisxL"
 lastModified: "2024-05-31"
 ---
-
-*Aaseya Order Management Solution*
 
 Streamline telecom order management, eliminating delays, errors, and customer frustration. Address common industry challenges such as manual tasks, siloed data, and complex workflows.
 

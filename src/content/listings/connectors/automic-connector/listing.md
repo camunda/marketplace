@@ -20,6 +20,7 @@ compatibleVersions:
   - "8.9"
 availability: "open-source"
 description: "Access metadata and run processes"
+seoDescription: "Connect Camunda with Automic Automation to start jobs, get metadata, and route process paths based on execution status for reliable automation across systems."
 templates: 
   - url: "https://raw.githubusercontent.com/best-blu/connectors/refs/heads/main/automic/element-templates/automic-outbound-connector.json"
     name: "Automic Connector Outbound Template"
@@ -29,8 +30,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2026-02-06"
 ---
-
-*Bridge Camunda and Automic Automation*
 
 Connect Camunda with Automic Automation to start jobs, get metadata, and route process paths based on execution status for reliable automation across systems.
 

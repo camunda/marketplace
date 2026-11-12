@@ -18,6 +18,7 @@ compatibleVersions:
   - "8.5"
 availability: "open-source"
 description: "Classify emails with UiPath AI"
+seoDescription: "This Camunda Connector gives business processes access to UiPath's email classification functionality."
 templates: 
   - url: "https://raw.githubusercontent.com/BP3/uip-comms-mining-connector/main/element-template/uipath_comms_mining_connector.json"
     name: "UIPath Communicating Mining Outbound Template"
@@ -26,8 +27,6 @@ links:
   support: "https://support.bp-3.com/"
 lastModified: "2024-07-16"
 ---
-
-*Classify Emails with UiPath AI*
 
 This Camunda Connector gives business processes access to UiPath's email classification functionality.
 

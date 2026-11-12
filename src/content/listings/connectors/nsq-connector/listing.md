@@ -18,6 +18,7 @@ compatibleVersions:
   - "8.7"
 availability: "open-source"
 description: "Perform message delivery to NSQ"
+seoDescription: "Publish messages to NSQ topics as part of a service task, enabling asynchronous communication and decoupling of processes."
 templates: 
   - url: "https://raw.githubusercontent.com/charanteja469/Camunda-NSQ-Outbound-Connector/refs/heads/master/element-templates/NSQ%20Outbound%20Connector.json"
     name: "NSQ Outbound Connector"
@@ -28,8 +29,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-06-27"
 ---
-
-*Perform message delivery to NSQ with ease*
 
 Publish messages to NSQ topics as part of a service task, enabling asynchronous communication and decoupling of processes.
 

@@ -21,6 +21,7 @@ compatibleVersions:
   - "8.9"
 availability: "open-source"
 description: "Integrate email handling into process"
+seoDescription: "Safely connect Microsoft 365 Outlook accounts and manage emails in business processes."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda/connectors/refs/heads/main/connectors/microsoft/email-inbound/element-templates/microsoft-o365-email-message-start-event-connector.json"
     name: "Outlook Email  Inbound Connector Inbound Start Template"
@@ -34,8 +35,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2026-04-09"
 ---
-
-*Act on emails in processes*
 
 Safely connect Microsoft 365 Outlook accounts and manage emails in business processes.
 

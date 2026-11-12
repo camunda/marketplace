@@ -17,12 +17,11 @@ compatibleVersions:
   - "8.7"
 availability: "listing-only"
 description: "Efficient, user-centric application handling"
+seoDescription: "Quickly and efficiently onboard customers with minimal manual work, hassle-free digital KYC verification, and short duration for card application request completion."
 links: 
   support: "https://forum.camunda.io/"
 lastModified: "2025-09-24"
 ---
-
-*Efficient, user-centric credit card application handling*
 
 Quickly and efficiently onboard customers with minimal manual work, hassle-free digital KYC verification, and short duration for card application request completion.
 

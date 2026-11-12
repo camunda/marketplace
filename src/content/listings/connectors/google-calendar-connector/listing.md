@@ -20,6 +20,7 @@ compatibleVersions:
   - "8.10"
 availability: "open-source"
 description: "Create, manage, and delete Google Calendar events"
+seoDescription: "Create, update, and delete Google Calendar events directly from your Camunda process, including recurring events and individual occurrences."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda-community-hub/camunda-8-connector-googlecalendar/main/element-templates/googlecalendar-function.json"
     name: "Google Calendar Outbound Template"
@@ -29,8 +30,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2026-07-28"
 ---
-
-*Manage Google Calendar events from Camunda-based processes*
 
 Create, update, and delete Google Calendar events directly from your Camunda process, including recurring events and individual occurrences.
 

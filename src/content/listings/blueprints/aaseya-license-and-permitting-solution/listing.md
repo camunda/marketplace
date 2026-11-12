@@ -22,6 +22,7 @@ compatibleVersions:
   - "8.7"
 availability: "open-source"
 description: "Streamline government licensing and boost efficiency"
+seoDescription: "Streamline government licensing for residents and businesses. Manage applications, payments, and inspections to boost efficiency and revenue."
 templates: 
   - url: "https://raw.githubusercontent.com/AkhilaPuram/Camunda-ALPS/refs/heads/master/alps/src/main/resources/camunda/ALPS.bpmn"
     name: "Resource 1"
@@ -32,8 +33,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-03-18"
 ---
-
-*Aaseya ALPS: One-Stop Licensing for Businesses and Residents*
 
 Streamline government licensing for residents and businesses. Manage applications, payments, and inspections to boost efficiency and revenue.
 

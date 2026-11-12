@@ -17,6 +17,7 @@ compatibleVersions:
   - "8.10"
 availability: "open-source"
 description: "Learn AI agents quickly with Camunda."
+seoDescription: "Integrate AI chat agents into business processes, enabling automated conversations and tool execution for greater efficiency."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda/camunda-8-tutorials/refs/heads/main/solutions/ai-agent-chat-with-tools/ai-agent-chat-with-tools.bpmn"
     name: "BPMN"
@@ -36,11 +37,7 @@ links:
 lastModified: "2026-10-09"
 ---
 
-*An AI chat with tools and human feedback*
-
-Ask a question and follow the agent as it answers directly or uses tools to find recipes, sample users, jokes, or technology products. Review the response, approve it to finish, or send a follow-up to continue the conversation.
-
-For setup and provider configuration, see the example README: https://github.com/camunda/camunda-8-tutorials/tree/main/solutions/ai-agent-chat-with-tools.
+Integrate AI chat agents into business processes, enabling automated conversations and tool execution for greater efficiency.
 
 ## Features
 

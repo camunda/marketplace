@@ -18,14 +18,13 @@ compatibleVersions:
   - "8.6"
 availability: "listing-only"
 description: "Automated, efficient, dynamic claims processing"
+seoDescription: "Streamlines insurance claims processing and enhance efficiency through automated validation, dynamic decision-making, and parallel processing, ensuring accuracy and compliance while reducing manual effort."
 video: "https://www.youtube.com/watch?v=qm1bnTCTpXY"
 links: 
   demo: "https://github.com/Acheron-Camunda/Claims-Blueprint"
   support: "https://forum.camunda.io/"
 lastModified: "2024-09-20"
 ---
-
-*Motor Claims Management System*
 
 Streamlines insurance claims processing and enhance efficiency through automated validation, dynamic decision-making, and parallel processing, ensuring accuracy and compliance while reducing manual effort.
 

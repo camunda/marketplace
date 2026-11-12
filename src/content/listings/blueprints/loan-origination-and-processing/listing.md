@@ -21,6 +21,7 @@ compatibleVersions:
   - "8.6"
 availability: "open-source"
 description: "Orchestrate a chatbot-driven loan process"
+seoDescription: "Reduce the time and effort to deliver loans faster. This blueprint provides a customizable foundation to simplify the lending process, shorten approval times, and enhance self-service through digital channels."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda/camunda-platform-tutorials/main/solutions/bank-loan-origination-and-processing/bank-loan-origination-and-processing.bpmn"
     name: "Resource 1"
@@ -36,8 +37,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2026-04-09"
 ---
-
-*Process a Loan Originating from a Chatbot*
 
 Reduce the time and effort to deliver loans faster. This blueprint provides a customizable foundation to simplify the lending process, shorten approval times, and enhance self-service through digital channels.
 

@@ -19,6 +19,7 @@ compatibleVersions:
   - "8.5"
 availability: "open-source"
 description: "Seamlessly integrate with NoSQL databases"
+seoDescription: "Integrate DynamoDB, Amazon's NoSQL database service, with Camunda process orchestration. From table creation to item updates, experience unparalleled data management and integration."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda/connectors/main/connectors/aws/aws-dynamodb/element-templates/aws-dynamodb-outbound-connector.json"
     id: "io.camunda.connectors.AWSDynamoDB.v1"
@@ -30,8 +31,6 @@ links:
   website: "https://docs.camunda.io/docs/components/connectors/out-of-the-box-connectors/aws-dynamodb"
 lastModified: "2025-09-02"
 ---
-
-*Integrate NoSQL Databases with the Amazon DynamoDB Connector*
 
 Integrate DynamoDB, Amazon's NoSQL database service, with Camunda process orchestration. From table creation to item updates, experience unparalleled data management and integration.
 

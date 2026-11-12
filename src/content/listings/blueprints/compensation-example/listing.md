@@ -18,6 +18,7 @@ compatibleVersions:
   - "8.5"
 availability: "open-source"
 description: "Implement the saga pattern with BPMN"
+seoDescription: "Use BPMN compensation events to undo actions as part of a business process."
 templates: 
   - url: "https://raw.githubusercontent.com/NPDeehan/Compensation-Example-Camunda8/main/BPMN/Hawk%20Adoption%20(Compensation%20Example).bpmn"
     name: "Compensation Example Blueprint"
@@ -35,8 +36,6 @@ resources:
     url: "https://www.youtube.com/watch?v=xoTlE4yd3rk"
 lastModified: "2024-08-13"
 ---
-
-*Implement the saga pattern in Camunda*
 
 Use BPMN compensation events to undo actions as part of a business process.
 

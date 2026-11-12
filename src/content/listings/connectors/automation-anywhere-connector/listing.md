@@ -21,6 +21,7 @@ compatibleVersions:
   - "8.5"
 availability: "open-source"
 description: "Integrate process orchestration with RPA"
+seoDescription: "Integrate Camunda's leading process orchestration with Automation Anywhere's RPA capabilities. Harness the power of seamless automation across both modern and legacy systems. Efficient task queuing and precise outcome retrieval made easy."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.AutomationAnywhere/latest/automation-anywhere-outbound-connector.json"
     name: "Automation Anywhere outbound"
@@ -29,8 +30,6 @@ links:
   website: "https://docs.camunda.io/docs/components/connectors/out-of-the-box-connectors/automation-anywhere/"
 lastModified: "2025-09-05"
 ---
-
-*Automation Anywhere Connector*
 
 Integrate Camunda's leading process orchestration with Automation Anywhere's RPA capabilities. Harness the power of seamless automation across both modern and legacy systems. Efficient task queuing and precise outcome retrieval made easy.
 

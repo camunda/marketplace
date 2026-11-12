@@ -20,14 +20,13 @@ compatibleVersions:
   - "8.10"
 availability: "open-source"
 description: "Barcode generation for Camunda processes"
+seoDescription: "Generates barcodes directly within a Camunda process, supporting formats including Aztec, Codabar, Code 128, Code 39, Code 93, Data Matrix, EAN-8, EAN-13, ITF, PDF417, QR Code, UPC-A, and UPC-E."
 smTemplate: "https://github.com/camunda-community-hub/camunda-8-connector-barcode/"
 links: 
   docs: "https://github.com/camunda-community-hub/camunda-8-connector-barcode/blob/main/README.md"
   support: "https://forum.camunda.io/"
 lastModified: "2026-07-02"
 ---
-
-*Generate barcodes directly within your process*
 
 Generates barcodes directly within a Camunda process, supporting formats including Aztec, Codabar, Code 128, Code 39, Code 93, Data Matrix, EAN-8, EAN-13, ITF, PDF417, QR Code, UPC-A, and UPC-E.
 

@@ -21,12 +21,11 @@ compatibleVersions:
   - "8.9"
 availability: "listing-only"
 description: "Intelligent hospital workflows with AI"
+seoDescription: "Automate hospital workflows from patient discharge to insurance claims using Camunda 8 and AWS Bedrock AI. Includes emergency triage, resource management, nurse scheduling, and prior authorization with agentic AI."
 links: 
   support: "https://forum.camunda.io/"
 lastModified: "2026-02-19"
 ---
-
-*AI-Powered Healthcare Workflow Automation*
 
 Automate hospital workflows from patient discharge to insurance claims using Camunda 8 and AWS Bedrock AI. Includes emergency triage, resource management, nurse scheduling, and prior authorization with agentic AI.
 

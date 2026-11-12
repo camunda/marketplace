@@ -17,13 +17,12 @@ compatibleVersions:
   - "8.9"
 availability: "listing-only"
 description: "Tailored Camunda 8 migration services"
+seoDescription: "Plan and deliver your Camunda 8 migration with cimt's three-phase framework, from readiness and strategy to pilot implementation, scaling, and support."
 links: 
   demo: "https://www.cimt-ag.de/camunda/"
   support: "https://www.cimt-ag.de/camunda/"
 lastModified: "2026-03-25"
 ---
-
-*cimt Migration Framework*
 
 Plan and deliver your Camunda 8 migration with cimt's three-phase framework, from readiness and strategy to pilot implementation, scaling, and support.
 

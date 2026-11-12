@@ -15,13 +15,12 @@ compatibleVersions:
   - "8.9"
 availability: "listing-only"
 description: "Extract data from documents and images"
+seoDescription: "Integrate Google Cloud Document AI into Camunda processes to extract structured data from PDFs and images. The connector handles OCR, entity extraction, and table parsing with secure OAuth 2.0 authentication via Google Cloud service accounts."
 links: 
   docs: "https://docs.camunda.io/docs/guides/host-custom-connectors/"
   support: "https://forum.camunda.io/"
 lastModified: "2026-06-09"
 ---
-
-*Extract structured data from documents and images using Google Cloud*
 
 Integrate Google Cloud Document AI into Camunda processes to extract structured data from PDFs and images. The connector handles OCR, entity extraction, and table parsing with secure OAuth 2.0 authentication via Google Cloud service accounts.
 

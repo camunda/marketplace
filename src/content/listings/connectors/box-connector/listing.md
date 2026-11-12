@@ -22,6 +22,7 @@ compatibleVersions:
   - "8.7"
 availability: "open-source"
 description: "Streamlined document handling for Box"
+seoDescription: "Manage folders and files that are stored on Box directly from business processes that are orchestrated by Camunda."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.box/latest/box-outbound-connector.json"
     name: "box.com Connector Outbound Template"
@@ -31,8 +32,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-09-08"
 ---
-
-*Manage assets in Box with Camunda*
 
 Manage folders and files that are stored on Box directly from business processes that are orchestrated by Camunda.
 

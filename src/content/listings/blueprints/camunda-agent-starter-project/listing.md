@@ -16,6 +16,7 @@ compatibleVersions:
   - "8.9"
 availability: "open-source"
 description: "Start building Camunda agents quickly"
+seoDescription: "A ready-to-use starting point for building agents with Camunda. This blueprint includes working examples of core agent capabilities: time and date awareness, configurable wait behavior, and Slack-based communication via message events."
 templates: 
   - url: "https://raw.githubusercontent.com/NPDeehan/camunda-agent-template/refs/heads/main/Camunda%20Agent%20Builder%20Template%20V2.bpmn"
     name: "Resource 1"
@@ -25,8 +26,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2026-07-02"
 ---
-
-*Build your first Camunda agent with working examples*
 
 A ready-to-use starting point for building agents with Camunda. This blueprint includes working examples of core agent capabilities: time and date awareness, configurable wait behavior, and Slack-based communication via message events.
 

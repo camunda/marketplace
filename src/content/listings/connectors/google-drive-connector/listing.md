@@ -19,6 +19,7 @@ compatibleVersions:
   - "8.5"
 availability: "open-source"
 description: "Create folders and files easily"
+seoDescription: "Integrate Camunda with Google Drive to automate folder and file creation. This Connector is ideal for archiving, data collection, and generating standardized documents within orchestrated processes."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.GoogleDrive.v1/latest/google-drive-outbound-connector.json"
     name: "Google Drive Outbound"
@@ -28,8 +29,6 @@ links:
   website: "https://camunda.com"
 lastModified: "2025-09-09"
 ---
-
-*Streamlined Google Drive File and Folder Management in Orchestrated Processes*
 
 Integrate Camunda with Google Drive to automate folder and file creation. This Connector is ideal for archiving, data collection, and generating standardized documents within orchestrated processes.
 

@@ -34,13 +34,12 @@ compatibleVersions:
   - "8.8"
 availability: "listing-only"
 description: "AI-powered call analysis"
+seoDescription: "Reduce audit time from 138 to 8 minutes, cutting costs, improving agent performance, and transforming customer experience for call centers."
 video: "https://youtu.be/RKN7U9JNt4M"
 links: 
   support: "https://forum.camunda.io/"
 lastModified: "2025-06-30"
 ---
-
-*Agentic AI Assisted Quality Audit Process*
 
 Reduce audit time from 138 to 8 minutes, cutting costs, improving agent performance, and transforming customer experience for call centers.
 

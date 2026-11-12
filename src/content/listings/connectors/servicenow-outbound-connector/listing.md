@@ -20,6 +20,7 @@ compatibleVersions:
   - "8.8"
 availability: "open-source"
 description: "Execute operations on ServiceNow tables"
+seoDescription: "Execute create, read, update, and delete operations on any ServiceNow table from Camunda processes to integrate incidents, tasks, users, and more without writing custom code."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda/connectors/refs/heads/main/connectors/servicenow/element-templates/servicenow-connector.json"
     name: "ServiceNow Outbound Connector Outbound Template"
@@ -29,8 +30,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-10-15"
 ---
-
-*Integrate incidents, tasks, users, and more without writing custom code*
 
 Execute create, read, update, and delete operations on any ServiceNow table from Camunda processes to integrate incidents, tasks, users, and more without writing custom code.
 

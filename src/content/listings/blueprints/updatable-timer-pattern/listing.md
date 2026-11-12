@@ -14,6 +14,7 @@ compatibleVersions:
   - "8.5"
 availability: "open-source"
 description: "Enable updating timers based on variables"
+seoDescription: "Allow BPMN process designers to update timers in tasks or subprocesses."
 templates: 
   - url: "https://raw.githubusercontent.com/brix-ag/bpmn-design-patterns/master/updatable-timer-pattern/updatable-timer-pattern.bpmn"
     name: "Updatable Timer Pattern Blueprint"
@@ -23,8 +24,6 @@ links:
   support: "https://www.brix.ch/en/about-us/contact"
 lastModified: "2024-05-31"
 ---
-
-*Allow variable updates to affect timers*
 
 Allow BPMN process designers to update timers in tasks or subprocesses.
 

@@ -17,14 +17,13 @@ compatibleVersions:
   - "8.5"
 availability: "listing-only"
 description: "Automate and optimize video creation"
+seoDescription: "Use Camunda to orchestrate AWS Elemental tasks for video transcoding. Adjust frame rates and resolution, add caption and audio tracks, merge multiple videos, overlay images onto videos, and more. The blueprint also supports file uploads and downloads from Amazon S3, content moderation detection, and generating presigned URLs for secure delivery."
 video: "https://youtu.be/V9i3UAC3-U8"
 links: 
   demo: "https://github.com/Acheron-Camunda/Camunda-AWS-MediaConvert-Blueprint"
   support: "https://forum.camunda.io/"
 lastModified: "2025-06-30"
 ---
-
-*Automate and Optimize Media Processing with AWS Elemental MediaConvert*
 
 Use Camunda to orchestrate AWS Elemental tasks for video transcoding. Adjust frame rates and resolution, add caption and audio tracks, merge multiple videos, overlay images onto videos, and more. The blueprint also supports file uploads and downloads from Amazon S3, content moderation detection, and generating presigned URLs for secure delivery.
 

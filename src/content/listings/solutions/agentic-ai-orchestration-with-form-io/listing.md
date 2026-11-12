@@ -20,6 +20,7 @@ compatibleVersions:
   - "8.9"
 availability: "listing-only"
 description: "Orchestrate processes with Form.io forms"
+seoDescription: "Combine Form.io data capture with Camunda process orchestration, enabling secure, governed human and system workflows for agentic AI use cases across teams."
 video: "https://youtu.be/LE3Fg4_R68Q?"
 links: 
   docs: "https://help.form.io/faq/tutorials-and-workflows/using-camunda-with-form.io"
@@ -27,8 +28,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2026-01-16"
 ---
-
-*Agentic AI orchestration with Camunda and Form.io*
 
 Combine Form.io data capture with Camunda process orchestration, enabling secure, governed human and system workflows for agentic AI use cases across teams.
 

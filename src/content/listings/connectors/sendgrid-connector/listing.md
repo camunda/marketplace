@@ -21,6 +21,7 @@ compatibleVersions:
   - "8.5"
 availability: "open-source"
 description: "Automate emails in Camunda processes"
+seoDescription: "Integrate SendGrid email delivery into your Camunda processes for automated notifications and reliable transactional emails."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.SendGrid.v2/latest/sendgrid-outbound-connector.json"
     name: "SendGrid Outbound"
@@ -30,8 +31,6 @@ links:
   website: "https://camunda.com"
 lastModified: "2025-09-08"
 ---
-
-*Streamline Email Communications in Camunda-Based Processes*
 
 Integrate SendGrid email delivery into your Camunda processes for automated notifications and reliable transactional emails.
 

@@ -21,6 +21,7 @@ compatibleVersions:
   - "8.7"
 availability: "open-source"
 description: "Orchestrate CI/CD pipelines with Camunda"
+seoDescription: "Implement a customizable process development lifecycle (PDLC) that begins when Web Modeler changes are complete and ends when the process and all other dependencies are released to production."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda/camunda-platform-tutorials/main/solutions/ci-cd/CI-CD%20Pipeline.bpmn"
     name: "CI-CD Pipeline.bpmn"
@@ -34,8 +35,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2026-04-09"
 ---
-
-*Orchestrate CI/CD pipelines with Camunda*
 
 Implement a customizable process development lifecycle (PDLC) that begins when Web Modeler changes are complete and ends when the process and all other dependencies are released to production.
 

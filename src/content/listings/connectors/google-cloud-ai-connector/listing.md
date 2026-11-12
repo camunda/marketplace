@@ -18,6 +18,7 @@ compatibleVersions:
   - "8.4"
 availability: "open-source"
 description: "Enhance processes with Google AI"
+seoDescription: "Leverage Vertex AI and pre-trained models for image labeling, video object tracking, and batch predictions."
 links: 
   github: "https://github.com/Acheron-Camunda/gcp-ai-connector"
   docs: "https://docs.camunda.io/docs/guides/host-custom-connectors/"
@@ -28,8 +29,6 @@ resources:
     url: "https://www.youtube.com/watch?v=JbONMuTfTcU"
 lastModified: "2024-04-08"
 ---
-
-*Use Google Cloud to maximize AI capabilities in business processes*
 
 Leverage Vertex AI and pre-trained models for image labeling, video object tracking, and batch predictions.
 

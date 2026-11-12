@@ -33,14 +33,13 @@ compatibleVersions:
   - "8.8"
 availability: "listing-only"
 description: "Effortlessly upgrade to Camunda 8"
+seoDescription: "Exodus by Capital BPM is a streamlined solution designed for fast, reliable, and cost-effective migration from Camunda 7 to Camunda 8."
 video: "https://youtu.be/RQ_lR41mueY?feature=shared"
 links: 
   demo: "https://CapBPM.com/contact"
   support: "https://forum.camunda.io/"
 lastModified: "2025-11-20"
 ---
-
-*Automated migration from Camunda 7 to Camunda 8*
 
 Exodus by Capital BPM is a streamlined solution designed for fast, reliable, and cost-effective migration from Camunda 7 to Camunda 8.
 

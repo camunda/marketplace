@@ -23,12 +23,11 @@ compatibleVersions:
   - "8.9"
 availability: "listing-only"
 description: "Retail Returns Management, Handling & Processing"
+seoDescription: "AI-powered returns management platform for fashion and apparel or other retail items, uses predictive analytics, computer vision, and intelligent automation to transform high-volume returns into efficient, revenue-generating processes, reducing rates by 15-35% and costs by 20-60%."
 links: 
   support: "https://forum.camunda.io/"
 lastModified: "2026-02-10"
 ---
-
-*Retail Returns Management*
 
 AI-powered returns management platform for fashion and apparel or other retail items, uses predictive analytics, computer vision, and intelligent automation to transform high-volume returns into efficient, revenue-generating processes, reducing rates by 15-35% and costs by 20-60%.
 

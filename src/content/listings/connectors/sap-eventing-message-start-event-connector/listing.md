@@ -20,6 +20,7 @@ compatibleVersions:
   - "8.8"
 availability: "open-source"
 description: "Start Camunda processes from SAP AEM"
+seoDescription: "Start Camunda processes from SAP Advanced Event Mesh CloudEvents for real-time, event-driven orchestration of SAP systems."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda/sap-connectors/ec7ed38ed3cae366e905bacc81c132b0a73b1afa/eventing-connectors/element-templates/sap-eventing-message-start-event-connector.json"
     name: "SAP Eventing Message Start Event Connector Inbound Start Template"
@@ -29,8 +30,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-10-21"
 ---
-
-*Start BPMN processes from SAP CloudEvents*
 
 Start Camunda processes from SAP Advanced Event Mesh CloudEvents for real-time, event-driven orchestration of SAP systems.
 

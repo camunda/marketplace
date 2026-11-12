@@ -35,6 +35,7 @@ compatibleVersions:
   - "8.9"
 availability: "open-source"
 description: "Reliable document AI for process orchestration"
+seoDescription: "Transform unstructured documents into accurate, structured data, while Camunda orchestrates decisions and routes work across systems and teams. Deliver scalable, end-to-end automation for document-centric processes such as claims handling, onboarding, financial operations, compliance, and customer service."
 templates: 
   - url: "https://raw.githubusercontent.com/deepakgoyalABBYY/camunda-abbyy-vantage-connector/refs/heads/main/ABBYY%20Vantage%20Connector.json"
     name: "ABBYY Vantage Connector for Camunda Outbound Template"
@@ -46,8 +47,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-12-10"
 ---
-
-*Automate Intelligent Document Processing with Reusable Building Blocks*
 
 Transform unstructured documents into accurate, structured data, while Camunda orchestrates decisions and routes work across systems and teams. Deliver scalable, end-to-end automation for document-centric processes such as claims handling, onboarding, financial operations, compliance, and customer service.
 

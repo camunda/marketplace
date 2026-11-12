@@ -19,6 +19,7 @@ compatibleVersions:
   - "8.5"
 availability: "open-source"
 description: "Interact with the SpaceTraders API"
+seoDescription: "An SDK to play SpaceTraders from a Camunda process.  It makes the interaction with the API easy by providing one connector for all endpoints, from purchasing a ship to miring ore."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda-community-hub/camunda-space-traders/main/sdk/spacetraders.json"
     id: "com.camunda.SpaceTradersApi\""
@@ -28,8 +29,6 @@ links:
   support: "https://github.com/camunda-community-hub/camunda-space-traders/issues"
 lastModified: "2024-04-08"
 ---
-
-*Play SpaceTraders from Camunda Processes*
 
 An SDK to play SpaceTraders from a Camunda process.  It makes the interaction with the API easy by providing one connector for all endpoints, from purchasing a ship to miring ore.
 

@@ -21,6 +21,7 @@ compatibleVersions:
   - "8.10"
 availability: "open-source"
 description: "AI-powered security incident analysis and decisions"
+seoDescription: "This blueprint automates the analysis and triage of security incidents for security operations center teams. It normalizes incoming security events, enriches them with threat intelligence and asset context, and applies consistent decision logic to identify which incidents require action. Confirmed incidents are routed to downstream systems such as ServiceNow, while false positives are filtered out automatically.\nThe goal is to automatically structure and categorize incoming security events and, based on this, make consistent and traceable decisions.\n\n- The focus is on clearly separating:\n\n- Data preparation (ingest & normalization)\n\n- Technical interpretation (topic & context)\n\n- Decision logic (AI Incident Planner)"
 templates: 
   - url: "https://raw.githubusercontent.com/ilume-Informatik-AG/Intelligent-Security-Incident-Processing-Blueprint/refs/heads/main/Blueprint/AI_Incident_Investigation.bpmn"
     name: "Resource 1"
@@ -39,8 +40,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2026-07-23"
 ---
-
-*Automate security incident triage and decision-making*
 
 This blueprint automates the analysis and triage of security incidents for security operations center teams. It normalizes incoming security events, enriches them with threat intelligence and asset context, and applies consistent decision logic to identify which incidents require action. Confirmed incidents are routed to downstream systems such as ServiceNow, while false positives are filtered out automatically.
 The goal is to automatically structure and categorize incoming security events and, based on this, make consistent and traceable decisions.

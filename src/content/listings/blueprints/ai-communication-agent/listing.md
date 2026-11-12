@@ -17,6 +17,7 @@ compatibleVersions:
   - "8.9"
 availability: "open-source"
 description: "Route customer messages to business services"
+seoDescription: "The AI Communication Agent receives customer messages across email, SMS, chat, and other channels, identifies the customer and their intent, and routes each request to the appropriate business service. Responses are delivered back through the customer's preferred channel, creating a consistent and coordinated experience across all touchpoints."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda/BizSol_bb-AI-Communication-Agent/refs/heads/main/camunda-artifacts/communication-agent.bpmn"
     name: "Resource 1"
@@ -32,12 +33,10 @@ templates:
     name: "Resource 6"
 smTemplate: "https://github.com/camunda/BizSol_bb-AI-Communication-Agent"
 links: 
-  docs: "https://github.com/camunda/BizSol_bb-AI-Communication-Agent"
+  docs: "https://github.com/camunda/BizSol_bb-AI-Communication-Agent#readme"
   support: "https://forum.camunda.io/"
 lastModified: "2026-05-06"
 ---
-
-*Add an AI engagement layer to your business services*
 
 The AI Communication Agent receives customer messages across email, SMS, chat, and other channels, identifies the customer and their intent, and routes each request to the appropriate business service. Responses are delivered back through the customer's preferred channel, creating a consistent and coordinated experience across all touchpoints.
 

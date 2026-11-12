@@ -24,12 +24,11 @@ compatibleVersions:
   - "8.8"
 availability: "listing-only"
 description: "Smooth migration to Camunda 8 from integration experts"
+seoDescription: "nterra is your experienced partner, ensuring a smooth transition from your legacy system or a previous Camunda version to Camunda 8. As integration experts, we see the big picture."
 links: 
   support: "https://forum.camunda.io/"
 lastModified: "2025-10-20"
 ---
-
-*From legacy to legendary with Camunda 8 and nterra*
 
 nterra is your experienced partner, ensuring a smooth transition from your legacy system or a previous Camunda version to Camunda 8. As integration experts, we see the big picture.
 

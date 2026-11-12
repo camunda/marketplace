@@ -13,6 +13,7 @@ compatibleVersions:
   - "8.4"
   - "8.5"
 description: "More flexible timers for processes"
+seoDescription: "Separate a non-interrupting boundary timer from its task or subprocess and recalculate the next trigger time based on variables."
 templates: 
   - url: "https://raw.githubusercontent.com/brix-ag/bpmn-design-patterns/refs/heads/master/recalculable-non-interrupting-boundary-timer-pattern/recalculable-non-interrupting-boundary-timer.bpmn"
     name: "Recalculable Non-Interrupting Timer Pattern Blueprint"
@@ -23,8 +24,6 @@ links:
   support: "https://www.brix.ch/en/about-us/contact"
 lastModified: "2025-02-13"
 ---
-
-*Increase the flexibility of timers that are triggered repeatedly*
 
 Separate a non-interrupting boundary timer from its task or subprocess and recalculate the next trigger time based on variables.
 

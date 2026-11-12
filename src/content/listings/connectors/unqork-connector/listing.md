@@ -15,13 +15,12 @@ compatibleVersions:
   - "8.5"
 availability: "listing-only"
 description: "Combine Camunda and Unqork to deliver value"
+seoDescription: "Integrate Camunda-based business processes with Unqork's no-code application development capabilities to deliver business value quickly."
 links: 
   demo: "https://www.unqork.com"
   support: "https://forum.camunda.io/"
 lastModified: "2024-10-31"
 ---
-
-*Combine Camunda process orchestration with Unqork's no-code development capabilities*
 
 Integrate Camunda-based business processes with Unqork's no-code application development capabilities to deliver business value quickly.
 

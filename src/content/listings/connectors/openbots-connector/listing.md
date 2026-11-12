@@ -20,6 +20,7 @@ compatibleVersions:
   - "8.5"
 availability: "open-source"
 description: "Orchestrate RPA bots with Camunda"
+seoDescription: "Orchestrate RPA bots running in OpenBots as part of your Camunda-based business processes by creating queue items and checking for them to complete."
 templates: 
   - url: "https://raw.githubusercontent.com/BP3/openbots-connector/main/element-templates/openbots_connector.json"
     name: "OpenBots Connector Outbound Template"
@@ -28,8 +29,6 @@ links:
   support: "https://support.bp-3.com/"
 lastModified: "2024-04-08"
 ---
-
-*Integrate OpenBots with Camunda*
 
 Orchestrate RPA bots running in OpenBots as part of your Camunda-based business processes by creating queue items and checking for them to complete.
 

@@ -18,6 +18,7 @@ compatibleVersions:
   - "8.8"
 availability: "open-source"
 description: "Accelerate S/4HANA and ECC projects"
+seoDescription: "Use this blueprint to pick an SAP system, enter filters in a Camunda form, and review live Business Partner data in a native Fiori environment. No custom code required."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda/sap-connectors/refs/heads/main/blueprint/Primary%20Process.bpmn"
     name: "Resource 1"
@@ -46,8 +47,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-11-26"
 ---
-
-*Connect to any SAP system instantly*
 
 Use this blueprint to pick an SAP system, enter filters in a Camunda form, and review live Business Partner data in a native Fiori environment. No custom code required.
 

@@ -19,14 +19,13 @@ compatibleVersions:
   - "8.6"
 availability: "listing-only"
 description: "Orchestrate mortgage origination processes efficiently"
+seoDescription: "This blueprint demonstrates how to improve the mortgage origination process by automating validation and compliance tasks. It focuses on development skills, best practices, and architectural understanding."
 video: "https://youtu.be/NSb0uYaTu0g"
 links: 
   demo: "https://capbpm.com/camunda-marketplace/mortgage-origination/"
   support: "https://forum.camunda.io/"
 lastModified: "2024-12-09"
 ---
-
-*Jumpstart Your Mortgage Origination Process*
 
 This blueprint demonstrates how to improve the mortgage origination process by automating validation and compliance tasks. It focuses on development skills, best practices, and architectural understanding.
 

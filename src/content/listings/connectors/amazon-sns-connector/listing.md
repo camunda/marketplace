@@ -24,6 +24,7 @@ compatibleVersions:
   - "8.5"
 availability: "open-source"
 description: "Leverage Amazon SNS pub/sub capabilities"
+seoDescription: "Send and receive messages between Camunda and Amazon SNS. Enhance your business processes with dynamic messaging capabilities and instant responsiveness."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.AWSSNS.v1/latest/aws-sns-outbound-connector.json"
     id: "io.camunda.connectors.AWSSNS.v1"
@@ -42,8 +43,6 @@ links:
   website: "https://docs.camunda.io/docs/components/connectors/out-of-the-box-connectors/aws-sns/"
 lastModified: "2025-09-03"
 ---
-
-*Pub/Sub Integration with the Amazon SNS Connector*
 
 Send and receive messages between Camunda and Amazon SNS. Enhance your business processes with dynamic messaging capabilities and instant responsiveness.
 

@@ -21,15 +21,14 @@ compatibleVersions:
   - "8.9"
 availability: "open-source"
 description: "Protect sensitive data in processes"
+seoDescription: "Protect sensitive data in Camunda-powered business processes. This connecter uses Skyflow Detect to de-identify sensitive fields in structured JSON data and re-identify previously tokenized values. It locates sensitive information such PII, PHI, and PCI from text, PDFs, images, and audio files and then redacts that information with tokens. You can use this de-identified data for a variety of tasks such as model training, fine tuning, running secure inference, performing privacy-aware analytics, or any other operational task that requires de-identified unstructured data."
 smTemplate: "https://github.com/mathieu-stennier/skyflow-camunda-connector"
 video: "https://youtu.be/UZJrN1oXlyE"
 links: 
-  docs: "https://github.com/mathieu-stennier/skyflow-camunda-connector"
+  docs: "https://github.com/mathieu-stennier/skyflow-camunda-connector#readme"
   support: "https://forum.camunda.io/"
 lastModified: "2026-02-12"
 ---
-
-*Protect your data from AI and integration leaks*
 
 Protect sensitive data in Camunda-powered business processes. This connecter uses Skyflow Detect to de-identify sensitive fields in structured JSON data and re-identify previously tokenized values. It locates sensitive information such PII, PHI, and PCI from text, PDFs, images, and audio files and then redacts that information with tokens. You can use this de-identified data for a variety of tasks such as model training, fine tuning, running secure inference, performing privacy-aware analytics, or any other operational task that requires de-identified unstructured data.
 

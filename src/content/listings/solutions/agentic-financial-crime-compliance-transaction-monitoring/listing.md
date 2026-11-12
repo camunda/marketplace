@@ -24,12 +24,11 @@ compatibleVersions:
   - "8.8"
 availability: "listing-only"
 description: "Modernize transaction monitoring with AI/ML"
+seoDescription: "Leverage agentic AI to address the biggest challenges in anti-money laundering (AML) compliance to ensure stronger regulatory alignment, improve operational resilience, and enhance fraud prevention capabilities."
 links: 
   support: "https://forum.camunda.io/"
 lastModified: "2025-06-02"
 ---
-
-*Agentic Financial Crime Compliance Transaction Monitoring*
 
 Leverage agentic AI to address the biggest challenges in anti-money laundering (AML) compliance to ensure stronger regulatory alignment, improve operational resilience, and enhance fraud prevention capabilities.
 

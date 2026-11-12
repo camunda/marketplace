@@ -19,13 +19,12 @@ compatibleVersions:
   - "8.6"
 availability: "listing-only"
 description: "Automate income verification"
+seoDescription: "Streamlines the process of verifying income, reducing processing time and ensuring regulatory compliance at every step. Use this foundational blueprint by itself or in combination with other blueprints for consumer banking, commercial banking, wealth management, and so on."
 links: 
   demo: "https://capbpm.com/camunda-marketplace/income-verification"
   support: "https://forum.camunda.io/"
 lastModified: "2025-05-22"
 ---
-
-*Improve the income verification process*
 
 Streamlines the process of verifying income, reducing processing time and ensuring regulatory compliance at every step. Use this foundational blueprint by itself or in combination with other blueprints for consumer banking, commercial banking, wealth management, and so on.
 

@@ -11,13 +11,12 @@ compatibleVersions:
   - "8.9"
 availability: "listing-only"
 description: "AI-powered analysis of suspicious emails"
+seoDescription: "Employees forward suspicious emails and receive an AI-generated Guardian Report with a clear verdict. Camunda orchestrates privacy-safe threat analysis with Amazon Bedrock."
 video: "https://www.youtube.com/watch?v=tW3cyEu99CI&feature=youtu.be"
 links: 
   support: "https://forum.camunda.io/"
 lastModified: "2026-10-08"
 ---
-
-*Stop phishing before users click*
 
 Employees forward suspicious emails and receive an AI-generated Guardian Report with a clear verdict. Camunda orchestrates privacy-safe threat analysis with Amazon Bedrock.
 

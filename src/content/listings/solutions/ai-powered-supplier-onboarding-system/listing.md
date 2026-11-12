@@ -16,13 +16,12 @@ compatibleVersions:
   - "8.8"
 availability: "listing-only"
 description: "Faster, smarter, compliant supplier onboarding"
+seoDescription: "Accelerates approval, automate compliance checks, and ensure clean master data. Achieve faster vendor creation, reduce risk, and unify ERP visibility with intelligent AI orchestration."
 links: 
   demo: "https://www.acheron-tech.com/contact"
   support: "https://forum.camunda.io/"
 lastModified: "2025-10-20"
 ---
-
-*AI-driven supplier onboarding, simplified*
 
 Accelerates approval, automate compliance checks, and ensure clean master data. Achieve faster vendor creation, reduce risk, and unify ERP visibility with intelligent AI orchestration.
 

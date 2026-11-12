@@ -17,14 +17,13 @@ compatibleVersions:
   - "8.3"
 availability: "open-source"
 description: "Secure remote server operations"
+seoDescription: "Securely orchestrate file and folder operations on remote servers as part of Camunda processes."
 links: 
   github: "https://github.com/Infosys/camunda-connectors/tree/main/connector-sftp"
   docs: "https://docs.camunda.io/docs/guides/host-custom-connectors/"
   website: "https://www.infosys.com/"
 lastModified: "2024-04-05"
 ---
-
-*Manage Data Securely with the SFTP Connector for Camunda*
 
 Securely orchestrate file and folder operations on remote servers as part of Camunda processes.
 

@@ -24,11 +24,13 @@ compatibleVersions:
   - "8.8"
 availability: "listing-only"
 description: "Enhanced compliance, automated oversight"
+seoDescription: "The Compliance Monitoring Agent ensures consistent oversight and better audit readiness for events in highly regulated industries by automating risk detection and safeguards without human intervention."
 video: "https://youtu.be/_9wxND807oI"
 links: 
   support: "https://forum.camunda.io/"
 lastModified: "2025-06-30"
 ---
+
 
 The Compliance Monitoring Agent ensures consistent oversight and better audit readiness for events in highly regulated industries by automating risk detection and safeguards without human intervention.
 

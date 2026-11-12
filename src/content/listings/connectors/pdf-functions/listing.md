@@ -17,14 +17,13 @@ connectorTypes:
 compatibleVersions: 
   - "8.5"
 description: "Automate work with PDFs"
+seoDescription: "Automate many different functions with PDF files."
 links: 
   github: "https://github.com/camunda-community-hub/camunda-8-connector-pdf"
   docs: "https://github.com/camunda-community-hub/camunda-8-connector-pdf/blob/main/README.md"
   support: "https://forum.camunda.io/"
 lastModified: "2025-09-22"
 ---
-
-*Automate PDF work in business processes*
 
 Automate many different functions with PDF files.
 

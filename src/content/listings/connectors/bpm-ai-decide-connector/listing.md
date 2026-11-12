@@ -18,14 +18,13 @@ compatibleVersions:
   - "8.4"
 availability: "open-source"
 description: "Automate decisions using AI"
+seoDescription: "Make automated decisions in business processes based on process variables and a question."
 links: 
   github: "https://github.com/holunda-io/bpm-ai-connectors-camunda-8"
   docs: "https://docs.camunda.io/docs/guides/host-custom-connectors/"
   support: "https://github.com/holunda-io/bpm-ai-connectors-camunda-8/discussions/categories/q-a"
 lastModified: "2024-04-08"
 ---
-
-*Automate decision-making in business processes to reduce reliance on human tasks and improve operational performance*
 
 Make automated decisions in business processes based on process variables and a question.
 

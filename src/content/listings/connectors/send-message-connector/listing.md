@@ -20,6 +20,7 @@ compatibleVersions:
   - "8.8"
 availability: "open-source"
 description: "Invoke the message API without a worker"
+seoDescription: "Publish or correlate BPMN messages in business processes without writing code. This connector provides robust error handling and supports reusability through element templates."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.message.sendtask.v1/latest/send-message-connector-send-task.json"
     name: "Send Camunda BPMN Messages Outbound Template"
@@ -34,8 +35,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-09-18"
 ---
-
-*Publish or correlate BPMN messages without writing code*
 
 Publish or correlate BPMN messages in business processes without writing code. This connector provides robust error handling and supports reusability through element templates.
 

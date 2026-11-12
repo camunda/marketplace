@@ -26,14 +26,13 @@ compatibleVersions:
   - "8.5"
 availability: "listing-only"
 description: "Automated predictions with Vertex AI"
+seoDescription: "Integrate Camunda and Google Cloud Vertex AI to streamline data processing and conversion and leverage ML models to make accurate predictions."
 video: "https://youtu.be/Sqsd8lAihfM"
 links: 
   demo: "https://github.com/Acheron-Camunda/Camunda-GCP-Vision-AI-Blueprint/tree/main"
   support: "https://forum.camunda.io/"
 lastModified: "2025-06-30"
 ---
-
-*Predictive Batch Processing with Vertex AI*
 
 Integrate Camunda and Google Cloud Vertex AI to streamline data processing and conversion and leverage ML models to make accurate predictions.
 

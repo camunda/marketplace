@@ -19,14 +19,13 @@ compatibleVersions:
   - "8.9"
 availability: "open-source"
 description: "Multi-channel notifications via Brevo API"
+seoDescription: "Send email, SMS, and WhatsApp notifications using the Brevo API for process automation and real-time communication."
 links: 
   github: "https://github.com/ak-chaudhari423/brevo-notification-connector.git"
   docs: "https://docs.camunda.io/docs/guides/host-custom-connectors/"
   support: "https://forum.camunda.io/"
 lastModified: "2026-03-25"
 ---
-
-*Automate multi-channel communications with Brevo*
 
 Send email, SMS, and WhatsApp notifications using the Brevo API for process automation and real-time communication.
 

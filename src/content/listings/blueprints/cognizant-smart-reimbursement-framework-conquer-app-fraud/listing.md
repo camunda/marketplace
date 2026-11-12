@@ -21,11 +21,13 @@ compatibleVersions:
   - "8.8"
 availability: "listing-only"
 description: "Cognizant's Smart APP-Fraud Reimbursement Framework"
+seoDescription: "Cognizant's Smart APP-Fraud Reimbursement Framework, powered by the Camunda platform, offers a comprehensive solution, addressing the limitations of Reimbursement Claims Management System (RCMS) and empowering Payment Systems Regulators (PSRs) to effectively combat Authorized Push Payment (APP) fraud."
 video: "https://vimeo.com/1058668476?share=copy"
 links: 
   support: "https://forum.camunda.io/"
 lastModified: "2025-06-02"
 ---
+
 
 Cognizant's Smart APP-Fraud Reimbursement Framework, powered by the Camunda platform, offers a comprehensive solution, addressing the limitations of Reimbursement Claims Management System (RCMS) and empowering Payment Systems Regulators (PSRs) to effectively combat Authorized Push Payment (APP) fraud.
 

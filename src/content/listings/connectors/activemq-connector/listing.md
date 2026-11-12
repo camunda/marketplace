@@ -17,14 +17,13 @@ compatibleVersions:
   - "8.3"
 availability: "listing-only"
 description: "Push messages to ActiveMQ"
+seoDescription: "Easily integrate the ActiveMQ message broker into Camunda-based business processes."
 links: 
   github: "https://github.com/aloksingh25/activemq-connector"
   docs: "https://docs.camunda.io/docs/guides/host-custom-connectors/"
   support: "https://forum.camunda.io/"
 lastModified: "2024-08-09"
 ---
-
-*ActiveMQ Connector*
 
 Easily integrate the ActiveMQ message broker into Camunda-based business processes.
 

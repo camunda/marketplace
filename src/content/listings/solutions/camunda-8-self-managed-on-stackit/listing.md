@@ -17,12 +17,11 @@ compatibleVersions:
   - "8.10"
 availability: "listing-only"
 description: "Sovereign Camunda deployment on STACKIT"
+seoDescription: "Consid designs and builds Camunda Self-Managed on STACKIT, the sovereign cloud of the Schwarz Group. Delivered entirely as Terraform, Helm and GitOps in your Git, production-ready in weeks, with data staying in Germany."
 links: 
   support: "https://github.com/consid-germany/camunda-on-stackit"
 lastModified: "2026-08-26"
 ---
-
-*Deploy sovereign process orchestration, delivered entirely as code*
 
 Consid designs and builds Camunda Self-Managed on STACKIT, the sovereign cloud of the Schwarz Group. Delivered entirely as Terraform, Helm and GitOps in your Git, production-ready in weeks, with data staying in Germany.
 

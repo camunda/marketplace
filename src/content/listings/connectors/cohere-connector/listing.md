@@ -22,6 +22,7 @@ compatibleVersions:
   - "8.10"
 availability: "open-source"
 description: "Bring Cohere models into processes"
+seoDescription: "Integrate Cohere into Camunda business processes: chat with Command models, get schema-conformant JSON answers, classify text for routing decisions, embed documents for semantic search, and rerank retrieval hits by relevance, all from a service task."
 templates: 
   - url: "https://raw.githubusercontent.com/zishan-c8academy/camunda-connector-cohere/master/src/cohere-connector.json"
     name: "Cohere Connector Outbound Template"
@@ -31,8 +32,6 @@ links:
   support: "https://github.com/zishan-c8academy/camunda-connector-cohere/issues"
 lastModified: "2026-07-15"
 ---
-
-*Put Cohere chat, embeddings, and reranking to work in your processes*
 
 Integrate Cohere into Camunda business processes: chat with Command models, get schema-conformant JSON answers, classify text for routing decisions, embed documents for semantic search, and rerank retrieval hits by relevance, all from a service task.
 

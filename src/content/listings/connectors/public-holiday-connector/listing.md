@@ -21,6 +21,7 @@ compatibleVersions:
   - "8.5"
 availability: "open-source"
 description: "Streamline scheduling with public holidays"
+seoDescription: "Integrate public holidays and long weekends seamlessly into Camunda processes with the Public Holiday Connector. Leverage Nager.Date API to keep your global teams and processes in sync with over 100 countries' holiday schedules."
 templates: 
   - url: "https://raw.githubusercontent.com/bastiankoerber/camunda-connector-public-holiday/main/World_Wide_Public_Holiday_Connector_Template.json"
     id: "nager.api.connector.v1"
@@ -30,8 +31,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-10-27"
 ---
-
-*Leverage Public Holiday Data for Scheduling in Critical Business Processes*
 
 Integrate public holidays and long weekends seamlessly into Camunda processes with the Public Holiday Connector. Leverage Nager.Date API to keep your global teams and processes in sync with over 100 countries' holiday schedules.
 

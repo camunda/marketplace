@@ -16,14 +16,13 @@ compatibleVersions:
   - "8.9"
 availability: "listing-only"
 description: "Procurement automation with intelligent matching"
+seoDescription: "Transform procurement from purchase request to payment reconciliation with intelligent automation. This Camunda-based solution combines AI classification, smart document processing, and three-way matching to streamline the entire P2P cycle while maintaining critical financial controls and compliance visibility."
 video: "https://www.youtube.com/watch?v=DLGE8EyUzk8"
 links: 
   demo: "https://www.acheron-tech.com/contact"
   support: "https://forum.camunda.io/"
 lastModified: "2026-03-26"
 ---
-
-*End-to-end procure-to-pay automation*
 
 Transform procurement from purchase request to payment reconciliation with intelligent automation. This Camunda-based solution combines AI classification, smart document processing, and three-way matching to streamline the entire P2P cycle while maintaining critical financial controls and compliance visibility.
 

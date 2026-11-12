@@ -17,6 +17,7 @@ compatibleVersions:
   - "8.5"
 availability: "open-source"
 description: "Efficient, automated event sign-up system"
+seoDescription: "Use BPMN, Connectors, and Camunda forms to automate event registration."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda/camunda-platform-tutorials/main/solutions/event-registration/Event%20Registration.bpmn"
     name: "Event Registration.bpmn"
@@ -28,8 +29,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2026-04-09"
 ---
-
-*Event Registration*
 
 Use BPMN, Connectors, and Camunda forms to automate event registration.
 

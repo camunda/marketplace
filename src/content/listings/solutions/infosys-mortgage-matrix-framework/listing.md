@@ -25,10 +25,12 @@ compatibleVersions:
   - "8.8"
 availability: "listing-only"
 description: "Your Mortgage Made Simple"
+seoDescription: "One Application, Endless Possibilities: Your Mortgage Made Simple"
 links: 
   support: "https://forum.camunda.io/"
 lastModified: "2025-07-30"
 ---
+
 
 One Application, Endless Possibilities: Your Mortgage Made Simple
 

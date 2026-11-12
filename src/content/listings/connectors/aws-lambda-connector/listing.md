@@ -20,6 +20,7 @@ compatibleVersions:
   - "8.4"
 availability: "open-source"
 description: "Connect serverless to business processes"
+seoDescription: "Invoke AWS Lambda functions as part of orchestrated business processes."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.AWSLAMBDA.v2/latest/aws-lambda-outbound-connector.json"
     id: "io.camunda.connectors.AWSLAMBDA.v2"
@@ -30,8 +31,6 @@ links:
   website: "https://github.com/camunda/connectors-bundle/tree/main/connectors/aws/aws-lambda"
 lastModified: "2025-09-03"
 ---
-
-*AWS Lambda Connector*
 
 Invoke AWS Lambda functions as part of orchestrated business processes.
 

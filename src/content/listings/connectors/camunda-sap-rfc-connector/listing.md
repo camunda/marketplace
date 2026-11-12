@@ -14,6 +14,7 @@ compatibleVersions:
   - "8.6"
   - "8.7"
 description: "Connect to SAP using RFC"
+seoDescription: "Integrate SAP into business processes using Remote Function Calls (RFC). This connector complies with SAP's Clean Core strategy, ensuring it's future-proof."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda/sap-connectors/refs/heads/main/rfc-connector/element-templates/sap-rfc-connector.json"
     name: "RFC"
@@ -23,8 +24,6 @@ links:
   support: "https://forum.camunda.io/tag/sap-integration"
 lastModified: "2026-06-01"
 ---
-
-*Orchestrate SAP tasks and data with the Camunda SAP RFC connector*
 
 Integrate SAP into business processes using Remote Function Calls (RFC). This connector complies with SAP's Clean Core strategy, ensuring it's future-proof.
 

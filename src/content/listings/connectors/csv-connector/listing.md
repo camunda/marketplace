@@ -18,6 +18,7 @@ compatibleVersions:
   - "8.8"
 availability: "open-source"
 description: "Read and write comma-separated values"
+seoDescription: "Streamline the use of flat data files in business processes by reading CSV files or converting JSON data to CSV format."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.csv/latest/csv-outbound-connector.json"
     name: "CSV Connector Outbound Template"
@@ -27,8 +28,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-10-06"
 ---
-
-*CSV Connector*
 
 Streamline the use of flat data files in business processes by reading CSV files or converting JSON data to CSV format.
 

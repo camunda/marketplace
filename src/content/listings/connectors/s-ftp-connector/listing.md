@@ -17,13 +17,12 @@ compatibleVersions:
   - "8.2"
 availability: "open-source"
 description: "Simplify file management with S/FTP"
+seoDescription: "Publish a file to an S/FTP server or download a file from an S/FTP server."
 links: 
   support: "https://forum.camunda.io/"
   website: "https://www.cognizant.com/"
 lastModified: "2024-04-08"
 ---
-
-*Download / Upload file to FTP Server with the provided details*
 
 Publish a file to an S/FTP server or download a file from an S/FTP server.
 

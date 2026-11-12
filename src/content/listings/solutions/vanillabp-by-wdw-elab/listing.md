@@ -29,13 +29,12 @@ compatibleVersions:
   - "8.8"
 availability: "listing-only"
 description: "Simplify Camunda migration and reduce risk"
+seoDescription: "Migrate from Camunda 7 to 8 with VanillaBP: seamless, flexible, and low-risk. Run both platforms in parallel and avoid \"big bang\" migrations."
 video: "https://player.vimeo.com/video/826237905?h=e6f3eef34a&"
 links: 
   support: "https://github.com/vanillabp"
 lastModified: "2025-07-30"
 ---
-
-*Simplify your Camunda 7 to 8 Migration*
 
 Migrate from Camunda 7 to 8 with VanillaBP: seamless, flexible, and low-risk. Run both platforms in parallel and avoid "big bang" migrations.
 

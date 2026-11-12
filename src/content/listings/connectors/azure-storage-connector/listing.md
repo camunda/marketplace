@@ -16,12 +16,11 @@ compatibleVersions:
   - "8.3"
 availability: "open-source"
 description: "Unlock Azure Blob Storage simplicity"
+seoDescription: "Integrate Microsoft Azure Blob Storage into your Camunda processes by retrieving information about blob containers and uploading data to them."
 links: 
   website: "https://www.cognizant.com/"
 lastModified: "2024-04-05"
 ---
-
-*Effortless Cloud Storage Management with the Azure Blob Storage Connector*
 
 Integrate Microsoft Azure Blob Storage into your Camunda processes by retrieving information about blob containers and uploading data to them.
 

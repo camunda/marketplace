@@ -20,6 +20,7 @@ compatibleVersions:
   - "8.8"
 availability: "open-source"
 description: "Trigger ServiceNow flows from Camunda"
+seoDescription: "Start ServiceNow Flow Designer flows from Camunda processes to orchestrate approvals, fulfillment, or catalog workflows using REST calls and correlation keys."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda/connectors/refs/heads/main/connectors/servicenow/element-templates/servicenow-flow-starter-connector.json"
     name: "ServiceNow Flow Starter Outbound Template"
@@ -29,8 +30,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-10-15"
 ---
-
-*Trigger ServiceNow flows directly from Camunda*
 
 Start ServiceNow Flow Designer flows from Camunda processes to orchestrate approvals, fulfillment, or catalog workflows using REST calls and correlation keys.
 

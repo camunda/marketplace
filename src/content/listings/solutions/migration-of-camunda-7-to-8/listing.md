@@ -30,12 +30,11 @@ compatibleVersions:
   - "8.7"
 availability: "listing-only"
 description: "Expert-led, structured Camunda migration approach"
+seoDescription: "Structured, fixed-price migration from Camunda 7 to 8  for both embedded and remote engines. Designed for reliability, transparency, and peace of mind."
 links: 
   support: "https://forum.camunda.io/"
 lastModified: "2025-06-30"
 ---
-
-*Smooth migration. No surprises.*
 
 Structured, fixed-price migration from Camunda 7 to 8  for both embedded and remote engines. Designed for reliability, transparency, and peace of mind.
 

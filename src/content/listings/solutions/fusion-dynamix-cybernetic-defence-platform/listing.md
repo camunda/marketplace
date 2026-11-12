@@ -19,14 +19,13 @@ compatibleVersions:
   - "8.9"
 availability: "listing-only"
 description: "Orchestrate cyber resilience response processes"
+seoDescription: "Orchestrate cyber resilience response processes with governance gates, ecosystem risk scoring, and board-ready assurance reporting."
 video: "https://bluenebula.egnyte.com/dl/MP4TPkqhHg3V"
 links: 
   demo: "https://bluenebula.io/contact"
   support: "https://forum.camunda.io/"
 lastModified: "2026-02-05"
 ---
-
-*Safeguarding the digital ecosystem*
 
 Orchestrate cyber resilience response processes with governance gates, ecosystem risk scoring, and board-ready assurance reporting.
 

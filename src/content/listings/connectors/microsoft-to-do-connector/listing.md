@@ -18,14 +18,13 @@ compatibleVersions:
   - "8.5"
 availability: "open-source"
 description: "Orchestrate Microsoft To Do lists"
+seoDescription: "Orchestrate human work that's managed in Microsoft 365 To Do. Perform operations on task lists, tasks, and check list items."
 links: 
   github: "https://github.com/bbhtde/bbht-outbound-connector-microsoft-todo/"
   docs: "https://docs.camunda.io/docs/guides/host-custom-connectors/"
   support: "https://github.com/bbhtde/bbht-outbound-connector-microsoft-todo/issues"
 lastModified: "2024-08-22"
 ---
-
-*Orchestrate Human Work with Microsoft 365 To Do*
 
 Orchestrate human work that's managed in Microsoft 365 To Do. Perform operations on task lists, tasks, and check list items.
 

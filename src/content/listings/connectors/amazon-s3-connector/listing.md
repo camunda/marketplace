@@ -19,6 +19,7 @@ compatibleVersions:
   - "8.8"
 availability: "open-source"
 description: "Manage Amazon S3 Files in Camunda"
+seoDescription: "Orchestrate file and document-heavy processes with Camunda and Amazon S3."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.aws.s3.v1/latest/aws-s3-outbound-connector.json"
     name: "Amazon S3 Connector Outbound Template"
@@ -27,8 +28,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2025-10-16"
 ---
-
-*Manage files on Amazon S3*
 
 Orchestrate file and document-heavy processes with Camunda and Amazon S3.
 

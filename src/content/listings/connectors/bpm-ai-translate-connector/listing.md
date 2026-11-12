@@ -18,14 +18,13 @@ compatibleVersions:
   - "8.4"
 availability: "open-source"
 description: "Overcome language barriers using AI"
+seoDescription: "Automatically translate documents, audio, and text from process variables into any language."
 links: 
   github: "https://github.com/holunda-io/bpm-ai-connectors-camunda-8"
   docs: "https://docs.camunda.io/docs/guides/host-custom-connectors/"
   support: "https://github.com/holunda-io/bpm-ai-connectors-camunda-8/discussions/categories/q-a"
 lastModified: "2024-04-08"
 ---
-
-*Overcome language barriers using AI-powered translation*
 
 Automatically translate documents, audio, and text from process variables into any language.
 

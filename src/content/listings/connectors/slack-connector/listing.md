@@ -25,6 +25,7 @@ compatibleVersions:
   - "8.5"
 availability: "open-source"
 description: "Automate communication in business processes"
+seoDescription: "Use Slack in Camunda processes for real-time notifications, event-driven workflows, dynamic team interactions, and more."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.Slack.v1/latest/slack-outbound-connector.json"
     name: "Slack Outbound"
@@ -44,8 +45,6 @@ resources:
     url: "https://vimeo.com/893263522"
 lastModified: "2025-09-10"
 ---
-
-*Camunda and Slack: Uniting Process Orchestration and Team Collaboration*
 
 Use Slack in Camunda processes for real-time notifications, event-driven workflows, dynamic team interactions, and more.
 

@@ -21,6 +21,7 @@ compatibleVersions:
   - "8.6"
 availability: "open-source"
 description: "Orchestrate insurance claims with BPMN and DMN"
+seoDescription: "This blueprint provides a foundation to streamline the handling of high-volume, low-value personal insurance claims, reducing delays and improving customer satisfaction."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda/camunda-platform-tutorials/main/solutions/insurance-personal-property-damage-claim-handling/insurance-personal-property-damage-claim-handling.bpmn"
     name: "Resource 1"
@@ -36,8 +37,6 @@ links:
   support: "https://forum.camunda.io/"
 lastModified: "2024-08-20"
 ---
-
-*Automate or Adjudicate Insurance Claims*
 
 This blueprint provides a foundation to streamline the handling of high-volume, low-value personal insurance claims, reducing delays and improving customer satisfaction.
 

@@ -23,13 +23,12 @@ compatibleVersions:
   - "8.8"
 availability: "listing-only"
 description: "Streamline and automate trade exception handling"
+seoDescription: "Streamline and automate trade exception processes, reducing the cost of operational risks and increasing regulatory compliance in financial services institutions."
 video: "https://youtu.be/DcmSC4gKaEY"
 links: 
   support: "https://forum.camunda.io/"
 lastModified: "2025-07-02"
 ---
-
-*Agentic Trade Exception Management*
 
 Streamline and automate trade exception processes, reducing the cost of operational risks and increasing regulatory compliance in financial services institutions.
 

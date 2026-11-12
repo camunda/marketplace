@@ -14,6 +14,7 @@ compatibleVersions:
   - "8.9"
 availability: "open-source"
 description: "Typed AI decisions in BPMN"
+seoDescription: "Use Jev by TypeSafe AI in your Camunda processes. Make fast, typed AI decisions: pick the best option, find all matches, or ask yes/no, choice, and score questions over lists of any size."
 templates: 
   - url: "  https://raw.githubusercontent.com/rajeshponna/camunda-jev-ai-decision-connector/main/element-templates/jev-ai-decision-connector.json"
     name: "Jev AI Decision Connector Outbound Template"
@@ -24,8 +25,6 @@ links:
   support: "https://github.com/rajeshponna/camunda-jev-ai-decision-connector/issues"
 lastModified: "2026-10-01"
 ---
-
-*Make fast, typed AI decisions in your processes*
 
 Use Jev by TypeSafe AI in your Camunda processes. Make fast, typed AI decisions: pick the best option, find all matches, or ask yes/no, choice, and score questions over lists of any size.
 

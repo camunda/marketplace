@@ -19,6 +19,7 @@ compatibleVersions:
   - "8.5"
 availability: "open-source"
 description: "Full control over Camunda processes"
+seoDescription: "Easily retrieve or search for process instances, process definitions, variables, flow node Instances, and incidents. Manage and monitor all of these within your Camunda workflow."
 templates: 
   - url: "https://marketplace.cloud.camunda.io/api/v1/ootb-connectors/io.camunda.connectors.CamundaOperate.v1/latest/operate-connector.json"
     name: "Camunda Operate Outbound"
@@ -27,8 +28,6 @@ links:
   website: "https://camunda.com"
 lastModified: "2025-09-10"
 ---
-
-*Orchestrate, Monitor, and Optimize Processes with Camunda Operate Connector*
 
 Easily retrieve or search for process instances, process definitions, variables, flow node Instances, and incidents. Manage and monitor all of these within your Camunda workflow.
 

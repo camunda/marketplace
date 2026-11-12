@@ -20,18 +20,17 @@ compatibleVersions:
   - "8.9"
 availability: "open-source"
 description: "Orchestrate your contact center end-to-end"
+seoDescription: "Connect NICE CXone to Camunda: manage agents, create work items, query real-time data, and send messages across 22+ operations with no code required."
 templates: 
   - url: "https://raw.githubusercontent.com/camunda-community-hub/camunda-nice-cxone-connector/refs/heads/main/element-templates/nicecxone-connector.json"
     name: "NICE CXone Connector Outbound Template"
 smTemplate: "https://github.com/camunda-community-hub/camunda-nice-cxone-connector"
 video: "https://www.youtube.com/watch?v=qaqH9yw9N3U"
 links: 
-  docs: "https://github.com/camunda-community-hub/camunda-nice-cxone-connector"
+  docs: "https://github.com/camunda-community-hub/camunda-nice-cxone-connector#readme"
   support: "https://forum.camunda.io/"
 lastModified: "2026-08-06"
 ---
-
-*Orchestrate your NICE CXone contact center directly from Camunda processes*
 
 Connect NICE CXone to Camunda: manage agents, create work items, query real-time data, and send messages across 22+ operations with no code required.
 
