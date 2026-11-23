@@ -34,3 +34,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: dist
           exclude_assets: pr-preview
+          cname: marketplace-new.camunda.com
